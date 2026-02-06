@@ -8,21 +8,417 @@ IOC 2.0 (Internship OneConnect) là một nền tảng edtech được phát tri
 
 Khác với các mô hình giới thiệu chỗ thực tập truyền thống, IOC 2.0 không giới hạn trong một ngành nghề cụ thể mà được thiết kế như một hạ tầng thực tập dùng chung, có khả năng áp dụng cho nhiều nhóm ngành khác nhau (CNTT, kinh tế, dữ liệu, vận hành, truyền thông, phân tích nghiệp vụ…), miễn là có thể tổ chức công việc theo dự án và đầu ra rõ ràng. **Tuy nhiên, trong năm 2026 IOC vẫn tập trung vào ngành Công nghệ thông tin (CNTT), nơi đội ngũ có thế mạnh và kinh nghiệm sâu.**
 
-IOC 2.0 tập trung vào việc thiết kế – vận hành – đo lường toàn bộ hành trình thực tập của sinh viên, bắt đầu từ giai đoạn đăng ký, đánh giá đầu vào, onboarding, làm việc thực chiến (On-the-job training), cho đến đánh giá đầu ra và kết nối tuyển dụng. Thông qua quá trình này, nền tảng phục vụ trực tiếp **hai nhóm khách hàng chính**:
+IOC 2.0 tập trung vào việc thiết kế – vận hành – đo lường toàn bộ hành trình thực tập của sinh viên, bắt đầu từ giai đoạn đăng ký, đánh giá đầu vào, onboarding, làm việc thực chiến (On-the-job training), cho đến đánh giá đầu ra. Thông qua quá trình này, nền tảng phục vụ trực tiếp **hai nhóm khách hàng chính**:
 
 **Nhà trường**: có bằng chứng đầu ra cụ thể cho hoạt động đào tạo và thực tập (tiến độ, đánh giá mentor, kết quả dự án).
 
 **Sinh viên**: được làm dự án thật, có mentor hướng dẫn và đánh giá, tích lũy kinh nghiệm và portfolio thực tế để ứng tuyển.
 
-Trong giai đoạn hiện tại doanh nghiệp chưa được định vị là khách hàng của IOC (do rào cản chuyển đổi trong bài toán tuyển intern).
-
 Về mô hình vận hành, IOC 2.0 ứng dụng cách tiếp cận con người + AI. Sinh viên làm việc trực tiếp trong các dự án thực tế dưới sự hướng dẫn của mentor, đồng thời được hỗ trợ bởi các AI Agent đóng vai trò như "trợ lý ảo" trong quá trình thực tập: nhắc tiến độ, chia nhỏ task, giải thích yêu cầu công việc và hỗ trợ duy trì tính liên tục của dự án. AI không thay thế mentor, mà giúp giảm tải các tác vụ lặp lại.
 
-IOC 2.0 hướng tới một hệ sinh thái thực tập – tuyển dụng sinh viên: nhà trường quản trị được chất lượng đầu ra qua đánh giá và báo cáo, sinh viên chứng minh năng lực thông qua kết quả làm việc thực tế và portfolio dự án thay vì chỉ dựa vào chứng chỉ hay mô tả chủ quan.
+IOC 2.0 hướng tới một hệ sinh thái thực tập: nhà trường quản trị được chất lượng đầu ra qua đánh giá và báo cáo, sinh viên chứng minh năng lực thông qua kết quả làm việc thực tế và portfolio dự án thay vì chỉ dựa vào chứng chỉ hay mô tả chủ quan.
 
-1.1 **Tổng quan thị trường thực tập và tuyển dụng sinh viên CNTT năm 2025**
+2\. **Vấn đề cốt lõi – Chất lượng đầu ra thực tập chưa đáng tin cậy**
 
-1.1.1 **Quy mô thị trường & nhu cầu nhân lực**
+2.1 **Nhà trường**
+
+**Vấn đề chính:** Nhà trường thiếu dữ liệu thực tế về quá trình làm việc của sinh viên:
+
+Báo cáo thực tập thường mang tính mô tả, thiếu dữ liệu vận hành
+
+Không có cách chuẩn hóa KPI/OKR quá trình thực tập
+
+Khó chứng minh chất lượng đầu ra với các bên liên quan
+
+**Thách thức đặt sinh viên đi thực tập:** Hiện nay các trường rất khó đưa sinh viên CNTT đi thực tập. Lý do lớn nhất là nhu cầu dành cho intern/fresher của thị trường giảm: đơn vị tuyển dụng ngại nhận sinh viên nền tảng yếu và phải đào tạo lại từ đầu, dẫn đến thiếu chỗ thực tập thực chất cho sinh viên.
+
+2.2 **Sinh viên CNTT**
+
+**Vấn đề chính:** Sinh viên thiếu cách chứng minh được năng lực làm việc thực tế:
+
+Thiếu kinh nghiệm và bằng chứng cụ thể từ dự án thật (không chỉ là chứng chỉ hay bảng điểm)
+
+Họ không có portfolio dự án thật để thuyết phục nhà tuyển dụng
+
+**Thiếu chỗ thực tập và thực tập không đúng chuyên môn:** Sinh viên vừa thiếu cơ hội thực tập (ít chỗ nhận intern/fresher), vừa khi đi thực tập thì thường bị giao những việc không đúng chuyên môn (ví dụ làm việc văn phòng, hỗ trợ hành chính, photo tài liệu…) nên không tích lũy được kinh nghiệm và bằng chứng năng lực thực tế.
+
+3\. **Phân tích Khách hàng & Vấn đề Cốt lõi (Customer & Core Problem Analysis)**
+
+3.1 **BƯỚC 1: XÁC ĐỊNH KHÁCH HÀNG (DEFINE THE CUSTOMER)**
+
+Để thấu hiểu nhu cầu thị trường và tối ưu hóa mô hình kinh doanh, IOC sử dụng cách tiếp cận đa chiều, phân chia rõ ràng giữa khách hàng trả phí trực tiếp và khách hàng tổ chức:
+
+**1. Khách hàng trực tiếp (B2C) - Sinh viên tự do (Freelance Students)**
+Đây là nhóm sinh viên chủ động tìm kiếm cơ hội thực tập, không phụ thuộc vào sự sắp xếp của nhà trường.
+*   **Đặc điểm:** Tự chủ, có động lực cao để lấp đầy "khoảng trống kinh nghiệm" (experience gap). Sẵn sàng chi trả cho các dịch vụ hỗ trợ sự nghiệp.
+*   **Vai trò:** Người dùng cuối (End User) đồng thời là Người trả phí (Payer).
+
+**2. Khách hàng tổ chức (B2B) - Nhà trường (University Partners)**
+Đây là nhóm khách hàng then chốt giúp IOC vận hành ổn định.
+*   **Đặc điểm:** Các trường Đại học/Cao đẳng cần đảm bảo đầu ra thực tập cho sinh viên hàng loạt.
+*   **Vai trò:** Người mua (Buyer) dịch vụ quản lý thực tập và công cụ đánh giá chuẩn đầu ra. Nhà trường trả phí để IOC tổ chức và giám sát thực tập cho sinh viên của họ.
+
+**3. Khách hàng khai thác thêm (B2B2C) - Sinh viên từ đối tác trường**
+Đây là nhóm sinh viên được nhà trường gửi sang (nằm trong gói B2B cơ bản).
+*   **Đặc điểm:** Ban đầu sử dụng dịch vụ nền tảng do trường tài trợ (Base Tier).
+*   **Chiến lược Up-sell:** IOC khai thác nhu cầu nâng cao của nhóm này để chuyển đổi họ thành khách hàng trả phí cá nhân.
+
+---
+
+3.2 **BƯỚC 2: ĐỊNH NGHĨA CÔNG VIỆC CẦN LÀM (DEFINE THE JOB-TO-BE-DONE)**
+
+Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho từng nhóm đối tượng:
+
+**a. Đối với Sinh viên (B2C & B2B2C)**
+> **"Tích lũy kinh nghiệm làm việc thực tế để có được việc làm mong muốn."**
+
+*   *Sự khác biệt ngữ cảnh:*
+    *   **Nhóm B2C:** Áp lực rất lớn là "phải có việc làm" để tồn tại trong ngành. Họ cần *lợi thế cạnh tranh*.
+    *   **Nhóm B2B2C:** Nhiệm vụ ban đầu là "hoàn thành kỳ thực tập" (để ra trường). Tuy nhiên, IOC sẽ kích hoạt nhu cầu tiềm ẩn của họ: biến kỳ thực tập bắt buộc thành bàn đạp sự nghiệp (Up-sell point).
+
+**b. Đối với Nhà trường (B2B)**
+> **"Đảm bảo và minh chứng chất lượng đào tạo thực tiễn với xã hội."**
+
+*   *Phân tích:* Điểm đau của nhà trường không chỉ là "tìm chỗ thực tập" mà là "kiểm soát chất lượng". Họ thuê IOC để giải quyết nỗi lo về việc sinh viên đi thực tập nhưng không học được gì hoặc bị doanh nghiệp phàn nàn.
+
+**c. Các công việc cảm xúc & xã hội (Emotional & Social Jobs)**
+
+*   **Đối với Sinh viên (B2C & B2B2C):**
+    *   *Công việc cảm xúc:* Muốn cảm thấy **"tự tin"** vào năng lực bản thân, xóa bỏ nỗi sợ bị đào thải (Layoff anxiety).
+    *   *Công việc xã hội:* Muốn được nhà tuyển dụng và bạn bè nhìn nhận là ứng viên **"có kinh nghiệm"** và năng lực thực chiến (Seniority potential).
+
+*   **Đối với Nhà trường (B2B):**
+    *   *Công việc cảm xúc:* Muốn cảm thấy **"an tâm"** (Safety) về uy tín đào tạo khi đưa sinh viên ra doanh nghiệp.
+    *   *Công việc xã hội:* Muốn giữ vững **"thương hiệu"** tuyển sinh hàng đầu trong mắt phụ huynh và xã hội.
+
+---
+
+3.3 **BƯỚC 3: BẢN ĐỒ CÔNG VIỆC CHI TIẾT & KẾT QUẢ MONG MUỐN (DETAILED JOB MAPS & DESIRED OUTCOMES)**
+
+Để thiết kế giải pháp chính xác cho từng đối tượng, IOC xây dựng 3 Bản đồ công việc riêng biệt. Mỗi bản đồ đi kèm với các **Desired Outcomes** (Kết quả mong muốn) cụ thể được dùng làm KPI đo lường sự thành công của sản phẩm.
+
+### 3.3.1 BẢN ĐỒ CÔNG VIỆC NHÓM B2C - SINH VIÊN TỰ DO (THE "HUNTER" JOURNEY)
+*Tâm thế: Chủ động, Cạnh tranh, Sợ thất nghiệp. Mục tiêu: Tìm được việc & Tồn tại.*
+
+**1. Define (Xác định hướng đi)**
+*Sinh viên tự đánh giá năng lực và xác định niche thị trường.*
+*   1.  Giảm thiểu thời gian tự đánh giá năng lực (Self-audit time).
+*   2.  Tăng độ chính xác khi xác định khoảng trống kỹ năng (Skill gap accuracy).
+*   3.  Giảm thiểu rủi ro chọn sai công nghệ đang thoái trào (Tech trend risk).
+*   4.  Tăng sự tự tin khi đặt mục tiêu mức lương khởi điểm.
+*   5.  Giảm sự mơ hồ về yêu cầu của thị trường đối với Fresher.
+*   6.  Tăng khả năng nhận diện các "ngách" thị trường ít cạnh tranh.
+
+**2. Locate (Tìm kiếm cơ hội)**
+*Sinh viên chủ động săn tìm các thông tin tuyển dụng.*
+*   7.  Giảm thiểu thời gian sàng lọc tin tuyển dụng rác/spam.
+*   8.  Tăng tỷ lệ phát hiện các cơ hội thực tập có lương (Paid internship).
+*   9.  Giảm thiểu rủi ro gặp phải các công ty đa cấp/lừa đảo (Scam risk).
+*   10. Tăng khả năng tiếp cận các dự án sử dụng Tech stack hiện đại.
+*   11. Giảm thời gian tìm kiếm profile/review về người hướng dẫn (Mentor).
+*   12. Tăng số lượng cơ hội việc làm Remote/Hybrid phù hợp.
+
+**3. Prepare (Chuẩn bị ứng tuyển)**
+*Sinh viên "luyện công" để vượt qua vòng hồ sơ và phỏng vấn.*
+*   13. Giảm thiểu thời gian chuẩn bị CV/Portfolio cho từng vị trí (Tailoring time).
+*   14. Tăng tỷ lệ vượt qua vòng lọc hồ sơ tự động (ATS Pass rate).
+*   15. Giảm "nỗi sợ phỏng vấn kỹ thuật" (Coding interview anxiety).
+*   16. Tăng tốc độ ôn tập các kiến thức nền tảng (Knowledge refresh speed).
+*   17. Giảm thiểu thời gian setup môi trường dev (IDE, Github) để làm bài test.
+*   18. Tăng sự sẵn sàng về tâm lý và tác phong chuyên nghiệp.
+
+**4. Confirm (Chốt deal)**
+*Sinh viên đàm phám và cam kết với đơn vị thực tập.*
+*   19. Giảm sự mơ hồ về phạm vi công việc thực tế (Scope ambiguity).
+*   20. Tăng độ rõ ràng về lộ trình thăng tiến lên chính thức (Conversion path).
+*   21. Giảm thiểu rủi ro bị giao việc sai chuyên môn (Admin/Photocopy risks).
+*   22. Tăng khả năng đàm phán thành công mức trợ cấp mong muốn.
+*   23. Giảm thời gian chờ đợi phản hồi kết quả (Waiting time).
+*   24. Tăng sự minh bạch trong hợp đồng/thỏa thuận thực tập.
+
+**5. Execute (Thực chiến)**
+*Sinh viên làm việc để chứng minh giá trị (Survival mode).*
+*   25. Giảm thiểu thời gian "chết" (Blocked time) khi gặp bug khó.
+*   26. Tăng tốc độ hòa nhập với quy trình Agile/Scrum của team.
+*   27. Giảm số lượng lỗi Re-open (Bug rate) sau khi fix.
+*   28. Tăng chất lượng code theo chuẩn (Clean code compliance).
+*   29. Giảm sự phụ thuộc thụ động vào Mentor (Passive dependency).
+*   30. Tăng khả năng xử lý xung đột khi làm việc nhóm (Conflict resolution).
+
+**6. Monitor (Tự soi chiếu)**
+*Sinh viên tự theo dõi sự tiến bộ so với đồng nghiệp/thị trường.*
+*   31. Giảm độ trễ khi nhận feedback từ Mentor (Feedback latency).
+*   32. Tăng độ chính xác khi tự đánh giá hiệu suất bản thân (Self-performance).
+*   33. Giảm sự lo lắng về việc "không biết mình đang đứng ở đâu".
+*   34. Tăng khả năng theo dõi sự thay đổi của các chỉ số năng lực kỹ thuật.
+*   35. Giảm thời gian tổng hợp báo cáo công việc hàng ngày (Daily report time).
+
+**7. Modify (Thích nghi & Sửa lỗi)**
+*Sinh viên tự học và điều chỉnh để không bị đào thải.*
+*   36. Giảm thời gian tìm nguyên nhân gốc rễ của vấn đề (Root cause ID).
+*   37. Tăng tốc độ học công nghệ mới (Learning curve) khi dự án yêu cầu.
+*   38. Giảm số lượng lỗi lặp lại (Recurring mistakes) đã được nhắc nhở.
+*   39. Tăng hiệu quả của việc tái cấu trúc mã nguồn (Refactoring).
+*   40. Giảm sự kháng cự tâm lý khi phải thay đổi cách làm việc cũ.
+
+**8. Conclude (Về đích)**
+*Sinh viên dùng kết quả để xin việc chính thức.*
+*   41. Tăng số lượng dự án đã xác thực (Verified Projects) trong Portfolio.
+*   42. Tăng tỷ lệ nhận được Thư giới thiệu (Reference Letter) chất lượng.
+*   43. Giảm thời gian thất nghiệp sau khi kết thúc thực tập (Job search gap).
+*   44. Tăng xác suất nhận Offer chính thức từ chính nơi thực tập (Return offer).
+*   45. Tăng sự tự tin khi đàm phán lương cho vị trí Junior.
+*   46. Giảm sự hoài nghi của nhà tuyển dụng về "kinh nghiệm thực tập".
+
+---
+
+### 3.3.2 BẢN ĐỒ CÔNG VIỆC NHÓM B2B - SINH VIÊN TỪ TRƯỜNG (THE "ASSIGNED" JOURNEY)
+*Tâm thế: Tuân thủ, Hoàn thành nghĩa vụ -> Chuyển đổi. Mục tiêu: Trả môn & Nâng cấp.*
+
+**1. Define (Tiếp nhận yêu cầu)**
+*Sinh viên nhận thông tin về kỳ thực tập bắt buộc từ nhà trường.*
+*   1.  Giảm sự mơ hồ về yêu cầu đầu ra của nhà trường (Grading criteria).
+*   2.  Tăng sự hiểu biết về quyền lợi của gói thực tập cơ bản (Base tier).
+*   3.  Giảm thời gian đăng ký nguyện vọng vào hệ thống.
+*   4.  Tăng nhận thức về tầm quan trọng của thực tập (giảm tư duy "trả nợ môn").
+*   5.  Giảm sự lo lắng về việc không đủ điều kiện đi thực tập.
+
+**2. Match (Được phân bổ)**
+*Sinh viên chờ hệ thống/nhà trường xếp vào dự án.*
+*   6.  Tăng mức độ tin cậy vào sự sắp xếp của hệ thống (Trust in matching).
+*   7.  Giảm cảm giác bị phân công vào dự án kém chất lượng (FOMO).
+*   8.  Tăng sự phù hợp giữa kỹ năng hiện có và dự án được giao.
+*   9.  Giảm thời gian chờ đợi để biết kết quả phân nhóm (Assignment latency).
+*   10. Tăng sự hào hứng với đề tài dự án được giao.
+
+**3. Prepare (Nhập môn)**
+*Sinh viên tham gia Onboarding bắt buộc của IOC.*
+*   11. Giảm thiểu các lỗi sai do không nắm rõ quy chế (Compliance errors).
+*   12. Tăng tốc độ hoàn thành các khóa học nền tảng bắt buộc (Pre-training).
+*   13. Giảm thời gian làm quen với công cụ quản lý của IOC.
+*   14. Tăng sự tự tin (nhóm Risk Averse) nhờ quy trình cầm tay chỉ việc.
+*   15. Giảm tỷ lệ bỏ cuộc ngay tuần đầu tiên (Drop-out rate).
+
+**4. Confirm (Cam kết)**
+*Sinh viên xác nhận tham gia và cam kết kỷ luật.*
+*   16. Giảm thời gian xử lý thủ tục giấy tờ hành chính (Paperwork time).
+*   17. Tăng sự rõ ràng về các hình thức kỷ luật nếu vi phạm.
+*   18. Tăng mức độ cam kết tuân thủ tiến độ (Commitment level).
+*   19. Giảm sự hiểu lầm về vai trò của Mentor (Mentor vs Teacher).
+*   20. Tăng khả năng tiếp cận các gói hỗ trợ nâng cao (Up-sell awareness).
+
+**5. Execute (Làm bài/Làm việc)**
+*Sinh viên thực hiện task để đạt điểm số.*
+*   21. Tăng tỷ lệ tham gia đầy đủ các buổi họp/check-in (Attendance rate).
+*   22. Giảm số lượng task bị trễ hạn (Overdue tasks).
+*   23. Tăng sự tương tác với AI Assistant để giải quyết vấn đề cơ bản.
+*   24. Giảm tải áp lực hỏi các câu hỏi ngớ ngẩn cho Mentor.
+*   25. Tăng khả năng hoàn thành các đầu việc cơ bản đúng hướng dẫn.
+*   26. Giảm xung đột nội bộ trong nhóm sinh viên thực tập.
+
+**6. Monitor (Báo cáo)**
+*Sinh viên ghi nhật ký công việc (Logwork) để trường theo dõi.*
+*   27. Giảm thời gian viết logwork hàng ngày.
+*   28. Tăng độ chính xác và trung thực của dữ liệu báo cáo.
+*   29. Giảm rủi ro bị đánh trượt do thiếu báo cáo tiến độ.
+*   30. Tăng khả năng nhận diện sớm trát rủi ro trượt môn.
+*   31. Giảm sự khó chịu khi phải thực hiện các thủ tục báo cáo hành chính.
+
+**7. Modify (Sửa sai)**
+*Sinh viên chỉnh sửa theo yêu cầu để đạt chuẩn đầu ra.*
+*   32. Tăng tốc độ phản hồi các yêu cầu chỉnh sửa từ Mentor/GV.
+*   33. Giảm số lần phải làm lại báo cáo thực tập (Re-submission).
+*   34. Tăng khả năng tự sửa lỗi nhờ gợi ý của AI.
+*   35. Giảm cảm giác tiêu cực khi bị nhận xét/chê trách.
+
+**8. Conclude & Upgrade (Chuyển đổi)**
+*Sinh viên nộp kết quả và quyết định nâng cấp (Moment of Truth).*
+*   36. Tăng sự hài lòng với điểm số cuối kỳ (Fairness satisfaction).
+*   37. Giảm thời gian hoàn thiện khóa luận/báo cáo tốt nghiệp.
+*   38. **Tăng tỷ lệ chuyển đổi sang gói Premium (Conversion rate)** để lấy chứng chỉ Verified.
+*   39. Tăng mong muốn được giới thiệu việc làm thông qua IOC.
+*   40. Tăng khả năng quay lại sử dụng IOC cho các nhu cầu học tập tiếp theo.
+*   41. Tăng tỷ lệ giới thiệu bạn bè sử dụng (NPS).
+
+---
+
+### 3.3.3 BẢN ĐỒ CÔNG VIỆC NHÀ TRƯỜNG - ĐỐI TÁC B2B (THE "ADMINISTRATOR" JOURNEY)
+*Mục tiêu: Quản lý chất lượng, Giảm tải hành chính, Bảo vệ uy tín.*
+
+**1. Define (Thiết lập tiêu chuẩn)**
+*Nhà trường xác định chuẩn đầu ra và KPI cho kỳ thực tập.*
+*   1.  Giảm thời gian thống nhất khung chương trình với doanh nghiệp.
+*   2.  Tăng độ phủ của tiêu chuẩn đào tạo với nhu cầu thực tế thị trường.
+*   3.  Giảm sự mâu thuẫn giữa tiêu chí học thuật và tiêu chí doanh nghiệp.
+*   4.  Tăng khả năng tùy biến tiêu chuẩn đánh giá theo từng mã ngành.
+*   5.  Giảm rủi ro thiết lập các KPI bất khả thi cho sinh viên.
+*   6.  Tăng sự đồng thuận của hội đồng khoa học về phương pháp mới.
+
+**2. Partner/Locate (Kết nối đối tác)**
+*Nhà trường tìm kiếm chỗ thực tập cho hàng ngàn sinh viên.*
+*   7.  Giảm áp lực phải tự đi xin xỏ từng doanh nghiệp nhận sinh viên.
+*   8.  Tăng số lượng "High-quality spots" (chỗ thực tập chất lượng) trong network.
+*   9.  Giảm rủi ro hợp tác với các doanh nghiệp "ma" hoặc kém uy tín.
+*   10. Tăng vị thế thương lượng của nhà trường với đối tác doanh nghiệp.
+*   11. Giảm thời gian ký kết và hoàn tất thủ tục pháp lý hợp tác (MOU/MOA).
+*   12. Tăng sự đa dạng của các lĩnh vực thực tập cho sinh viên lựa chọn.
+
+**3. Prepare (Sàng lọc & Chuẩn bị)**
+*Nhà trường bàn giao danh sách và chuẩn bị tâm thế cho sinh viên.*
+*   13. Giảm tỷ lệ sinh viên bị doanh nghiệp từ chối sau vòng phỏng vấn sơ loại.
+*   14. Tăng độ chính xác của dữ liệu sinh viên bàn giao (Skill profile).
+*   15. Giảm thời gian tổ chức các buổi định hướng (Orientation) thủ công.
+*   16. Tăng tỷ lệ sinh viên nắm rõ quy chế trước khi đi thực tập.
+*   17. Giảm khối lượng công việc hành chính cho giáo vụ khoa.
+
+**4. Allocate (Phân bổ)**
+*Nhà trường/Hệ thống phân phối sinh viên về các dự án.*
+*   18. Giảm thời gian matching (khớp nối) hàng ngàn sinh viên vào dự án.
+*   19. Tăng độ khớp (Matching score) giữa năng lực sinh viên và yêu cầu dự án.
+*   20. Giảm số lượng khiếu nại của sinh viên về nơi thực tập.
+*   21. Tăng tính minh bạch trong quy trình phân bổ (tránh tiêu cực).
+*   22. Giảm tình trạng "thừa người chỗ dễ, thiếu người chỗ khó".
+
+**5. Execute & Monitor (Theo dõi gián tiếp)**
+*Nhà trường giám sát quá trình thông qua Dashboard.*
+*   23. Tăng khả năng nắm bắt tình hình thực tập theo thời gian thực (Real-time).
+*   24. Giảm độ trễ thông tin khi có sự cố xảy ra với sinh viên.
+*   25. Tăng khả năng giám sát đồng thời hàng ngàn sinh viên mà không cần tăng nhân sự.
+*   26. Giảm nỗ lực giảng viên phải gọi điện kiểm tra từng điểm thực tập.
+*   27. Tăng tính sẵn sàng của dữ liệu điểm danh/chuyên cần.
+*   28. Giảm tình trạng sinh viên "đem con bỏ chợ" (bỏ thực tập giữa chừng).
+
+**6. Assess (Đánh giá)**
+*Nhà trường nghiệm thu kết quả dựa trên dữ liệu IOC.*
+*   29. Tăng tính khách quan của điểm số (Objectivity).
+*   30. Giảm sự phụ thuộc vào các báo cáo "xin dấu mộc" làm đẹp số liệu.
+*   31. Tăng khả năng phát hiện các trường hợp gian lận/copy báo cáo.
+*   32. Giảm thời gian chấm điểm đồ án/khóa luận của giảng viên.
+*   33. Tăng cơ sở dữ liệu để bảo vệ kết quả trước thanh tra giáo dục.
+*   34. Giảm số lượng các ca phúc khảo/khiếu nại điểm số.
+
+**7. Modify (Can thiệp/Xử lý)**
+*Nhà trường xử lý các ca ngoại lệ và rủi ro.*
+*   35. Giảm thời gian phát hiện dấu hiệu rủi ro (Early warning system).
+*   36. Tăng hiệu quả khi can thiệp hỗ trợ sinh viên gặp khó khăn tâm lý.
+*   37. Giảm ảnh hưởng tiêu cực của các sự cố đến uy tín nhà trường.
+*   38. Tăng khả năng giữ chân sinh viên hoàn thành khóa học (Retention rate).
+
+**8. Conclude (Tổng kết & Kiểm định)**
+*Nhà trường sử dụng dữ liệu cho mục tiêu chiến lược.*
+*   39. **Tăng tỷ lệ sinh viên có việc làm ngay sau tốt nghiệp (Employment rate).**
+*   40. Tăng chất lượng hồ sơ minh chứng cho kiểm định chất lượng (AUN-QA, MOET).
+*   41. Giảm chi phí tổ chức khảo sát cựu sinh viên/doanh nghiệp.
+*   42. Tăng uy tín thương hiệu tuyển sinh của nhà trường.
+*   43. Tăng khả năng thu hút các doanh nghiệp lớn hợp tác trong khóa sau.
+*   44. Giảm nỗ lực làm báo cáo tổng kết năm học.
+*   45. Tăng sự hài lòng của phụ huynh và xã hội.
+
+---
+
+3.4 **BƯỚC 4: PHÂN KHÚC CƠ HỘI (SEGMENTS OF OPPORTUNITY)**
+
+Dựa trên cấu trúc khách hàng đa chiều, IOC nhận diện các cơ hội tăng trưởng riêng biệt cho từng nhóm đối tượng dựa trên **Các nhu cầu chưa được đáp ứng (Underserved Outcomes)**:
+
+### 3.4.1 CƠ HỘI TỪ NHÓM B2C (SINH VIÊN TỰ DO)
+*Đối tượng: Sinh viên năm cuối, trái ngành, hoặc mất gốc (The "Desperate" Job Seeker).*
+
+1.  **Phân khúc "Panic Seekers" (Nhóm Hoảng loạn):**
+    *   *Nỗi đau:* Sắp ra trường nhưng CV trống trơn, sợ thất nghiệp, sợ phỏng vấn.
+    *   *Underserved Outcome:* Cần một "phao cứu sinh" cấp tốc để có 1-2 dự án bỏ vào CV.
+    *   *Giải pháp:* **Bootcamp thực chiến ngắn hạn** (Foundation Training).
+
+2.  **Phân khúc "Switchers" (Nhóm Chuyển ngành):**
+    *   *Nỗi đau:* Có tư duy nhưng thiếu kinh nghiệm thực tế trong ngành IT.
+    *   *Underserved Outcome:* Cần chứng minh năng lực tương đương với sinh viên chính quy.
+    *   *Giải pháp:* **Dự án thực tế có Mentor 1:1**.
+
+### 3.4.2 CƠ HỘI TỪ NHÓM B2B (SINH VIÊN TỪ TRƯỜNG - UPSELL)
+*Đối tượng: Sinh viên khá/giỏi nhưng bị giới hạn bởi chương trình đại trà (The "Silent" High-Achiever).*
+
+1.  **Phân khúc "Badge Hunters" (Nhóm Săn chứng chỉ):**
+    *   *Nỗi đau:* Đi thực tập chỉ để "lấy điểm", sợ CV không có gì nổi bật so với hàng ngàn bạn cùng khóa.
+    *   *Underserved Outcome:* Muốn có một bằng chứng năng lực (Artifact) độc quyền mà "trường không cấp".
+    *   *Giải pháp:* **Verified Career Path (Premium)** với chứng chỉ năng lực số.
+
+2.  **Phân khúc "Big Corp Dreamers" (Nhóm Mơ vào Big Tech):**
+    *   *Nỗi đau:* Dự án nhà trường quá dễ, không đủ tiêu chuẩn thi vào các tập đoàn lớn.
+    *   *Underserved Outcome:* Cần tiếp cận các dự án độ khó cao (High complexity) và Mock Interview chuẩn Big Tech.
+    *   *Giải pháp:* **Gói Mentoring chuyên sâu & Job Referral**.
+
+### 3.4.3 CƠ HỘI TỪ NHÓM B2B (NHÀ TRƯỜNG - UNIVERSITY PARTNERS)
+*Đối tượng: Các trường ĐH/CĐ cần nâng cao vị thế và giải bài toán kiểm định (The "Accredited" School).*
+
+1.  **Phân khúc "Administration Overloaded" (Nhóm Quá tải hành chính):**
+    *   *Nỗi đau:* Khoa CNTT có hàng ngàn sinh viên nhưng chỉ có vài giáo vụ, quá tải trong việc quản lý giấy tờ thực tập.
+    *   *Underserved Outcome:* Cần giải phóng sức lao động hành chính (Admin workload reduction).
+    *   *Giải pháp:* **Hệ thống quản lý thực tập số hóa (IMS)**.
+
+2.  **Phân khúc "Quality Obsessed" (Nhóm Cần thương hiệu):**
+    *   *Nỗi đau:* Tỷ lệ sinh viên có việc làm sau tốt nghiệp thấp, ảnh hưởng tuyển sinh và xếp hạng (Ranking).
+    *   *Underserved Outcome:* Cần dữ liệu minh chứng chất lượng đào tạo để phục vụ kiểm định AUN-QA/MOET.
+    *   *Giải pháp:* **Dashboard báo cáo chất lượng & Cam kết đầu ra**.
+
+---
+
+3.5 **BƯỚC 5: ĐỀ XUẤT GIÁ TRỊ & CHIẾN LƯỢC (VALUE PROPOSITION)**
+
+IOC áp dụng chiến lược **"Platform đa diện" (Multi-sided Platform)**, cung cấp các bộ giá trị riêng biệt nhưng bổ trợ lẫn nhau cho 3 nhóm đối tượng.
+
+### 3.5.1 CHIẾN LƯỢC B2C: "CAREER SURVIVAL KIT" (BỘ KIT SINH TỒN)
+*Thông điệp: "Đừng để thiếu kinh nghiệm giết chết sự nghiệp của bạn."*
+
+| Yếu tố | Nội dung |
+| :--- | :--- |
+| **Sản phẩm** | Khóa huấn luyện dự án thực tế (Project-based Training) + AI Mentor 24/7. |
+| **Pain Relievers** | • Xóa bỏ nỗi sợ hổng kiến thức (AI hỗ trợ).<br>• Giảm lo lắng khi phỏng vấn (Mock Interview). |
+| **Gain Creators** | • Có ngay Portfolio chuẩn chỉnh sau 2 tháng.<br>• Tự tin deal lương nhờ năng lực thật. |
+
+### 3.5.2 CHIẾN LƯỢC B2B UPSELL: "PREMIUM CERTIFICATION" (CHỨNG THỰC CAO CẤP)
+*Thông điệp: "Biến kỳ thực tập bắt buộc thành bệ phóng vào Big Tech."*
+
+| Yếu tố | Nội dung |
+| :--- | :--- |
+| **Sản phẩm** | Verified Project Track (Gói dự án xác thực) + Đặc quyền Job Referral. |
+| **Pain Relievers** | • Tránh việc thực tập "rót nước pha trà".<br>• Không còn nỗi sợ CV bị chìm nghỉm giữa đám đông. |
+| **Gain Creators** | • Sở hữu "Verified Badge" độc quyền của IOC trên LinkedIn.<br>• Được Priority kết nối trực tiếp với HR đối tác. |
+
+### 3.5.3 CHIẾN LƯỢC B2B SCHOOL: "QUALITY ASSURANCE PLATFORM" (NỀN TẢNG ĐẢM BẢO CHẤT LƯỢNG)
+*Thông điệp: "Chuẩn hóa quy trình thực tập, Vững tin chất lượng đầu ra."*
+
+| Yếu tố | Nội dung |
+| :--- | :--- |
+| **Sản phẩm** | Hệ thống quản lý thực tập (IMS) + Dashboard phân tích dữ liệu (Analytics). |
+| **Pain Relievers** | • Giảm 80% thời gian xử lý thủ tục hành chính.<br>• Loại bỏ rủi ro sinh viên thực tập "ma". |
+| **Gain Creators** | • Có bộ dữ liệu chuẩn hóa phục vụ kiểm định chất lượng.<br>• Nâng cao tỷ lệ sinh viên có việc làm (Employment Rate). |
+
+---
+
+3.6 **BƯỚC 6: KẾ HOẠCH KIỂM CHỨNG & TRIỂN KHAI (VALIDATION & ROLLOUT PLAN)**
+
+Chiến lược kiểm chứng được chia nhỏ (Unbundle) để phù hợp với từng kênh tiếp cận.
+
+### 3.6.1 KIỂM CHỨNG KÊNH B2C (SMOKE TEST)
+*Mục tiêu: Đo lường độ "khát" (Desirability) của sinh viên tự do.*
+1.  **Landing Page Test:** Chạy quảng cáo Facebook/TikTok target vào sinh viên năm cuối với thông điệp "Sợ thất nghiệp?".
+2.  **Value Offer:** Tặng "Ebook lộ trình thực tập" để thu thập Lead.
+3.  **Metric:** CPA (Cost Per Acquisition) cho một Lead đăng ký tư vấn. Nếu < 50k VNĐ -> Tín hiệu tốt.
+
+### 3.6.2 KIỂM CHỨNG KÊNH B2B UPSELL (PILOT TEST)
+*Mục tiêu: Đo lường tỷ lệ chuyển đổi (Conversion Rate) từ Free sang Paid.*
+1.  **Pilot Program:** Hợp tác với 1 trường ĐH để triển khai hệ thống quản lý miễn phí cho 200 sinh viên.
+2.  **Upsell Trigger:** Giữa kỳ thực tập, tung ra gói "Nâng cấp dự án" (Premium Project) với giá ưu đãi.
+3.  **Metric:** Conversion Rate. Nếu > 5% sinh viên chấp nhận trả tiền để nâng cấp -> Mô hình khả thi.
+
+### 3.6.3 KIỂM CHỨNG KÊNH B2B SCHOOL (PARTNERSHIP TEST)
+*Mục tiêu: Đo lường khả năng giải quyết nỗi đau hành chính (Viability).*
+1.  **MOU Ký kết:** Thuyết phục Trưởng khoa CNTT của 1 trường tầm trung sử dụng hệ thống.
+2.  **Admin Time Tracking:** Đo lường thời gian giáo vụ bỏ ra trước và sau khi dùng IOC.
+3.  **Metric:** Time Saved. Nếu giảm được > 50% thời gian quản lý -> Đạt Product-Market Fit với nhà trường.
+
+4\. **Tổng quan thị trường thực tập và tuyển dụng sinh viên CNTT năm 2025**
+
+4.1 **Quy mô thị trường & nhu cầu nhân lực**
 
 Theo _Vietnam Information Technology Market Report_, ngành CNTT tại Việt Nam sẽ cần khoảng 700.000 nhân lực có kỹ năng CNTT vào cuối năm 2025, trong khi các cơ sở đào tạo trong nước chỉ có thể cung cấp khoảng 500.000 lao động CNTT → dẫn tới thiếu hụt khoảng ~200.000 người có kỹ năng chuyên môn đủ mạnh để đáp ứng nhu cầu thị trường.
 
@@ -30,7 +426,7 @@ Tổng số doanh nghiệp IT hiện tại: ~74.000 doanh nghiệp, sử dụng 
 
 → Ước tính giai đoạn 2023–2025, Việt Nam thiếu khoảng 150.000–200.000 nhân lực IT mỗi năm, là áp lực lớn cho phát triển công nghệ số quốc gia.
 
-1.1.2 **Chất lượng đầu vào nhân lực không đáp ứng nhu cầu doanh nghiệp**
+4.2 **Chất lượng đầu vào nhân lực không đáp ứng nhu cầu doanh nghiệp**
 
 Theo thống kê từ _Vietnam IT Market Report_, mỗi năm có ~50.000–57.000 sinh viên tốt nghiệp ngành CNTT, nhưng chỉ ~30–35% trong số đó được coi là "sẵn sàng làm việc ngay” - phần lớn còn phải qua đào tạo lại 3–6 tháng trong doanh nghiệp trước khi đạt năng lực mong muốn.
 
@@ -44,7 +440,7 @@ Kỹ năng mềm: teamwork, quản lý deadline, giao tiếp nhóm
 
 → Đây chính là ''khoảng cách kỹ năng” mà nhiều doanh nghiệp gọi là _skills gap_ - tức chương trình học chưa theo kịp nhu cầu thực hành trong môi trường dự án thật.
 
-1.1.3 **Xu hướng cung – cầu trên thị trường lao động CNTT**
+4.3 **Xu hướng cung – cầu trên thị trường lao động CNTT**
 
 Mặc dù một số báo cáo khảo sát cho thấy việc tuyển dụng nhân sự CNTT có thể giảm nhẹ (2%) trong vài tháng đầu năm 2025 so với cùng kỳ năm trước, nhưng số người tìm việc trong ngành tăng đến ~18%, cho thấy thị trường bị lệch pha: nhiều ứng viên nhưng thiếu ứng viên chất lượng.
 
@@ -52,11 +448,11 @@ Mặc dù một số báo cáo khảo sát cho thấy việc tuyển dụng nhâ
 
 \>81% doanh nghiệp dự định tăng tuyển nhân sự IT trong năm 2025
 
-Họ vẫn ưu tiên ứng viên có 1–3 năm kinh nghiệm (55,47%) và 3–5 năm (27,36%) hơn là sinh viên mới ra trường.
+Họ vẫn ưu tiên ứng viên có 1–3 năm kinh nghiệm (55,47%) và 3–5 năm (27,36%) hơn là sinh viên mới ra trường. Nhu cầu dành cho intern/fresher giảm tương đối, nhiều đơn vị ngại nhận sinh viên nền tảng yếu và phải đào tạo lại từ đầu.
 
-→ Điều này cho thấy nhu cầu "sẵn sàng làm việc" tăng cao hơn nhu cầu số lượng CV, tạo áp lực lớn hơn cho sinh viên fresher/junior khi họ thiếu kinh nghiệm và bằng chứng làm việc thực tế.
+→ Điều này cho thấy nhu cầu "sẵn sàng làm việc" tăng cao hơn nhu cầu số lượng CV, tạo áp lực lớn hơn cho sinh viên fresher/junior khi họ thiếu kinh nghiệm và bằng chứng làm việc thực tế; đồng thời khiến nhà trường khó tìm đủ chỗ thực tập thực chất cho sinh viên CNTT.
 
-1.1.4 **Lý do gốc của khoảng cách thị trường**
+4.4 **Lý do gốc của khoảng cách thị trường**
 
 **Nguyên nhân 1 – Chương trình đào tạo chưa đủ thực hành:**  
 Báo cáo phân tích cho thấy sinh viên tốt nghiệp phần lớn thiếu tiếp xúc với các quy trình làm việc theo dự án thật, workflow làm việc nhóm, kiểm soát chất lượng phần mềm… dẫn tới việc họ chưa có dữ liệu thể hiện khả năng làm việc thực tế.
@@ -67,7 +463,7 @@ Doanh nghiệp hiện nay đánh giá ứng viên chủ yếu dựa trên CV, b�
 **Nguyên nhân 3 – Tăng cạnh tranh do AI & công nghệ mới:**  
 Sự phát triển nhanh của công nghệ AI yêu cầu kỹ năng mới, và nhiều ứng viên thiếu kỹ năng cập nhật, dẫn tới roi lộ gap lớn giữa kỹ năng cần và kỹ năng có.
 
-1.1.5 **Tóm lược – Insight Thị trường**
+4.5 **Tóm lược – Insight Thị trường**
 
 Ngay cả khi có số lượng sinh viên tốt nghiệp lớn (~50.000–57.000 mỗi năm), chỉ ~30–35% được xem là sẵn sàng làm việc thực tế → khoảng trống kỹ năng rất lớn.
 
@@ -77,385 +473,39 @@ Nhu cầu tuyển tăng (~81% doanh nghiệp định tăng tuyển IT) nhưng y�
 
 → Tất cả đều chỉ ra khoảng trống giữa bằng cấp và năng lực thực tế — sinh viên có chứng chỉ nhưng thiếu trải nghiệm và bằng chứng làm việc trong môi trường dự án thật, là vấn đề trọng tâm mà thị trường đang gặp phải hiện nay.
 
-1.2 **Vấn đề cốt lõi – Chất lượng đầu ra thực tập chưa đáng tin cậy**
-
-1.2.1 **Đối với doanh nghiệp**
-
-**Vấn đề chính:** Doanh nghiệp không thể đánh giá năng lực làm việc thực tế của ứng viên từ CV, bằng cấp hay phỏng vấn do:
-
-CV là tự khai, thiếu bằng chứng cụ thể
-
-Sinh viên thiếu kinh nghiệm dự án thực tế
-
-Đa số ứng viên cần đào tạo lại 3–6 tháng sau tuyển để đáp ứng yêu cầu công việc
-
-**Hệ quả:**
-
-Chi phí tuyển sai cao
-
-Thời gian rút ngắn đưa nhân lực lên hiệu quả (time-to-productivity) kéo dài
-
-Rủi ro dự án, deadline và quản lý tăng
-
-**Vấn đề thứ cấp:** Không có bộ tiêu chí chuẩn đánh giá đầu ra thực tập áp dụng được cho nhiều doanh nghiệp khác nhau → làm giảm hiệu quả sàng lọc ứng viên.
-
-1.2.2 **Đối với nhà trường**
-
-**Vấn đề chính:** Nhà trường thiếu dữ liệu thực tế về quá trình làm việc của sinh viên:
-
-Báo cáo thực tập thường mang tính mô tả, thiếu dữ liệu vận hành
-
-Không có cách chuẩn hóa KPI/OKR quá trình thực tập
-
-Khó chứng minh chất lượng đầu ra với doanh nghiệp hay các bên liên quan
-
-**Hệ quả:**
-
-Uy tín đầu ra giảm so với kỳ vọng thị trường
-
-Khó cải thiện chương trình đào tạo dựa trên dữ liệu
-
-1.2.3 **Đối với sinh viên CNTT**
-
-**Vấn đề chính:** Sinh viên thiếu cách chứng minh được năng lực làm việc thực tế:
-
-Thiếu kinh nghiệm và bằng chứng cụ thể từ dự án thật (không chỉ là chứng chỉ hay bảng điểm)
-
-Họ không có portfolio dự án thật để thuyết phục doanh nghiệp
-
-**Hệ quả:**
-
-Tỷ lệ ứng tuyển thành công thấp
-
-Cần đầu tư thêm thời gian học lại trước khi thật sự "đi làm”
-
-Tự tin thấp trong cạnh tranh với các ứng viên khác
-
-1.3 **Chân dung khách hàng mục tiêu (Customer Segmentation & Persona)**
-
-1.3.1 **LÝ THUYẾT VIỆC CẦN LÀM & KHUNG NHU CẦU (JOB TO BE DONE & NEEDS FRAMEWORK)**
-
-1.3.1.1 **Lý thuyết Job to be Done (JTBD)**
-
-Theo lý thuyết này, khách hàng không mua sản phẩm vì bản thân sản phẩm, mà họ "kéo" (pull) sản phẩm vào cuộc sống để đạt được một sự tiến bộ (make progress). Trong bối cảnh thị trường IT đầy biến động, nơi 92 triệu việc làm bị dịch chuyển và 39% kỹ năng cốt lõi sẽ thay đổi vào năm 2030, sinh viên không đơn thuần "mua" một chỗ thực tập. Thay vào đó, họ "thuê" IOC để giải quyết sự bất an trong công việc (chiếm 25% tâm lý ứng viên) và vượt qua rào cản cạnh tranh khốc liệt khi có tới 330 đơn ứng tuyển cho mỗi vị trí không yêu cầu kinh nghiệm.
-
-Công việc chức năng cốt lõi (Core Functional Job) của IOC được định nghĩa theo cấu trúc Động từ + Tân ngữ + Ngữ cảnh như sau: "Chuẩn bị năng lực thực chiến trong môi trường doanh nghiệp chuẩn IT để bứt phá nghề nghiệp". Công việc này có tính ổn định cao, không thay đổi theo công nghệ (dù là Java hay Python) và không có ranh giới địa lý.
-
-1.3.1.2 **JTBD Needs Framework (Khung nhu cầu) áp dụng cho IOC**
-
-Một bộ nhu cầu khách hàng đầy đủ có thể lên tới hơn 100 nhu cầu. Với IOC, chúng ta phân loại như sau:
-
-**Kết quả mong muốn (Desired Outcomes):** Đây là các chỉ số đo lường sự thành công khi thực hiện công việc cốt lõi.
-
-◦ **Ví dụ:** Giảm thiểu thời gian để có được lời mời làm việc chính thức; Tăng mức độ phù hợp giữa kỹ năng thực tập và yêu cầu thực tế của dự án.
-
-**Các công việc liên quan (Related Jobs):** Những nhiệm vụ phụ mà người dùng muốn hoàn thành đồng thời.
-
-**Áp dụng:** Xây dựng thương hiệu cá nhân trên LinkedIn/GitHub, rèn luyện ngoại ngữ (Tiếng Nhật/Anh) để tìm kiếm cơ hội làm việc quốc tế, và tham gia các workshop định hướng nghề nghiệp.
-
-**Công việc Cảm xúc và Xã hội (Emotional & Social Jobs):**
-
-**Cảm xúc:** Muốn cảm thấy **"an tâm"** vì được Mentor hỗ trợ trực tiếp hàng ngày và thoát khỏi nỗi sợ "thực tập trái ngành chỉ để lấy điểm".
-
-**Xã hội:** Muốn được nhà tuyển dụng nhìn nhận là ứng viên **"chuyên nghiệp"** và có kinh nghiệm tham gia vào dự án thật (như dự án Đặt vé xe khách hay Ứng dụng nghe nhạc).
-
-**Công việc trong chuỗi tiêu dùng (Consumption Chain Jobs):** Liên quan đến trải nghiệm sử dụng sản phẩm từ đầu đến cuối.
-
-**Áp dụng:** Quy trình từ Điền form đăng ký -> Tham gia OneConnect Test (30 câu trắc nghiệm + 3 bài Live Coding) -> Phỏng vấn chuyên gia -> Làm dự án thực tế theo mô hình Agile/Scrum.
-
-**Kết quả tài chính mong muốn (Financial Desired Outcomes):**
-
-**Sinh viên:** Tối ưu hóa thu nhập sớm thông qua việc rút ngắn thời gian đào tạo để trở thành nhân viên chính thức.
-
-**Doanh nghiệp:** Giảm chi phí tuyển dụng và đào tạo lại (reskill/upskill) vốn đang là nhu cầu của 33% nhân sự trong bối cảnh sa thải.
-
-1.3.2 **XÁC ĐỊNH KHÁCH HÀNG (DEFINE THE CUSTOMER)**
-
-**Các tệp khách hàng trọng tâm của IOC (lưu ý: trong giai đoạn 2026, khách hàng của IOC là Sinh viên và Nhà trường; doanh nghiệp là đối tác trong mạng lưới hợp tác nhưng rất khó trở thành khách hàng trong vấn đề tuyển intern nên không được định vị là khách hàng):**
-
-Tệp Sinh viên IT chính quy (The Core Segment)
-
-Đây là nhóm khách hàng đông đảo nhất, trực tiếp sử dụng nền tảng IOC để hoàn thành học phần thực tập và chuẩn bị hành trang sự nghiệp.
-
-**Nhân khẩu học (Demographics):** Độ tuổi từ 18-23, là sinh viên từ năm 2 đến năm cuối tại các trường Đại học/Cao đẳng chuyên ngành CNTT hoặc Kỹ thuật. Họ sinh sống chủ yếu tại các thành phố lớn có hạ tầng công nghệ phát triển như Hà Nội, Đà Nẵng, TP.HCM.
-
-**Áp dụng JTBD & Nhu cầu chưa đáp ứng (Unmet Needs):**
-
-Nhóm Experience Seekers (Khao khát kinh nghiệm): Những sinh viên có GPA khá/giỏi, đã vững nền tảng kiến thức chuyên môn. Công việc (Job) của họ là bứt phá sự nghiệp sớm để tạo lợi thế cạnh tranh khi thị trường đang chứng kiến tỷ lệ 330 đơn ứng tuyển cho mỗi vị trí không yêu cầu kinh nghiệm. Họ tìm kiếm các dự án thực tế như "Đặt vé xe khách" hay "Ứng dụng nghe nhạc" để làm đẹp portfolio.
-
-Nhóm Foundation Seekers (Cần bù đắp nền tảng): Những sinh viên có GPA trung bình, cảm thấy môi trường học thuật quá lý thuyết và lo sợ khi phải làm việc trong dự án thật. Nỗi đau (Pain) của họ là sự bất an trong công việc (chiếm 25% tâm lý ứng viên trong bối cảnh sa thải hiện nay) và lo sợ thất nghiệp. Họ "thuê" IOC để được đào tạo lại (reskill/upskill) thông qua các khóa Foundation Training để củng cố kiến thức trước khi bước vào thực chiến.
-
-Tệp Người chuyển ngành (Career Changers)
-
-Nhóm này có sự đa dạng lớn về nhân khẩu học nhưng chia sẻ một nỗi đau cực độ về sự an toàn nghề nghiệp trong bối cảnh công nghệ thay đổi nhanh chóng.
-
-**Nhân khẩu học (Demographics):** Độ tuổi rộng từ 22-35+, đã tốt nghiệp các ngành khác hoặc đang đi làm nhưng mong muốn chuyển hướng sang IT. Đối tượng này thường chịu áp lực tài chính và thời gian lớn hơn nhóm sinh viên chính quy.
-
-**Áp dụng JTBD & Kết quả mong muốn (Gains):**
-
-Công việc chức năng cốt lõi: Chuyển đổi nghề nghiệp cấp tốc để gia nhập thị trường IT Việt Nam – nơi dự kiến sẽ thiếu hụt khoảng 220.000 nhân lực vào năm 2026.
-
-Kết quả tài chính (Financial Outcomes): Giảm thiểu thời gian thất nghiệp và tối ưu hóa chi phí đào tạo thông qua mô hình On-Job-Training (OJT) – làm việc thực tế tại doanh nghiệp.
-
-Hành động: Họ ưu tiên các dự án thực tế có tính ứng dụng cao và kết nối trực tiếp với nhà tuyển dụng ngay sau khi kết thúc thực tập để có thu nhập ổn định.
-
-Tệp Ứng viên định hướng thị trường Nhật Bản (Global Seekers)
-
-Phân khúc này tận dụng thế mạnh kết nối quốc tế của hệ sinh thái Rikkei Education.
-
-**Nhân khẩu học (Demographics):** Sinh viên IT hoặc lao động trẻ quan tâm đến văn hóa Nhật Bản và mong muốn làm việc trong môi trường quốc tế.
-
-**Áp dụng JTBD & Công việc liên quan (Related Jobs):**
-
-**Công việc liên quan:** Ngoài kỹ năng lập trình, họ cần hoàn thành các nhiệm vụ như học tiếng Nhật và rèn luyện kỹ năng làm việc đa văn hóa.
-
-**Công việc xã hội (Social Job):** Mong muốn được nhìn nhận là một "kỹ sư toàn cầu", có khả năng làm việc tại các văn phòng quốc tế như Fukuoka.
-
-**Hành động:** Họ ưu tiên chọn dự án thực tế như "Ứng dụng học tiếng Nhật" trên nền tảng IOC để thực hành kỹ năng chuyên môn gắn liền với ngôn ngữ mục tiêu.
-
-Tệp Người ra quyết định (Decision Makers - B2B)
-
-Đây là nhóm khách hàng then chốt giúp IOC vận hành và kết nối ở quy mô lớn.
-
-**Nhà trường (Lãnh đạo/Giảng viên):**
-
-**Nhân khẩu học:** Độ tuổi từ **35-55+**, giữ vai trò quản lý giáo dục hoặc tham gia giảng dạy.
-
-**JTBD:** Công việc cốt lõi là quản lý và kiểm soát chất lượng thực tập của hàng nghìn sinh viên một cách minh bạch.
-
-**Nỗi đau:** Tốn quá nhiều thời gian liên hệ thủ công qua email/điện thoại và khó theo dõi tiến độ thực tế của sinh viên tại doanh nghiệp.
-
-_(Doanh nghiệp không được xem là khách hàng của IOC trong giai đoạn hiện tại — do rào cản chuyển đổi, doanh nghiệp rất khó trở thành khách hàng trong vấn đề tuyển intern; doanh nghiệp tham gia với vai trò đối tác trong mạng lưới hợp tác.)_
-
-Sự khác biệt giữa Nhân khẩu học và Hành động
-
-IOC nhận định rằng nhân khẩu học đơn thuần thường không giải thích được lý do tại sao khách hàng có nhu cầu khác nhau.
-
-Cùng độ tuổi 21 (Sinh viên năm cuối): Một sinh viên vững kỹ năng sẽ chọn dự án OJT thực chiến để bứt phá Portfolio (nhóm Experience Seekers), trong khi một bạn cùng lớp có thể chọn Foundation Training vì nhận thấy kỹ năng cốt lõi của mình cần được củng cố (nhóm Foundation Seekers).
-
-Bối cảnh thị trường ảnh hưởng đến Job: Theo báo cáo của Diễn đàn Kinh tế Thế giới (WEF), 39% kỹ năng cốt lõi của người lao động sẽ thay đổi vào năm 2030 và 92 triệu việc làm bị dịch chuyển. Điều này thúc đẩy tất cả các tệp khách hàng "thuê" IOC để hoàn thành công việc tốt hơn (qua dự án thật, mentor thật) và rẻ hơn (giảm chi phí cơ hội và thời gian tìm việc)
-
-1.3.3 **ĐỊNH NGHĨA CÔNG VIỆC CẦN LÀM (DEFINE THE JOB-TO-BE-DONE)**
-
-Việc định nghĩa đúng **Công việc chức năng cốt lõi (Core functional job)** là nền tảng để đổi mới thành công. Theo lý thuyết, một tuyên bố công việc chuẩn phải tuân thủ công thức: Động từ + Tân ngữ + Yếu tố làm rõ ngữ cảnh.
-
-**Đối với Sinh viên:** "Tích lũy kinh nghiệm làm việc thực tế trong môi trường doanh nghiệp chuyên nghiệp".
-
-_Phân tích:_ Công việc này không phụ thuộc vào giải pháp (solution agnostic), nghĩa là sinh viên có thể thực hiện nó thông qua nhiều cách, nhưng IOC cung cấp phương tiện để hoàn thành công việc này tốt hơn và hiệu quả hơn.
-
-**Đối với Nhà trường:** "Đảm bảo chất lượng đào tạo thực tiễn cho sinh viên trước khi tốt nghiệp".
-
-_Phân tích:_ Đây là điểm neo ổn định vì nhà trường luôn cần chứng minh giá trị đào tạo bất kể công nghệ hay thị trường thay đổi ra sao.
-
-**Sai lầm cần tránh:** Không được định nghĩa quá hẹp theo kiểu lấy sản phẩm làm trung tâm như "Sử dụng nền tảng IOC để nộp báo cáo", vì điều này chỉ là một bước nhỏ và không phản ánh mục tiêu tiến bộ cuối cùng của khách hàng.
-
-1.3.4 **BẢN ĐỒ CÔNG VIỆC (JOB MAP)**
-
-Bản đồ công việc mô tả "luồng quy trình lý tưởng" mà sinh viên cố gắng thực hiện để hoàn thành kỳ thực tập. Tại IOC, quy trình này gồm 8 bước:
-
-**Define (Xác định):** Sinh viên nhận diện nhu cầu thực tập, xác định định hướng nghề nghiệp (Web, App, hay thị trường Nhật Bản) và những kỹ năng cần bứt phá.
-
-**Locate (Định vị):** Tìm kiếm cơ hội phù hợp. IOC đóng vai trò "cầu nối thông minh", tự động lọc và gợi ý vị trí thực tập đúng chuyên ngành, giúp sinh viên không còn tình trạng thực tập trái ngành.
-
-**Prepare (Chuẩn bị):** Điền form đăng ký, gửi CV và tham gia OneConnect Test (30 câu trắc nghiệm + 3 bài Live Coding) để đánh giá năng lực đầu vào.
-
-**Confirm (Xác nhận):** Phỏng vấn định hướng cùng chuyên gia, nhận thông báo trúng tuyển và tham gia buổi **Orientation** để nắm bắt quy trình làm việc hiệu quả.
-
-**Execute (Thực thi):** Đây là bước quan trọng nhất. Sinh viên thực hiện dự án thật theo mô hình **Agile/Scrum**, làm việc nhóm và tham gia Daily Meeting hàng ngày.
-
-**Monitor (Giám sát):** Cập nhật tiến độ trên hệ thống số hóa. Mentor và nhà trường theo dõi, đánh giá sự tiến bộ qua từng mốc (Onboarding - Giữa kỳ - Cuối kỳ).
-
-**Modify (Điều chỉnh):** Nhận phản hồi trực tiếp từ Mentor để sửa lỗi kỹ thuật (fix bugs), cải thiện kỹ năng mềm và điều chỉnh hướng đi của dự án nếu cần thiết.
-
-**Conclude (Kết thúc):** Bảo vệ dự án trước doanh nghiệp, nhận chứng chỉ (Certificate) và lưu trữ kết quả dự án trên hệ thống để làm bằng chứng kinh nghiệm cho nhà tuyển dụng sau này.
-
-1.3.5 **HỒ SƠ KHÁCH HÀNG (CUSTOMER PROFILE)**
-
-Hồ sơ này tập trung vào việc hiểu sâu sắc các khía cạnh tạo nên giá trị cho khách hàng mục tiêu.
-
-**Công việc của khách hàng (Jobs):** Bao gồm công việc chức năng (hoàn thành kỳ thực tập, xin việc), công việc xã hội (muốn được nhìn nhận là chuyên nghiệp) và công việc cảm xúc (muốn cảm thấy tự tin và an tâm).
-
-**Nỗi đau (Pains):**
-
-**Cực độ:** Sự bất an do thị trường sa thải hàng loạt (như Amazon, Meta, Microsoft sa thải hàng chục nghìn người) và khoảng cách quá lớn giữa kiến thức học thuật thuần túy với thực tế doanh nghiệp.
-
-**Vừa phải:** Thực tập theo kiểu "pha trà rót nước", thiếu người hướng dẫn, hoặc thực tập trái ngành chỉ để lấy dấu mộc.
-
-**Phía nhà trường:** Khó kiểm soát chất lượng thực tập tại doanh nghiệp và tốn nhiều công sức theo dõi thủ công.
-
-**Lợi ích (Gains):**
-
-**Bắt buộc:** Phải có chứng chỉ thực tập hợp lệ để nộp cho nhà trường và đủ điều kiện tốt nghiệp.
-
-**Mong muốn:** Được tiếp cận dự án thật (như App đặt vé xe, nghe nhạc...), có Portfolio thực chiến để bứt phá và cơ hội tuyển dụng thẳng không qua phỏng vấn vòng 1.
-
-1.3.6 **PHÂN KHÚC CƠ HỘI (SEGMENTS OF OPPORTUNITY)**
-
-Module 2 nhấn mạnh việc phân khúc dựa trên **nhu cầu chưa được đáp ứng (unmet needs)** thay vì các đặc điểm nhân khẩu học như tuổi tác hay vùng miền.
-
-• **Phân khúc 1: Người tìm kiếm nền tảng (Foundation Seekers):** Những sinh viên có kiến thức nền tảng chưa vững, lo sợ khi phải thực chiến ngay lập tức.
-
-◦ _Nhu cầu:_ Cần được đào tạo lại (reskill/upskill) và củng cố kiến thức cơ bản.
-
-◦ _Giải pháp IOC:_ Khóa **Foundation Training** với ưu đãi học phí tại Rikkei Academy.
-
-• **Phân khúc 2: Người khao khát kinh nghiệm (Experience Seekers):** Những sinh viên đã có nền tảng vững chắc, muốn bứt phá Portfolio.
-
-◦ _Nhu cầu:_ Tiếp cận quy trình Agile/Scrum chuyên nghiệp và làm việc cùng Mentor trình độ cao.
-
-◦ _Giải pháp IOC:_ Thực tập thực chiến (On-Job-Training) và học qua dự án (Project-Based Learning).
-
-• **Phân khúc 3: Người săn việc làm (Job Hunters):** Sinh viên năm cuối ưu tiên tìm kiếm cơ hội việc làm ngay lập tức.
-
-◦ _Nhu cầu:_ Networking và kết nối trực tiếp với nhà tuyển dụng.
-
-◦ _Giải pháp IOC:_ IOC có mạng lưới hợp tác với hơn 50+ doanh nghiệp đối tác; tuy nhiên hiện chưa thể kết nối sinh viên thực tập sang các công ty đó — sinh viên vẫn phải chủ động tự tìm và apply vào doanh nghiệp. Giá trị IOC mang lại là kinh nghiệm dự án thật và portfolio để sinh viên cạnh tranh tốt hơn khi ứng tuyển.
-
-1.3.7 **ĐỀ XUẤT GIÁ TRỊ (VALUE PROPOSITION)**
-
-IOC xây dựng đề xuất giá trị theo nguyên tắc của Wayne Gretzky: "Hãy lướt đến nơi quả bóng sẽ đến".
-
-**Thị trường cũ (Quả bóng đã ở):** Các đơn vị chỉ cung cấp nơi thực tập hình thức, tập trung vào việc lấy dấu mộc qua môn, trong khi nhu cầu thực tế của thị trường đã dịch chuyển sang đòi hỏi kinh nghiệm thực chiến.
-
-**Thị trường mới (Quả bóng sẽ đến - IOC):** Giải quyết bài toán an toàn nghề nghiệp và nâng cao kỹ năng trong bối cảnh công nghệ thay đổi nhanh chóng (39% kỹ năng cốt lõi sẽ thay đổi vào năm 2030).
-
-**Đề xuất giá trị:** "Internship OneConnect là bệ phóng giúp sinh viên biến kỳ thực tập thành bước ngoặt sự nghiệp. Chúng tôi cung cấp một nền tảng thực tập thực chiến số hóa, nơi sinh viên được chạm tay vào dự án thật, mentor thật và cơ hội việc làm thật".
-
-**Chiến lược này giúp IOC:**
-
-Giúp sinh viên hoàn thành công việc tốt hơn bằng cách cung cấp kinh nghiệm thực tế và kỹ năng mềm.
-
-Giúp sinh viên hoàn thành công việc rẻ hơn bằng cách rút ngắn thời gian đào tạo lại và tăng khả năng có việc làm ngay lập tức
-
-1.3.8 **NGHIÊN CỨU NGƯỜI DÙNG (USER RESEARCH)**
-
-Nghiên cứu người dùng đóng vai trò then chốt trong việc giúp đội ngũ phát triển sản phẩm hiểu rõ hành vi, nhu cầu và những rào cản thực tế mà sinh viên gặp phải. Để IOC thành công, quy trình nghiên cứu cần được triển khai bài bản theo các bước sau:
-
-**Chuẩn bị tinh thần và thái độ nghiên cứu:** Người làm sản phẩm cần giữ một đầu óc khách quan, trung lập và cởi mở để đón nhận mọi thông tin, ngay cả khi thông tin đó trái ngược với giả định ban đầu. Cần tránh bẫy niềm tin cho rằng sinh viên "chỉ cần dấu mộc" để đối phó kỳ thực tập, vì điều này sẽ dẫn đến việc đặt các câu hỏi định hướng và bỏ lỡ những insight sâu sắc về nỗi sợ thất nghiệp hay khao khát thực chiến.
-
-**Xác định mục tiêu nghiên cứu cụ thể:** Mục tiêu cốt lõi là lý giải lý do tại sao sinh viên lựa chọn (hoặc từ chối) IOC thay vì tự tìm kiếm nơi thực tập thông qua các kênh truyền thống. Cuộc phỏng vấn cần làm rõ cách người dùng hiện đang khắc phục các sự cố như thực tập trái ngành hoặc thiếu người hướng dẫn trong thực tế.
-
-**Chiến lược chọn mẫu (Sampling):** Cần chọn mẫu dựa trên các đặc điểm thực sự ảnh hưởng đến kết quả nghiên cứu, ví dụ như sự khác biệt về nhu cầu giữa sinh viên năm 2 (muốn sớm tiếp cận) và năm 4 (áp lực tốt nghiệp và việc làm). Ngoài ra, việc chia nhóm theo năng lực như nhóm giỏi (tìm kiếm dự án khó, đa công nghệ) đối trọng với nhóm yếu (cần củng cố kiến thức nền tảng - Foundation) sẽ giúp kiểm chứng các giả thiết về sản phẩm bổ trợ. Số lượng mẫu khuyến nghị là từ 15–20 người để đảm bảo dữ liệu đạt độ bão hòa insight.
-
-**Phương pháp nghiên cứu phối hợp:**
-
-**Phỏng vấn sâu (In-depth Interviews):** Sử dụng các câu hỏi mở để đào sâu vào lý do, suy nghĩ và cảm xúc đằng sau hành động của sinh viên, đặc biệt là tâm lý bất an trong bối cảnh sa thải hàng loạt.
-
-**Khảo sát (Survey):** Triển khai trên cỡ mẫu lớn để định lượng mức độ quan tâm của sinh viên và nhà trường đối với các tính năng cụ thể như Dashboard quản lý hoặc Chứng chỉ số hóa.
-
-**Thiết kế câu hỏi phỏng vấn tinh tế:**
-
-**Câu hỏi mở:** "Bạn có thể mô tả trải nghiệm của mình với quy trình thực tập hiện tại tại trường không?" để thu thập thông tin chi tiết và cá nhân hóa.
-
-**Câu hỏi thăm dò:** "Khi bạn nói rằng mình sợ thực tập trái ngành, bạn có thể chia sẻ cụ thể hơn về những rủi ro mà bạn lo lắng không?" nhằm khai thác điều chưa được nói ra.
-
-1.3.9 **CÁC CÔNG CỤ BẢN ĐỒ (MAPPING TOOLS)**
-
-1.3.9.1 **Biểu đồ Hành trình Khách hàng (Customer Journey Map - CJM)**
-
-Hành trình của sinh viên tại IOC được mô tả qua các giai đoạn từ khi nhận biết đến khi được tuyển dụng chính thức.
-
-**点击图片可查看完整电子表格**
-
-1.3.9.2 **Bản đồ Đồng cảm (Empathy Map) - Chân dung sinh viên năm 3/4**
-
-Bản đồ này khắc họa sâu sắc tâm lý của đối tượng sinh viên IT trong bối cảnh thị trường biến động.
-
-**SAYS (Nói):**
-
-◦ "Mình cần kinh nghiệm thực tế tại doanh nghiệp chứ không phải lý thuyết suông trên giảng đường".
-
-◦ "Thực tập ở đâu để được làm dự án thật thay vì chỉ đi photo tài liệu hay pha trà?".
-
-**THINKS (Nghĩ):**
-
-◦ "Liệu trình độ hiện tại của mình có đủ để làm dự án thật không? Sợ bị Mentor mắng nếu làm sai".
-
-◦ "Hồ sơ (Portfolio) của mình liệu có đủ sức hút giữa 330 đơn ứng tuyển khác?".
-
-**DOES (Làm):**
-
-◦ Chủ động tìm kiếm thông tin thực tập trên LinkedIn, Facebook và các diễn đàn công nghệ.
-
-◦ Đăng ký tham gia IOC và nỗ lực học thêm các chứng chỉ hoặc ngôn ngữ lập trình mới (Java, JS, Python).
-
-**FEELS (Cảm thấy):**
-
-◦ **Lo lắng (Anxious):** Về làn sóng layoff (sa thải) toàn cầu và sự an toàn nghề nghiệp của bản thân.
-
-◦ **Hy vọng (Hopeful):** Khi nhìn thấy lộ trình thực chiến rõ ràng và cơ hội gia nhập các tập đoàn lớn như Rikkeisoft.
-
-1.3.9.3 **KẾT LUẬN & PHÂN KHÚC THỰC HÀNH (SEGMENTATION PRACTICE)**
-
-Mô hình phân khúc thực hành của IOC không dựa trên nhân khẩu học mà dựa trên kết quả bài kiểm tra năng lực và nhu cầu chưa được đáp ứng.
-
-**Quy trình phân khúc thực hành tại IOC:**
-
-**Mục tiêu:** Tối ưu hóa hiệu quả đào tạo để tăng tỷ lệ sinh viên hoàn thành dự án và được doanh nghiệp giữ lại làm nhân viên chính thức.
-
-**Dữ liệu đầu vào:** Sử dụng kết quả bài OneConnect Test (Tiêu chí: Kiến thức nền tảng, tư duy logic qua Live Coding) kết hợp với nguyện vọng nghề nghiệp.
-
-**Tiêu chí phân khúc:**
-
-**Theo Sản phẩm (Product):** Chia nhóm theo chuyên môn dự án:
-
-▪ _Nhóm Web App:_ Đặt vé xe, Ứng dụng nghe nhạc.
-
-▪ _Nhóm Global:_ Ứng dụng học tiếng Nhật (định hướng thị trường Nhật Bản).
-
-**Theo Nhu cầu (Needs):**
-
-▪ **Nhóm Foundation (Cần học):** Dành cho sinh viên kiến thức yếu, lo sợ thực chiến ngay. Giải pháp: Khóa đào tạo bổ trợ nền tảng tại Rikkei Academy.
-
-▪ **Nhóm Project-based (Cần làm):** Dành cho sinh viên khao khát kinh nghiệm, vững nền tảng. Giải pháp: On-Job-Training thực chiến với Mentor.
-
-**Kiểm chứng (Validation):**
-
-Sử dụng **Dashboard quản lý** để theo dõi tỷ lệ hoàn thành task của từng nhóm.
-
-So sánh tỷ lệ tuyển dụng của nhóm được phân loại đúng lộ trình so với nhóm thông thường để tối ưu hóa chương trình đào tạo.
-
-**Kết luận:** Bằng việc áp dụng các công cụ từ Module 2, IOC đã chuyển đổi từ một dịch vụ cung cấp nơi thực tập đơn thuần sang một hệ sinh thái số hóa toàn diện. Việc thấu hiểu "nỗi đau" bị bỏ rơi và sự "bất an" của sinh viên thông qua CJM và Empathy Map giúp IOC đưa ra đề xuất giá trị: "Biến kỳ thực tập thành bệ phóng nghề nghiệp thực chất"
-
-1.3.10 **KẾT LUẬN & PHÂN KHÚC THỰC HÀNH (SEGMENTATION PRACTICE)**
-
-Phân khúc thị trường là nền tảng để tránh "cái bẫy người dùng trung bình" và đưa ra các đề xuất giá trị xuất sắc.
-
-**Mục tiêu phân khúc:** Tập trung vào việc **tăng tỷ lệ hoàn thành dự án** và **tối ưu hóa tỷ lệ được tuyển dụng chính thức** sau thực tập cho từng nhóm sinh viên.
-
-**Thu thập và sử dụng dữ liệu:** Kết hợp dữ liệu định lượng từ kết quả bài **OneConnect Test** (đánh giá kiến thức nền tảng và kỹ năng coding) với dữ liệu định tính về nguyện vọng nghề nghiệp để phân loại.
-
-**Tiêu chí phân khúc thực tiễn:**
-
-**Theo loại sản phẩm (Product):** Chia nhóm theo chuyên môn kỹ thuật như làm Web App (Đặt vé xe, Nghe nhạc), Mobile App, AI, hoặc tiếng Nhật.
-
-**Theo nhu cầu (Needs):**
-
-\- Nhóm **Foundation Seekers**: Cần bổ trợ kiến thức nền tảng thông qua các khóa đào tạo ngắn hạn.
-
-\- Nhóm **Experience Seekers**: Cần nhúng mình vào các dự án giả lập phức tạp và môi trường thực chiến chuyên nghiệp.
-
-**Kiểm chứng và tối ưu:** Sau khi chia nhóm, IOC cần theo dõi các chỉ số như tỷ lệ hoàn thành task, điểm đánh giá của Mentor và tỷ lệ chuyển đổi sang nhân viên chính thức của từng phân khúc. Dựa trên kết quả thực tế, đội ngũ quản lý sẽ điều chỉnh lại tiêu chí phân loại hoặc bổ sung các workshop bổ trợ kỹ năng mềm (như thuyết trình, viết CV) để đảm bảo sinh viên trong mỗi nhóm đều đạt được sự tiến bộ tốt nhất.
-
-Việc áp dụng đồng bộ các bước từ nghiên cứu người dùng đến các công cụ mapping và phân khúc khoa học sẽ giúp **Internship OneConnect** không rơi vào trạng thái "trung bình cho tất cả" mà thực sự trở thành bệ phóng nghề nghiệp xuất sắc cho từng cá nhân
-
-1.4 **Khoảng trống thị trường (Market Gap)**
+4.6 **Khoảng trống thị trường (Market Gap)**
 
 Tổng hợp từ ba phía: Hiện không có hệ thống nào tổ chức thực tập thực chiến – dự án thật, mentor xác thực, đánh giá đầu ra rõ ràng – cho sinh viên CNTT ở quy mô và chuẩn hóa như IOC
 
 **Hệ quả của khoảng trống này:**
 
-Sinh viên: mất cơ hội vì không chứng minh được năng lực
+Sinh viên: thiếu chỗ thực tập hoặc đi thực tập thì bị giao việc không đúng chuyên môn, dẫn đến mất cơ hội chứng minh năng lực
 
-Doanh nghiệp: tốn chi phí vì tuyển sai
-
-Nhà trường: mất uy tín đầu ra
+Nhà trường: khó đặt sinh viên đi thực tập (nhu cầu intern/fresher giảm, đơn vị tuyển ngại nhận và đào tạo lại từ đầu), mất uy tín đầu ra
 
 **\->** Đây không phải vấn đề cá biệt, mà là lỗ hổng cấu trúc của thị trường lao động trẻ.
 
-1.5 **Phân tích quy mô thị trường mục tiêu theo mô hình TAM – SAM – SOM của IOC 2.0**
 
-1.5.1 **TAM – Total Addressable Market**
+5\. **Phân tích dự án theo mô hình kinh doanh BUSINESS MODEL CANVAS – IOC 2.0**
+
+|     |     |
+| --- | --- |
+| **Customer Segments – Phân khúc khách hàng** | IOC 2.0 phục vụ **hai nhóm khách hàng chính** (Sinh viên và Nhà trường), cùng bị khóa bởi một vấn đề cốt lõi:  <br>Thiếu thực tập thực chiến và bằng chứng đầu ra đáng tin cậy (dự án thật, đánh giá mentor).<br><br>**1\. Tổng thị trường – TAM (Total Addressable Market)**<br><br>**1.1. Sinh viên**<br><br>Việt Nam hiện có khoảng **2,2 – 2,4 triệu sinh viên đại học**, cao đẳng.<br><br>Trong đó, nhóm **CNTT, Kinh tế số, Truyền thông số, Data, AI, Product, Design** chiếm xấp xỉ **30–35%**.<br><br>**~700.000 – 800.000 sinh viên ngành số**  <br>→ Đây là **nguồn nhu cầu thực tập thực chiến lớn**, nhưng hiện **chưa được đáp ứng đủ** bởi mô hình chuẩn hóa như IOC.<br><br>**Lưu ý:** Doanh nghiệp không được định vị là khách hàng của IOC trong giai đoạn hiện tại (doanh nghiệp rất khó trở thành khách hàng trong vấn đề tuyển intern); doanh nghiệp tham gia với vai trò đối tác trong mạng lưới hợp tác.<br><br>**1.2. Nhà trường – Bên cần bằng chứng đầu ra**<br><br>Việt Nam có khoảng **240+ trường đại học, học viện, cao đẳng**.<br><br>Phần lớn **chưa có hệ thống theo dõi và chứng minh chất lượng đầu ra thực tập**:<br><br>Chỉ thống kê việc làm sau tốt nghiệp<br><br>Không chứng minh được _sinh viên làm được gì_<br><br>**TAM nhà trường = Toàn bộ hệ thống đào tạo cần dữ liệu để bảo vệ uy tín và kiểm định chất lượng.**<br><br>**Kết luận TAM:** IOC 2.0 nằm trong thị trường giao thoa EdTech – thực tập – đào tạo, với hàng trăm nghìn sinh viên tiềm năng mỗi năm và nhu cầu thực tập thực chiến mang tính cấu trúc.<br><br>**2\. Thị trường phục vụ được – SAM (Serviceable Available Market)**<br><br>IOC **không phục vụ toàn bộ TAM**, mà tập trung vào phân khúc **có nhu cầu thực tập thật và đánh giá đầu ra rõ ràng**.<br><br>**2.1. Sinh viên (SAM)**<br><br>Sinh viên năm 2–4, ngành số. Có nhu cầu:<br><br>Đi thực tập thật<br><br>Có dự án thật để xin việc<br><br>Sẵn sàng làm việc theo quy trình, có mentor & AI hỗ trợ<br><br>**~200.000 – 250.000 sinh viên / năm**<br><br>**2.2. Nhà trường (SAM)**<br><br>Trường:<br><br>Đào tạo CNTT / ngành số<br><br>Có định hướng hợp tác doanh nghiệp<br><br>Áp lực kiểm định & đầu ra<br><br>**~60 – 80 trường**<br><br>**SAM là tập khách hàng mà IOC có thể kích hoạt ngay**, vì:<br><br>Có nhu cầu rõ<br><br>Có hành vi phù hợp<br><br>Có khả năng trả tiền hoặc hợp tác dài hạn<br><br>3\. **Thị trường mục tiêu thực tế – SOM (Serviceable Obtainable Market)**<br><br>Trong 12–24 tháng đầu, IOC 2.0 chủ động giới hạn quy mô để đảm bảo chất lượng đào tạo và đánh giá.<br><br>Mục tiêu SOM giai đoạn đầu:<br><br>**Sinh viên:** 500 – 1000 sinh viên / năm<br><br>**Nhà trường:** 5 – 10 trường đối tác chiến lược<br><br>Đây là ngưỡng tối ưu để:<br><br>Đủ quy mô để huấn luyện AI và chuẩn hóa quy trình<br><br>Tạo uy tín và hiệu ứng mạng lưới trước khi scale<br><br>\-> IOC 2.0 giải quyết bài toán thực tập hình thức bằng cách tổ chức thực tập thực chiến (dự án thật, mentor, đánh giá rõ ràng), phục vụ nhà trường và sinh viên. |
+| **Value Propositions – Giá trị cốt lõi** | **IOC 2.0 tổ chức thực tập thực chiến: dự án thật, mentor, đánh giá đầu ra rõ ràng.**<br><br>**Giá trị mang lại cho từng nhóm**<br><br>**Đối với sinh viên**<br><br>Kinh nghiệm dự án thật, portfolio và đánh giá từ mentor<br><br>Tăng tỷ lệ được gọi phỏng vấn và được tuyển<br><br>**Đối với nhà trường**<br><br>Dashboard dữ liệu đầu ra<br><br>Bằng chứng định lượng về chất lượng đào tạo<br><br>Nâng uy tín với doanh nghiệp tuyển dụng |
+| **Channels – Kênh tiếp cận** | IOC 2.0 tiếp cận thị trường thông qua:<br><br>Chương trình thực tập dự án thật<br><br>Hợp tác với doanh nghiệp (đối tác)<br><br>Hợp tác chính thức với nhà trường<br><br>Nền tảng số: quản lý dự án, báo cáo tiến độ, AI Assistant & AI Mentor |
+| **Customer Relationships – Quan hệ khách hàng** | **Sinh viên**:<br><br>Đồng hành xuyên suốt dự án<br><br>Feedback liên tục từ AI & mentor<br><br>Cá nhân hoá lộ trình năng lực<br><br>**Nhà trường**:<br><br>Quan hệ đối tác chiến lược<br><br>Báo cáo định kỳ, dữ liệu đầu ra<br><br>Đồng thiết kế chương trình thực tập |
+| **Revenue Streams – Dòng doanh thu** | Mô hình doanh thu của IOC 2.0 tập trung vào **hai nhóm khách hàng** (doanh nghiệp không được định vị là khách hàng trả tiền trong giai đoạn hiện tại — rào cản chuyển đổi trong bài toán tuyển intern):<br><br>• **Nhà trường (B2B):**<br><br>\- **Phí Dashboard / báo cáo đầu ra:** Cung cấp bằng chứng về chất lượng đào tạo và thực tập để phục vụ kiểm định và uy tín nhà trường.<br><br>\- **Phí triển khai thực tập chuẩn hóa:** Thu phí dịch vụ khi IOC vận hành quy trình thực tập theo dự án thật cho sinh viên của trường.<br><br>• **Sinh viên (B2C):**<br><br>\- **Gói Premium:** Thu phí cho các công cụ AI Mentor, AI Teammate và tính năng bổ trợ |
+| **Key Resources – Tài nguyên cốt lõi** | Nền tảng công nghệ & quy trình thực tập<br><br>AI Agent (giao việc, hỗ trợ, đánh giá)<br><br>Hệ thống mentor & quy trình chấm chuẩn hoá<br><br>Quan hệ doanh nghiệp & nhà trường |
+| **Key Activities – Hoạt động cốt lõi** | Thiết kế & vận hành dự án thực tập<br><br>Phân bổ task bằng AI, mentor<br><br>Theo dõi tiến độ & đánh giá đầu ra<br><br>Đánh giá chéo AI – mentor<br><br>Phân tích & xuất báo cáo cho nhà trường / sinh viên |
+| **Key Partners – Đối tác chính** | Hệ thống đối tác của IOC 2.0 được xây dựng như một mạng lưới liên kết giữa các chủ thể: nhà trường, doanh nghiệp, mentor, AI.<br><br>**Nhóm đối tác chiến lược trong hệ sinh thái (External Ecosystem)**<br><br>Đây là những đối tác trực tiếp tham gia vào việc vận hành thực tập và đánh giá đầu ra:<br><br>**Doanh nghiệp (7 đối tác hiện tại):** Đối tác hợp tác trong mạng lưới (dự án, mentor, tham chiếu tuyển dụng) — **không phải khách hàng trả tiền** của IOC; việc kết nối sinh viên sang thực tập tại doanh nghiệp chưa được thực hiện trực tiếp, sinh viên vẫn tự apply.<br><br>**Nhà trường & Đơn vị đào tạo (14 đối tác hiện tại):** Kênh phân phối sinh viên ổn định. Nhà trường sử dụng Dashboard của IOC để theo dõi chất lượng đào tạo và bảo vệ uy tín đầu ra.<br><br>**Đội ngũ Mentor ngành CNTT:** Các chuyên gia trực tiếp hướng dẫn, đánh giá và xác thực kết quả làm việc của sinh viên tại các điểm then chốt.<br><br>**Đối tác hạ tầng AI:** Cung cấp các mô hình ngôn ngữ lớn (LLM) và AI Agent để tự động hóa việc giao nhiệm vụ, hỗ trợ kỹ thuật và chấm điểm sơ bộ. Đây là yếu tố giúp tối ưu chi phí vận hành và cho phép dự án mở rộng quy mô (scale) mà không phụ thuộc hoàn toàn vào con người.<br><br>**Nhóm đối tác hỗ trợ chiến lược nội bộ (Internal Stakeholders)**<br><br>Dự án nhận được sự phối hợp liên phòng ban từ tổ chức mẹ để đảm bảo tính thực thi và gắn chặt với hoạt động kinh doanh:<br><br>**Phòng Marketing & Sales:** Hỗ trợ hoạt động truyền thông, cung cấp yêu cầu từ góc độ thị trường và đánh giá mức độ phù hợp của sản phẩm với nhu cầu khách hàng.<br><br>**Trung tâm Đào tạo:** Kết nối IOC 2.0 với các hoạt động đào tạo thực tế để dữ liệu thu thập phản ánh đúng quá trình học tập của sinh viên.<br><br>**Ban Giám đốc & Phòng Kế toán:** Đảm bảo định hướng chiến lược, ra quyết định quan trọng và phê duyệt ngân sách triển khai.<br><br>**Phòng Nhân sự – Hành chính:** Hỗ trợ truyền thông nội bộ, tuyển dụng và sắp xếp nhân sự khi dự án cần mở rộng quy mô |
+| **Cost Structure – Cấu trúc chi phí** | Phát triển & vận hành nền tảng<br><br>Chi phí AI (compute, model, agent)<br><br>Mentor & kiểm soát chất lượng<br><br>Sales & hợp tác doanh nghiệp<br><br>Phân tích & lưu trữ dữ liệu<br><br>**AI giúp chi phí không tăng tuyến tính theo số sinh viên, cho phép mô hình scale.** |
+| **Key Metrics – Chỉ số đo lường** | Tỷ lệ hoàn thành dự án<br><br>Độ lệch giữa AI và mentor<br><br>Tỷ lệ sinh viên được tuyển<br><br>Mức độ hài lòng của nhà trường và sinh viên<br><br>**Các chỉ số này phản ánh hiệu quả vận hành và chất lượng thực tập.** |
+
+6\. **Thị trường và cạnh tranh**
+
+6.1 **Phân tích quy mô thị trường mục tiêu theo mô hình TAM – SAM – SOM của IOC 2.0**
+
+6.1.1 **TAM – Total Addressable Market**
 
 _(Quy mô thị trường tiềm năng tối đa)_
 
@@ -475,7 +525,7 @@ TAM phản ánh nhu cầu mang tính cấu trúc của thị trường: sinh vi�
 
 → TAM của IOC 2.0: ~700.000–800.000 người học ngành công nghệ số tại Việt Nam.
 
-1.5.2 **SAM – Serviceable Available Market**
+6.1.2 **SAM – Serviceable Available Market**
 
 _(Thị trường mục tiêu có thể phục vụ)_
 
@@ -509,7 +559,7 @@ Thực tập truyền thống mang tính hình thức
 
 Doanh nghiệp thiếu dữ liệu tin cậy để đánh giá fresher
 
-1.5.3 **SOM – Serviceable Obtainable Market**
+6.1.3 **SOM – Serviceable Obtainable Market**
 
 _(Thị trường mục tiêu khả thi giai đoạn đầu)_
 
@@ -543,7 +593,7 @@ Phù hợp với năng lực vận hành hiện tại
 
 Đủ nhỏ để kiểm soát chất lượng đánh giá và chuẩn hóa quy trình
 
-1.5.4 **Nhận định tổng hợp**
+6.1.4 **Nhận định tổng hợp**
 
 Phân tích TAM – SAM – SOM cho thấy IOC 2.0 đang tiếp cận một thị trường:
 
@@ -555,7 +605,7 @@ Có chiến lược tiếp cận thận trọng và khả thi (SOM)
 
 Việc lựa chọn SOM thu gọn trong giai đoạn đầu cho phép IOC 2.0 ưu tiên xây dựng quy trình thực tập đủ chuẩn và độ tin cậy, thay vì mở rộng quy mô khi mô hình đánh giá chưa hoàn thiện. Đây là tiền đề quan trọng cho các giai đoạn mở rộng sau này.
 
-1.6 **Cơ hội thị trường (Market Opportunity)**
+6.1.5 **Cơ hội thị trường (Market Opportunity)**
 
 **Nếu xây dựng được một mô hình:**
 
@@ -573,7 +623,7 @@ Tăng khả năng được tuyển cho sinh viên (portfolio, kinh nghiệm th�
 
 Trở thành chuẩn thực tập thực chiến cho thị trường nhân lực trẻ
 
-1.7 **Giải pháp IOC 2.0**
+6.1.6 **Giải pháp IOC 2.0**
 
 Thị trường thực tập và tuyển dụng sinh viên hiện nay gặp một vấn đề cốt lõi: thực tập mang tính hình thức, thiếu dự án thật và đánh giá đầu ra đáng tin cậy; sinh viên thiếu kinh nghiệm và bằng chứng cụ thể để ứng tuyển.
 
@@ -581,7 +631,7 @@ Trước vấn đề đó, IOC 2.0 không tiếp cận theo hướng chỉ kết
 
 **Giải pháp cốt lõi của IOC 2.0 là: biến toàn bộ quá trình thực tập thành một hành trình có thể quan sát và đo lường — sinh viên tham gia dự án thật, làm việc theo nhóm, nhận và hoàn thành task, tương tác với mentor và nhận phản hồi liên tục.**
 
-Cụ thể, IOC 2.0 tổ chức hành trình từ học → thực tập → tuyển dụng trong đó:
+Cụ thể, IOC 2.0 tổ chức hành trình từ học → thực tập trong đó:
 
 Sinh viên tham gia các dự án thật, làm việc theo quy trình (Agile/Scrum), nhận task từ AI và mentor.
 
@@ -591,52 +641,10 @@ Kết quả: trải nghiệm thực tập có chất lượng, đánh giá đầ
 
 **Như vậy, IOC 2.0 là nền tảng thực tập thực chiến phục vụ nhà trường và sinh viên: quản trị chất lượng đầu ra, đánh giá minh bạch, sinh viên có bằng chứng kinh nghiệm từ dự án thật để ứng tuyển.**
 
-2\. **Phân tích dự án theo mô hình kinh doanh BUSINESS MODEL CANVAS – IOC 2.0**
 
-|     |     |
-| --- | --- |
-| **Customer Segments – Phân khúc khách hàng** | IOC 2.0 phục vụ **hai nhóm khách hàng chính** (Sinh viên và Nhà trường), cùng bị khóa bởi một vấn đề cốt lõi:  <br>Thiếu thực tập thực chiến và bằng chứng đầu ra đáng tin cậy (dự án thật, đánh giá mentor).<br><br>**1\. Tổng thị trường – TAM (Total Addressable Market)**<br><br>**1.1. Sinh viên**<br><br>Việt Nam hiện có khoảng **2,2 – 2,4 triệu sinh viên đại học**, cao đẳng.<br><br>Trong đó, nhóm **CNTT, Kinh tế số, Truyền thông số, Data, AI, Product, Design** chiếm xấp xỉ **30–35%**.<br><br>**~700.000 – 800.000 sinh viên ngành số**  <br>→ Đây là **nguồn nhu cầu thực tập thực chiến lớn**, nhưng hiện **chưa được đáp ứng đủ** bởi mô hình chuẩn hóa như IOC.<br><br>**Lưu ý:** Doanh nghiệp không được định vị là khách hàng của IOC trong giai đoạn hiện tại (doanh nghiệp rất khó trở thành khách hàng trong vấn đề tuyển intern); doanh nghiệp tham gia với vai trò đối tác trong mạng lưới hợp tác.<br><br>**1.2. Nhà trường – Bên cần bằng chứng đầu ra**<br><br>Việt Nam có khoảng **240+ trường đại học, học viện, cao đẳng**.<br><br>Phần lớn **chưa có hệ thống theo dõi và chứng minh chất lượng đầu ra thực tập**:<br><br>Chỉ thống kê việc làm sau tốt nghiệp<br><br>Không chứng minh được _sinh viên làm được gì_<br><br>**TAM nhà trường = Toàn bộ hệ thống đào tạo cần dữ liệu để bảo vệ uy tín và kiểm định chất lượng.**<br><br>**Kết luận TAM:** IOC 2.0 nằm trong thị trường giao thoa EdTech – thực tập – đào tạo, với hàng trăm nghìn sinh viên tiềm năng mỗi năm và nhu cầu thực tập thực chiến mang tính cấu trúc.<br><br>**2\. Thị trường phục vụ được – SAM (Serviceable Available Market)**<br><br>IOC **không phục vụ toàn bộ TAM**, mà tập trung vào phân khúc **có nhu cầu thực tập thật và đánh giá đầu ra rõ ràng**.<br><br>**2.1. Sinh viên (SAM)**<br><br>Sinh viên năm 2–4, ngành số. Có nhu cầu:<br><br>Đi thực tập thật<br><br>Có dự án thật để xin việc<br><br>Sẵn sàng làm việc theo quy trình, có mentor & AI hỗ trợ<br><br>**~200.000 – 250.000 sinh viên / năm**<br><br>**2.2. Nhà trường (SAM)**<br><br>Trường:<br><br>Đào tạo CNTT / ngành số<br><br>Có định hướng hợp tác doanh nghiệp<br><br>Áp lực kiểm định & đầu ra<br><br>**~60 – 80 trường**<br><br>**SAM là tập khách hàng mà IOC có thể kích hoạt ngay**, vì:<br><br>Có nhu cầu rõ<br><br>Có hành vi phù hợp<br><br>Có khả năng trả tiền hoặc hợp tác dài hạn<br><br>3\. **Thị trường mục tiêu thực tế – SOM (Serviceable Obtainable Market)**<br><br>Trong 12–24 tháng đầu, IOC 2.0 chủ động giới hạn quy mô để đảm bảo chất lượng đào tạo và đánh giá.<br><br>Mục tiêu SOM giai đoạn đầu:<br><br>**Sinh viên:** 500 – 1000 sinh viên / năm<br><br>**Nhà trường:** 5 – 10 trường đối tác chiến lược<br><br>Đây là ngưỡng tối ưu để:<br><br>Đủ quy mô để huấn luyện AI và chuẩn hóa quy trình<br><br>Tạo uy tín và hiệu ứng mạng lưới trước khi scale<br><br>\-> IOC 2.0 giải quyết bài toán thực tập hình thức bằng cách tổ chức thực tập thực chiến (dự án thật, mentor, đánh giá rõ ràng), phục vụ nhà trường và sinh viên. |
-| **Value Propositions – Giá trị cốt lõi** | **IOC 2.0 tổ chức thực tập thực chiến: dự án thật, mentor, đánh giá đầu ra rõ ràng.**<br><br>**Giá trị mang lại cho từng nhóm**<br><br>**Đối với sinh viên**<br><br>Kinh nghiệm dự án thật, portfolio và đánh giá từ mentor<br><br>Tăng tỷ lệ được gọi phỏng vấn và được tuyển<br><br>**Đối với nhà trường**<br><br>Dashboard dữ liệu đầu ra<br><br>Bằng chứng định lượng về chất lượng đào tạo<br><br>Nâng uy tín với doanh nghiệp tuyển dụng |
-| **Channels – Kênh tiếp cận** | IOC 2.0 tiếp cận thị trường thông qua:<br><br>Chương trình thực tập dự án thật<br><br>Hợp tác với doanh nghiệp (đối tác)<br><br>Hợp tác chính thức với nhà trường<br><br>Nền tảng số: quản lý dự án, báo cáo tiến độ, AI Assistant & AI Mentor |
-| **Customer Relationships – Quan hệ khách hàng** | **Sinh viên**:<br><br>Đồng hành xuyên suốt dự án<br><br>Feedback liên tục từ AI & mentor<br><br>Cá nhân hoá lộ trình năng lực<br><br>**Nhà trường**:<br><br>Quan hệ đối tác chiến lược<br><br>Báo cáo định kỳ, dữ liệu đầu ra<br><br>Đồng thiết kế chương trình thực tập |
-| **Revenue Streams – Dòng doanh thu** | Mô hình doanh thu của IOC 2.0 tập trung vào **hai nhóm khách hàng** (doanh nghiệp không được định vị là khách hàng trả tiền trong giai đoạn hiện tại — rào cản chuyển đổi trong bài toán tuyển intern):<br><br>• **Nhà trường (B2B):**<br><br>\- **Phí Dashboard / báo cáo đầu ra:** Cung cấp bằng chứng về chất lượng đào tạo và thực tập để phục vụ kiểm định và uy tín nhà trường.<br><br>\- **Phí triển khai thực tập chuẩn hóa:** Thu phí dịch vụ khi IOC vận hành quy trình thực tập theo dự án thật cho sinh viên của trường.<br><br>• **Sinh viên (B2C):**<br><br>\- **Gói Premium:** Thu phí cho các công cụ AI Mentor, AI Teammate và tính năng bổ trợ |
-| **Key Resources – Tài nguyên cốt lõi** | Nền tảng công nghệ & quy trình thực tập<br><br>AI Agent (giao việc, hỗ trợ, đánh giá)<br><br>Hệ thống mentor & quy trình chấm chuẩn hoá<br><br>Quan hệ doanh nghiệp & nhà trường |
-| **Key Activities – Hoạt động cốt lõi** | Thiết kế & vận hành dự án thực tập<br><br>Phân bổ task bằng AI, mentor<br><br>Theo dõi tiến độ & đánh giá đầu ra<br><br>Đánh giá chéo AI – mentor<br><br>Phân tích & xuất báo cáo cho nhà trường / sinh viên |
-| **Key Partners – Đối tác chính** | Hệ thống đối tác của IOC 2.0 được xây dựng như một mạng lưới liên kết giữa các chủ thể: nhà trường, doanh nghiệp, mentor, AI.<br><br>**Nhóm đối tác chiến lược trong hệ sinh thái (External Ecosystem)**<br><br>Đây là những đối tác trực tiếp tham gia vào việc vận hành thực tập và đánh giá đầu ra:<br><br>**Doanh nghiệp (7 đối tác hiện tại):** Đối tác hợp tác trong mạng lưới (dự án, mentor, tham chiếu tuyển dụng) — **không phải khách hàng trả tiền** của IOC; việc kết nối sinh viên sang thực tập tại doanh nghiệp chưa được thực hiện trực tiếp, sinh viên vẫn tự apply.<br><br>**Nhà trường & Đơn vị đào tạo (14 đối tác hiện tại):** Kênh phân phối sinh viên ổn định. Nhà trường sử dụng Dashboard của IOC để theo dõi chất lượng đào tạo và bảo vệ uy tín đầu ra.<br><br>**Đội ngũ Mentor ngành CNTT:** Các chuyên gia trực tiếp hướng dẫn, đánh giá và xác thực kết quả làm việc của sinh viên tại các điểm then chốt.<br><br>**Đối tác hạ tầng AI:** Cung cấp các mô hình ngôn ngữ lớn (LLM) và AI Agent để tự động hóa việc giao nhiệm vụ, hỗ trợ kỹ thuật và chấm điểm sơ bộ. Đây là yếu tố giúp tối ưu chi phí vận hành và cho phép dự án mở rộng quy mô (scale) mà không phụ thuộc hoàn toàn vào con người.<br><br>**Nhóm đối tác hỗ trợ chiến lược nội bộ (Internal Stakeholders)**<br><br>Dự án nhận được sự phối hợp liên phòng ban từ tổ chức mẹ để đảm bảo tính thực thi và gắn chặt với hoạt động kinh doanh:<br><br>**Phòng Marketing & Sales:** Hỗ trợ hoạt động truyền thông, cung cấp yêu cầu từ góc độ thị trường và đánh giá mức độ phù hợp của sản phẩm với nhu cầu khách hàng.<br><br>**Trung tâm Đào tạo:** Kết nối IOC 2.0 với các hoạt động đào tạo thực tế để dữ liệu thu thập phản ánh đúng quá trình học tập của sinh viên.<br><br>**Ban Giám đốc & Phòng Kế toán:** Đảm bảo định hướng chiến lược, ra quyết định quan trọng và phê duyệt ngân sách triển khai.<br><br>**Phòng Nhân sự – Hành chính:** Hỗ trợ truyền thông nội bộ, tuyển dụng và sắp xếp nhân sự khi dự án cần mở rộng quy mô |
-| **Cost Structure – Cấu trúc chi phí** | Phát triển & vận hành nền tảng<br><br>Chi phí AI (compute, model, agent)<br><br>Mentor & kiểm soát chất lượng<br><br>Sales & hợp tác doanh nghiệp<br><br>Phân tích & lưu trữ dữ liệu<br><br>**AI giúp chi phí không tăng tuyến tính theo số sinh viên, cho phép mô hình scale.** |
-| **Key Metrics – Chỉ số đo lường** | Tỷ lệ hoàn thành dự án<br><br>Độ lệch giữa AI và mentor<br><br>Tỷ lệ sinh viên được tuyển<br><br>Mức độ hài lòng của nhà trường và sinh viên<br><br>**Các chỉ số này phản ánh hiệu quả vận hành và chất lượng thực tập.** |
+6.2 **CÁC GIẢ THUYẾT ĐẶT RA TRONG DỰ ÁN (Dựa trên mục tiêu IOC 2.0)**
 
-3\. **Thị trường và cạnh tranh**
-
-3.1 **CÁC GIẢ THUYẾT ĐẶT RA TRONG DỰ ÁN (Dựa trên mục tiêu IOC 2.0)**
-
-**a/ Đối với Doanh nghiệp**
-
-**Giả thuyết DN–H1: Thiếu niềm tin vào dữ liệu thực tập hiện tại**
-
-Phần lớn doanh nghiệp CNTT hiện nay không tin tưởng dữ liệu đầu ra từ các chương trình thực tập truyền thống, do các đánh giá mang tính hình thức, thiếu minh chứng năng lực làm việc thực tế.
-
-Hệ quả giả định:
-
-Doanh nghiệp phải mất 3–6 tháng đào tạo lại sau tuyển dụng.
-
-Chi phí thử–sai cao, rủi ro tuyển nhầm lớn.
-
-Giả thuyết giải pháp: Nếu quá trình thực tập được thiết kế thực chiến (dự án thật, mentor và AI), sinh viên ra trường sẽ có năng lực sát thực tế hơn, doanh nghiệp có thể rút ngắn thời gian đào tạo lại.
-
-**Giả thuyết DN–H2: Thiếu tiêu chí đánh giá chung cho đầu ra sinh viên**
-
-Thị trường hiện không tồn tại một bộ tiêu chí đánh giá thống nhất để doanh nghiệp định lượng giá trị năng lực của sinh viên sau thực tập.
-
-Hệ quả giả định:
-
-Mỗi doanh nghiệp tự đặt tiêu chí riêng → khó so sánh.
-
-Chứng chỉ thực tập hiện nay không có giá trị tuyển dụng rõ ràng.
-
-Giả thuyết giải pháp: Một chứng chỉ thực tập dựa trên dự án thật và đánh giá mentor chuẩn hóa có thể đóng vai trò "bằng thực hành", bổ sung cho bằng đại học thiên về lý thuyết.
-
-**b/ Đối với Nhà trường**
+**a/ Đối với Nhà trường**
 
 **Giả thuyết NT–H1: Uy tín nhà trường phụ thuộc ngày càng nhiều vào đầu ra việc làm**
 
@@ -658,7 +666,7 @@ Siết chất lượng đầu ra
 
 Giảm tình trạng thực tập hình thức
 
-**c/ Đối với Học viên (chưa tham gia IOC)**
+**b/ Đối với Học viên (chưa tham gia IOC)**
 
 **Giả thuyết HV–H1: Sinh viên thiếu hiểu biết rõ ràng về năng lực bản thân**
 
@@ -729,9 +737,9 @@ Thị trường thực tập và tuyển dụng sinh viên CNTT tại Việt Nam
 | **E – Environmental (Môi trường – Bền vững & bối cảnh làm việc)** | **Xu hướng làm việc từ xa và hybrid ngày càng phổ biến trong ngành CNTT:**<br><br>Doanh nghiệp chú trọng đánh giá năng lực dựa trên kết quả công việc, không chỉ thời gian hiện diện<br><br>Thực tập và làm việc không còn phụ thuộc hoàn toàn vào không gian vật lý<br><br>**Tác động tới thị trường thực tập:**<br><br>Nhu cầu chuẩn hóa quy trình làm việc số<br><br>Cần hệ thống theo dõi tiến độ, chất lượng và kỷ luật làm việc<br><br>**Tác động tới RIKKEI / IOC:**<br><br>IOC phù hợp với môi trường làm việc số hóa<br><br>Cho phép mở rộng quy mô thực tập mà không phụ thuộc địa lý<br><br>Quy trình và báo cáo thực tập trở thành tài sản phục vụ đào tạo và đầu ra. |
 | **L – Legal (Pháp lý)** | **Hiện nay:**<br><br>Chưa có khung pháp lý thống nhất cho chuẩn đầu ra thực tập<br><br>Chứng chỉ thực tập chưa có giá trị pháp lý rõ ràng trong tuyển dụng<br><br>Việc đánh giá năng lực sinh viên chủ yếu dựa vào thỏa thuận giữa doanh nghiệp và nhà trường<br><br>**Hệ quả:**<br><br>Thực tập mang tính hình thức vẫn phổ biến<br><br>Thiếu tiêu chuẩn chung để so sánh năng lực sinh viên giữa các doanh nghiệp<br><br>**Tác động tới RIKKEI / IOC:**<br><br>IOC đóng vai trò như một **chuẩn thực tế (de facto standard)** cho thực tập thực chiến (dự án thật, đánh giá mentor)<br><br>Quy trình và báo cáo đầu ra có thể bổ trợ cho kiểm định và tiêu chuẩn hóa trong tương lai. |
 
-3.2 **MARKET DOMAINS – LĨNH VỰC THỊ TRƯỜNG**
+6.3 **MARKET DOMAINS – LĨNH VỰC THỊ TRƯỜNG**
 
-3.2.1 **Sức hấp dẫn thị trường (Market Attractiveness - Macro)**
+6.3.1 **Sức hấp dẫn thị trường (Market Attractiveness - Macro)**
 
 IOC 2.0 hoạt động tại giao điểm của Giáo dục & đào tạo CNTT và Thực tập – tuyển dụng nhân sự công nghệ.
 
@@ -739,7 +747,7 @@ Xu hướng cốt lõi: CV và bằng cấp không còn đủ; sinh viên cần 
 
 IOC 2.0 nhắm trực tiếp vào khoảng trống này.
 
-3.2.2 **Sức hấp dẫn phân khúc mục tiêu (Target Segment Attractiveness - Micro)**
+6.3.2 **Sức hấp dẫn phân khúc mục tiêu (Target Segment Attractiveness - Micro)**
 
 IOC không phục vụ toàn bộ thị trường lao động mà tập trung vào phân khúc:
 
@@ -759,9 +767,9 @@ IOC không cạnh tranh trực tiếp với các nền tảng CV hay job board h
 
 Nếu Market Domains tập trung vào quy mô, động lực và hành vi của nhu cầu thị trường, thì Industry Domains phân tích cấu trúc ngành, mức độ cạnh tranh và khả năng hình thành lợi thế bền vững của IOC trong bối cảnh đó.
 
-3.3 **INDUSTRY DOMAINS – LĨNH VỰC NGÀNH**
+6.4 **INDUSTRY DOMAINS – LĨNH VỰC NGÀNH**
 
-3.3.1 **Sức hấp dẫn ngành (Industry Attractiveness - Macro)**
+6.4.1 **Sức hấp dẫn ngành (Industry Attractiveness - Macro)**
 
 IOC hoạt động tại giao điểm của HR Tech – EdTech – Data Platform.  
 Trong ngành này, rào cản gia nhập không nằm ở công nghệ mà nằm ở dữ liệu và mạng lưới.
@@ -774,7 +782,7 @@ LMS/EdTech có nội dung nhưng không kết nối tuyển dụng
 
 IOC đứng ở mô hình thực tập thực chiến: dự án thật, mentor, đánh giá đầu ra rõ ràng.
 
-3.3.2 **Lợi thế cạnh tranh bền vững (Sustainable Competitive Advantage - Micro)**
+6.4.2 **Lợi thế cạnh tranh bền vững (Sustainable Competitive Advantage - Micro)**
 
 Lợi thế của IOC không nằm ở việc kết nối sinh viên với doanh nghiệp, mà ở quy trình thực tập thực chiến: dự án thật, mentor, theo dõi tiến độ và đánh giá đầu ra rõ ràng trong suốt quá trình học – thực tập.
 
@@ -1106,7 +1114,6 @@ IOC không có đối thủ giống hệt, nhưng chịu cạnh tranh gián ti�
 
 **HR Tech & AI screening** (HireVue, bài test kỹ thuật): cải thiện khâu lọc nhanh, nhưng dựa trên dữ liệu đầu vào ngắn hạn, không phản ánh quá trình làm việc thực tế.
 
-**点击图片可查看完整电子表格**
 
 Tất cả các đối thủ trên chỉ giải quyết công việc ở trước hoặc sau giai đoạn làm việc thực sự, nhưng không kiểm soát được quá trình sinh vật liệu năng lực - đây là trung tâm của vấn đề. IOC 2.0 khác ở chỗ nó đặt hệ thống đo lường ngay tại nơi sinh viên làm việc, không yêu cầu trình bày sinh viên trình bày lại năng lượng sau khi kết thúc.  
 Chiến lược của IOC là Dominant Strategy: không rẻ hơn theo đơn giá, nhưng giảm chi phí sai dùng hạn chế cho toàn hệ thống (tuyển sai, đào tạo lại, thất nghiệp, mất uy tín).
@@ -1193,7 +1200,6 @@ Từ phân tích SWOT, dự án IOC 2.0 xây dựng các chiến lược kết h
 
 **Bảng TOWS Matrix – IOC 2.0**
 
-**点击图片可查看完整电子表格**
 
 4.3 **Kết luận phân tích SWOT & TOWS**
 
@@ -1251,7 +1257,6 @@ Bảng tính này dựa trên mục tiêu phục vụ 300 - 500 sinh viên, 10 -
 
 **Bảng dự tính tài chính IOC 2.0 (Năm 1)**
 
-**点击图片可查看完整电子表格**
 
 Các yếu tố chiến lược ảnh hưởng đến bảng tính:
 
@@ -1382,7 +1387,7 @@ Trước hết, về quy mô người dùng, hệ thống IOC hiện ghi nhận 
 
 Về mức độ tham gia và hoàn thành, IOC hiện đạt tỷ lệ tham gia 44,5% và tỷ lệ hoàn thành 29,4%. Dù chưa phải con số tối ưu, các chỉ số này phản ánh đúng đặc thù của mô hình thực tập thực tế, nơi sinh viên chịu tác động từ nhiều yếu tố như thời gian, năng lực cá nhân và yêu cầu của doanh nghiệp. Đây cũng chính là cơ sở dữ liệu quan trọng để dự án IOC 2.0 tiếp tục cải thiện thiết kế sản phẩm, cơ chế theo dõi và động lực tham gia.
 
-Về mạng lưới đối tác, dự án hiện đã kết nối với 14 trường học và 7 doanh nghiệp, tạo thành một hệ sinh thái bước đầu giữa nhà trường – sinh viên – doanh nghiệp. Sự tham gia của nhiều bên cho thấy IOC không chỉ là một công cụ nội bộ mà đã bắt đầu đóng vai trò là nền tảng phối hợp giữa các chủ thể trong quá trình thực tập và tuyển dụng.
+Về mạng lưới đối tác, dự án hiện đã hợp tác với 14 trường học và 7 doanh nghiệp, tạo thành một hệ sinh thái bước đầu giữa nhà trường – sinh viên – doanh nghiệp. Sự tham gia của nhiều bên cho thấy IOC không chỉ là một công cụ nội bộ mà đã bắt đầu đóng vai trò là nền tảng phối hợp giữa các chủ thể trong quá trình thực tập.
 
 Cuối cùng, xét theo tốc độ tăng trưởng, biểu đồ số lượng sinh viên theo thời gian cho thấy xu hướng tăng đều và ổn định, phản ánh nhu cầu thực tế của thị trường và khả năng mở rộng của nền tảng. Đây là nền tảng quan trọng để IOC bước sang giai đoạn 2.0, tập trung vào việc nâng cao chất lượng dữ liệu và khai thác giá trị sâu hơn từ các kết quả đã đạt được.
 
