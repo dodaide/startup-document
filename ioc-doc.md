@@ -552,7 +552,7 @@ Khác với việc thiết kế cấu trúc lý thuyết khổng lồ trước k
 Chuyển sang giai đoạn hiện tại, chiến lược phát triển sản phẩm của chúng tôi xoay trục hoàn toàn sang việc **hệ thống hóa các tính năng hiện có, gán các chỉ số đo lường (Metrics định lượng)** và tiến hành tối ưu theo vòng lặp **Build - Measure - Learn**. Dưới đây là phương thức cấu trúc lại Nền tảng thành các giả thuyết (Hypotheses) để theo dõi và tinh chỉnh:
 
 ### 7.1. Trụ cột 1: Các Gói Dịch vụ (Mô hình kinh doanh làm Giả thuyết)
-Thay vì là những gói dịch vụ tĩnh, đây là các "Mô hình thử nghiệm" để tìm ra Product-Market Fit và thiết lập Tỷ suất lợi nhuận (Unit Economics).
+Thay vì là những gói dịch vụ tĩnh, đây là các "Mô hình thử nghiệm" để tìm ra Product-Market Fit và thiết lập Tỷ suất lợi nhuận (Unit Economics). Phần này nói về tổng quan, chi tiết từng gói sẽ được trình bày sau.
 
 #### A. Nhóm B2B - Thử nghiệm mô hình hợp tác với Nhà trường
 *(Chương trình chi tiết thường là theo thỏa thuận giữa doanh nghiệp và nhà trường, tuy nhiên cơ bản sẽ gồm các nội dung cốt lõi sau)*
@@ -561,27 +561,26 @@ Thay vì là những gói dịch vụ tĩnh, đây là các "Mô hình thử ngh
     *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng.
     *   *Nội dung chương trình:* Sinh viên được đào tạo ban đầu về công nghệ, quy trình. Sau đó, được tham gia dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn sát sao của Mentor.
     *   *Quyền lợi nâng cao:* Được tham gia 1-2 lần Mock Interview (ở đầu và cuối kỳ). Đặc biệt, **ở mức 4.000.000đ**, sinh viên được làm thử dự án thật *(là một dự án thật của doanh nghiệp, có các sprint thật, cho phép sinh viên join vào làm thử từ 1 sprint nào đó)*.
-    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Chuyển đổi (Conversion Rate)** – Phần trăm ngân sách nhà trường / hệ CLC sẵn sàng chi trả để đảm bảo chất lượng đầu ra.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Chuyển đổi (Conversion Rate)** – Tỷ lệ nhà trường có ngân sách sẵn sàng chi trả cho dịch vụ.
 
 *   **B2B Gói 2: Trải nghiệm thực tập (Miễn phí)**
     *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng.
     *   *Nội dung chương trình:* Được đào tạo thông qua hệ thống tài nguyên có sẵn. Hành động chủ yếu là làm các dự án giả lập đã hoàn thành, có sự hạn chế về thời lượng Mentor hướng dẫn.
-    *   *Quyền lợi:* Không được tham gia Mock Interview.
-    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Chấp nhận (Acquisition Rate)** – Số lượng trường đại học ký kết đăng ký tham gia nền tảng.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Chấp nhận (Acquisition Rate)**
 
 #### B. Nhóm B2C - Thử nghiệm Độ khao khát kinh nghiệm của Sinh viên
 
 *   **B2C Gói 1: Gói cao cấp (8.000.000đ)**
-    *   *Hình thức & Thời hạn:* Tuyệt đối Offline kéo dài trong 4.5 tháng.
+    *   *Hình thức & Thời hạn: Hybrid (Offline / Online) kéo dài trong 4.5 tháng.
     *   *Nội dung chương trình:* Được đào tạo về công nghệ, quy trình một cách bài bản và chi tiết hơn. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
     *   *Trải nghiệm thực chiến:* Sinh viên được làm thử dự án thật *(là một dự án thật, có các sprint thật, cho các bạn join vào làm thử từ 1 sprint nào đó)*.
-    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Có việc làm (Placement Rate)**.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Có việc làm ở đối tượng tiêu chuẩn (Placement Rate)**.
 
 *   **B2C Gói 2: Gói tiêu chuẩn (4.000.000đ)**
     *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng.
     *   *Nội dung chương trình:* Được đào tạo về công nghệ và quy trình làm việc nền tảng. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
     *   *Trải nghiệm thực chiến:* Sinh viên được làm thử dự án thật *(là một dự án thật, có các sprint thật, cho các bạn join vào làm thử từ 1 sprint nào đó)*.
-    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Hoàn thành (Completion Rate)**.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Có việc làm ở đối tượng tiêu chuẩn (Placement Rate)**.
 
 *   **B2C Gói 3: Gói cơ bản (1.500.000đ)**
     *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng.
@@ -589,35 +588,43 @@ Thay vì là những gói dịch vụ tĩnh, đây là các "Mô hình thử ngh
     *   *Quyền lợi:* Không được tham gia Mock Interview.
     *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Drop-off** – Đo lường thời điểm rơi rụng của sinh viên khi gặp Bug khó trong quá trình tự vận hành.
 
-### 7.2. Trụ cột 2: Hệ thống Nền tảng (Bộ máy Thu thập Dữ liệu Hành vi)
-Hệ thống 4 phân hệ hiện tại ở Platform V1.0 không được sinh ra để trình diễn tính năng, mà được sử dụng như một "máy đo lường" hành vi người dùng (Behavioral Analytics) để giúp rà soát vòng đời thực tập.
+### 7.2. Trụ cột 2: Hệ thống Nền tảng (Bộ máy Thu thập Dữ liệu & Vận hành JIRA-like)
+Hệ thống 4 phân hệ hiện tại ở Platform V1.0 không được sinh ra để trình diễn tính năng, mà được thiết kế như một **"Không gian làm việc đồng bộ hóa (JIRA-like)"** kết hợp **"Máy đo lường hành vi"**. Cấu trúc này bám sát bộ tính năng thực tế đang có trên hệ thống backend (từ việc cấp quyền, tạo Board, assign Issue cho đến Score Templates):
 
 #### a. Phân hệ Sinh viên (Student Workspace)
-*   *Chức năng:* Không gian Daily Logwork và submit Pull Request.
-*   *Gán đo lường (Metrics):* **Thời gian hoàn thành Task (Time-to-Resolve)** và **Tần suất Logwork (Daily Active User)**. Nếu số liệu cho thấy sinh viên tốn quá nhiều thời gian để nộp Logwork, chúng tôi sẽ đơn giản hóa UI/UX để giảm ma sát giao diện.
+*   *Chức năng thực tế:* Sinh viên thao tác trực tiếp trên các Board quản trị linh hoạt (Scrum/Kanban/Waterfall) được thừa kế từ Space Template. Thực hiện Nộp báo cáo Hằng ngày (Daily Report), thay đổi trạng thái Task (Issue workflow), nhận đánh giá định kỳ và giao tiếp nội bộ qua Hệ thống Chat/SMS Gateway.
+*   *Gán đo lường (Metrics):* **Thời gian hoàn thành Task (Time-to-Resolve)**, **Tỷ lệ đúng hạn (Late Task Rate)** và **Tần suất Vi phạm (Violation Rate: Vắng mặt, Trễ giờ)**. Các thông số Daily Report này là bằng chứng thép để hệ thống đánh giá xem lượng Task phân bổ có quá sức (burnout) hay quá nhẹ với sinh viên.
 
-#### b. Phân hệ Chuyên gia (Mentor Workspace)
-*   *Chức năng:* Giao diện duyệt logwork (Approve/Reject) và chấm điểm định kỳ.
-*   *Gán đo lường (Metrics):* **SLA Phản hồi (Review Turnaround Time)**. Đây là rào cản chí mạng; nếu thời gian chờ Mentor duyệt bài bị kéo dài, hệ thống sẽ tự động alert để tối ưu sức người (Unit Cost), hoặc thiết lập quy trình nhắc nhở hiệu quả hơn.
+#### b. Phân hệ Chuyên gia / Business Mentor Workspace
+*   *Chức năng thực tế:* Mentor (nội bộ hoặc từ Doanh nghiệp) được cấp quyền theo RBAC để quản lý Group thực tập. Họ thực hiện kéo thả Issue, Review Task, phân bổ Dự án từ Ngân hàng Dự án (Project Bank), và trực tiếp chấm điểm OJT thông qua các Bộ Tiêu chí Đánh giá (Score Templates) đã được số hóa.
+*   *Gán đo lường (Metrics):* **SLA Phản hồi (Review Turnaround Time)** và **Độ lệch Điểm số (Score Variance)**. Nếu thời gian duyệt bài (Approve/Reject Daily Report) hoặc chấm điểm OJT kéo dài chênh lệch quá mức giữa các Mentor, hệ thống Dashboard sẽ tự động Alert cảnh báo chất lượng dịch vụ vận hành.
 
-#### c. Phân hệ Nhà trường (University Dashboard) 
-*   *Chức năng:* Bảng điều khiển quản lý toàn cảnh sinh viên thực tập & cảnh báo đỏ.
-*   *Gán đo lường (Metrics):* **Tỷ lệ Tương tác của Giảng viên (Engagement Score)**. Đo số lần giảng viên đăng nhập để kiểm tra tiến độ, qua đó đánh giá xem dashboard này có thực sự tạo "An tâm" hay không, hoặc nó cần cảnh báo push-notification chủ động hơn.
+#### c. Phân hệ Admin Nhà trường (University Dashboard) 
+*   *Chức năng thực tế:* Cung cấp cho Giảng viên (LECTURE) và Quản trị trường (SCHOOL_ADMIN) quyền giám sát xuyên suốt Kỳ thực tập (Internship Phases). Triết xuất các thống kê (Statistics) về lượng sinh viên active/completed, theo dõi sơ đồ Burndown/Velocity của các nhóm dự án và danh sách sinh viên rơi vào cảnh báo (Warning Students).
+*   *Gán đo lường (Metrics):* **Tỷ lệ Tương tác của Giảng viên (Engagement Score)**. Đo số lần giảng viên vào hệ thống lấy dữ liệu báo cáo chất lượng đào tạo (Quality Metrics) thay vì chờ nộp giấy truyền thống ở cuối kỳ.
 
-#### d. Phân hệ Quản trị (Backoffice Admin)
-*   *Chức năng:* Quản lý Project Templates và đối soát công việc Mentor.
-*   *Gán đo lường (Metrics):* **Thời gian Khởi tạo (Setup Time)**. Tối ưu khung giờ vận hành tự động để một nhóm sinh viên tham gia hệ thống lập tức có ngay môi trường.
+#### d. Phân hệ Quản trị Vận hành IOC (Master/Moderator Backoffice)
+*   *Chức năng thực tế:* Nắm quyền sinh sát (Quản lý User, School, Enterprise). Trọng tâm là việc cấu hình **Ngân hàng Dự án (Project Templates)** để có thể clone quy trình đa ngành (IT, Marketing, Design...). Quản lý hệ thống Bài Kiểm tra Đầu vào (Entrance Exams & Sessions) để Audit và Matching sinh viên. Xử lý các luồng hỗ trợ (Support Feedbacks).
+*   *Gán đo lường (Metrics):* **Thời gian Khởi tạo & Trình độ Khớp nối (Matching/Setup Time)**. Tối ưu thuật toán / quy trình để việc đẩy sinh viên thi test đầu vào (Entrance Exam) sang đóng gói thành một Project Group (Assign Students to Groups) diễn ra mượt mà nhất.
 
-### 7.3. Luồng vận hành lõi: Quy trình "Sai thì Sửa" liên tục
-Vòng đời thực tập tiêu chuẩn (Audit -> Onboarding -> Sprint Execution -> Evaluation) không dừng lại ở một khung vận hành tĩnh, mà trở thành **Hệ thống Thu thập Phản hồi (Feedback Loop)** khép kín:
-*   Chúng tôi sử dụng thuật toán ghép Team ở **Bước 1**, rồi đo lường sự gắn kết và lượng block code ở **Bước 3 (Agile Execution)**.
-*   Kết quả năng lực ở **Bước 4 (Evaluation)** sẽ ngay lập tức trả về hệ thống số liệu trung tâm để từ đó công ty tự đưa ra định hướng tinh chỉnh (Sửa đổi độ khó Project Template, thanh lọc Mentor, hoặc đổi bài test Audit cho kỳ sau).
+### 7.3. Trụ cột 3: AI Vận hành Dự án (AI Project Operator)
+Nhằm phá vỡ rào cản giới hạn về sức người (Scale Bottleneck) của các Mentor trong việc quản lý khối lượng sinh viên khổng lồ, IOC đưa AI vào hệ thống không phải như một tính năng trang trí, mà như một thiết chế vận hành từ đầu tới cuối nằm dưới sự giám sát của Mentor. Các năng lực cốt lõi của Trụ cột AI này bao gồm:
 
-### 7.4. Phân định rạch ròi Bản MVP Hiện Tại và Định hướng "Scale"
-Để phòng rủi ro đầu tư quá trán (over-engineering), việc phát triển Dịch vụ & Nền tảng IOC tuân thủ nguyên tắc:
+*   **Tự động Phân loại & Ghép nhóm (Smart Matching):** Dựa trên thông tin đầu vào đa chiều (Điểm số bài test, mục tiêu cá nhân, kỹ năng công nghệ), AI tự động đánh giá và sắp xếp sinh viên vào các nhóm có tính bổ trợ cao. Đồng thời, hệ thống AI sẽ phân tích hồ sơ và sắp xếp Mentor có chuyên môn/portfolio tương ứng nhất để dẫn dắt nhóm đo.
+*   **Hỗ trợ Vận hành & Đánh giá (Auto-Generating & Reviewing):** 
+    *   *Giai đoạn khởi tạo:* AI tự động phân tích requirement để khởi tạo ra các Tài liệu mô tả, Thiết kế kiến trúc, phân rã User Story, và biên soạn các Test Case chuẩn chỉnh cho Sprint.
+    *   *Giai đoạn thực thi:* Đóng vai trò như một Senior Code Reviewer, AI trực tiếp tham gia review công việc hằng ngày của sinh viên bao gồm: review Code, review Test Case, nhận xét Thiết kế, và góp ý cho các Tài liệu sinh viên viết.
+    *   *Tầm nhìn nâng cao:* Hướng tới năng lực AI có khả năng tự động test và review chất lượng của toàn bộ Sản phẩm cuối cùng (Final Product).
+*   **Tái sử dụng & Tự động điều phối Dự án (Project Recycling):** Hệ thống AI có khả năng học hỏi từ các dự án thật đã chạy xong và nghiệm thu thành công. Nó sẽ tự động trích xuất các luồng làm việc hiệu quả, xóa mờ dữ liệu nhạy cảm, và biến dự án đó thành các "Dự án Mẫu" (Project Templates) chuẩn mực. Sau đó, AI sử dụng lại các mẫu này để tự cấu hình và điều phối ngay lập tức cho các nhóm thực tập đi sau.
 
-*   **Platform V1.0 (Bản thu thập Data hiện tại):** Là bản "xây nhanh - chạy thật", tập trung hoàn toàn vào ghi nhận dữ liệu định lượng. Mọi nỗ lực thực thi của code base lúc này chỉ để trả lời: *Các luồng dịch vụ có thực sự mượt không? Giá trị trao đi có được chuyển hóa thành số liệu đo đếm được không?* Việc Scale hệ thống lớn hơn chỉ được diễn ra KHI VÀ CHỈ KHI các thông số này có tỷ lệ giữ chân user đủ tốt để không làm "thủng phễu" chi phí.
-*   **Product Vision (Viễn cảnh AI):** Tương lai dài hạn của "AI Code Review" hay "AI Phân tích Tâm lý" CHỈ được đầu tư R&D khi các chỉ số đo lường chỉ ra rằng con người (Mentor) đã kham hết tải (Scale Bottleneck). AI không phải là "tính năng trang trí", mà là một công cụ giúp đo lường, theo dõi sát sao, và đẩy tốc độ thu thập feedback từ đo lường bằng Ngày xuống bằng Phút.
+### 7.4. Trụ cột 4: Đội ngũ Vận hành & Chuyên gia (Human Capital)
+Nền tảng công nghệ ưu việt tới đâu cũng không thể tách rời yếu tố con người. Trong mô hình IOC, đội ngũ Vận hành (Moderators) và các Chuyên gia hướng dẫn (Mentors) không chỉ là người đi "giải quyết sự cố", mà trở thành một phần gắn kết hữu cơ của toàn bộ Giải pháp:
+
+*   **Bộ phận Vận hành (Operations & Moderators):** Đóng vai trò là "nhạc trưởng" điều phối nhịp độ toàn hệ thống. Đội ngũ này giám sát các dashboard cảnh báo (như tỷ lệ drop-off, tỷ lệ task trễ hạn, vi phạm), từ đó chủ động liên hệ với sinh viên gặp khó khăn, báo cáo tình hình với nhà trường/doanh nghiệp. Họ là tuyến thiết lập ban đầu (tạo cấu hình trường học, doanh nghiệp, template dự án) để đảm bảo dữ liệu đưa vào hệ thống là chuẩn xác nhất. Vẫn sử dụng kênh truyền thống như Zalo để trao đổi với các nhóm/sinh viên.
+*   **Mạng lưới Mentor (Internal & Cộng tác viên):** Bao gồm đội ngũ Mentor nội bộ và các Cộng tác viên chuyên môn được tuyển chọn kỹ lưỡng. Việc giới hạn nguồn Mentor này giúp IOC hoàn toàn **kiểm soát được chất lượng** và đảm bảo họ tuân thủ đúng các tiêu chuẩn sư phạm/đánh giá (chuẩn). Họ được định vị là "điểm chạm giá trị nhất" của giải pháp, không bị bó buộc vào việc cầm tay chỉ việc lặt vặt (đã có AI và quy trình nền tảng lo), mà tập trung vào:
+    *   *Nghiệm thu khối lượng lõi:* Duyệt Daily Report, chấm điểm OJT, đánh giá năng lực thực tế dựa trên Metric thay vì cảm tính.
+    *   *Giám sát AI (Human-in-the-loop):* Đánh giá lại các phân tích, Code Review hoặc nhận xét mà AI Operator sinh ra. Đảm bảo trải nghiệm sinh viên luôn giữ được "hơi ấm con người" đồng thời chịu trách nhiệm cuối cùng về chất lượng đầu ra.
+    *   *Động lực truyền cảm hứng:* Tổ chức các buổi Mock Interview định kỳ để huấn luyện tư duy giao tiếp và kỹ năng giải quyết vấn đề (Engineering mindset) – thứ mà AI hay platform không tự làm thay được.
 
 ---
 
