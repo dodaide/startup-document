@@ -630,31 +630,91 @@ Nền tảng công nghệ ưu việt tới đâu cũng không thể tách rời 
 
 ## 8. Hoạch định Sản phẩm & Lộ trình Phát triển (Product Planning & Roadmapping)
 
-Để đảm bảo việc phát triển một dự án phức tạp mang tính nền tảng đi đúng hướng từ dài hạn đến ngắn hạn, IOC áp dụng bộ khung quản trị sản phẩm đồng bộ từ Tầm nhìn (Vision) đến lộ trình thực thi (Roadmap).
+Để đảm bảo dự án IOC đi đúng hướng từ tham vọng dài hạn đến khả năng thực thi khắt khe trong ngắn hạn, giải pháp áp dụng trọn bộ khung quản trị sản phẩm hiện đại theo. Cấu trúc này liên kết chặt chẽ từ Tầm nhìn (Vision), cụ thể hóa các quyết định qua Khung Kiến tạo Chiến lược (Product Strategy Canvas), đo lường bằng North Star Framework và phân bổ nguồn lực theo Lộ trình (Roadmap).
 
-### 8.1. Tầm nhìn & Bản đồ Chiến lược (Vision & Product Strategy Canvas)
-*   **Tầm nhìn Sản phẩm (Product Vision - Why):** *"Thúc đẩy sự nghiệp của sinh viên IT thông qua môi trường thực chiến ảo, thu hẹp khoảng cách giữa nhà trường và doanh nghiệp."*
-*   **Product Strategy Canvas:**
-    *   *Chi phí tương đối:* Tối ưu hóa **Giá trị độc đáo**. IOC không cạnh tranh bằng giá trị rẻ (chi phí thấp) như các khóa học video thu sẵn, mà đầu tư vào mạng lưới Mentor và chất lượng báo cáo minh bạch cho các trường Đại học.
-    *   *Sự đánh đổi (Trade-offs):* **IOC quyết định KHÔNG** trở thành một Job Board tuyển dụng thụ động rải CV; **KHÔNG** làm Edtech cung cấp video bài giảng lý thuyết; **KHÔNG** tự thu nhận học viên một cách đại trà nếu không đảm bảo được số lượng Mentor kèm cặp. 
-    *   *Lợi thế phòng thủ (Can't/Won't):* Các nền tảng học trực tuyến kiểu Udemy khó sao chép vì họ không có bộ máy nhân sự Mentor ngành IT đồ sộ để chấm điểm 1-1. Job board không sao chép được vì không có dữ liệu báo cáo kỹ năng chuyên sâu (Logwork/Velocity) tại thời gian thực.
-    *   *Động cơ tăng trưởng (Growth):* Phát triển thông qua **Product-Led Growth (B2C)** (sinh viên rủ nhau cùng lập team làm dự án ảo) kết hợp **Sales-Led Growth (B2B)** (đội ngũ IOC đi ký kết hợp tác trực tiếp với các Khoa CNTT trên cả nước).
+### 8.1. Khung Hoạch định Chiến lược Sản phẩm (Product Strategy Canvas)
+Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của Product Strategy Canvas, IOC định nghĩa rõ ràng cách mình tạo ra một "Đại dương xanh" (Blue Ocean):
 
-### 8.2. Quản trị Mục tiêu & Khung North Star
-*   **North Star Metric (Chỉ số Sao Bắc Đẩu):** *Tổng số phiên Review (Sprint Review) / Điểm báo cáo (Logwork) được xác thực thành công trên nền tảng hàng tuần.*
-    *(Lý do: Đây là chỉ số phản ánh đúng giá trị cốt lõi mang tính khác biệt của IOC: Sinh viên thực sự làm dự án, và Mentor thực sự review feedback. Nếu chỉ số này cao, chứng tỏ sinh viên được tích lũy kinh nghiệm, và hệ thống có data báo cáo cho Nhà trường).*
-*   **Sử dụng OKRs để đo lường trong ngắn hạn:**
-    *   *O (Objective):* Triển khai thành công MVP & Pilot Model cho 2 trường Đại học đối tác đầu tiên.
-    *   *KR1:* Đạt được mốc 200 account sinh viên hoạt động thường xuyên trên hệ thống tạo dự án ảo.
-    *   *KR2:* Tỷ lệ hoàn thành submit Logwork mỗi tuần của sinh viên đạt > 85%.
+1.  **Tầm nhìn (Vision - Why):** *"Thúc đẩy sự nghiệp của sinh viên IT thông qua môi trường thực chiến ảo, thu hẹp triệt để khoảng cách giữa nhà trường và thị trường lao động."*
+2.  **Phân khúc Thị trường (Market Segments - Who/Where):**
+    *   *B2C:* Sinh viên "Panic Seekers" tuyệt vọng tìm kinh nghiệm dự án thực tế để lấp đầy Portfolio trống rỗng.
+    *   *B2B Giáo dục:* Các Khoa CNTT/Trường Đại học bế tắc trong việc duy trì, giám sát định lượng chất lượng thực tập (OJT) cho hàng ngàn sinh viên mỗi kỳ do vấn nạn thực tập ma.
+3.  **Chi phí Tương đối (Relative Costs):** Tối ưu hóa **Giá trị Độc đáo ở quy mô lớn** (trải nghiệm dự án giả lập sát với thực tế doanh nghiệp, dữ liệu báo cáo định lượng minh bạch). Đồng thời, để giải bài toán cấu trúc chi phí nhân sự, hệ thống dựa vào **AI làm chủ lực xử lý/đánh giá (AI Code & Document Review)** và Mentor đóng vai trò giám sát chất lượng vòng cuối (Human-in-the-loop), thay vì hứa hẹn dùng sức người 100% để "cầm tay chỉ việc".
+4.  **Tuyên bố Giá trị (Value Proposition):** 
+    *   *Trước đó:* Sinh viên đi thực tập ma hoặc tự học chay qua video lý thuyết; nhà trường theo dõi sinh viên qua những con mộc mờ ảo trên giấy thủ công.
+    *   *Cách thức:* IOC nhúng sinh viên thẳng vào nền tảng (JIRA-like), phân nhóm chạy dự án giả lập dưới sự kèm cặp sát sao của AI Project Operator và Mentor (Human-in-the-loop). Tham gia vào các bài kiểm tra, đánh giá, daily hàng ngày...
+    *   *Sau đó:* Sinh viên tích lũy năng lực động (Dynamic Portfolio) dựa trên tiến độ commit code; Nhà trường kiểm soát hiệu quả đào tạo qua Dashboard dữ liệu thời gian thực.
+5.  **Sự đánh đổi (Trade-offs - Điều quyết KHÔNG làm):** 
+    *   KHÔNG trở thành một Job Board tĩnh chuyên môi giới rải CV thụ động.
+    *   KHÔNG làm EdTech kiểu cũ chuyên bán hoặc phát video bài giảng.
+    *   KHÔNG ôm đồm học viên bất chấp chất lượng nếu vượt mức chịu tải của nền tảng (Feasibility) và đội ngũ Mentor.
+6.  **Các Chỉ số Then chốt (Key Metrics):** Chỉ số Sao Bắc Đẩu (North Star Metric), Tỷ lệ tìm việc thành công của sinh viên tiêu chuẩn của IOC đạt 60%.
+7.  **Tăng trưởng (Growth) - Đa kênh B2B & B2C:**
+    *   *B2B kéo B2C:* Khởi chạy bằng **Sales-Led Growth** hướng tới B2B (ký MOU cung cấp nền tảng quản trị OJT cho các trường Đại học). Thông qua tệp sinh viên từ phễu B2B, IOC chuyển đổi B2C bằng uy tín truyền miệng dựa trên đánh giá thực tế và tỷ lệ xin được việc của học viên khóa trước.
+    *   *B2C Trực diện (KOL-Led Growth):* Xây dựng  chuyên gia (Micro-Influencers/KOL) nội bộ chuyên chia sẻ kiến thức thực chiến, mindset kỹ sư trên các kênh mạng xã hội (Facebook, TikTok, LinkedIn). Dạng nội dung này đánh trúng "nỗi đau" và sẽ trực tiếp điều hướng tệp sinh viên "Panic Seekers" tự do đăng ký các gói dịch vụ OJT thu phí của IOC.
+8.  **Năng lực Cốt lõi (Capabilities):** Nền tảng quản lý dự án linh hoạt tích hợp công cụ đo lường hành vi (Metrics Engine); Hệ thống AI Vận hành (AI Project Operator) làm chủ lực đánh giá (Review Code/Test Case/Docs); Ngân hàng Dự án Mẫu giả lập sát thực tế (Project Templates); và Đội ngũ Vận hành + Mạng lưới Mentor (Nội bộ & CTV) đóng vai trò giám sát (Human-in-the-loop).
+9.  **Lợi thế Phòng thủ (Can't/Won't):** Các nền tảng EdTech lớn (Coursera, Udemy) khó sao chép vì họ chỉ mạnh phân phối nội dung tĩnh, *sẽ không* muốn đầu tư Mentor. Các Job board/Nền tảng tuyển dụng truyền thống cũng *không thể* bắt chước vì họ rỗng lõi về đào tạo thực chiến.
+10. **Tự vấn:** Cấu trúc 4 Trụ cột (Gói Dịch vụ - Nền tảng Đo lường - AI Vận hành - Đội ngũ Chuyên gia) đã tạo thành lõi động cơ lặp hoàn hảo chưa? Sự kết hợp này phải mang lại khả năng mở rộng (Feasibility - nhờ Platform & AI), khả năng sinh lời (Viability - nhờ tối ưu chi phí Mentor & đa dạng kênh thu hút B2B/B2C) và luôn hấp dẫn với người dùng (Desirability - giải quyết dứt điểm rào cản kinh nghiệm thực chiến).
 
-### 8.3. Lộ trình Phát triển Sản phẩm (Product Roadmap)
-*   **Giai đoạn 1 (Validation & Pilot - "Now"):** 
-    *   *Hành động:* Vận hành chương trình Managed Internship theo phương thức kết hợp công cụ thủ công (Jira, Trello, Discord, Google Sheets). 
-    *   *Mục đích:* Tập trung cực độ vào việc chứng minh giá trị: tỷ lệ sinh viên xin được việc làm cao sau kỳ OJT của IOC và lấy feedback từ các Trưởng khoa để ra tài liệu Requirements. 
-*   **Giai đoạn 2 (MVP Launch - "Next"):** 
-    *   *Hành động:* Xây dựng và ra mắt nền tảng Web-based (dashboard) với 3 luồng tính năng lõi: Quản lý nhóm (Student), Chấm điểm (Mentor), Báo cáo chuyên sâu (University). 
-    *   *Mục đích:* Tự động hóa quy trình quản lý thực tập tốn kém nhân sự của các trường Đại học. Khẳng định Viability để tiến hành Sales mở rộng tệp B2B.
-*   **Giai đoạn 3 (Scale & Ecosystem - "Later"):** 
-    *   *Hành động:* Xây dựng Talent Pool; Tích hợp tính năng doanh nghiệp ủy quyền Outsourcing vào (giao dự án thật lên app cho sinh viên giải quyết); Triển khai AI hỗ trợ Mentor chấm Logwork và check code tự động (AI Code Reviewer).
-    *   *Mục đích:* Tối đa hóa giá trị vòng đời của sinh viên; trở thành cổng nhân sự chất lượng cao độc đáo nhất thị trường.
+### 8.2. Lộ trình Sản phẩm Relaunched (Product Roadmap - Now/Next/Later)
+Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 2025, Roadmap hiện tại của IOC tập trung vào bài toán mở rộng quy mô (Scale-up) và tự động hóa toàn diện:
+
+*   **NOW 3/2026 - 6/2026 (Giai đoạn Hiện hành - Mở rộng Quy mô & Tối ưu Nền tảng):**
+    *   *Mục đích:* Giải quyết bài toán Feasibility & Viability: Mở rộng tiếp nhận sinh viên mà không làm vỡ hệ thống vận hành, đồng thời tối ưu hóa lợi nhuận.
+    *   *Sáng kiến & Hoạt động:* Vận hành trên Nền tảng ổn định. Tự động hóa các luồng quản lý nhóm. Hoàn thiện **Trụ cột 3 (AI Project Operator)** vào luồng hỗ trợ Mentor (tự động sinh Test case, phân tích Requirement, Review Code cơ bản) nhằm giảm tải 30-50% sức người. Đẩy mạnh đòn bẩy kinh doanh Sales-Led Growth cho khối B2B và mở rộng kênh B2C để tận dụng Proof of Concept thành công từ năm trước.
+*   **NEXT 6/2026 - 12/2026 (Tự động Hóa Chuyên Sâu & Khẳng Định Lợi Thế Dữ Liệu):**
+    *   *Mục đích:* Thiết lập Rào cản Dữ liệu (Data Moat) vững chắc, đưa tự động hóa lên mức cao nhất để bứt phá biên lợi nhuận (Gross Margin).
+    *   *Sáng kiến & Hoạt động:* Nâng cấp AI đóng vai trò Senior Reviewer để đảm đương 50-70% công suất Mentor. Triển khai tính năng **Project Recycling** (AI tự động trích xuất dự án cũ để làm templates vòng lặp mới). Hoàn thiện hệ thống **Hồ sơ năng lực siêu định lượng (Dynamic Portfolio)** cho mọi sinh viên.
+
+---
+
+## 9. Doanh thu, Chi phí và Lợi nhuận dự tính
+
+### 9.1. Nguồn doanh thu
+
+**a. Các nguồn doanh thu lõi và phụ trợ**
+Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõi (B2B và B2C) thông qua việc khai thác Nền tảng thực tập mô phỏng (Managed Internship Service):
+*   **Doanh thu từ khối B2C (End-user - Sinh viên):** Nguồn thu trực tiếp từ các gói dịch vụ OJT thu phí đối với sinh viên tự do muốn có kinh nghiệm thực chiến. Bao gồm các gói Dịch vụ lộ trình: Cơ bản (1.500.000đ), Tiêu chuẩn (4.000.000đ) và Cao cấp (8.000.000đ) với thời lượng và mức độ tương tác trải nghiệm chuyên gia khác nhau.
+*   **Doanh thu từ khối B2B (Nhà trường/Khoa CNTT):** Nguồn thu từ việc ký kết hợp đồng "Ủy thác Thực tập Trọn gói" nhằm giải quyết gánh nặng quản lý thực tập, với ngân sách dao động từ 2.000.000đ – 4.000.000đ/sinh viên tùy mức độ trải nghiệm dự án thật.
+
+**b. Chiến lược tăng trưởng doanh thu ngắn hạn và dài hạn**
+*   **Ngắn hạn (1-2 năm đầu - Thâm nhập thị trường):** Tập trung vào mô hình **Sales-Led Growth** hướng tới B2B. Đội ngũ nỗ lực chốt thỏa thuận (MOU/MOA) với các trường Đại học/Cao đẳng để có lưu lượng đầu vào lớn (Volume). Từ bệ phóng này, sử dụng mô hình **KOL-Led Growth** (truyền thông qua giới chuyên gia, micro-influencers nội bộ) để kích thích nhóm sinh viên nâng cấp lên các gói trả phí cao (Upsell từ tệp miễn phí B2B sang tác động khách hàng B2C cá nhân).
+*   **Dài hạn (Từ năm thứ 3 trở đi - Tối ưu hóa phễu và Mở rộng đa luồng):** Tối ưu biên lợi nhuận thông qua sức mạnh của AI. Khi AI đảm nhiệm 50-70% khối lượng review của Mentor, chi phí vận hành trên mỗi học viên giảm, tạo ra Unit Economics xuất sắc. Tiến hành khai mở mạnh dòng doanh thu B2B thứ 2: Ra mắt mô hình chia sẻ giao dịch (Transaction-based) trong môi giới nhân sự, hoặc phát hành Thuê bao (Subscription) cho Doanh nghiệp IT vào tuyển dụng nhân tài đã được audit qua hệ thống đo lường của IOC.
+
+### 9.2. Cơ cấu chi phí
+
+Mô hình hiện tại của IOC là sự giao thoa giữa Dịch vụ (sức người) và Nền tảng (công nghệ). Do đó, cơ cấu chi phí được phân bổ chủ yếu vào năng lực vận hành thực chiến và xây dựng rào cản nền tảng Data:
+
+*   **1. Chi phí Vận hành Dịch vụ & Chuyên gia (COGS - Cost of Goods Sold):** Đây là khoản ngân sách lớn nhất và trọng yếu nhất ở giai đoạn đầu. Bao gồm tiền lương/thù lao cho đội ngũ Mentor, Chuyên gia (Reviewer) để chấm điểm Daily Report, điều phối dự án và trực tiếp Training / Mock Interview với sinh viên. Đây là nguồn chi để đảm bảo "Giá trị cốt lõi" của trải nghiệm đi làm thật.
+*   **2. Chi phí R&D và Hạ tầng Công nghệ (Product & Data Infrastructure):** Chi phí phát triển, bảo trì Nền tảng số hóa (JIRA-like Dashboard) và vận hành hệ thống Server. Một khoản đầu tư lớn nằm ở chi phí triển khai **AI Project Operator** (chi trả API/LLMs cho khả năng sinh tự động Test Case, Review Code và tự động hoá tái sử dụng Project Templates).
+*   **3. Chi phí Marketing & Sales:** Bao gồm ngân sách quảng bá thương hiệu (SEO, PR), tổ chức các chuỗi Workshop định hướng nghề nghiệp, trả phí hoa hồng đại lý (KOLs sinh viên) và duy trì đội ngũ B2B Sales làm việc với khối Giáo dục truyền thống.
+*   **4. Chi phí Quản lý doanh nghiệp (G&A):** Bao gồm văn phòng vận hành trực tiếp, chi phí pháp lý kế toán và bộ máy quản trị nhân sự nội bộ.
+
+### 9.3. Lợi nhuận kỳ vọng
+
+**a. Mục tiêu ban đầu của dự án**
+Trong giai đoạn MVP và năm đầu tiên, **mục tiêu ưu tiên của dư án không phải là tối đa hóa lợi nhuận (Profit Maximization) theo hướng vắt kiệt khách hàng**. Mục tiêu tối thượng là đạt được **Product-Market Fit (PMF)** và xây dựng **Data Moat (Rào cản dữ liệu)** kết nối mật thiết giữa sinh viên - nhà trường. Việc duy trì chất lượng ngặt nghèo đòi hỏi lượng thời gian khổng lồ của Mentor khiến biên lợi nhuận gộp ban đầu mỏng, nhưng điều này là bắt buộc để chứng minh Tỷ lệ có việc làm (% Employment Rate) đúng như cam kết, thiết lập uy tín vững chắc không thể bị thay thế trên thị trường.
+
+**b. Dự định và biên lợi nhuận tương lai**
+*   **Giai đoạn mở rộng (Scale-up):** Khi Trụ cột AI đạt độ chín, công nghệ thay thế đắc lực quy trình hậu kiểm của Mentor, chi phí cấu thành (COGS) trên mỗi mô-đun sinh viên sẽ giảm đáng kể trong khi chất lượng đánh giá không đổi. Lúc này, tỷ suất biên lợi nhuận gộp (Gross Margin) dự kiến được kỳ vọng rơi vào khoảng **30% - 40%**.
+*   **Giai đoạn trưởng thành trọn vẹn (Talent Ecosystem):** Lợi nhuận ròng của dự án sẽ tăng vọt mạnh mẽ thông qua dòng suối doanh thu từ khối Doanh nghiệp tuyển dụng B2B. Thu lại trái ngọt hoàn toàn dựa trên chính tệp Database ứng viên chuẩn chỉnh mà hệ thống đã dày công thẩm định qua các năm, với tỷ suất chi phí cận biên gần như bằng 0 trong mảng kết nối việc làm này.
+
+### 9.4. Dự phóng Doanh thu 2026 (Mục tiêu: 2,6 Tỷ VNĐ)
+
+Dựa trên dữ liệu thực tế của năm 2025 (năm thử nghiệm - Validation Phase) với quy mô **~300 sinh viên B2B** (biên độ giá ủy thác 2-4 triệu VNĐ/bạn) và **13 sinh viên B2C** (gói tiêu chuẩn 4 triệu VNĐ), tổng doanh thu năm ngoái đã đạt hơn 950 triệu VNĐ dù chưa được chuẩn hóa toàn diện quy trình Truyền thông & Bán hàng.
+
+Bước sang năm 2026, để đạt được mục tiêu tăng trưởng doanh thu lên mốc **2.600.000.000 VNĐ (2,6 Tỷ VNĐ)**, chiến lược sẽ tập trung vào việc nhân đôi sản lượng cung ứng đối tác nhà trường (B2B) nhằm tạo doanh số nền tảng, và đẩy lực mạnh mẽ vào khai thác phễu sinh viên cá nhân (B2C) để tối ưu biên lợi nhuận.
+
+**a. Bảng cơ cấu phân bổ doanh thu kỳ vọng 2026:**
+
+| Phân khúc & Khách hàng | Loại Gói Dịch vụ | Đơn giá trung bình | Chỉ tiêu Volume | Tổng Doanh thu (VNĐ) | Tỷ trọng |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **B2B (Trường ĐH/Khoa CNTT)** | Ủy thác thực tập trọn gói | 3.000.000đ | **600** sinh viên | 1.800.000.000đ | ~ 69,2% |
+| **B2C (Sinh viên tự do)** | Gói Tiêu chuẩn | 4.000.000đ | **100** sinh viên | 400.000.000đ | ~ 15,4% |
+| **B2C (Sinh viên tự do)** | Gói Cao cấp | 8.000.000đ | **35** sinh viên | 280.000.000đ | ~ 10,8% |
+| **B2C (Sinh viên tự do)** | Gói Cơ bản | 1.500.000đ | **80** sinh viên | 120.000.000đ | ~ 4,6% |
+| **TỔNG CỘNG MỤC TIÊU 2026** | | | **815 sinh viên** | **2.600.000.000đ** | **100%** |
+
+**b. Tính khả thi của chiến lược cán mốc 2,6 Tỷ:**
+1.  **Mảng B2B (Mũi nhọn nền tảng - Đóng góp ~70% doanh thu):** Năm 2025 dự án đã chứng minh năng lực phục vụ mượt mà 300 sinh viên B2B. Việc tăng trưởng x2 lên 600 sinh viên trong năm 2026 (tương đương việc ký kết triển khai thực tiễn thành công thêm 2-3 khoa CNTT quy mô vừa) là hoàn toàn nằm trong tầm tay, nhất là khi hệ thống Platform đã được nâng cấp ổn định và dự án đang có Data, Proof of Concept rất thành công từ năm ngoái làm vũ khí đi đàm phán cùng các khoa CNTT.
+2.  **Mảng B2C (Đòn bẩy doanh thu - Tăng trưởng x16 lần so với năm ngoái):** Dù 2025 chỉ có 13 tài khoản B2C mở gói tiêu chuẩn, nguyên nhân chính là sản phẩm chưa được Marketing đánh trúng tệp. Năm 2026, nhờ bệ phóng có sẵn 600 sinh viên từ B2B (tạo mạng lưới truyền miệng Word-Of-Mouth cực mạnh trong cộng đồng), kết hợp tung ngân sách vào kênh phân phối qua Micro-Influencers/KOLs, mục tiêu chốt sales được tổng cộng **215 sinh viên B2C có trả phí** ở 3 gói là vô cùng thận trọng. Với thị trường hàng năm đào thải 60.000 sinh viên công nghệ, con số 215 tài khoản OJT chỉ chiếm một phần thập phân nhỏ nhoi (~0.35%) - cho thấy dung lượng thị trường còn bao la và rất dễ để đạt được định mức này một khi chiến dịch được chạy đúng nhịp.
