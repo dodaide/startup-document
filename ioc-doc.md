@@ -247,12 +247,9 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 
 ---
 
-### 3.4. Phân khúc cơ hội & Đề xuất giá trị (Value Proposition Canvas)
+### 3.4. Phân khúc cơ hội & Hồ sơ Khách hàng (Customer Profile)
 
-Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT & Khủng hoảng Đo lường"** đã được xác định ở Mục 2.1, hoạt động của IOC hoàn thiện "Hạt nhân chiến lược" (Kernel of Strategy) của Richard Rumelt bằng cách kết hợp với khung Value Proposition Canvas (Alexander Osterwalder) và Ma trận Tăng trưởng JTBD để thiết lập các bước tiếp theo:
-
-*   **Chính sách định hướng (Guiding Policy):** Áp dụng **Chiến lược Khác biệt hóa (Differentiation Strategy)** thông qua mô hình **"Hệ sinh thái Dịch vụ & Platform đa diện" (Multi-sided Service Platform)**. Gắn liền với định vị cốt lõi là một đơn vị cung ứng dịch vụ quản trị - vận hành thực tập trọn gói (Managed Internship Service) kết hợp nền tảng EdTech, IOC tập trung giải quyết triệt để sự bế tắc OJT bằng cách trực tiếp cung cấp hệ thống và quy trình thực tập thực chiến.
-*   **Hành động nhất quán (Coherent Actions):** Ứng dụng phương pháp Tính điểm cơ hội (Opportunity Algorithm) để nhận diện phân khúc. Mặc dù ở giai đoạn đầu tập trung vào xác định định tính từ đội ngũ chuyên gia, nền tảng vẫn hướng đến đáp ứng các **Kết quả chưa được đáp ứng tốt (Underserved Outcomes)**. Tiếp đó, hiện thực hóa chính sách thông qua **Value Map (Bản đồ Giá trị)**, đảm bảo nguyên tắc Fit (Phù hợp) 1:1 với Customer Profile.
+Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT & Khủng hoảng Đo lường"** đã được xác định ở Mục 2.1, hoạt động của IOC ứng dụng phương pháp Tính điểm cơ hội (Opportunity Algorithm) để nhận diện phân khúc. Mặc dù ở giai đoạn đầu tập trung vào xác định định tính từ đội ngũ chuyên gia, nền tảng vẫn hướng đến đáp ứng các **Kết quả chưa được đáp ứng tốt (Underserved Outcomes)** thông qua việc khắc họa chi tiết Hồ sơ Khách hàng (Customer Profile).
 
 #### 3.4.1. CHIẾN LƯỢC B2C (SINH VIÊN): "CAREER SURVIVAL KIT" & "PREMIUM CERTIFICATION"
 *Đối tượng: Sinh viên năm cuối, yếu hoặc mất gốc thực tập sinh tự do, và sinh viên cần hoàn thành tiêu chuẩn thực tập của trường.*
@@ -278,16 +275,6 @@ Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT & Khủng hoảng 
 *   **Does:** Đành chấp nhận làm dự án lặt vặt để đủ điểm, tự tìm kiếm dự án ngoài để vớt vát lại CV.
 *   **Feels:** Cực kỳ áp lực, tự ti khi so sánh với bạn bè, hoang mang sợ hãi khi đọc JD, thất vọng vì không được code thật.
 
-**2. Bản đồ Giá trị (Value Map) - Giải pháp Khớp nối (Fit) 1:1:**
-*Core JTBD: "Tích lũy kinh nghiệm làm việc thực tế để vượt ải CV và được tuyển dụng."*
-*Thông điệp: "Đừng để thiếu kinh nghiệm giết chết sự nghiệp của bạn."*
-
-| Yếu tố (Value Map) | Nội dung giải pháp đề xuất |
-| :--- | :--- |
-| **Sản phẩm (Products & Services)** | 3 gói dịch vụ lộ trình: Dự án Cơ bản -> Bootcamp Chuyên sâu -> Thực tập có lương. |
-| **Pain Relievers (Giải pháp giảm đau)** | • *Giải quyết P1 & P2:* Hệ thống Audit kỹ năng đầu vào giúp giảm hoang mang định hướng.<br>• *Giải quyết P3:* Tổ chức Mock Interview định kỳ để giảm lo âu phỏng vấn.<br>• *Giải quyết P4:* Chấm dứt 100% rủi ro thực tập "rót nước pha trà" nhờ phân bổ Task chuẩn hóa, ép buộc tương tác dự án.<br>• *Giải quyết P5:* Xóa bỏ sự phụ thuộc vào thư giới thiệu cảm tính bằng cách trang bị năng lực tự bảo vệ hồ sơ. |
-| **Gain Creators (Nhân tố tạo Lợi ích)** | • *Đạt được G1 & G2:* Hoàn thiện tối thiểu 2 Project chuẩn doanh nghiệp.<br>• *Đạt được G3:* Tăng tỷ lệ qua vòng ATS, rút ngắn 50% thời gian tìm việc.<br>• *Đạt được G4:* Cung cấp đủ Giấy chứng nhận và dấu mộc hợp lệ, làm nền tảng để sinh viên tự tin thể hiện thực lực khi phỏng vấn. |
-
 #### 3.4.2. CHIẾN LƯỢC B2B (NHÀ TRƯỜNG): "MANAGED INTERNSHIP SERVICE" (DỊCH VỤ VẬN HÀNH THỰC TẬP TRỌN GÓI)
 *Đối tượng: Các trường ĐH/CĐ top dưới đang cần nâng cao vị thế đào tạo, gặp khó khăn tìm đối tác tiếp nhận sinh viên.*
 
@@ -307,16 +294,6 @@ Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT & Khủng hoảng 
 *   **Thinks:** "Nếu tỷ lệ có việc làm thấp thì năm sau lấy gì tuyển sinh?"
 *   **Does:** Phải đi "xin" từng suất thực tập, cuối kỳ thu về báo cáo sinh viên tự viết mà không biết sinh viên thực chất học được gì.
 *   **Feels:** Áp lực chỉ tiêu chất lượng, hoang mang khi doanh nghiệp phàn nàn sinh viên yếu, lo lắng về uy tín tuyển sinh.
-
-**2. Bản đồ Giá trị (Value Map) - Giải pháp Khớp nối (Fit) 1:1:**
-*Core JTBD: "Đảm bảo và minh chứng chất lượng đào tạo thực tiễn với xã hội."*
-*Thông điệp: "Chuẩn hóa quy trình thực tập, Vững tin chất lượng đầu ra."*
-
-| Yếu tố (Value Map) | Nội dung giải pháp đề xuất |
-| :--- | :--- |
-| **Sản phẩm (Products & Services)** | **Dịch vụ Vận hành Thực tập Thực chiến trọn gói (Managed Internship Service)**, chia theo 2 model (Miễn phí và Trả phí), được hỗ trợ bởi hệ thống Dashboard giám sát và báo cáo chất lượng tự động. |
-| **Pain Relievers (Giải pháp giảm đau)** | • *Giải quyết P6:* IOC đứng ra tổ chức các nhóm dự án thực tập cho sinh viên theo chuẩn doanh nghiệp.<br>• *Giải quyết P7:* Khung huấn luyện mô phỏng doanh nghiệp khắt khe của dịch vụ IOC đóng vai trò "bảo chứng chất lượng", giúp nhà trường tự tin khẳng định năng lực sinh viên với các liên kết doanh nghiệp. |
-| **Gain Creators (Nhân tố tạo Lợi ích)** | • *Đạt được G5 & G7:* Đóng gói mọi điểm chạm kỹ năng của sinh viên thành các Báo cáo Phân tích định lượng, làm minh chứng chất lượng đào tạo vững chắc phục vụ doanh nghiệp tuyển dụng.<br>• *Đạt được G6:* Dịch vụ trang bị cho sinh viên bản lĩnh tự chứng minh thực lực khi đi phỏng vấn, từ đó tác động trực tiếp thúc đẩy tỷ lệ có việc làm (Employment Rate). |
 
 ---
 
@@ -484,7 +461,29 @@ Với nền tảng là tìm cơ hội từ nhóm khách hàng "Chưa được đ
 *   **Tạo ra (Create):** Một dịch vụ "Đi làm thử - Trải nghiệm thật";
 
 ### 6.4. Đề xuất Giá trị & Định vị Sản phẩm (Value Proposition & Positioning)
-Dựa trên Value Proposition Canvas (ở Mục 3), IOC phân tách rõ ràng sự phù hợp (Fit):
+Từ việc thâu tóm "Hồ sơ Khách hàng - Customer Profile" ở Mục 3, kết hợp với các chính sách định hướng phía trên, IOC thiết kế **Bản đồ Giá trị (Value Map)** để tạo ra sự khớp nối (Fit) 1:1 trong Value Proposition Canvas.
+
+**A. Bản đồ giá trị (Value Map) B2C - "CAREER SURVIVAL KIT" & "PREMIUM CERTIFICATION"**
+*Core JTBD: "Tích lũy kinh nghiệm làm việc thực tế để vượt ải CV và được tuyển dụng."*
+*Thông điệp: "Đừng để thiếu kinh nghiệm giết chết sự nghiệp của bạn."*
+
+| Yếu tố (Value Map) | Nội dung giải pháp đề xuất |
+| :--- | :--- |
+| **Sản phẩm (Products & Services)** | 3 gói dịch vụ lộ trình: Dự án Cơ bản -> Bootcamp Chuyên sâu -> Thực tập có lương. |
+| **Pain Relievers (Giải pháp giảm đau)** | • *Giải quyết P1 & P2:* Hệ thống Audit kỹ năng đầu vào giúp giảm hoang mang định hướng.<br>• *Giải quyết P3:* Tổ chức Mock Interview định kỳ để giảm lo âu phỏng vấn.<br>• *Giải quyết P4:* Chấm dứt 100% rủi ro thực tập "rót nước pha trà" nhờ phân bổ Task chuẩn hóa, ép buộc tương tác dự án.<br>• *Giải quyết P5:* Xóa bỏ sự phụ thuộc vào thư giới thiệu cảm tính bằng cách trang bị năng lực tự bảo vệ hồ sơ. |
+| **Gain Creators (Nhân tố tạo Lợi ích)** | • *Đạt được G1 & G2:* Hoàn thiện tối thiểu 2 Project chuẩn doanh nghiệp.<br>• *Đạt được G3:* Tăng tỷ lệ qua vòng ATS, rút ngắn 50% thời gian tìm việc.<br>• *Đạt được G4:* Cung cấp đủ Giấy chứng nhận và dấu mộc hợp lệ, làm nền tảng để sinh viên tự tin thể hiện thực lực khi phỏng vấn. |
+
+**B. Bản đồ giá trị (Value Map) B2B - "MANAGED INTERNSHIP SERVICE"**
+*Core JTBD: "Đảm bảo và minh chứng chất lượng đào tạo thực tiễn với xã hội."*
+*Thông điệp: "Chuẩn hóa quy trình thực tập, Vững tin chất lượng đầu ra."*
+
+| Yếu tố (Value Map) | Nội dung giải pháp đề xuất |
+| :--- | :--- |
+| **Sản phẩm (Products & Services)** | **Dịch vụ Vận hành Thực tập Thực chiến trọn gói (Managed Internship Service)**, chia theo 2 model (Miễn phí và Trả phí), được hỗ trợ bởi hệ thống Dashboard giám sát và báo cáo chất lượng tự động. |
+| **Pain Relievers (Giải pháp giảm đau)** | • *Giải quyết P6:* IOC đứng ra tổ chức các nhóm dự án thực tập cho sinh viên theo chuẩn doanh nghiệp.<br>• *Giải quyết P7:* Khung huấn luyện mô phỏng doanh nghiệp khắt khe của dịch vụ IOC đóng vai trò "bảo chứng chất lượng", giúp nhà trường tự tin khẳng định năng lực sinh viên với các liên kết doanh nghiệp. |
+| **Gain Creators (Nhân tố tạo Lợi ích)** | • *Đạt được G5 & G7:* Đóng gói mọi điểm chạm kỹ năng của sinh viên thành các Báo cáo Phân tích định lượng, làm minh chứng chất lượng đào tạo vững chắc phục vụ doanh nghiệp tuyển dụng.<br>• *Đạt được G6:* Dịch vụ trang bị cho sinh viên bản lĩnh tự chứng minh thực lực khi đi phỏng vấn, từ đó tác động trực tiếp thúc đẩy tỷ lệ có việc làm (Employment Rate). |
+
+**Từ sự liên kết trên, IOC phân tách rõ ràng:**
 *   **Problem-Solution Fit:** Đảm bảo "Dịch vụ Vận hành Thực tập" thực sự giải quyết được Nỗi đau của Nhà trường (không quản lý được chuẩn đầu ra) và Lợi ích mong muốn của Sinh viên (có Portfolio kinh nghiệm).
 *   **Positioning (Định vị):**
     *   *Với B2C:* "IOC - Trạm trung chuyển thực chiến biến sinh viên lý thuyết thành Kỹ sư phần mềm Plug-and-Play sẵn sàng làm việc".
@@ -506,20 +505,23 @@ Thay vì rơi vào bẫy "Solution-first" (chỉ chăm chăm xây dựng tính n
 
 ### 7.1. Phương pháp luận Hình thành Giải pháp (Solution Design Methodology)
 
-Cấu trúc cốt lõi của IOC 2.0 bao gồm một **Dịch vụ Vận hành Thực tập Trọn gói (Managed Internship Service)** và một **Nền tảng Công nghệ Giáo dục (EdTech Platform)**. Việc lựa chọn và định hình 2 trụ cột này xuất phát từ quá trình đối chiếu với các khung lý thuyết cốt lõi (Module 5 & 6):
+Cấu trúc cốt lõi của IOC 2.0 bao gồm một **Dịch vụ Vận hành Thực tập Trọn gói (Managed Internship Service)** và một **Nền tảng Công nghệ Giáo dục (EdTech Platform)**. Thay vì phỏng đoán, việc lựa chọn mô hình lai này là kết quả của quá trình chắt lọc theo mô hình "Mở rộng và Thu hẹp" (Tư duy Thiết kế - Design Thinking):
 
-**1. Định hướng bởi Cây Cơ hội & Giải pháp (Opportunity Solution Tree - OST):**
-*   **Outcome (Kết quả mục tiêu):** Giải quyết dứt điểm "Sự bế tắc OJT", tăng tỷ lệ việc làm cho sinh viên và cung cấp bộ dữ liệu đánh giá chất lượng đầu ra chuẩn xác cho Nhà trường.
-*   **Opportunity (Rào cản cần vượt qua):** Sinh viên khát kinh nghiệm nhưng không vào được các dự án thật vì doanh nghiệp sợ rủi ro; Nhà trường cần theo dõi tiến độ nhưng không có công cụ đo lường thực tế.
-*   **Solution (Giải pháp được chọn):** IOC không cố gắng đi xin các doanh nghiệp cấp thêm suất thực tập. Thay vào đó, tự tay kiến tạo một **"Môi trường thực chiến giả lập"**. Cung cấp *Dịch vụ (Trụ cột 1)* để mang yếu tố chuyên gia (Mentor) trực tiếp kèm cặp dự án cường độ cao, và *Nền tảng (Trụ cột 2)* hệ thống hóa hàng trăm đầu việc thành các dashboard minh bạch.
+**1. Khám phá Giải pháp với Tư duy Phân kỳ (Divergent Thinking):**
+Để giải quyết dứt điểm "Sự bế tắc OJT" (Được định nghĩa từ Cây Cơ hội Giải pháp - OST), đội ngũ áp dụng các kỹ thuật Brainstorming để mở rộng tối đa các hướng tiếp cận, tránh lối mòn:
+*   *Ý tưởng 1 - Job Board/Platform tuyển dụng:* Chỉ tạo app nối CV sinh viên với công ty. 👉 *Mắc kẹt:* Sinh viên không đủ năng lực để công ty nhận.
+*   *Ý tưởng 2 - Nền tảng học trực tuyến (Pure EdTech):* Bán khóa học video lý thuyết. 👉 *Mắc kẹt:* Thị trường quá đỏ (Red Ocean), không tạo được rào cản đào tạo thực chiến.
+*   *Ý tưởng 3 - Trung tâm Offline (Pure Bootcamp):* Mở trung tâm dạy lập trình trực tiếp. 👉 *Mắc kẹt:* Chi phí vận hành vật lý (Capex) quá cao, bất khả thi để mở rộng quy mô (Scale) cho hàng ngàn sinh viên.
+*   *Ý tưởng 4 - Mô hình Lai (Managed Service + EdTech):* Ban quản lý dự án đóng vai "doanh nghiệp giả lập" cung cấp Mentor hướng dẫn, kết hợp dùng nền tảng số kiểm soát chất lượng từ xa.
 
-**2. Đánh giá Khả thi qua lăng kính DVF (Desirability, Feasibility, Viability):**
-Giải pháp được thiết lập không chỉ vì khách hàng mong muốn (Desirability - qua JTBD), mà còn được cân nhắc cẩn thận về:
-*   *Feasibility (Tính khả thi triển khai):* Bóc tách rõ thành phần Dịch vụ (dùng chuyên môn Mentor) và phần Nền tảng (dùng công nghệ). Công nghệ sẽ đóng vai trò là đòn bẩy công suất, tối ưu hóa thời gian chấm điểm của Mentor, giúp hệ thống có thể quản lý hàng ngàn sinh viên (Scale) thay vì chỉ vài chục người làm thủ công.
-*   *Viability (Tính hiệu quả kinh doanh):* Để đảm bảo sinh lời dài hạn, giải pháp được thiết kế thành cấu trúc rổ sản phẩm đa tầng (Service Tiers), từ "Trải nghiệm cơ bản" đến "Bootcamp giá trị cao", tối đa hóa doanh thu trên cả 2 khối khách hàng B2B và B2C.
+**2. Chốt Mô hình với Tư duy Hội tụ (Convergent Thinking):**
+Hàng loạt ý tưởng từ bước Phân kỳ được đưa qua lăng kính bảo chứng **DVF (Desirability, Feasibility, Viability)** kết hợp **Ma trận RICE** để đánh giá điểm số triển khai. Ý tưởng số 4 (Mô hình Lai) được chọn bởi thỏa mãn hoàn hảo cả 3 lăng kính:
+*   *Desirability (Sự mong muốn):* Khớp hoàn toàn với "Outcome" của OST: Sinh viên có được kỹ năng qua dự án thật có người dắt tay chỉ việc; Nhà trường có được công cụ giám sát đo lường minh bạch (Giải quyết Pain Points).
+*   *Feasibility (Tính khả thi triển khai):* Ứng dụng công nghệ phần mềm làm "đòn bẩy" tự động hóa các khâu giao việc/chấm điểm, giải thoát thời gian cho Mentor con người, giúp mô hình dịch vụ có thể hoạt động với quy mô lớn mà không gãy gánh.
+*   *Viability (Hiệu quả kinh tế):* Dễ dàng thiết kế cấu trúc sản phẩm thành các gói ngân sách đa tầng (Service Tiers), cho phép thu phí ở cả nhóm B2C (sinh viên tự do) và B2B (các hệ chất lượng cao của nhà trường).
 
-**3. Chiến lược Đổi mới & Trọn vẹn Giải pháp (Formulating the Ultimate Solution):**
-Dựa trên nguyên lý "Conceptualize the ultimate solution" của Tư duy Chiến lược Sản phẩm, thay vì chỉ tạo ra một tool chấm điểm rời rạc hay mở trung tâm dạy học thuần túy, IOC tích hợp thành một giải pháp "tất cả trong một". Nền tảng kết nối trực tiếp 4 mắt xích: Sinh viên - Chuyên gia (Mentor) - Nhà trường - và Bộ máy Vận hành IOC. Cách thiết kế này tạo ra một vòng khép kín từ lúc nhận sinh viên đến khi cấp chứng chỉ đầu ra, không tạo khoảng trống cho đối thủ thay thế.
+**3. Trọn vẹn Giải pháp (Formulating the Ultimate Solution):**
+Theo nguyên lý thiết kế "Ultimate Solution", IOC quyết định không làm một sản phẩm chắp vá mà tạo ra một "hệ sinh thái khép kín". Nền tảng lúc này sở hữu 4 mắt xích tương hỗ đồng thời: Sinh viên (thực thi) - Mentor (kiểm định) - Nhà trường (nhận KPI) - IOC (vận hành tổng). Cấu trúc vòng lặp chặt chẽ này tạo nên "hào nước kinh tế" chống lại sự sao chép của đối thủ.
 
 Dưới đây là chi tiết về 2 phần tử cấu thành nên giải pháp "Ultimate Solution" của IOC:
 
@@ -578,6 +580,29 @@ Dưới đây là chi tiết về 2 phần tử cấu thành nên giải pháp "
 #### d. Phân hệ Quản trị Vận hành IOC (Backoffice Admin)
 *   **Quản lý Kho Dự án (Project Templates):** Quản trị viên xây dựng và đóng gói các framework mẫu (Project Templates) để tự động hóa việc khởi tạo không gian dự án mới cho các nhóm sinh viên.
 *   **Quản lý Đối tác & Đối soát tài chính:** Cung cấp chức năng quản lý hợp đồng B2B với Trường học, và hệ thống đối soát khối lượng công việc (công đếm theo số logwork/review) hỗ trợ thanh toán chi phí cho đội ngũ Mentor.
+
+### 7.4. Luồng vận hành cốt lõi (The Core User Journey & Workflow)
+Để chuyển hóa khái niệm "Thực tập mô phỏng" thành hiện thực, hệ thống vận hành theo một **Vòng đời Thực tập tiêu chuẩn (Standard Internship Lifecycle)** khép kín:
+*   **Bước 1: Audit & Matching (Đánh giá & Ghép đội):** Sinh viên thực hiện bài đánh giá năng lực đầu vào (Skill Audit). Hệ thống tự động phân loại trình độ và ghép nhóm (Team matching) từ 4-5 người có kỹ năng bổ trợ nhau, đồng thời gán 1 Mentor chuyên môn phù hợp.
+*   **Bước 2: Onboarding & Sprint 0 (Hội nhập & Chuẩn bị):** Các nhóm nhận yêu cầu dự án (Requirement), thiết lập công cụ làm việc (Jira/Trello), setup môi trường code (Github/Gitlab) và làm quen với quy trình phát triển.
+*   **Bước 3: Agile Execution (Thực chiến cường độ cao):** Dự án được chia thành các Sprint kéo dài 2-3 tuần. Sinh viên tuân thủ nghiêm ngặt quy trình: Code -> Báo cáo tiến độ (Daily Standup) -> Gửi yêu cầu kiểm tra (Pull Request) -> Mentor Code Review -> Họp rút kinh nghiệm (Sprint Retrospective).
+*   **Bước 4: Final Evaluation (Nghiệm thu & Đóng gói Portfolio):** Mentor thực hiện chấm điểm chéo độc lập. Hệ thống tự động xuất Báo cáo Năng lực bằng biểu đồ véc-tơ (Radar chart), cấp Giấy chứng nhận hoàn thành có mộc doanh nghiệp, tạo nền tảng vững chắc để sinh viên ứng tuyển việc làm.
+
+### 7.5. Cơ chế Đảm bảo Chất lượng Mentor (Mentor Quality Assurance)
+Bởi vì chất lượng chuyên môn của Mentor là "Trái tim" định hình sự Khác biệt hóa của mô hình, hệ thống thiết lập một cơ chế kiểm soát chặt chẽ:
+*   **Tiêu chuẩn Tuyển chọn khắt khe:** Mentor phải là các kỹ sư (Middle/Senior) có ít nhất 2 năm kinh nghiệm thực tế, đang trực tiếp tham gia phát triển sản phẩm ở các công ty công nghệ.
+*   **Động lực Hợp tác bền vững:** Khác với việc thuê cộng tác viên, Mentor tham gia nền tảng vì 3 động lực chính: (1) Nguồn thu nhập tăng thêm tự chủ; (2) Xây dựng uy tín cá nhân (Personal branding) trong cộng đồng; (3) Được trao đặc quyền "sàng lọc sơ khai" những sinh viên xuất sắc nhất để tuyển thẳng về công ty của mình.
+*   **Hệ thống Giám sát SLA Tự động:** Nền tảng đo lường hiệu suất của Mentor theo thời gian thực (SLA - Service Level Agreement) để đảm bảo không có tình trạng "đem con bỏ chợ". Hệ thống tự động tracking: thời gian phản hồi tin nhắn của sinh viên, độ trễ khi duyệt Logwork, và tần suất để lại feedback chi tiết trong các dòng code (Comment PR).
+
+### 7.6. Bộ Chỉ số Đo lường Năng lực Định lượng (The Quantitative Metric System)
+Để cam kết cung cấp các báo cáo chuẩn AUN-QA cho nhà trường thay thế nạn giấy tờ "xin mộc ma", EdTech Platform đo lường sự tiến bộ qua 2 nhóm chỉ số phân tích dữ liệu chuyên sâu:
+*   **Chỉ số Năng lực Kỹ thuật (Hard-skill Tech Metrics):** Thống kê số lượng dòng code hợp lệ (Lines of Code), tỷ lệ sinh lỗi sau quy trình kiểm thử (Bug rate), tiến độ được duyệt Pull Request, và đánh giá mức độ thuần thục đối với từng Framework ngôn ngữ lập trình.
+*   **Chỉ số Thái độ & Kỹ năng Mềm (Agile & Soft-skill Metrics):** Tỷ lệ tuân thủ báo cáo Daily meeting đúng hạn, tốc độ và khối lượng nỗ lực hoàn thành tính năng (Velocity), điểm đánh giá độ tương tác chéo từ đồng đội (Peer review 360 độ).
+
+### 7.7. Ứng dụng AI để tối ưu Quy mô (AI & Scalability)
+Mô hình "1 Mentor kèm 1 nhóm" bằng sức người thuần túy sẽ đặt ngưỡng giới hạn cho việc nhân rộng (Scale) và làm căng thẳng biên lợi nhuận. Vì vậy, IOC thiết lập cấu trúc tích hợp AI làm trợ lý đắc lực cho Mentor:
+*   **AI Code Review:** Tích hợp Bot AI tự động rà quét các lỗi cú pháp (syntax errors), báo cáo hổng bảo mật cơ bản và chuẩn hóa quy tắc clean code trước khi đoạn mã được đi vào vòng kiểm tra của Mentor con người. (Ước tính tiết kiệm 50% thời gian review của Mentor).
+*   **AI Sentiment Report (Đánh giá Cảm xúc học tập):** AI xử lý ngôn ngữ tự nhiên (NLP) phân tích các báo cáo Logwork hằng ngày để phán đoán trạng thái tâm lý của sinh viên (đang bế tắc, tụt hậu hay tiến triển năng nổ). Từ đó gán cờ cảnh báo rủi ro đỏ (Red Flag) cho Admin của trường kịp thời can thiệp trước khi sinh viên nản chí bỏ cuộc.
 
 ---
 
