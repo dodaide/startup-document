@@ -52,6 +52,7 @@ Nút thắt sống còn của thị trường thực tập CNTT không chỉ là
 **Vấn đề chính:** Sinh viên thiếu phương thức chứng minh năng lực làm việc thực tế:
 *   Hàng ngàn CV tương tự nhau (Paradox of Choice nhắm vào Nhà tuyển dụng) khiến sinh viên giỏi cũng bị chìm nghỉm nếu không có bằng chứng từ dự án đã làm.
 *   **Thiếu chỗ thực tập thực chất:** Sinh viên thường bị đẩy vào các vị trí hành chính lặt vặt (photo tài liệu, hỗ trợ văn phòng...) vì doanh nghiệp không tin tưởng giao task dự án, dẫn đến lãng phí thời gian và không tích lũy được kinh nghiệm chuyên môn.
+*   **Kém kỹ năng giao tiếp và thấu hiểu thị trường:** Nhiều sinh viên có khả năng lập trình (làm được việc) nhưng khi đi phỏng vấn lại không biết cách trình bày để thuyết phục, do không hiểu nhà tuyển dụng thực sự cần gì. Thị trường cần một **kỹ sư thực thụ** với tư duy giải quyết vấn đề, chứ không chỉ cần một "thợ code" biết gõ khối lệnh.
 
 => **Kết luận Chiến lược:** Nếu không giải quyết được sự bế tắc "Ai đào tạo thực chiến?" và "Làm sao đo lường?" để sinh viên phát triển năng lực & kinh nghiệm, mọi nền tảng kết nối thực tập chỉ là một Job Board truyền thống và không thể giải quyết triệt để các nỗi đau trên.
 
@@ -126,7 +127,7 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 *Sinh viên "luyện công" để vượt qua vòng hồ sơ và phỏng vấn.*
 *   13. Giảm thiểu thời gian chuẩn bị CV/Portfolio (Tailoring time) **cho từng nhóm yêu cầu vị trí đặc thù**.
 *   14. Tăng tỷ lệ vượt qua vòng lọc hồ sơ tự động (ATS Pass rate) **tại các nền tảng tuyển dụng chuyên nghiệp**.
-*   15. Giảm "nỗi sợ phỏng vấn kỹ thuật" (Coding interview anxiety).
+*   15. Giảm "nỗi sợ phỏng vấn kỹ thuật" (Coding interview anxiety) và tăng khả năng trình bày tư duy giải quyết vấn đề (Engineering mindset) thay vì chỉ nói về dòng code.
 *   16. Tăng tốc độ ôn tập các kiến thức nền tảng (Knowledge refresh speed) **ở giai đoạn nước rút chuẩn bị đánh giá**.
 *   17. Giảm thiểu thời gian sẵn sàng môi trường lập trình (IDE, Github) **phục vụ hệ thống bài kiểm tra năng lực đầu vào**.
 *   18. Tăng sự sẵn sàng về tâm lý và tác phong chuyên nghiệp **bước vào vòng phỏng vấn trực tiếp**.
@@ -263,6 +264,7 @@ Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT & Khủng hoảng 
     - (P3 - Extreme Pain) Vô cùng áp lực và sợ hãi khi phải đối mặt với phỏng vấn chuyên môn.
     - (P4 - Extreme Pain) Lãng phí kỳ thực tập chỉ để "rót nước pha trà", "xách nước bổ cam" thay vì code dự án thực tế.
     - (P5 - Moderate Pain) Bị phụ thuộc thụ động vào sự ban phát cơ hội thực tập, hoặc phụ thuộc vào thư giới thiệu cảm tính.
+    - (P6 - Extreme Pain) Nghịch lý kỹ năng - giao tiếp: Có thể tự code được nhưng đi phỏng vấn bị trượt do không biết cách diễn đạt, không hiểu mong muốn của nhà tuyển dụng (nhà tuyển dụng cần "kỹ sư thực thụ" để giải quyết vấn đề, không phải "thợ code").
 *   **Gains (Lợi ích kỳ vọng):**
     - (G1 - Required Gain) Có ít nhất 1-2 Dự án (Project) hoàn chỉnh để đưa vào CV (Portfolio).
     - (G2 - Expected Gain) Được người có kinh nghiệm hướng dẫn và nâng cao kỹ năng.
@@ -358,10 +360,10 @@ Dựa trên Outcome trên, IOC đào sâu vào các vấn đề (Pain points) ch
 
 **3. Mở rộng Giải pháp với Tư duy Phân kỳ (Solutions via Divergent Thinking)**
 Để giải quyết các Opportunities, đội ngũ bắt đầu với nguyên tắc "Hoãn phán xét" (No Early Judgment), sử dụng Brainstorming và tư duy SCAMPER để liệt kê tối đa các mô hình tiềm năng:
-*   **Solution 1 - Nền tảng kết nối dịch vụ thực tập:** Đóng vai trò cấu nối sinh viên, nhà trường với các đơn vị cung cấp dịch vụ thực tập. Mọi dữ liệu thực tập từ đầu tới khi kết thúc đều được lưu trữ hoàn toàn tập trung trên nền tảng.
-*   **Solution 2 - Nền tảng thực tập trực tuyến:** Sinh viên tự lên hệ thống lập tài khoản và apply. Sau đó nền tảng sẽ sắp xếp nhóm, gán mentor, gán dự án để sinh viên bắt tay vào làm việc theo luồng trực tuyến.
-*   **Solution 3 - Dịch vụ thực tập (Trung tâm đào tạo):** Mở trung tâm Offline/Online để dạy lập trình chuyên môn và cho học viên giải các bài tập/dự án thực hành.
-*   **Solution 4 - Mô hình Lai (Managed Internship Service + EdTech Platform):** cung cấp môi trường dự án giả lập/thật, có chuyên gia Mentor hướng dẫn (nội bộ, CTV), kết hợp dùng nền tảng số hóa tự động các tác vụ lặp lại, kiểm soát và xuất báo cáo (Phần Platform).
+*   **Solution 1 - Nền tảng kết nối dịch vụ thực tập:** Đóng vai trò cấu nối sinh viên, nhà trường với các đơn vị cung cấp dịch vụ thực tập. Mọi dữ liệu thực tập từ đầu tới khi kết thúc đều được lưu trữ hoàn toàn tập trung trên nền tảng. 
+*   **Solution 2 - Nền tảng thực tập trực tuyến:** Sinh viên tự lên hệ thống lập tài khoản và apply. Sau đó nền tảng sẽ sắp xếp nhóm, gán mentor, gán dự án để sinh viên bắt tay vào làm việc theo luồng trực tuyến. (Giống Prep)
+*   **Solution 3 - Dịch vụ thực tập (Trung tâm đào tạo):** Mở trung tâm Offline/Online để dạy lập trình chuyên môn và cho học viên giải các bài tập/dự án thực hành. (Giống khóa Java BE của Rikkei Academy)
+*   **Solution 4 - Mô hình Lai (Managed Internship Service + EdTech Platform):** cung cấp môi trường dự án giả lập/thật, có chuyên gia Mentor hướng dẫn (nội bộ, CTV), kết hợp dùng nền tảng số hóa tự động các tác vụ lặp lại, kiểm soát và xuất báo cáo (Phần Platform). (Giống Teky)
 
 **4. Chọn lọc Giải pháp với Tư duy Hội tụ (Prioritization via Convergent Thinking)**
 Các ý tưởng được đưa vào "phễu hội tụ" để ưu tiên khách quan dựa trên dữ liệu định lượng:
@@ -514,7 +516,7 @@ Từ việc thâu tóm "Hồ sơ Khách hàng - Customer Profile" ở Mục 3, k
 | Yếu tố (Value Map) | Nội dung giải pháp đề xuất |
 | :--- | :--- |
 | **Sản phẩm (Products & Services)** | 3 gói dịch vụ lộ trình: Dự án Cơ bản -> Bootcamp Chuyên sâu -> Thực tập có lương. |
-| **Pain Relievers (Giải pháp giảm đau)** | • *Giải quyết P1 & P2:* Hệ thống Audit kỹ năng đầu vào giúp giảm hoang mang định hướng.<br>• *Giải quyết P3:* Tổ chức Mock Interview định kỳ để giảm lo âu phỏng vấn.<br>• *Giải quyết P4:* Chấm dứt 100% rủi ro thực tập "rót nước pha trà" nhờ phân bổ Task chuẩn hóa, ép buộc tương tác dự án.<br>• *Giải quyết P5:* Xóa bỏ sự phụ thuộc vào thư giới thiệu cảm tính bằng cách trang bị năng lực tự bảo vệ hồ sơ. |
+| **Pain Relievers (Giải pháp giảm đau)** | • *Giải quyết P1 & P2:* Hệ thống Audit kỹ năng đầu vào giúp giảm hoang mang định hướng.<br>• *Giải quyết P3 & P6:* Tổ chức Mock Interview định kỳ để giảm lo âu phỏng vấn, đồng thời rèn luyện tư duy giao tiếp và diễn đạt đúng ngôn ngữ thị trường (tư duy "kỹ sư" giải quyết vấn đề thay vì "thợ code").<br>• *Giải quyết P4:* Chấm dứt 100% rủi ro thực tập "rót nước pha trà" nhờ phân bổ Task chuẩn hóa, ép buộc tương tác dự án.<br>• *Giải quyết P5:* Xóa bỏ sự phụ thuộc vào thư giới thiệu cảm tính bằng cách trang bị năng lực tự bảo vệ hồ sơ. |
 | **Gain Creators (Nhân tố tạo Lợi ích)** | • *Đạt được G1 & G2:* Hoàn thiện tối thiểu 2 Project chuẩn doanh nghiệp.<br>• *Đạt được G3:* Tăng tỷ lệ qua vòng ATS, rút ngắn 50% thời gian tìm việc.<br>• *Đạt được G4:* Cung cấp đủ Giấy chứng nhận và dấu mộc hợp lệ, làm nền tảng để sinh viên tự tin thể hiện thực lực khi phỏng vấn. |
 
 **B. Bản đồ giá trị (Value Map) B2B - "MANAGED INTERNSHIP SERVICE"**
@@ -543,88 +545,79 @@ Thay vì dùng phễu (phễu sẽ rò rỉ và mất khách), IOC thiết kế 
 
 ---
 
-## 7. Giải pháp Dịch vụ & Trải nghiệm Nền tảng (Managed Service & Platform Solution)
+## 7. Giải pháp Dịch vụ & Nền tảng (Tiếp cận Lean & Tối ưu bằng Dữ liệu)
 
-Thay vì rơi vào bẫy "Solution-first" (chỉ chăm chăm xây dựng tính năng phần mềm theo giả định chủ quan), bộ giải pháp của IOC 2.0 được hình thành thông qua một quy trình phân tích chặt chẽ dựa trên các phương pháp luận Phát triển Sản phẩm Tinh gọn (Lean Product Development) và Kiểm chứng Giả thuyết (Hypothesis-Driven Development).
+Khác với việc thiết kế cấu trúc lý thuyết khổng lồ trước khi code, IOC 2.0 chấp nhận phương thức **Phát triển Tinh gọn (Lean Product Development)** với tinh thần: **"Làm trước, sửa sau"**. Chúng tôi đã nhanh chóng "xây nhanh - chạy thật" dự án trên quy trình thực tế dựa trên những kinh nghiệm và hiểu biết ban đầu (những gì cho là đúng). 
 
-### 7.1. Trụ cột 1: Dịch vụ Vận hành Thực tập Thực chiến (The Managed Service)
-Đây là "trái tim" của giải pháp, tập trung giải quyết trực tiếp sự bế tắc trong khâu On-the-Job Training (OJT). Thay vì để sinh viên tự bơi ở doanh nghiệp với các công việc lặt vặt, IOC đứng ra tổ chức toàn bộ môi trường và cung cấp nhân sự chuyên môn để huấn luyện thực chiến. Để đáp ứng đặc thù của 2 nhóm khách hàng lõi, giải pháp dịch vụ được phân cấp thành **Các Gói Trải nghiệm (Service Tiers)** riêng biệt:
+Chuyển sang giai đoạn hiện tại, chiến lược phát triển sản phẩm của chúng tôi xoay trục hoàn toàn sang việc **hệ thống hóa các tính năng hiện có, gán các chỉ số đo lường (Metrics định lượng)** và tiến hành tối ưu theo vòng lặp **Build - Measure - Learn**. Dưới đây là phương thức cấu trúc lại Nền tảng thành các giả thuyết (Hypotheses) để theo dõi và tinh chỉnh:
 
-#### A. Nhóm Dịch vụ B2B (Dành cho Nhà trường / Khoa CNTT)
-*Giải pháp giúp Nhà trường số hóa và nâng cao chất lượng thực tập, có kết quả minh bạch, có thể đo lường, giảm tải cho bộ máy giáo vụ và giảng viên.*
+### 7.1. Trụ cột 1: Các Gói Dịch vụ (Mô hình kinh doanh làm Giả thuyết)
+Thay vì là những gói dịch vụ tĩnh, đây là các "Mô hình thử nghiệm" để tìm ra Product-Market Fit và thiết lập Tỷ suất lợi nhuận (Unit Economics).
 
-*   **B2B Gói 1: Hợp tác Toàn diện (Miễn phí)**
-    *   *Đối tượng:* Các trường ĐH/CĐ cần giải pháp thực tập chuẩn hóa cho sinh viên mà không phát sinh chi phí từ phía nhà trường.
-    *   *Giải pháp cung cấp:* Sinh viên tham gia trải nghiệm dự án của IOC. Nhà trường được cấp tài khoản phụ trách (Dashboard) giám sát sinh viên đi thực tập hoàn toàn miễn phí. Khung chương trình đã được IOC cấu trúc và thiết kế "may đo" kỹ lưỡng để khớp với các chuẩn đầu ra chung.
-    *   *Giá trị lõi:* Dữ liệu báo cáo chuẩn hóa, triệt tiêu nạn "thực tập ma", tạo minh chứng chất lượng rõ ràng mà không tốn ngân sách từ phía nhà trường.
+#### A. Nhóm B2B - Thử nghiệm mô hình hợp tác với Nhà trường
+*(Chương trình chi tiết thường là theo thỏa thuận giữa doanh nghiệp và nhà trường, tuy nhiên cơ bản sẽ gồm các nội dung cốt lõi sau)*
 
-*   **B2B Gói 2: Ủy thác Vận hành Trọn gói (2.000.000 VNĐ - 4.000.000 VNĐ / sinh viên)**
-    *   *Đối tượng:* Các hệ đào tạo chất lượng cao (CLC), chương trình liên kết quốc tế, hoặc các Khoa muốn đầu tư ngân sách để đảm bảo đầu ra tinh hoa.
-    *   *Giải pháp cung cấp:* IOC "thầu" toàn bộ kỳ thực tập. Sinh viên được trải nghiệm tương đương khóa huấn luyện Bootcamp chuyên sâu. Cung cấp **đội ngũ Senior Mentor** kèm cặp 1:1, code review mỗi ngày. Các Project được thiết lập chuyên biệt với áp lực cường độ cao sát thực tế doanh nghiệp.
-    *   *Giá trị lõi:* Đảm bảo 100% sinh viên được huấn luyện chuyên môn sâu, thiết lập rào cản chất lượng đào tạo, giữ vững vị thế thương hiệu tuyển sinh của trường.
+*   **B2B Gói 1: Ủy thác Thực tập Trọn gói (2.000.000đ – 4.000.000đ / sinh viên)**
+    *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng.
+    *   *Nội dung chương trình:* Sinh viên được đào tạo ban đầu về công nghệ, quy trình. Sau đó, được tham gia dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn sát sao của Mentor.
+    *   *Quyền lợi nâng cao:* Được tham gia 1-2 lần Mock Interview (ở đầu và cuối kỳ). Đặc biệt, **ở mức 4.000.000đ**, sinh viên được làm thử dự án thật *(là một dự án thật của doanh nghiệp, có các sprint thật, cho phép sinh viên join vào làm thử từ 1 sprint nào đó)*.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Chuyển đổi (Conversion Rate)** – Phần trăm ngân sách nhà trường / hệ CLC sẵn sàng chi trả để đảm bảo chất lượng đầu ra.
 
-#### B. Nhóm Dịch vụ B2C (Dành cho Sinh viên tự do)
-*Giải pháp giúp sinh viên "Panic Seekers" lấp đầy lỗ hổng kinh nghiệm, xây dựng Profile thực chiến để săn việc.*
+*   **B2B Gói 2: Trải nghiệm thực tập (Miễn phí)**
+    *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng.
+    *   *Nội dung chương trình:* Được đào tạo thông qua hệ thống tài nguyên có sẵn. Hành động chủ yếu là làm các dự án giả lập đã hoàn thành, có sự hạn chế về thời lượng Mentor hướng dẫn.
+    *   *Quyền lợi:* Không được tham gia Mock Interview.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Chấp nhận (Acquisition Rate)** – Số lượng trường đại học ký kết đăng ký tham gia nền tảng.
 
-*   **B2C Gói 1: Trải nghiệm Dự án Cơ bản (Guided Project Experience)**
-    *   *Đối tượng:* Sinh viên năm 2-3 cần làm quen với Agile/Scrum, Git cơ bản, và cách vận hành một team làm phần mềm.
-    *   *Giải pháp cung cấp:* Sinh viên tham gia vào một dự án có sẵn mã nguồn nền móng. Công việc chính là clone dự án, xử lý các issue/bug dễ, làm quen với Jira/Trello. Mentor giám sát chủ yếu ở các buổi Sprint Planning và Sprint Review (tuần 1 lần).
-    *   *Giá trị lõi:* Có một dòng "Kinh nghiệm làm việc dự án nhóm" hợp lệ đưa vào CV.
+#### B. Nhóm B2C - Thử nghiệm Độ khao khát kinh nghiệm của Sinh viên
 
-*   **B2C Gói 2: Huấn luyện Chuyên sâu Thực chiến (Intensive Bootcamp)**
-    *   *Đối tượng:* Sinh viên năm cuối, sinh viên trái ngành chuyển sang IT thiếu kinh nghiệm thực tế trầm trọng, cần profile mạnh để xin việc.
-    *   *Giải pháp cung cấp:* Cường độ như đi làm Full-time (Bootcamp). Sinh viên được giao phát triển các tính năng phức tạp trên dự án thực tế giả lập. Quá trình làm việc có báo cáo Daily Standup, Mentor theo sát như Tech Lead, Code Review từng dòng lệnh và ép sửa lỗi theo Best Practices. Liên tục có Mock Interview.
-    *   *Giá trị lõi:* Lột xác năng lực lập trình. Sở hữu một Portfolio "nặng ký" gồm 2-3 dự án có tính thương mại cao, tự tin phỏng vấn ở các công ty Top.
+*   **B2C Gói 1: Gói cao cấp (8.000.000đ)**
+    *   *Hình thức & Thời hạn:* Tuyệt đối Offline kéo dài trong 4.5 tháng.
+    *   *Nội dung chương trình:* Được đào tạo về công nghệ, quy trình một cách bài bản và chi tiết hơn. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
+    *   *Trải nghiệm thực chiến:* Sinh viên được làm thử dự án thật *(là một dự án thật, có các sprint thật, cho các bạn join vào làm thử từ 1 sprint nào đó)*.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Có việc làm (Placement Rate)**.
 
-*   **B2C Gói 3: Thực tập có Lương / Cam kết Việc làm (Placement / Return Offer)**
-    *   *Đối tượng:* Sinh viên xuất sắc đã qua vòng Test năng lực/Phỏng vấn đầu vào gắt gao.
-    *   *Giải pháp cung cấp:* Sinh viên code trực tiếp trên sản phẩm (Real Project) đang chạy thực tế của mạng lưới doanh nghiệp đối tác (Outsource) của IOC. Mentor chính là người của công ty đối tác. IOC đóng vai trò quản lý tiến độ và chấm điểm năng lực.
-    *   *Giá trị lõi:* Có phụ cấp (Allowance) trong quá trình thực tập. Cơ hội nghiễm nhiên nhận thư mời làm việc (Return Offer) trở thành nhân viên chính thức nếu vượt qua kỳ kiểm tra tiến độ cuối cùng.
+*   **B2C Gói 2: Gói tiêu chuẩn (4.000.000đ)**
+    *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng.
+    *   *Nội dung chương trình:* Được đào tạo về công nghệ và quy trình làm việc nền tảng. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
+    *   *Trải nghiệm thực chiến:* Sinh viên được làm thử dự án thật *(là một dự án thật, có các sprint thật, cho các bạn join vào làm thử từ 1 sprint nào đó)*.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Hoàn thành (Completion Rate)**.
 
-### 7.2. Trụ cột 2: Nền tảng Công nghệ & Đo lường (The EdTech Platform)
-Để duy trì dịch vụ vận hành chặt chẽ với quy mô hàng ngàn sinh viên, đồng thời đáp ứng yêu cầu khắt khe của trường Đại học, IOC sở hữu một nền tảng phần mềm đóng vai trò là "không gian làm việc số" và "bộ máy đo lường minh bạch". Nền tảng bao gồm 4 phân hệ (Portal) tương tác chặt chẽ cùng nhau:
+*   **B2C Gói 3: Gói cơ bản (1.500.000đ)**
+    *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng.
+    *   *Nội dung chương trình:* Chủ yếu tự đào tạo thông qua tài nguyên có sẵn trên nền tảng. Sinh viên tự làm lại các dự án giả lập đã hoàn thành từ khóa trước và bị hạn chế sự tương tác với Mentor hướng dẫn.
+    *   *Quyền lợi:* Không được tham gia Mock Interview.
+    *   *Mục tiêu đo lường (Metrics):* **Tỷ lệ Drop-off** – Đo lường thời điểm rơi rụng của sinh viên khi gặp Bug khó trong quá trình tự vận hành.
 
-#### a. Phân hệ Sinh viên (Student Workspace - B2C)
-*   **Công cụ làm việc hàng ngày (Daily Operation):** Cung cấp không gian làm việc mô phỏng doanh nghiệp để nhận báo cáo task, submit link Pull Request, và khai báo tiến độ hằng ngày (Daily Logwork).
-*   **Hồ sơ Năng lực Động (Dynamic Portfolio):** Tự động tổng hợp dữ liệu làm việc để vẽ biểu đồ năng lực kỹ thuật, minh chứng sinh viên đã code kiến trúc gì, giải quyết bao nhiêu issue, thành thạo framework nào thực sự.
-*   **Khu vực Hội nhập (Onboarding):** Cung cấp tài liệu mô tả yêu cầu dự án để sinh viên nhanh chóng nắm bắt bối cảnh trước khi lao vào "thực chiến".
+### 7.2. Trụ cột 2: Hệ thống Nền tảng (Bộ máy Thu thập Dữ liệu Hành vi)
+Hệ thống 4 phân hệ hiện tại ở Platform V1.0 không được sinh ra để trình diễn tính năng, mà được sử dụng như một "máy đo lường" hành vi người dùng (Behavioral Analytics) để giúp rà soát vòng đời thực tập.
+
+#### a. Phân hệ Sinh viên (Student Workspace)
+*   *Chức năng:* Không gian Daily Logwork và submit Pull Request.
+*   *Gán đo lường (Metrics):* **Thời gian hoàn thành Task (Time-to-Resolve)** và **Tần suất Logwork (Daily Active User)**. Nếu số liệu cho thấy sinh viên tốn quá nhiều thời gian để nộp Logwork, chúng tôi sẽ đơn giản hóa UI/UX để giảm ma sát giao diện.
 
 #### b. Phân hệ Chuyên gia (Mentor Workspace)
-*   **Quản lý Nhóm Thực tập (Group Management):** Quan sát danh sách, tiến độ của các nhóm và từng cá nhân được phụ trách.
-*   **Công cụ Ghi nhận & Chấm điểm (Review & Scoring):** Giao diện thao tác tối ưu giúp Mentor duyệt logwork hằng ngày (Approve/Reject), chấm điểm báo cáo định kỳ, và nhập nhận xét chi tiết (Feedback) một cách nhanh chóng nhất, giảm thiểu gánh nặng hành chính.
-*   **Hệ thống Cảnh báo (Escalation):** Nhận cảnh báo ngay lập tức khi phát hiện sinh viên vắng mặt, trễ tiến độ nhiều ngày hoặc chất lượng mã nguồn vi phạm nghiêm trọng.
+*   *Chức năng:* Giao diện duyệt logwork (Approve/Reject) và chấm điểm định kỳ.
+*   *Gán đo lường (Metrics):* **SLA Phản hồi (Review Turnaround Time)**. Đây là rào cản chí mạng; nếu thời gian chờ Mentor duyệt bài bị kéo dài, hệ thống sẽ tự động alert để tối ưu sức người (Unit Cost), hoặc thiết lập quy trình nhắc nhở hiệu quả hơn.
 
-#### c. Phân hệ Nhà trường (University Dashboard - B2B)
-*   **Quản lý Báo cáo Toàn cảnh (Batch Management):** Quản lý quy mô lớn danh sách sinh viên thực tập, theo dõi trạng thái phân bổ vào luồng dự án.
-*   **Giám sát Thời gian thực (Real-time Early Warning):** Dashboard trực quan giúp giảng viên (Admin khoa) nhìn thấy ngay những "tín hiệu đỏ" - sinh viên có nguy cơ rớt môn (không tham gia, bị mentor đánh trượt) để kịp thời can thiệp nhắc nhở.
-*   **Báo cáo Chất lượng Đào tạo (Quality Reports):** Số hóa và xuất các báo cáo minh chứng định lượng chi tiết, phục vụ công tác đánh giá chất lượng sinh viên minh bạch. Chấm dứt triệt để nạn sinh viên đi "xin dấu mộc" thực tập ma.
+#### c. Phân hệ Nhà trường (University Dashboard) 
+*   *Chức năng:* Bảng điều khiển quản lý toàn cảnh sinh viên thực tập & cảnh báo đỏ.
+*   *Gán đo lường (Metrics):* **Tỷ lệ Tương tác của Giảng viên (Engagement Score)**. Đo số lần giảng viên đăng nhập để kiểm tra tiến độ, qua đó đánh giá xem dashboard này có thực sự tạo "An tâm" hay không, hoặc nó cần cảnh báo push-notification chủ động hơn.
 
-#### d. Phân hệ Quản trị Vận hành IOC (Backoffice Admin)
-*   **Quản lý Kho Dự án (Project Templates):** Quản trị viên xây dựng và đóng gói các framework mẫu (Project Templates) để tự động hóa việc khởi tạo không gian dự án mới cho các nhóm sinh viên.
-*   **Quản lý Đối tác & Đối soát tài chính:** Cung cấp chức năng quản lý hợp đồng B2B với Trường học, và hệ thống đối soát khối lượng công việc (công đếm theo số logwork/review) hỗ trợ thanh toán chi phí cho đội ngũ Mentor.
+#### d. Phân hệ Quản trị (Backoffice Admin)
+*   *Chức năng:* Quản lý Project Templates và đối soát công việc Mentor.
+*   *Gán đo lường (Metrics):* **Thời gian Khởi tạo (Setup Time)**. Tối ưu khung giờ vận hành tự động để một nhóm sinh viên tham gia hệ thống lập tức có ngay môi trường.
 
-### 7.3. Luồng vận hành cốt lõi (The Core User Journey & Workflow)
-Để chuyển hóa khái niệm "Thực tập mô phỏng" thành hiện thực, hệ thống vận hành theo một **Vòng đời Thực tập tiêu chuẩn (Standard Internship Lifecycle)** khép kín:
-*   **Bước 1: Audit & Matching (Đánh giá & Ghép đội):** Sinh viên thực hiện bài đánh giá năng lực đầu vào (Skill Audit). Hệ thống tự động phân loại trình độ và ghép nhóm (Team matching) từ 4-5 người có kỹ năng bổ trợ nhau, đồng thời gán 1 Mentor chuyên môn phù hợp.
-*   **Bước 2: Onboarding & Sprint 0 (Hội nhập & Chuẩn bị):** Các nhóm nhận yêu cầu dự án (Requirement), thiết lập công cụ làm việc (Jira/Trello), setup môi trường code (Github/Gitlab) và làm quen với quy trình phát triển.
-*   **Bước 3: Agile Execution (Thực chiến cường độ cao):** Dự án được chia thành các Sprint kéo dài 2-3 tuần. Sinh viên tuân thủ nghiêm ngặt quy trình: Code -> Báo cáo tiến độ (Daily Standup) -> Gửi yêu cầu kiểm tra (Pull Request) -> Mentor Code Review -> Họp rút kinh nghiệm (Sprint Retrospective).
-*   **Bước 4: Final Evaluation (Nghiệm thu & Đóng gói Portfolio):** Mentor thực hiện chấm điểm chéo độc lập. Hệ thống tự động xuất Báo cáo Năng lực bằng biểu đồ véc-tơ (Radar chart), cấp Giấy chứng nhận hoàn thành có mộc doanh nghiệp, tạo nền tảng vững chắc để sinh viên ứng tuyển việc làm.
+### 7.3. Luồng vận hành lõi: Quy trình "Sai thì Sửa" liên tục
+Vòng đời thực tập tiêu chuẩn (Audit -> Onboarding -> Sprint Execution -> Evaluation) không dừng lại ở một khung vận hành tĩnh, mà trở thành **Hệ thống Thu thập Phản hồi (Feedback Loop)** khép kín:
+*   Chúng tôi sử dụng thuật toán ghép Team ở **Bước 1**, rồi đo lường sự gắn kết và lượng block code ở **Bước 3 (Agile Execution)**.
+*   Kết quả năng lực ở **Bước 4 (Evaluation)** sẽ ngay lập tức trả về hệ thống số liệu trung tâm để từ đó công ty tự đưa ra định hướng tinh chỉnh (Sửa đổi độ khó Project Template, thanh lọc Mentor, hoặc đổi bài test Audit cho kỳ sau).
 
-### 7.4. Cơ chế Đảm bảo Chất lượng Mentor (Mentor Quality Assurance)
-Bởi vì chất lượng chuyên môn của Mentor là "Trái tim" định hình sự Khác biệt hóa của mô hình, hệ thống thiết lập một cơ chế kiểm soát chặt chẽ:
-*   **Tiêu chuẩn Tuyển chọn khắt khe:** Mentor phải là các kỹ sư (Middle/Senior) có ít nhất 2 năm kinh nghiệm thực tế, đang trực tiếp tham gia phát triển sản phẩm ở các công ty công nghệ.
-*   **Động lực Hợp tác bền vững:** Khác với việc thuê cộng tác viên, Mentor tham gia nền tảng vì 3 động lực chính: (1) Nguồn thu nhập tăng thêm tự chủ; (2) Xây dựng uy tín cá nhân (Personal branding) trong cộng đồng; (3) Được trao đặc quyền "sàng lọc sơ khai" những sinh viên xuất sắc nhất để tuyển thẳng về công ty của mình.
-*   **Hệ thống Giám sát SLA Tự động:** Nền tảng đo lường hiệu suất của Mentor theo thời gian thực (SLA - Service Level Agreement) để đảm bảo không có tình trạng "đem con bỏ chợ". Hệ thống tự động tracking: thời gian phản hồi tin nhắn của sinh viên, độ trễ khi duyệt Logwork, và tần suất để lại feedback chi tiết trong các dòng code (Comment PR).
+### 7.4. Phân định rạch ròi Bản MVP Hiện Tại và Định hướng "Scale"
+Để phòng rủi ro đầu tư quá trán (over-engineering), việc phát triển Dịch vụ & Nền tảng IOC tuân thủ nguyên tắc:
 
-### 7.5. Bộ Chỉ số Đo lường Năng lực Định lượng (The Quantitative Metric System)
-Để cam kết cung cấp các báo cáo chuẩn AUN-QA cho nhà trường thay thế nạn giấy tờ "xin mộc ma", EdTech Platform đo lường sự tiến bộ qua 2 nhóm chỉ số phân tích dữ liệu chuyên sâu:
-*   **Chỉ số Năng lực Kỹ thuật (Hard-skill Tech Metrics):** Thống kê số lượng dòng code hợp lệ (Lines of Code), tỷ lệ sinh lỗi sau quy trình kiểm thử (Bug rate), tiến độ được duyệt Pull Request, và đánh giá mức độ thuần thục đối với từng Framework ngôn ngữ lập trình.
-*   **Chỉ số Thái độ & Kỹ năng Mềm (Agile & Soft-skill Metrics):** Tỷ lệ tuân thủ báo cáo Daily meeting đúng hạn, tốc độ và khối lượng nỗ lực hoàn thành tính năng (Velocity), điểm đánh giá độ tương tác chéo từ đồng đội (Peer review 360 độ).
-
-### 7.6. Ứng dụng AI để tối ưu Quy mô (AI & Scalability)
-Mô hình "1 Mentor kèm 1 nhóm" bằng sức người thuần túy sẽ đặt ngưỡng giới hạn cho việc nhân rộng (Scale) và làm căng thẳng biên lợi nhuận. Vì vậy, IOC thiết lập cấu trúc tích hợp AI làm trợ lý đắc lực cho Mentor:
-*   **AI Code Review:** Tích hợp Bot AI tự động rà quét các lỗi cú pháp (syntax errors), báo cáo hổng bảo mật cơ bản và chuẩn hóa quy tắc clean code trước khi đoạn mã được đi vào vòng kiểm tra của Mentor con người. (Ước tính tiết kiệm 50% thời gian review của Mentor).
-*   **AI Sentiment Report (Đánh giá Cảm xúc học tập):** AI xử lý ngôn ngữ tự nhiên (NLP) phân tích các báo cáo Logwork hằng ngày để phán đoán trạng thái tâm lý của sinh viên (đang bế tắc, tụt hậu hay tiến triển năng nổ). Từ đó gán cờ cảnh báo rủi ro đỏ (Red Flag) cho Admin của trường kịp thời can thiệp trước khi sinh viên nản chí bỏ cuộc.
+*   **Platform V1.0 (Bản thu thập Data hiện tại):** Là bản "xây nhanh - chạy thật", tập trung hoàn toàn vào ghi nhận dữ liệu định lượng. Mọi nỗ lực thực thi của code base lúc này chỉ để trả lời: *Các luồng dịch vụ có thực sự mượt không? Giá trị trao đi có được chuyển hóa thành số liệu đo đếm được không?* Việc Scale hệ thống lớn hơn chỉ được diễn ra KHI VÀ CHỈ KHI các thông số này có tỷ lệ giữ chân user đủ tốt để không làm "thủng phễu" chi phí.
+*   **Product Vision (Viễn cảnh AI):** Tương lai dài hạn của "AI Code Review" hay "AI Phân tích Tâm lý" CHỈ được đầu tư R&D khi các chỉ số đo lường chỉ ra rằng con người (Mentor) đã kham hết tải (Scale Bottleneck). AI không phải là "tính năng trang trí", mà là một công cụ giúp đo lường, theo dõi sát sao, và đẩy tốc độ thu thập feedback từ đo lường bằng Ngày xuống bằng Phút.
 
 ---
 
