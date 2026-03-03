@@ -175,6 +175,7 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 *   45. Giảm sự hoài nghi của nhà tuyển dụng về tính thực tiễn của ứng viên.
 *   46. Tăng sự chủ động, giảm phụ thuộc vào sự giới thiệu việc làm/chỗ thực tập của nhà trường.
 *   47. Tăng khả năng nhận được dấu mộc xác nhận thực tập hợp lệ **để hoàn thành chương trình học bắt buộc**.
+*   48. Tăng khả năng thẩm thấu lý thuyết trên lớp nhờ việc được "thực tế hóa" các khái niệm thông qua quá trình tham gia dự án sớm.
 
 #### 3.3.2 Job map NHÓM B2B - NHÀ TRƯỜNG & KHOA CNTT (THE "ADMINISTRATOR" JOURNEY)
 *Mục tiêu: Quản lý chất lượng chuyên môn môn học, Bảo vệ uy tín sinh viên trường.*
@@ -351,7 +352,7 @@ Thay vì rơi vào bẫy "Solution-first" (chỉ chăm chăm xây dựng tính n
 
 **1. Xác định Kết quả mong muốn (Outcome)**
 Mọi quyết định thiết kế sản phẩm phải bắt đầu từ mục tiêu định lượng thay vì đầu ra tính năng (output):
-*   **Target Outcome:** Tăng tỷ lệ sinh viên CNTT có việc làm đúng chuyên ngành ngay sau khi ra trường từ mức trung bình 35% lên 60% ở các nhóm sử dụng nền tảng. Đồng thời, cung cấp hệ thống đo lường minh bạch để giải quyết triệt để tình trạng báo cáo "thực tập ma", tạo sự an tâm 100% cho các trường Đại học/Cao đẳng đối tác.
+*   **Target Outcome:** Tăng tỷ lệ sinh viên CNTT có việc làm đúng chuyên ngành ngay sau khi ra trường từ mức trung bình 35% lên 60% ở các nhóm sử dụng nền tảng. Đồng thời, cung cấp hệ thống đo lường minh bạch để giải quyết triệt để tình trạng báo cáo "thực tập ma".
 
 **2. Khám phá Cơ hội (Opportunities)**
 Dựa trên Outcome trên, IOC đào sâu vào các vấn đề (Pain points) chưa được đáp ứng tốt của đối tượng khách hàng:
@@ -359,11 +360,133 @@ Dựa trên Outcome trên, IOC đào sâu vào các vấn đề (Pain points) ch
 *   **Opportunity 2 (Bế tắc quản lý đầu ra - B2B):** Nhà trường không có cách nào kiểm chứng sinh viên có thực sự code và giải quyết vấn đề kỹ thuật tại doanh nghiệp hay không, buộc phải dựa vào giấy xác nhận vô hồn thiếu tính minh định.
 
 **3. Mở rộng Giải pháp với Tư duy Phân kỳ (Solutions via Divergent Thinking)**
-Để giải quyết các Opportunities, đội ngũ bắt đầu với nguyên tắc "Hoãn phán xét" (No Early Judgment), sử dụng Brainstorming và tư duy SCAMPER để liệt kê tối đa các mô hình tiềm năng:
-*   **Solution 1 - Nền tảng kết nối dịch vụ thực tập:** Đóng vai trò cấu nối sinh viên, nhà trường với các đơn vị cung cấp dịch vụ thực tập. Mọi dữ liệu thực tập từ đầu tới khi kết thúc đều được lưu trữ hoàn toàn tập trung trên nền tảng. 
-*   **Solution 2 - Nền tảng thực tập trực tuyến:** Sinh viên tự lên hệ thống lập tài khoản và apply. Sau đó nền tảng sẽ sắp xếp nhóm, gán mentor, gán dự án để sinh viên bắt tay vào làm việc theo luồng trực tuyến. (Giống Prep)
-*   **Solution 3 - Dịch vụ thực tập (Trung tâm đào tạo):** Mở trung tâm Offline/Online để dạy lập trình chuyên môn và cho học viên giải các bài tập/dự án thực hành. (Giống khóa Java BE của Rikkei Academy)
-*   **Solution 4 - Mô hình Lai (Managed Internship Service + EdTech Platform):** cung cấp môi trường dự án giả lập/thật, có chuyên gia Mentor hướng dẫn (nội bộ, CTV), kết hợp dùng nền tảng số hóa tự động các tác vụ lặp lại, kiểm soát và xuất báo cáo (Phần Platform). (Giống Teky)
+Dựa trên các kỹ thuật chuyên sâu từ Module 5, đội ngũ tiến hành "mổ xẻ" dự án qua các lăng kính tư duy cốt lõi để tìm ra những hướng đi đột phá, bắt đầu với nguyên tắc "Hoãn phán xét" (No Early Judgment):
+
+#### 3.1. Competitive Benchmarking: Nhìn ra ngoài để định vị bản thân (Đối thủ trực tiếp & ngách)
+Trong giai đoạn Discovery, việc Benchmarking không chỉ là xem đối thủ có gì, mà là tìm ra các "vũ khí" bí mật từ các nền tảng ngách để tìm ra "khe cửa hẹp" cho IOC.
+
+**Nhóm 1: Xóa bỏ rào cản kinh nghiệm (The Experience Builders)**
+Giải quyết bài toán: "Làm sao để có kinh nghiệm khi chưa ai nhận vào làm?"
+*   **Forage (Úc/Toàn cầu):** Hợp tác với các tập đoàn Fortune 500 để tạo ra các chương trình thực tập ảo (5-7 tiếng) mô phỏng task thực tế.
+    *   *Điểm thành công:* Miễn phí cho sinh viên, thu phí doanh nghiệp để tiếp cận tệp **Pre-vetted Talent**.
+    *   *Giá trị cho IOC:* Thiết kế các "Micro-course" huấn luyện chuẩn Rikkei. Sinh viên vượt qua "khóa huấn luyện" này mới được quyền ứng tuyển, giúp doanh nghiệp tiết kiệm 100% thời gian Onboarding.
+*   **EntryLevel (Toàn cầu):** Mô hình học tập theo đợt (Cohort-based) và cùng làm dự án trong 6 tuần.
+    *   *Điểm thành công:* Sử dụng **Financial Stakes** (Sinh viên đặt cọc và được hoàn lại nếu hoàn thành).
+    *   *Giá trị cho IOC:* Áp dụng mô hình cọc/thưởng để tăng cam kết, hoặc thưởng bằng voucher/điểm thưởng trên nền tảng.
+
+**Nhóm 2: Thực tập siêu ngắn hạn (The Student Gig Economy)**
+Giải quyết bài toán: "Kỳ thực tập 3 tháng quá dài và rủi ro cho cả hai bên."
+*   **Parker Dewey (Mỹ):** Kết nối sinh viên với các **Micro-internships** (dự án từ 5-40 giờ).
+    *   *Điểm thành công:* Doanh nghiệp trả phí theo task, "thử việc" cực nhanh không rườm rà hành chính.
+    *   *Giá trị cho IOC:* Chia nhỏ kỳ thực tập thành các task nhanh (fix bug, viết docs, test UI) để sinh viên có thu nhập sớm và kinh nghiệm "vỏ sò".
+
+**Nhóm 3: Hạ tầng kết nối (The Network Giants)**
+Giải quyết bài toán: "Thông tin bị phân mảnh giữa nhà trường và doanh nghiệp."
+*   **Handshake (Mỹ):** University-First Career Network. Cung cấp phần mềm quản lý hướng nghiệp (SaaS) cho trường đại học.
+    *   *Điểm thành công:* Trở thành tiêu chuẩn của hơn 1.400 trường đại học tại Mỹ.
+    *   *Giá trị cho IOC:* Tập trung cung cấp công cụ quản lý thực tập số hóa cho các trường Đại học tại Việt Nam để tạo phễu thu hút sinh viên/doanh nghiệp tự động.
+*   **Multiverse (Anh Quốc):** Mô hình thực tập tech (Tech Apprenticeships) thay thế cho bằng đại học truyền thống.
+    *   *Điểm thành công:* Đạt định giá hơn 1 tỷ USD nhờ hệ thống đào tạo thực tế song hành với công việc.
+    *   *Giá trị cho IOC:* Định vị là một **"Hệ thống học việc số"**, cung cấp các lộ trình kỹ năng (Learning Path) mà sinh viên phải hoàn thành ngay trong quá trình làm việc tại doanh nghiệp.
+*   **Bright Network (Anh Quốc):** Thành công nhờ chiến lược Content-led.
+    *   *Điểm thành công:* Tổ chức các sự kiện "Internship Experience" ảo quy mô lớn để định hướng sinh viên.
+    *   *Giá trị cho IOC:* Xây dựng các buổi **"Masterclass"** ngắn độc quyền trên app, tạo phễu người dùng chất lượng và xây dựng uy tín cho nền tảng.
+
+**Nhóm 4: Các đối thủ truyền thống & ngách khác**
+*   **RippleMatch (Mỹ):** AI tự động khớp (match) và gửi lời mời từ doanh nghiệp đến sinh viên.
+*   **TopCV (Việt Nam):** Thành công nhờ Product-led Growth khởi đầu từ công cụ tạo CV.
+*   **ITviec (Việt Nam):** Chiến lược "Ít nhưng chất", kiểm soát gắt gao chất lượng JD và uy tín doanh nghiệp.
+*   **HackerRank for Work:** Giải pháp "Khả năng thực thi" qua thử thách code để chọn lọc **Pre-vetted Talent**.
+*   **Graduateland (Châu Âu):** Mạnh về "Virtual Career Fairs" và sự kiện **"Speed Dating for Interns"**.
+*   **Extern (trước đây là Paragon One - Mỹ):** Managed Internship Service. Doanh nghiệp (HP, HP, Facebook) đưa đề bài, Extern tự tuyển và quản lý sinh viên hoàn thành dự án. Doanh nghiệp chỉ nhận kết quả.
+    *   *Giá trị cho IOC:* Cung cấp dịch vụ "Vận hành thực tập" thay doanh nghiệp.
+*   **Revature (Mỹ):** Mô hình **Hire-Train-Deploy**. Tuyển sinh viên, trả lương để đào tạo 10-12 tuần theo yêu cầu doanh nghiệp, sau đó "cho thuê" đội ngũ này.
+    *   *Giá trị cho IOC:* Tận dụng thế mạnh EdTech của Rikkei để cung cấp nhân sự "sẵn sàng thực chiến".
+*   **The Intern Group (Toàn cầu):** Dịch vụ B2C bán "gói trải nghiệm thực tập trong mơ" (Visa, chỗ ở, Mentor, đào tạo kỹ năng mềm).
+    *   *Giá trị cho IOC:* Gói premium cho sinh viên có điều kiện muốn vào doanh nghiệp Top đầu với lộ trình 1-1.
+*   **Generation (Toàn cầu):** Mô hình phi lợi nhuận lấp đầy khoảng cách kỹ năng. Chỉ thu phí doanh nghiệp khi sinh viên làm việc ổn định sau 3-6 tháng.
+    *   *Giá trị cho IOC:* Mô hình "Tuyển dụng không rủi ro" (Risk-free Recruitment).
+
+#### 3.2. Analogy Thinking (Tư duy tương tự): Mượn mô hình thành công từ ngành khác
+Đặt IOC vào các logic kinh doanh đã thành công ở lĩnh vực khác để tìm kiếm bước đột phá:
+*   **"Tinder cho Tuyển dụng IT":** Trải nghiệm "quẹt" dựa trên thẻ kỹ năng (Tech-stack) và văn hóa dự án. Match thành công sẽ kích hoạt phỏng vấn tự động.
+*   **"Shopee cho Kỹ năng":** Sinh viên là "Shop", kỹ năng là "Sản phẩm", có đánh giá 5 sao từ Mentor để doanh nghiệp yên tâm "mua" nhân sự.
+*   **"Duolingo cho Thực tập" (Gamification):** Biến lộ trình thực tập thành bản đồ thăng tiến có "Streak" hàng ngày. Hoàn thành task Jira hay Daily Standup được cộng "Exp" để thăng hạng profile, duy trì động lực cho Gen Z.
+*   **"Income Share Agreement" (Analogy từ BloomTech):** Cơ chế "Học trước, trả sau". Tài trợ học bổng thực tập, sinh viên chỉ trả lại một phần nhỏ từ lương khi có việc làm chính thức, gắn kết trách nhiệm 3 bên.
+*   **"Gig Economy" (Analogy từ Upwork/Fiverr):** Mô hình **"Intern-Gigs"**. Chia nhỏ dự án thành các task ngắn (code module, viết doc) trong 1 tuần để sinh viên nhận việc và có thu nhập + chứng chỉ ngay lập tức.
+*   **"Grab cho Micro-tasks":** Doanh nghiệp "phát lệnh" (bug fix/document), sinh viên rảnh và đủ trình độ sẽ "nhận đơn" và xử trị tức thì.
+*   **"Airbnb cho Tài năng" (Hosting an Intern):** Các startup nhỏ thiếu nhân sự nhưng ngại đào tạo có thể "đăng ký" các task nhỏ trên IOC, sinh viên "đặt chỗ" để giải quyết dựa trên quy trình Agile/Scrum sẵn có của nền tảng.
+*   **"Kickstarter cho Career":** Sinh viên gọi vốn (crowdfunding) cho các dự án sáng tạo trên IOC/Vfund, cam kết làm việc cho nhà đầu tư hoặc chia sẻ bản quyền sản phẩm sau này.
+*   **"Uber/Grab cho Mentor":** Sinh viên gặp lỗi kỹ thuật (NestJS, Prisma...) có thể "đặt" Mentor hỗ trợ 1:1 tức thì trong 30-60 phút để gỡ rối nhanh chóng.
+*   **"GitHub cho mọi ngành nghề" (Portfolio-first):** Biến profile sinh viên thành một **"Live Portfolio"**. Mọi dự án, task thực tập đều được lưu trữ và hiển thị kết quả thật (demo, feedback) thay vì CV chữ.
+*   **"Duolingo cho Kỹ năng mềm" (Gamified Learning):** Tích hợp các **"Daily Quests"** (viết email, báo cáo...). Hoàn thành đúng hạn sẽ tăng điểm "Professionalism" (Tính chuyên nghiệp) trên profile.
+*   **"Salesforce cho Văn phòng hướng nghiệp":** Cung cấp bản **SaaS dành riêng cho Nhà trường** để quản lý tập trung 100% sinh viên thực tập, số hóa hoàn toàn quy trình thay vì dùng Excel/giấy tờ thủ công.
+*   **"Spotify Wrapped" cho lộ trình sự nghiệp:** Cuối mỗi kỳ, IOC tạo ra bản tổng kết kỹ năng, số dòng code, bug fix và lời khen từ Mentor để sinh viên tự hào chia sẻ lên mạng xã hội, tạo hiệu ứng Viral.
+*   **"TikTok Talent Feed":** Nhà tuyển dụng lướt một "Feed" năng lực với các **Dev-log ngắn (30-60s)**. Sinh viên demo tính năng hoặc giải thích logic code qua video, giúp thể hiện thái độ và khả năng diễn đạt tốt hơn CV.
+*   **"Internship Streak" (Analogy từ Duolingo):** Duy trì thói quen cập nhật tiến độ công việc hàng ngày hoặc hoàn thành bài học nhỏ để nhận huy hiệu (Badges), giúp giảm tỷ lệ "bỏ cuộc" hoặc làm việc hời hợt.
+*   **"GitHub cho mọi nghề nghiệp" (Proof of Work):** Thay vì CV tự viết, IOC quét các commit GitHub/GitLab và task hoàn thành trên Jira để tự động tạo ra bộ chỉ số năng lực: "Code sạch", "Kỷ luật Agile", "Tốc độ fix bug".
+*   **Mô hình "RPG Game" (RPG Gamification):** Biến hành trình thực tập thành trò chơi nhập vai.
+    *   *Hệ thống "Skill Tree" (Cây kỹ năng):* Profile sinh viên hiển thị dưới dạng cây kỹ năng. Hoàn thành task thực tập để "mở khóa" các node kỹ năng cao cấp.
+    *   *Nhiệm vụ hàng ngày (Daily Quests):* Biến việc báo cáo thành nhiệm vụ nhận XP để đổi lấy các "đặc quyền" (đẩy CV lên Top, tham gia Workshop CTO).
+*   **Mô hình "Hinge - Designed to be deleted" (Compatibility Matching):** Tập trung vào sự "Tương hợp sâu". Sinh viên trả lời các câu hỏi về phong cách làm việc (Pair-programming, Agile vs Waterfall) để tìm doanh nghiệp thực sự phù hợp văn hóa.
+*   **Mô hình "Salesforce Trailhead" cho Career (Skill Badges):** Hệ thống huy hiệu và bảng xếp hạng cho các kỹ năng chuyên biệt (Clean Code, Agile Practitioner) được xác thực bởi chính doanh nghiệp, có giá trị cao hơn bằng cấp học thuật.
+*   **Mô hình "Managed IT Services":** Thay vì chỉ gửi người, IOC cung cấp gói "vận hành trọn gói". Cử Scrum Master quản lý nhóm thực tập sinh làm việc theo Agile để ra sản phẩm cuối cùng cho doanh nghiệp.
+*   **Mô hình "Concierge / Personal Trainer":** Dịch vụ "Quản gia sự nghiệp" 1-1 hỗ trợ sinh viên sửa Portfolio, luyện phỏng vấn giả định và tư vấn lộ trình học bù kỹ năng hổng.
+*   **Mô hình "Netflix Subscription" cho Nhân sự:** Doanh nghiệp trả phí hàng tháng để duy trì nguồn cung "máu mới" (thực tập sinh đã qua xác thực) ổn định và chất lượng.
+*   **Mô hình "Người đại diện" (Career Agent):** Mượn mô hình từ thể thao/giải trí. IOC là agent cho Top tài năng, săn tìm deal tốt nhất và lộ trình thăng tiến cho sinh viên.
+*   **Mô hình "Học qua quan sát" (Shadowing Experience):** Dựa trên nguyên lý học nhanh nhất là quan sát thực tế. Cho phép sinh viên học văn hóa/quy trình mà không gây rủi ro cho hệ thống doanh nghiệp.
+
+#### 3.3. Tổng hợp danh sách ý tưởng tiềm năng (Brainstorming & SCAMPER)
+Dưới đây là các mô hình tiềm năng được đúc kết từ quá trình phân kỳ:
+*   **Solution 1 - Nền tảng kết nối dịch vụ thực tập:** Đóng vai trò cấu nối sinh viên, nhà trường với các đơn vị cung cấp dịch vụ thực tập.
+*   **Solution 2 - Nền tảng thực tập trực tuyến:** Sinh viên tự apply, hệ thống matching và làm việc online hoàn toàn. (Giống Prep)
+*   **Solution 4 - Mô hình Lai (Managed Internship Service + EdTech Platform):** Cung cấp môi trường dự án giả lập/thật, có Mentor hướng dẫn, số hóa báo cáo. (Giống Teky)
+*   **Solution 5 - Mô hình "Tiêu chuẩn vàng" kết nối Đại học (Inspiration from Handshake):** Tích hợp sâu vào Văn phòng hướng nghiệp của trường và tính năng "Peer-to-peer review".
+*   **Solution 6 - Mô hình Dự án siêu ngắn "Micro-Internships" (Inspiration from Parker Dewey):** Cắt nhỏ dự án thành các task 5-40 giờ giúp tích lũy kinh nghiệm nhanh.
+*   **Solution 7 - Mô hình Thực tập ảo "Virtual Experience" (Inspiration from Forage):** Bài tập mô phỏng từ các Big Tech để tạo phễu lọc ứng viên chất lượng.
+*   **Solution 8 - Mô hình "Cá nhân hóa hành trình UX" (Inspiration from Prosple):** Đầu tư mạnh vào nội dung và giao diện Gen Z để giữ chân người dùng.
+*   **Solution 9 - Hệ sinh thái "Học - Thực tập - Đi làm" khép kín (Inspiration from Glints):** Cam kết đầu ra dựa trên tuyển dụng và đào tạo thực chiến.
+*   **Solution 10 - Live Coding Profile (Substitute):** Thay thế CV truyền thống bằng hồ sơ năng lực "động", hiển thị các commit Git thời gian thực.
+*   **Solution 11 - Tinder-style matching (Combine):** Cơ chế "quẹt phải" khớp nối nhanh; kết hợp tích hợp trực tiếp với Jira/GitHub để tự động cập nhật tiến độ thực tập cho Nhà trường.
+*   **Solution 12 - Hệ thống "Review dạo" (Adapt):** Cho phép sinh viên đánh giá môi trường thực tập và mentor theo chuẩn e-commerce.
+*   **Solution 13 - "1-Day Internship" (Modify/Magnify):** Một ngày trải nghiệm thực tế tại doanh nghiệp trước khi quyết định thực tập dài hạn.
+*   **Solution 14 - Nhận thẳng qua bài test tự động hoặc Trial Days (Substitute/Eliminate):** Loại bỏ phỏng vấn rườm rà, nhận sinh viên dựa trên kết quả giải quyết vấn đề thực tế hoặc ngày trải nghiệm thử.
+*   **Solution 15 - Danh sách "Pre-vetted Talent" (Inspiration from HackerRank):** Chỉ cung cấp cho doanh nghiệp danh sách 10% sinh viên xuất sắc nhất đã được hệ thống xác thực kỹ năng, giúp giảm 90% thời gian lọc hồ sơ.
+*   **Solution 16 - "Speed Dating for Interns" (Inspiration from Graduateland):** Tổ chức các buổi match nhanh qua video call, cho phép doanh nghiệp tiếp cận 10 ứng viên trong 60 phút để đánh giá sơ bộ thái độ và giao tiếp.
+*   **Solution 17 - Cổng thông tin thực tập cho Nhà trường (University SaaS):** Cung cấp công cụ quản trị tập trung giúp nhà trường theo dõi 100% tiến độ thực tập của sinh viên, tự động hóa việc thu thập báo cáo và xác nhận từ doanh nghiệp.
+*   **Solution 18 - Doanh nghiệp đấu giá tài năng (Reverse):** Thay vì sinh viên đi tìm việc, các doanh nghiệp đưa ra các gói đãi ngộ thực tập hấp dẫn để "chèo kéo" những sinh viên có Verified Skills hạng cao nhất.
+*   **Solution 19 - Tham gia "Open Project" thay cho nộp đơn (Eliminate):** Loại bỏ bước apply rườm rà. Sinh viên contribute vào các dự án mở của doanh nghiệp, ai đóng góp tốt nhất sẽ được hệ thống tự động mời thực tập.
+*   **Solution 20 - Thực tập theo mô hình Squad (Modify):** Doanh nghiệp tuyển nguyên một **Squad (3-4 người: FE, BE, Tester)** thay vì cá nhân rời rạc, giúp đội ngũ tự vận hành ngay theo chuẩn Agile/Scrum.
+*   **Solution 21 - Thay báo cáo bằng "Sprint Review" (Substitute):** Loại bỏ báo cáo văn bản khô khan. Cuối mỗi 2 tuần, IOC tổ chức buổi Review online cho sinh viên trình bày kết quả cho cả Doanh nghiệp và Giảng viên.
+*   **Solution 22 - Dự án thực tập theo đợt với cam kết tài chính (Inspiration from EntryLevel):** Tổ chức thực tập theo nhóm (Cohort), sử dụng mô hình "Cọc và Hoàn tiền/Thưởng" (Financial Stakes) để đảm bảo 100% sinh viên hoàn thành dự án.
+*   **Solution 23 - Tech Apprenticeships (Inspiration from Multiverse):** Chương trình vừa học vừa làm dài hạn, cung cấp chứng chỉ năng lực thực tiễn được các doanh nghiệp IT công nhận thay thế cho bằng cấp học thuật truyền thống.
+*   **Solution 24 - AI Mentor hỗ trợ kỹ năng mềm (Combine):** Tích hợp AI phân tích báo cáo và giao tiếp của sinh viên trên app để gợi ý cách dùng từ ngữ chuyên nghiệp hoặc bổ sung số liệu cụ thể.
+*   **Solution 25 - Remote-First Internship Marketplace (Modify):** Tập trung hoàn toàn vào thực tập từ xa/hybrid, xóa bỏ rào cản địa lý giữa doanh nghiệp IT tại các thành phố lớn và sinh viên ở các tỉnh.
+*   **Solution 26 - Draft Day / Đấu giá tài năng (Reverse):** Hàng tháng tổ chức ngày hội "Draft" (tương tự NBA). Top 20 sinh viên xuất sắc demo dự án và các doanh nghiệp đấu giá quyền được nhận các bạn vào thực tập.
+*   **Solution 27 - Năng lực số dựa trên Hard Data (Proof of Work):** Loại bỏ CV tự quảng cáo, doanh nghiệp tuyển dụng dựa trên dữ liệu quét trực tiếp từ công cụ làm việc thực tế (GitHub, Jira).
+*   **Solution 28 - Profile 60 giây (Modify):** Thay thế CV văn bản bằng video ngắn demo sản phẩm/code logic (dạng TikTok/Reels), giúp doanh nghiệp xem "trailer" năng lực trước khi nhận.
+*   **Solution 29 - Internship + Hackathon (Combine):** Tuyển dụng thông qua thi đấu giải quyết đề bài thực thực tế trong 48h. Người thắng cuộc được nhận thẳng vào thực tập không cần phỏng vấn.
+*   **Solution 30 - Onboarding Preparation (Adapt from Forage):** Sinh viên phải hoàn thành khóa "huấn luyện giả lập" quy trình/tech-stack của doanh nghiệp trên IOC trước khi được apply dự án thật.
+*   **Solution 31 - RPG Gamification System (Logic Mapping):** Áp dụng hệ thống Skill Tree và Daily Quests để duy trì động lực và minh bạch hóa lộ trình thăng tiến của thực tập sinh.
+*   **Solution 32 - Culture-Fit Matching (Adapt from Hinge):** Hệ thống lọc và gợi ý doanh nghiệp dựa trên bộ câu hỏi trắc nghiệm hành vi và phong cách làm việc (Ví dụ: Pair-programming, Agile vs. Waterfall), đảm bảo sự gắn kết dài lâu.
+*   **Solution 33 - Shadowing Live (Inspiration from Twitch):** Tính năng cho phép sinh viên xem livestream chia sẻ logic kỹ thuật từ Senior Dev của chính doanh nghiệp họ đang quan tâm.
+*   **Solution 34 - Verified Skill Badges (Inspiration from Trailhead):** Hệ thống chứng nhận năng lực theo từng mảng nhỏ (ví dụ: "Agile Expert") do Mentor trực tiếp cấp sau khi sinh viên hoàn thành dự án/task thực tế.
+*   **Solution 35 - Open Source Internship (Combine):** Liên kết kỳ thực tập với các dự án mã nguồn mở của doanh nghiệp. Đóng góp (Pull Request) thành công được tính điểm thực tập.
+*   **Solution 36 - Proof of Work Portfolio (Modify):** Thay đổi profile sinh viên thành nơi hiển thị những đoạn code tinh túy nhất và sản phẩm thực tế kèm feedback "sống" thay vì CV chữ.
+*   **Solution 37 - Trial Week (Substitute):** Thay thế phỏng vấn bằng 1 tuần làm dự án nhỏ có KPI cụ thể. Nếu đạt, hệ thống tự động kết nối doanh nghiệp để ký hợp đồng chính thức.
+*   **Solution 38 - Managed Internship Service (Combine - Inspiration from Extern):** Cung cấp gói thực tập trọn gói kèm Scrum Master quản lý nhóm 3-5 người, giúp SME/Startup có kết quả công việc mà không tốn công quản lý.
+*   **Solution 39 - Internship-as-a-Service cho Nhà trường (First Principles):** Số hóa và chuẩn hóa 80% quy trình hành chính (ký kết, kiểm tra điều kiện, thu thập báo cáo) của Văn phòng hướng nghiệp.
+*   **Solution 40 - Career Concierge (Analogy - Inspiration from The Intern Group):** Dịch vụ Premium 1-1 đồng hành cùng sinh viên định vị bản thân, tối ưu Portfolio chuẩn dự án thực tế và Mock Interview.
+*   **Solution 41 - Vetted Talent Subscription (Analogy):** Mô hình thuê bao định kỳ, cung cấp nguồn thực tập sinh chất lượng cao đã qua kiểm duyệt cho doanh nghiệp với phí cố định hàng tháng.
+*   **Solution 42 - Virtual R&D Lab (First Principles):** Đội ngũ thực tập sinh giỏi nhất thực hiện các dự án nghiên cứu/thử nghiệm tính năng mới (Prototype) cho doanh nghiệp dưới sự giám sát của Senior Dev.
+*   **Solution 43 - Hire-Train-Deploy (Inspiration from Revature):** Mô hình tuyển dụng và đào tạo chuyên sâu theo đặt hàng riêng của doanh nghiệp, sau đó triển khai nhân sự thực tập đã "nhuyễn" tay nghề.
+*   **Solution 44 - Risk-free Recruitment (Inspiration from Generation):** Cam kết chất lượng bằng cách chỉ thu phí tuyển dụng/vận hành khi sinh viên vượt qua kỳ thử việc hoặc làm việc ổn định tại doanh nghiệp.
+*   **Solution 45 - Premium Career Package (Inspiration from The Intern Group):** Gói dịch vụ cao cấp cam kết vị trí thực tập tại các tập đoàn Global kèm hỗ trợ Mentor 1-1 và chứng nhận chuyên môn quốc tế.
+*   **Solution 46 - Squad-as-a-Service (Analogy):** Cung ứng nhóm thực tập tự quản (FE, BE, Tester) kèm Scrum Master, giúp doanh nghiệp có sản phẩm mà không tốn công quản lý.
+*   **Solution 47 - Internship Audit & Verification (First Principles):** Dịch vụ kiểm định thực tập dựa trên Hard Data (Git logs, Jira...) cho Nhà trường để xóa bỏ "thực tập ma" và minh bạch hóa điểm số.
+*   **Solution 48 - White-label Onboarding (Combine/SCAMPER):** Đào tạo nhập môn thuê ngoài theo quy trình riêng của doanh nghiệp, giúp sinh viên có thể làm việc ngay từ ngày đầu tiên.
+*   **Solution 49 - Elite Career Agent (Analogy):** Đại diện sự nghiệp cho sinh viên xuất sắc (Top 5-10%), thương lượng đãi ngộ và lộ trình thăng tiến như agent cầu thủ bóng đá.
+*   **Solution 50 - Shadowing Experience (First Principles):** Gói trải nghiệm cho sinh viên năm 1-2 tham gia quan sát các buổi họp dự án thực tế để làm quen với môi trường chuyên nghiệp sớm.
 
 **4. Chọn lọc Giải pháp với Tư duy Hội tụ (Prioritization via Convergent Thinking)**
 Các ý tưởng được đưa vào "phễu hội tụ" để ưu tiên khách quan dựa trên dữ liệu định lượng:
@@ -557,7 +680,7 @@ Thay vì là những gói dịch vụ tĩnh, đây là các "Mô hình thử ngh
 #### A. Nhóm B2B - Thử nghiệm mô hình hợp tác với Nhà trường
 *(Chương trình chi tiết thường là theo thỏa thuận giữa doanh nghiệp và nhà trường, tuy nhiên cơ bản sẽ gồm các nội dung cốt lõi sau)*
 
-*   **B2B Gói 1: Ủy thác Thực tập Trọn gói (2.000.000đ – 4.000.000đ / sinh viên)**
+*   **B2B Gói 1: Ủy thác Thực tập Trọn gói (500.000đ – 4.000.000đ / sinh viên)**
     *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng.
     *   *Nội dung chương trình:* Sinh viên được đào tạo ban đầu về công nghệ, quy trình. Sau đó, được tham gia dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn sát sao của Mentor.
     *   *Quyền lợi nâng cao:* Được tham gia 1-2 lần Mock Interview (ở đầu và cuối kỳ). Đặc biệt, **ở mức 4.000.000đ**, sinh viên được làm thử dự án thật *(là một dự án thật của doanh nghiệp, có các sprint thật, cho phép sinh viên join vào làm thử từ 1 sprint nào đó)*.
@@ -675,7 +798,7 @@ Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 20
 **a. Các nguồn doanh thu lõi và phụ trợ**
 Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõi (B2B và B2C) thông qua việc khai thác Nền tảng thực tập mô phỏng (Managed Internship Service):
 *   **Doanh thu từ khối B2C (End-user - Sinh viên):** Nguồn thu trực tiếp từ các gói dịch vụ OJT thu phí đối với sinh viên tự do muốn có kinh nghiệm thực chiến. Bao gồm các gói Dịch vụ lộ trình: Cơ bản (1.500.000đ), Tiêu chuẩn (4.000.000đ) và Cao cấp (8.000.000đ) với thời lượng và mức độ tương tác trải nghiệm chuyên gia khác nhau.
-*   **Doanh thu từ khối B2B (Nhà trường/Khoa CNTT):** Nguồn thu từ việc ký kết hợp đồng "Ủy thác Thực tập Trọn gói" nhằm giải quyết gánh nặng quản lý thực tập, với ngân sách dao động từ 2.000.000đ – 4.000.000đ/sinh viên tùy mức độ trải nghiệm dự án thật.
+*   **Doanh thu từ khối B2B (Nhà trường/Khoa CNTT):** Nguồn thu từ việc ký kết hợp đồng "Ủy thác Thực tập Trọn gói" nhằm giải quyết gánh nặng quản lý thực tập, với ngân sách dao động từ 500.000đ – 4.000.000đ/sinh viên tùy mức độ trải nghiệm dự án thật.
 
 **b. Chiến lược tăng trưởng doanh thu Đa kênh (B2B & B2C)**
 *   **B2B kéo B2C (Sales-Led Growth kết hợp Truyền miệng):** Khởi chạy lộ trình thâm nhập bằng **Sales-Led Growth** thông qua việc ký biên bản ghi nhớ (MOU) cung cấp nền tảng quản trị OJT cho các trường Đại học/Cao đẳng. Sự hợp tác này đem lại lưu lượng sinh viên (Volume) lớn ngay lập tức. Sau đó, "hữu xạ tự nhiên hương", IOC sử dụng những tín hiệu tích cực về tỷ lệ đậu phỏng vấn và đánh giá thực tiễn của nhóm sinh viên B2B này để kích hoạt hiệu ứng truyền miệng (Word-Of-Mouth). Từ đó, kéo một lượng lớn sinh viên B2C bạn bè tự nguyện đăng ký các gói dịch vụ OJT trả phí (Upsell).
