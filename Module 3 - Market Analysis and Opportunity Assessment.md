@@ -1464,3 +1464,4 @@ Chiến lược này tập trung vào việc cải thiện những điểm yếu
 - **Điều cần làm:** Lập kế hoạch dự phòng (contingency plan) và sẵn sàng đưa ra các quyết định khó khăn để đảm bảo sự tồn tại của doanh nghiệp.
 
 **Tổng kết lại, ma trận SWOT không chỉ là công cụ phân tích. Bốn kiểu chiến lược SO, WO, ST, và WT chính là bản đồ hành động giúp bạn định vị doanh nghiệp, xác định ưu tiên và tiến lên phía trước một cách có chiến lược.**
+
