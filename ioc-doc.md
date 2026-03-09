@@ -645,9 +645,9 @@ Khác với việc thiết kế cấu trúc lý thuyết khổng lồ trước k
 Chuyển sang giai đoạn hiện tại, chiến lược phát triển sản phẩm của chúng tôi xoay trục hoàn toàn sang việc **hệ thống hóa các tính năng hiện có, gán các chỉ số đo lường (Metrics định lượng)** và tiến hành tối ưu theo vòng lặp **Build - Measure - Learn**. 
 
 Đặc biệt, để đảm bảo việc thực tập diễn ra chất lượng và bám sát năng lực thực tế, toàn bộ quá trình vận hành OJT của hệ thống được thiết kế dựa trên 3 phương pháp luận cốt lõi:
-*   **Mastery OJT (Biến thể của Mastery Learning của nhà tâm lý học Benjamin Bloom):** Khi đến từng task, hệ thống sẽ hiển thị kiến thức cần sử dụng để hoàn thành nội dung đó kèm chỉ số về kỹ năng hiện tại của học viên. Hệ thống thậm chí có cơ chế khóa task để bắt buộc sinh viên phải đạt trên 80% độ thông thạo mới cho phép làm. Học viên có thể học thêm qua hệ thống LMS và làm bài kiểm tra để tăng cường kỹ năng đó trước khi nhận việc.
+*   **Mastery OJT (Biến thể của Mastery Learning của nhà tâm lý học Benjamin Bloom):** Tính thông thạo được áp dụng toàn diện trên hệ thống. Khi đến từng task công việc, khi học lý thuyết mới hay luyện phỏng vấn, hệ thống đều yêu cầu và hiển thị các bộ kỹ năng cốt lõi tương ứng kèm mức độ thông thạo hiện tại của học viên. Hệ thống thiết lập cơ chế "khóa bảo vệ": sinh viên phải đạt trên mức độ thông thạo quy định (ví dụ >80% ở bài kiểm tra lý thuyết hoặc vượt điểm sàn qua hệ thống Mock Interview) thì mới được "mở khóa" phần kiến thức mới hoặc nhận task công việc có độ phức tạp cao hơn phục vụ dự án.
 *   **Flipped Internship (Thực tập đảo ngược):** Phần lý thuyết sẽ không chiếm nhiều thời gian làm việc (chỉ khoảng 20% thời gian). Hệ thống đưa phần học lý thuyết, quy trình, kiến thức ngành ra ngoài giờ làm việc. Thời gian ở công ty hoặc trên môi trường sinh hoạt dự án chỉ dùng để thực hành mã nguồn, thảo luận sâu, xử lý tình huống thực tế và nhận phản hồi trực tiếp từ Mentor. Thực tập sinh (TTS) sẽ học thông qua hệ thống E-learning (video, tài liệu) để tự học ở nhà.
-*   **Adaptive OJT:** Hệ thống/Mentor điều chỉnh độ khó của công việc để cá nhân hóa cho từng bạn, đảm bảo mỗi cá nhân luôn được giao phó các task phù hợp nhất với trình độ hiện tại, qua đó tối ưu hóa tốc độ học hỏi hạn chế tình trạng chán nản hay quá tải.
+*   **Adaptive OJT:** Không chỉ giới hạn ở việc giao task công việc (JIRA-like), tính cá nhân hóa còn phủ rộng trên tài nguyên học tập (LMS), hệ thống kiểm tra và quá trình đánh giá/phỏng vấn. Dựa vào tốc độ tiếp thu và lịch sử năng lực, hệ thống và Mentor sẽ liên tục tự động điều chỉnh độ khó của các task dự án, độ sâu của các chặng bài test, cũng như mức độ thử thách trong các kịch bản luyện phỏng vấn (Mock Interview). Qua đó, hệ sinh thái luôn được "may đo" (adaptive) vừa vặn với nhịp tiến bộ của từng sinh viên, giúp tối ưu hóa quá trình hấp thụ kiến thức đa chiều, giảm thiểu lo âu hay nhàm chán.
 
 Dưới đây là phương thức cấu trúc lại Nền tảng thành các giả thuyết (Hypotheses) để theo dõi và tinh chỉnh:
 
@@ -689,20 +689,16 @@ Dưới đây là phương thức cấu trúc lại Nền tảng thành các gi�
 ### 6.2. Trụ cột 2: Hệ thống Nền tảng (Bộ máy Thu thập Dữ liệu & Vận hành JIRA-like)
 
 #### a. Phân hệ Sinh viên (Student Workspace)
-*   *Chức năng thực tế:* Sinh viên thao tác trực tiếp trên các Board quản trị linh hoạt (Scrum/Kanban/Waterfall) được thừa kế từ Space Template. Thực hiện Nộp báo cáo Hằng ngày (Daily Report), thay đổi trạng thái Task (Issue workflow), nhận đánh giá định kỳ và giao tiếp nội bộ qua Hệ thống Chat/SMS Gateway. Thể hiện tư tưởng **Mastery OJT**, hệ thống LMS được tích hợp trực tiếp giúp sinh viên tra cứu kiến thức và bắt buộc làm bài kiểm tra đạt mức thông thạo (ví dụ >80%) để "mở khóa" task tiếp theo. Đồng thời, không gian làm việc ưu tiên phân phối các task thực hành thay vì tốn thời gian học lại lý thuyết, đúng chuẩn mô hình **Flipped Internship**.
-*   *Gán đo lường (Metrics):* **Thời gian hoàn thành Task (Time-to-Resolve)**, **Tỷ lệ đúng hạn (Late Task Rate)** và **Tần suất Vi phạm (Violation Rate: Vắng mặt, Trễ giờ)**. Các thông số Daily Report này là bằng chứng thép để hệ thống đánh giá xem lượng Task phân bổ có quá sức (burnout) hay quá nhẹ với sinh viên.
+*   *Chức năng thực tế:* Sinh viên thao tác trực tiếp trên các Board quản trị linh hoạt (Scrum/Kanban/Waterfall) được thừa kế từ Space Template. Thực hiện Nộp báo cáo Hằng ngày (Daily Report), thay đổi trạng thái Task (Issue workflow), làm bài kiểm tra định kỳ, tham gia các chiến dịch mock interview trực tuyến và giao tiếp nội bộ qua Hệ thống Chat/SMS Gateway. Thể hiện tư tưởng **Mastery OJT**, hệ thống LMS tự động theo dõi và đặt điều kiện bắt buộc sinh viên vượt qua điểm chuẩn thông thạo (ví dụ >80%) ở một chặng kỹ năng không chỉ để "mở khóa" task tiếp theo mà còn để truy xuất khóa học nâng cao, tài liệu mới, hoặc hệ thống luyện phỏng vấn chuyên sâu. Đồng hành là bộ thiết kế cá nhân hóa **Adaptive OJT** kiến tạo ra các bài thi kiểm tra hay câu hỏi luyện phỏng vấn có độ sắc bén và độ khó "nương" theo tiến trình phát triển của riêng cá nhân sinh viên. Tất cả hệ sinh thái hoạt động theo nguyên tắc **Flipped Internship**: đẩy lý thuyết ra ngoài giờ, để dành không gian Workspace ưu tiên tuyệt đối cho thực hành cường độ cao.
 
 #### b. Phân hệ Chuyên gia / Business Mentor Workspace
-*   *Chức năng thực tế:* Mentor (nội bộ hoặc từ Doanh nghiệp) được cấp quyền theo RBAC để quản lý Group thực tập. Họ thực hiện kéo thả Issue, Review Task, phân bổ Dự án từ Ngân hàng Dự án (Project Bank), và trực tiếp chấm điểm OJT thông qua các Bộ Tiêu chí Đánh giá (Score Templates) đã được số hóa. Ứng dụng **Adaptive OJT**, phân hệ cung cấp giao diện để Mentor (kết hợp với gợi ý của AI) dễ dàng điều chỉnh cấu trúc và độ phức tạp của backlog/task cho phù hợp với tốc độ phát triển cá nhân của từng sinh viên.
-*   *Gán đo lường (Metrics):* **SLA Phản hồi (Review Turnaround Time)** và **Độ lệch Điểm số (Score Variance)**. Nếu thời gian duyệt bài (Approve/Reject Daily Report) hoặc chấm điểm OJT kéo dài chênh lệch quá mức giữa các Mentor, hệ thống Dashboard sẽ tự động Alert cảnh báo chất lượng dịch vụ vận hành.
+*   *Chức năng thực tế:* Mentor (nội bộ hoặc từ Doanh nghiệp) được cấp quyền theo RBAC để quản lý Group thực tập. Họ thực hiện kéo thả Issue, Review Task, phân bổ Dự án từ Ngân hàng Dự án (Project Bank), và trực tiếp chấm điểm OJT thông qua các Bộ Tiêu chí Đánh giá (Score Templates) đã được số hóa. Ứng dụng **Adaptive OJT**, phân hệ cung cấp giao diện để Mentor (kết hợp với gợi ý của AI) dễ dàng điều chỉnh cấu trúc và tinh giản độ phức tạp không chỉ của backlog/task công việc, mà cả kịch bản đề kiểm tra chuyên môn trực tuyến (Testing) và hệ thống câu hỏi trong những buổi Mock Interview định kỳ. Tiến trình được cá nhân hoá theo sát tốc độ tiếp thu của thực tập sinh.
 
 #### c. Phân hệ Admin Nhà trường (University Dashboard) 
 *   *Chức năng thực tế:* Cung cấp cho Giảng viên (LECTURE) và Quản trị trường (SCHOOL_ADMIN) quyền giám sát xuyên suốt Kỳ thực tập (Internship Phases). Triết xuất các thống kê (Statistics) về lượng sinh viên active/completed, theo dõi sơ đồ Burndown/Velocity của các nhóm dự án và danh sách sinh viên rơi vào cảnh báo (Warning Students).
-*   *Gán đo lường (Metrics):* **Tỷ lệ Tương tác của Giảng viên (Engagement Score)**. Đo số lần giảng viên vào hệ thống lấy dữ liệu báo cáo chất lượng đào tạo (Quality Metrics) thay vì chờ nộp giấy truyền thống ở cuối kỳ.
 
 #### d. Phân hệ Quản trị Vận hành IOC (Master/Moderator Backoffice)
 *   *Chức năng thực tế:* Nắm quyền sinh sát (Quản lý User, School, Enterprise). Trọng tâm là việc cấu hình **Ngân hàng Dự án (Project Templates)** để có thể clone quy trình đa ngành (IT, Marketing, Design...). Quản lý hệ thống Bài Kiểm tra Đầu vào (Entrance Exams & Sessions) để Audit và Matching sinh viên. Xử lý các luồng hỗ trợ (Support Feedbacks).
-*   *Gán đo lường (Metrics):* **Thời gian Khởi tạo & Trình độ Khớp nối (Matching/Setup Time)**. Tối ưu thuật toán / quy trình để việc đẩy sinh viên thi test đầu vào (Entrance Exam) sang đóng gói thành một Project Group (Assign Students to Groups) diễn ra mượt mà nhất.
 
 ### 6.3. Trụ cột 3: AI Vận hành Dự án (AI Project Operator)
 Nhằm phá vỡ rào cản giới hạn về sức người (Scale Bottleneck) của các Mentor trong việc quản lý khối lượng sinh viên khổng lồ, IOC đưa AI vào hệ thống không phải như một tính năng trang trí, mà như một thiết chế vận hành từ đầu tới cuối nằm dưới sự giám sát của Mentor. Các năng lực cốt lõi của Trụ cột AI này bao gồm:
@@ -832,34 +828,33 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
 Để tạo ra một bước đi chiến lược đột phá (Blue Ocean Strategic Move) và vươn khỏi "đại dương đỏ" của các mô hình EdTech / Job Board hiện tại, IOC áp dụng **Bản đồ Chiến lược** và **Khung hành động Bốn Yếu tố (ERRC Grid)** để định hình lại Đường cong Giá trị (Value Curve) của nền tảng:
 
 **1. Khung hành động Bốn Yếu tố (ERRC) - Đối chiếu với 5 Lực lượng cạnh tranh:**
-*   **Eliminate (Loại bỏ):** Sự phụ thuộc vào **Mạng lưới Môi giới CV** (loại bỏ giá trị lõi của Job Boards).
-*   **Reduce (Cắt giảm):** **Mức học phí / Giá bán** đắt đỏ (hạ thấp cực đại so với Bootcamp).
-*   **Raise (Gia tăng):** **Tính Linh hoạt** (nhờ khả năng tham gia trực tuyến không bó buộc thời gian, công nghệ); **Chất lượng Kinh nghiệm OJT** thực chiến; **Lý thuyết & Bằng cấp** (chuyển đổi từ học nhồi nhét sang Flipped Internship cấp chứng nhận thực tế); **Báo cáo & Minh bạch** (bảo chứng cho Nhà trường).
-*   **Create (Tạo ra):** **Trải nghiệm thực tế** chân thực (sao chép y hệt quy trình Agile/Scrum); **Tần suất Feedback & Review 1:1** liên tục (thông qua AI Chấm chữa).
+*   **Eliminate (Loại bỏ):** Định hướng chạy đua theo **Mạng lưới tiếp cận CV** của giới sinh viên (dám loại bỏ giá trị gốc lõi của Job Boards để tập trung chuyên sâu đào tạo).
+*   **Reduce (Cắt giảm):** Rào cản về **Mức Giá** đắt đỏ (cấu trúc chi phí tối ưu giúp đem lại điểm số mức giá tốt hơn nhiều so với điểm 0 đắt đỏ của Bootcamp IT).
+*   **Raise (Gia tăng):** **Tính Linh hoạt** (khả năng tham gia nhiều hình thức trực tuyến); **Kiến thức** & **Bằng cấp** (đỉnh cao với hệ thống số hóa và Flipped Internship); và **Báo cáo minh bạch** (số hóa làm minh chứng cho đối tác).
+*   **Create (Tạo ra):** Môi trường làm việc cung cấp **Kinh nghiệm** và **Trải nghiệm thực tế** mô phỏng hoàn hảo môi trường công sở thông qua Agile/Scrum.
 
 **2. Phân tích Đường cong Giá trị (Strategy Canvas):**
 Sự khác biệt trong việc cấp phát giá trị của IOC so với các lựa chọn hiện hữu được phân tách dọc theo các tác nhân trong **5 Lực lượng cạnh tranh (Porter's 5 Forces)**. Các Yếu tố cạnh tranh (trục X) nay được định nghĩa là *các thuộc tính dịch vụ mà sinh viên hoặc nhà trường quan tâm nhất khi ra quyết định lựa chọn*:
 
 ```mermaid
-%%{init: {"xyChart": {"width": 1200, "height": 600, "xAxis": {"labelPadding": 10} } } }%%
+%%{init: {"xyChart": {"width": 1200, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
 xychart-beta
     title "Bản đồ Chiến lược (Strategy Canvas) - Phân tích thị trường"
-    x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Lý thuyết", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm" ]
+    x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận" ]
     y-axis "Mức độ Cung ứng" 0 --> 100
-    line "Job Boards (TopCV, ITviec...)" [ 100, 95, 10, 10, 20, 10, 10, 0, 0 ]
-    line "TT Đào tạo / Bootcamp IT" [ 95, 10, 80, 80, 40, 60, 20, 20, 10 ]
-    line "Mô hình Lab/Đồ án ĐH" [ 20, 10, 95, 95, 30, 40, 40, 10, 10 ]
-    line "Thực tập truyền thống (Tại DN)" [ 10, 60, 30, 85, 10, 70, 10, 95, 10 ]
-    line "IOC 2.0 (Blue Ocean)" [ 30, 10, 85, 85, 95, 90, 95, 80, 100 ]
+    line "Job Boards (TopCV, ITviec...)" [ 100, 100, 0, 0, 100, 0, 0, 0, 0, 100 ]
+    line "TT Đào tạo / Bootcamp IT" [ 0, 20, 100, 100, 50, 60, 30, 20, 60, 100 ]
+    line "Mô hình Lab ĐH" [ 100, 20, 20, 50, 0, 40, 70, 70, 10, 30 ]
+    line "Thực tập truyền thống" [ 100, 100, 100, 100, 30, 100, 20, 100, 40, 0 ]
+    line "IOC 2.0" [ 40, 20, 80, 100, 90, 80, 100, 80, 60, 100 ]
 ```
 
-*Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ":*
-*   *So với Đối thủ tiềm ẩn (Job Boards): IOC hoàn toàn loại bỏ (Eliminate) thế mạnh dẫn đầu của nền tảng này là "Mạng lưới Môi giới CV".*
-*   *So với Bootcamp & Đại học: Mặc dù đã cắt giảm "Giá bán", IOC vẫn duy trì sức mạnh tuyệt đối ở "Lý thuyết" (qua E-learning Flipped Internship) và "Bằng cấp/Chứng nhận" thực chiến; qua đó giải quyết tận gốc tính dứt điểm của một giải pháp giáo dục toàn diện thay vì chỉ môi giới.*
-*   *Tính Linh hoạt: Các mô hình Đồ án hoặc Thực tập doanh nghiệp bị giới hạn khắt khe về địa lý/thời gian hành chính (chạm đáy 10-30 điểm). IOC vút lên đỉnh (95 điểm) bằng trải nghiệm Online phi tập trung, người dùng có thể tham gia mọi lúc.*
-*   *So với Thực tập truyền thống (Tại Doanh nghiệp): Mặc dù điểm **Trải nghiệm thực tế** của việc ngồi tại văn phòng doanh nghiệp thật sự là điểm trần chói lọi (95/100) mà IOC với gốc nền tảng Online (80/100) không thể sánh bằng; thế nhưng điểm yếu chết người của thực tập truyền thống là cực kỳ thiếu linh hoạt, thiếu minh bạch và điểm Feedback 1:1 cực thấp do Mentor bận việc. IOC khắc phục bằng AI feedback.*
-*   *Kích tạo đại dương xanh (Create): Sự kết hợp giữa **Trải nghiệm thực tế** sắc nét (vòng lặp Agile) và vút lên cực đỉnh ở **Tần suất Feedback siêu tốc của AI**, chính thức thiết lập một không gian thị trường mới.*
-
+*Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ" dựa trên vị thế ưu việt ở 10 yếu tố cạnh tranh:*
+*   *So với Đối thủ tiềm ẩn (Job Boards): IOC quyết định thu hẹp và loại bỏ (Eliminate) cuộc đua bám đuổi "Mạng lưới tiếp cận CV" (giảm điểm số xuống 20). Thay vào đó, nền tảng dồn toàn lực cốt lõi vào sự dịch chuyển chất lượng hành nghề thực chiến vững chắc bên trong.*
+*   *So với Bootcamp & Đại học: Dù mang đến "Mức Giá" linh hoạt và dễ chịu hơn rất nhiều (40 điểm) thay vì sự đắt đỏ kiệt quệ của các Bootcamp (0 điểm), IOC vẫn thiết lập một tiêu chuẩn 100/100 tuyệt đối xuyên suốt ở trục "Lý thuyết" (thấm nhuần cốt lõi Flipped Internship) và "Bằng cấp/Chứng nhận". Sự dứt điểm này lấp đầy điểm yếu ở phần thiếu hụt "Kinh nghiệm" (80) của hệ thống đại học.*
+*   *Khả năng tiếp cận & Linh hoạt: Các cơ chế Lab thực hành của trường Đại học (0 điểm) hay môi trường Thực tập truyền thống (30 điểm) không chỉ bị bó cứng về địa lý, thời gian, mà còn thiết lập một rào cản quá lớn trong "Khả năng tiếp cận" cho những sinh viên bị hổng gốc. Bằng hệ sinh thái dự án phi tập trung, IOC mở cánh cửa tự do tiếp cận cho mọi đối tượng với thiết chế "Linh hoạt" (90 điểm) và "Khả năng tiếp cận" rộng mở bao trùm (100 điểm).*
+*   *So với Thực tập truyền thống: Nhúng mình trực tiếp tại văn phòng doanh nghiệp hiển nhiên duy trì "Trải nghiệm thực tế" và "Kinh nghiệm" ở mức trần tối đa (100). Là một nền tảng thực tập ảo trung gian, IOC dù chỉ tiệm cận mức (80) nhưng đã khắc phục vĩnh viễn điểm yếu chí tử của thực tập truyền thống đó là "Báo cáo minh bạch" quá mờ nhạt (20) và "Mức độ quan tâm" tới từng cá nhân bị phớt lờ do các Mentor luôn quá tải với công việc (40). IOC san lấp hoàn hảo được điểm mù vĩ đại này.*
+*   *Kích tạo đại dương xanh (Create): Cuối cùng, đỉnh cao của sự khác biệt là kỷ lục tuyệt đối ở **Báo cáo minh bạch** (100 điểm) đạt được qua việc số hóa mọi Logwork hàng giờ; đồng tâm tạo lập lực tương tác sâu kết nối với **Mức độ quan tâm** (60) mật thiết từ AI Operator và Agile Mentor. Sự giao hòa này chính là định nghĩa về một vùng trời Đại dương Xanh chưa từng có tổ chức nào có thể khai phá.*
 ### 8.3. Lộ trình Sản phẩm Relaunched (Product Roadmap - Now/Next/Later)
 Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 2025, Roadmap hiện tại của IOC tập trung vào bài toán mở rộng quy mô (Scale-up), tự động hóa toàn diện và củng cố chất lượng nội dung:
 
@@ -946,7 +941,7 @@ Trong giai đoạn MVP và năm đầu tiên, **mục tiêu ưu tiên của dư 
 | **AI Engineer** | 1 | Tinh chỉnh model AI, phát triển tính năng AI Project Operator cho khâu Auto Review. |
 | **Tester (Manual/Auto)** | 1 | Đảm bảo chất lượng phần mềm (QA/QC) trước khi release. |
 | **APM kiêm Vận hành** &<br>**Nhân sự Vận hành** | 2 | Gồm 1 APM kiêm vận hành nền tảng và 1 nhân sự Vận hành (đặt tại HCM) đôn đốc tiến độ sinh viên. |
-| **Mentor Fulltime** | 1 - 2 | **(Đang thiếu).** Nên có ít nhất 1 người ở chi nhánh HCM. *Đặc biệt: Một trong hai người này có thể kiêm nhiệm vai trò Dev Lead để bù vào khoảng trống 1 vị trí Fullstack Developer đang thiếu.* |
+| **Mentor Fulltime** | 2 - 3 | **(Đang thiếu).** Nên có ít nhất 1 người ở chi nhánh HCM. *Đặc biệt: Một trong hai người này có thể kiêm nhiệm vai trò Dev Lead để bù vào khoảng trống 1 vị trí Fullstack Developer đang thiếu.* |
 
 *(Ghi chú: Đội ngũ Mentor Part-time/SME chấm điểm và hỗ trợ nhóm sinh viên sẽ được linh động bổ sung tùy theo lưu lượng đăng ký khóa học thực tế).*
 
