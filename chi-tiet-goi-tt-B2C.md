@@ -110,3 +110,40 @@ Với cơ cấu chi phí trên, đây là bức tranh lợi nhuận sau khi tr�
 Trong lĩnh vực Platform Giáo dục (EdTech), mô hình chỉ mở rộng bền vững khi (LTV - Vòng đời Khách hàng) lớn gấp 3 lần chi phí Marketing (CAC).
 *   **LTV Ước tính:** Một sinh viên mua Gói Cơ bản (2tr) rất dễ chuyển đổi mua thêm Gói Tiêu chuẩn (5tr) khi họ nhận ra hệ thống thực sự chất lượng, đẩy LTV trung bình lên khoảng **4.000.000đ**.
 *   **Ngân sách chặn trần (CAC Target):** Từ quy tắc LTV/CAC tối thiểu > 3. Nghĩa là phòng Marketing chỉ được phép tốn tối đa **1.300.000đ** cho 1 lượt chuyển đổi (CPA). Bất kỳ chiến dịch quảng cáo nào vượt ngưỡng 1.300.000đ/Khách đều phải loại bỏ để bảo vệ biên lợi nhuận (Profit Margin) chung.
+
+---
+
+## 4. BẢNG DỰ PHÓNG P&L (PROFIT & LOSS) B2C - NĂM 1
+
+Để biến mô hình Unit Economics trên thành một bảng P&L chuẩn, dưới đây là sự lồng ghép thêm **Biến số Thời gian (4 Quý)**, **Dự phóng Sản lượng (Volume)** và **Định phí Vận hành (OPEX)** được phân bổ riêng cho nhánh B2C.
+
+### 4.1. Giả định Sản lượng & Chi phí (Assumptions)
+- **Sản lượng (Users):** Quý 1 (150 users), Quý 2 (300 users), Quý 3 (600 users - mùa thực tập), Quý 4 (750 users). Tỷ lệ dự phóng: 70% Cơ bản / 30% Tiêu chuẩn.
+- **Giá bán trung bình (Blended Revenue):** (70% * 2.000.000đ) + (30% * 5.000.000đ) = **2.900.000đ/User**.
+- **Giá vốn trung bình (Blended COGS):** (70% * 500.000đ) + (30% * 1.700.000đ) = **860.000đ/User**.
+- **Chi phí thu hút (CAC trung bình):** (70% * 1.000.000đ) + (30% * 1.500.000đ) = **1.150.000đ/User**.
+- **Định phí (OPEX) phân bổ cho B2C:** Lương đội ngũ Vận hành & Dev (phần cho B2C), Chi phí văn phòng, Pháp lý: ~150.000.000đ/tháng $\Rightarrow$ **450.000.000đ/Quý**.
+
+### 4.2. Bảng P&L Dự Phóng nhánh B2C (Đơn vị: VNĐ)
+
+| Khoản mục (P&L Items) | Quý 1 | Quý 2 | Quý 3 | Quý 4 | Tổng Năm 1 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **1. Sản lượng (Users)** | **150** | **300** | **600** | **750** | **1.800** |
+| | | | | | |
+| **2. DOANH THU (REVENUE)** | **435,000,000** | **870,000,000** | **1,740,000,000** | **2,175,000,000** | **5,220,000,000** |
+| **3. GIÁ VỐN HÀNG BÁN (COGS)** | **129,000,000** | **258,000,000** | **516,000,000** | **645,000,000** | **1,548,000,000** |
+| *- Chi phí Mentor/Reviewer* | *99,000,000* | *198,000,000* | *396,000,000* | *495,000,000* | *1,188,000,000* |
+| *- Chi phí Server/Platform* | *30,000,000* | *60,000,000* | *120,000,000* | *150,000,000* | *360,000,000* |
+| **4. LỢI NHUẬN GỘP (GROSS PROFIT)** | **306,000,000** | **612,000,000** | **1,224,000,000** | **1,530,000,000** | **3,672,000,000** |
+| *Biên lợi nhuận gộp (Gross Margin %)*| *70.3%* | *70.3%* | *70.3%* | *70.3%* | *70.3%* |
+| | | | | | |
+| **5. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **622,500,000** | **795,000,000** | **1,140,000,000** | **1,312,500,000** | **3,870,000,000** |
+| *- Phí Marketing/Thu hút (CAC)* | *172,500,000* | *345,000,000* | *690,000,000* | *862,500,000* | *2,070,000,000* |
+| *- Phí cố định (Lương Core, VP)* | *450,000,000* | *450,000,000* | *450,000,000* | *450,000,000* | *1,800,000,000* |
+| | | | | | |
+| **6. LỢI NHUẬN (LỖ) RÒNG** | **(316,500,000)** | **(183,000,000)** | **84,000,000** | **217,500,000** | **(198,000,000)** |
+
+**Phân tích P&L B2C:**
+*   **Burn Rate (Đốt tiền):** Khởi đầu dự án chịu lỗ trong Q1 và Q2 do lượng users chưa đủ bù đắp Định phí (OPEX) của Team vận hành và ngân sách Marketing phải chi tiêu mạnh để giáo dục thị trường.
+*   **Break-even (Hòa vốn):** Bước sang Quý 3, khi đạt mốc 600 users, dự án B2C chính thức chạm điểm hòa vốn chuyên môn và bắt đầu có lãi ròng dương (84 triệu VNĐ).
+*   **Scale-up:** Lợi nhuận gộp rất tốt (~70%), chứng tỏ sức mạnh của "Sản phẩm Phễu". Khi vượt qua điểm hòa vốn quy mô, chỉ cần tăng nhẹ lượng users, lợi nhuận ròng sẽ tăng vọt lên rất nhanh ở Q4.

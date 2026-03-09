@@ -183,3 +183,42 @@ Từ cơ cấu chi phí trên, chúng ta xác định **Điểm hòa vốn (Brea
 Đối với khối lượng B2B, điểm lợi hại nhất của mô hình KHÔNG nằm ở tiền mặt tức thời, mà nằm ở hệ sinh thái khép kín:
 *   **Chi phí Thu mua Khách hàng 0 đồng (Zero CAC):** Khác B2C phải đốt Marketing để dụ dỗ (1tr - 1.5tr/người), tệp B2B mang về hàng trăm Profile Data/Sinh viên trong 1 hợp đồng duy nhất, khiến chi phí Acquisition trên một sinh viên cực kỳ vi mô.
 *   **Doanh thu Trái Ngọt (Backend Revenue):** Khoản Lợi nhuận ròng vĩ đại nhất nằm ở việc sau khi lứa 50-100 sinh viên tốt nghiệp kỳ thực tập IOC, hệ thống này nắm giữ Data năng lực định lượng tuyệt đối của họ, có thể bán (Placement Fee) hoặc phân phối ngược nhân sự này cho các Headhunt/Doanh nghiệp Tuyển dụng với mệnh giá môi giới từ **10.000.000đ - 15.000.000đ/Ứng viên**.
+
+---
+
+## 5. BẢNG DỰ PHÓNG P&L (PROFIT & LOSS) B2B - NĂM 1
+
+Bảng P&L dưới đây mô phỏng doanh thu, chi phí trực tiếp và định phí được phân bổ riêng cho mảng B2B trong năm đầu tiên hoạt động. Khác với B2C kiếm tiền theo số đông user, B2B kiếm tiền theo lô sỉ (Batches).
+
+### 5.1. Giả định Sản lượng & Chi phí (Assumptions)
+- **Sản lượng (Batches/Trường):** Quý 1 (2 Lứa), Quý 2 (5 Lứa), Quý 3 (10 Lứa - Mùa cao điểm nhà trường gửi sinh viên), Quý 4 (8 Lứa). Trung bình sĩ số 40 sinh viên/lứa.
+- **Gói dịch vụ mặc định:** Khảo sát cho thấy 100% tổ chức sẽ chọn Gói Tiêu Chuẩn để dễ chuyển đổi môn học (2.000.000đ/sv).
+- **Doanh thu 1 Lứa trung bình (40 sv):** 40 * 2.000.000đ = **80.000.000đ/Lứa**.
+- **Giá vốn (COGS) trung bình 1 Lứa:** Setup Fix (18.000.000đ) + Variable (40 * 1.200.000đ) = **66.000.000đ/Lứa**.
+- **Định phí (OPEX) phân bổ cho B2B:** Lương đội ngũ Quản lý đối tác (BD/Sales B2B), Vận hành Core, Event phí: ~100.000.000đ/tháng $\Rightarrow$ **300.000.000đ/Quý**. Mảng B2B gần như không tốn chi phí Marketing đắt đỏ như B2C.
+
+### 5.2. Bảng P&L Dự Phóng nhánh B2B (Đơn vị: VNĐ)
+
+| Khoản mục (P&L Items) | Quý 1 | Quý 2 | Quý 3 | Quý 4 | Tổng Năm 1 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **1. Sản lượng (Lứa / Batches)** | **2** | **5** | **10** | **8** | **25** |
+| *Tổng lượng sinh viên ước tính* | *80* | *200* | *400* | *320* | *1.000* |
+| | | | | | |
+| **2. DOANH THU (REVENUE)** | **160,000,000** | **400,000,000** | **800,000,000** | **640,000,000** | **2,000,000,000** |
+| **3. GIÁ VỐN HÀNG BÁN (COGS)** | **132,000,000** | **330,000,000** | **660,000,000** | **528,000,000** | **1,650,000,000** |
+| *- Fix Setup Cost (Quản lý dự án)* | *36,000,000* | *90,000,000* | *180,000,000* | *144,000,000* | *450,000,000* |
+| *- Biến phí (Mentor, Server...)* | *96,000,000* | *240,000,000* | *480,000,000* | *384,000,000* | *1,200,000,000* |
+| **4. LỢI NHUẬN GỘP (GROSS PROFIT)** | **28,000,000** | **70,000,000** | **140,000,000** | **112,000,000** | **350,000,000** |
+| *Biên lợi nhuận gộp (Gross Margin %)*| *17.5%* | *17.5%* | *17.5%* | *17.5%* | *17.5%* |
+| | | | | | |
+| **5. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **300,000,000** | **315,000,000** | **350,000,000** | **335,000,000** | **1,300,000,000** |
+| *- Phí cố định (Lương Core, Sales)* | *300,000,000* | *300,000,000* | *300,000,000* | *300,000,000* | *1,200,000,000* |
+| *- Hoa hồng Sales bổ sung (nếu có)* | *0* | *15,000,000* | *50,000,000* | *35,000,000* | *100,000,000* |
+| | | | | | |
+| **6. LỢI NHUẬN (LỖ) RÒNG** | **(272,000,000)** | **(245,000,000)** | **(210,000,000)** | **(223,000,000)** | **(950,000,000)** |
+
+**Phân tích P&L B2B:**
+*   **Thách thức Gross Margin:** Nhánh B2B mang lại Doanh thu lớn (Bulk Revenue) ngay lập tức nhưng Cấp độ lợi nhuận gộp khá mỏng (chỉ ~17.5% do nặng chi phí setup ban đầu và vận hành lứa), khiến mô hình này khó tự gánh khoản OPEX lớn trong năm đầu.
+*   **Chiến lược Gỡ băng & Bùng nổ lợi nhuận:** 
+    * Lợi nhuận "ẩn" bù đắp khoản âm ròng P&L của B2B không nằm ở Doanh thu tiền mặt bán gói, mà là việc nạp **1.000 Data sinh viên** chất lượng cao vào hệ thống với "0 đồng Marketing". 
+    * Nếu 1.000 sinh viên tốt nghiệp này được phân phối qua mảng Hệ sinh thái Tuyển dụng (Placement) — giả định 10% (100 người) tuyển thành công với phí Headhunt 10.000.000đ/người — dự án sẽ thu về ngay lập tức thêm **1.000.000.000đ** doanh thu gần như tinh khiết 100% Margin, giúp toàn bộ mảng B2B đảo chiều sang hòa vốn và sinh lời.
