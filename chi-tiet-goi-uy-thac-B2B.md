@@ -13,6 +13,7 @@
 | **Quyền lợi đầu ra** | Chứng nhận thực tập Rikkei | Chứng nhận thực tập Rikkei | Chứng nhận thực tập Rikkei + Kết nối tuyển dụng |
 | **Quy trình tuyển** | Test năng lực tự động | Test + Phỏng vấn chuyên gia | Test + Phỏng vấn chuyên gia |
 | **Ưu đãi Academy** | Có | Có | Có |
+| **Đào tạo ban đầu** | E-learning | E-learning + offline | E-learning + offline |
 
 ---
 
@@ -40,7 +41,7 @@ Chương trình đào tạo thực chiến từ RikkeiEdu mang đến cho sinh v
 
 ### Lộ trình đào tạo & thực tập (03 Giai đoạn)
 *   Giai đoạn 1 – Đào tạo nền tảng
-    *   Hhướng dẫn ôn tập kiến thức cơ bản
+    *   Hướng dẫn ôn tập kiến thức cơ bản
     *   Phân loại, tổ chức nhóm dựa trên kết quả đầu vào, phân vai trò và xác định dự án
 *   Giai đoạn 2 – Tham gia dự án
     *   Làm việc theo Agile – Scrum, mentor đồng hành xuyên suốt
@@ -146,3 +147,39 @@ Chương trình trải nghiệm trên nền tảng số giúp sinh viên:
 *   Làm quen sớm với môi trường và tác phong làm việc IT chuyên nghiệp
 *   Chứng nhận thực tập từ hệ động giáo dục của Rikkei
 *   Ưu đãi học phí tại Rikkei Academy cho sinh viên cần bổ trợ nền tảng
+
+---
+
+## 4. BÀI TOÁN KINH TẾ ĐƠN VỊ (UNIT ECONOMICS) B2B & ĐIỂM HÒA VỐN QUY MÔ
+
+Bản chất của các Gói B2B là đàm phán sỉ cả một "Lứa/Cohort" từ nhà trường. Việc tính toán tài chính B2B không đơn thuần nằm ở giá 1 sinh viên, mà nằm ở điểm hòa vốn trên quy mô một lớp (Batch Size).
+
+### 4.1. Phân bổ cơ cấu chi phí cho 1 Lứa/Batch
+Bất kể quy mô lứa thực tập từ trường gửi sang là 10 người hay 50 người, Nền tảng IOC vẫn phải duy trì một lượng nguồn lực thiết lập cố định để bảo chứng chất lượng và cam kết vận hành.
+
+*   **Chi phí Thiết lập Cố định (Fixed Setup Cost):** 
+    *   Chi phí Tech Lead/Project Manager (PM) thiết lập và tùy biến môi trường/Dự án trên nền tảng: ~ **10.000.000đ**.
+    *   Chi phí vận hành Moderator theo dõi tiến độ chung: ~ **3.000.000đ**.
+    *   Chi phí đàm phán/Chốt Deal (Sales Commission B2B): ~ **5.000.000đ**.
+    *   *Tổng Chi phí Cố định trên 1 Batch:* ~ **18.000.000đ/Lứa**.
+*   **Chi phí Vận hành Biến đổi theo đầu người (Variable Cost):** 
+    *   Thù lao Mentor sâu sát (1 Mentor kèm 15-20 sinh viên): hạch toán **~ 800.000đ/User**.
+    *   Phí hệ thống Dashboard/Tài khoản/AI: **~ 200.000đ/User**.
+    *   Phí tham gia Workshop/Sự kiện: **~ 200.000đ/User**.
+    *   *Biến phí (Variable Cost / User):* ~ **1.200.000đ/Sinh viên**.
+
+### 4.2. Bài toán Hòa vốn & Quy mô Sĩ số tối thiểu (Minimum Batch Size)
+Từ cơ cấu chi phí trên, chúng ta xác định **Điểm hòa vốn (Break-even Point)** đối với việc ký kết 1 hợp đồng với Nhà trường:
+
+*   **Giá trị Bán sỉ giả định (Gói Tiêu chuẩn B2B):** 2.000.000đ / Sinh viên.
+*   **Lợi nhuận Biên (Contribution Margin):** Giá bán (2.000.000đ) - Biến phí (1.200.000đ) = **800.000đ / Sinh viên** (Số tiền mỗi đầu người dư ra để bù đắp Fixed Setup Cost).
+*   **Điểm Hòa Vốn Quy Mô Lứa (Break-even Volume) =** Khấu hao Cố định (18.000.000đ) / Lợi nhuận Biên (800.000đ) = **22,5 Sinh viên**.
+
+**Quyết định Chiến lược Tài chính Đầu vào (Financial Go/No-go):**
+1.  **Chính sách Sĩ số Tối thiểu:** Nền tảng IOC sẽ TỪ CHỐI NHẬN các lớp/khoa có số lượng đăng ký sỉ dưới **25 sinh viên/Lứa** (hoặc yêu cầu trường phải ghép lớp, hoặc bắt buộc phải thu thêm phụ phí Setup). Việc nhận lứa dưới 25 người ở Gói Tiêu chuẩn 2tr sẽ dẫn đến việc dự án bị Thâm Hụt Tiền Mặt (âm dòng tiền). 
+2.  **Khả năng Sinh lời Vượt bậc (Scale Profit):** Bất cứ sinh viên thứ 26 trở đi (từ 26 đến 50), lợi nhuận gộp sinh ra trực tiếp là đầy đủ **800.000đ/Sinh viên** do phần chi phí cố định (PM/Moderator/Sales) đã được bao tròn ở mốc 25 người đầu tiên. Đây chính là đòn bẩy lợi nhuận biên đặc thù của dự án B2B.
+
+### 4.3. Giá trị Dữ liệu Không định giá (Data Moat Value)
+Đối với khối lượng B2B, điểm lợi hại nhất của mô hình KHÔNG nằm ở tiền mặt tức thời, mà nằm ở hệ sinh thái khép kín:
+*   **Chi phí Thu mua Khách hàng 0 đồng (Zero CAC):** Khác B2C phải đốt Marketing để dụ dỗ (1tr - 1.5tr/người), tệp B2B mang về hàng trăm Profile Data/Sinh viên trong 1 hợp đồng duy nhất, khiến chi phí Acquisition trên một sinh viên cực kỳ vi mô.
+*   **Doanh thu Trái Ngọt (Backend Revenue):** Khoản Lợi nhuận ròng vĩ đại nhất nằm ở việc sau khi lứa 50-100 sinh viên tốt nghiệp kỳ thực tập IOC, hệ thống này nắm giữ Data năng lực định lượng tuyệt đối của họ, có thể bán (Placement Fee) hoặc phân phối ngược nhân sự này cho các Headhunt/Doanh nghiệp Tuyển dụng với mệnh giá môi giới từ **10.000.000đ - 15.000.000đ/Ứng viên**.
