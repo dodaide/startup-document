@@ -260,6 +260,11 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT"** đã được xác định ở Mục 2.1, hoạt động của IOC ứng dụng phương pháp Tính điểm cơ hội (Opportunity Algorithm) để nhận diện phân khúc. Mặc dù ở giai đoạn đầu tập trung vào xác định định tính từ đội ngũ chuyên gia, nền tảng vẫn hướng đến đáp ứng các **Kết quả chưa được đáp ứng tốt (Underserved Outcomes)** thông qua việc khắc họa chi tiết Hồ sơ Khách hàng (Customer Profile).
 
 #### 3.4.1. CHIẾN LƯỢC B2C (SINH VIÊN)
+
+![Mô tả ảnh](https://www.garyfox.co/wp-content/uploads/2024/07/value-proposition-canvas-customer-profile.png)
+
+![Mô tả ảnh](https://www.digital.nsw.gov.au/sites/default/files/styles/wysiwyg_image/public/2022-09/empathy-mapping.png?itok=A0pnvTtm)
+
 *Đối tượng: Sinh viên năm cuối, yếu hoặc mất gốc thực tập sinh tự do, và sinh viên cần hoàn thành tiêu chuẩn thực tập của trường.*
 
 **1. Customer Profile (Khắc họa phân khúc "Panic Seekers"):**
@@ -280,7 +285,7 @@ Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT"** đã được x
 
 *👉 **Empathy Map (Bản đồ thấu cảm định tính):***
 *   **Says:** "Chỉ còn 2 tháng nữa là nộp điểm", "Đi thực tập mà toàn bắt ngồi dịch tài liệu với đi mua cafe".
-*   **Thinks:** "Làm sao để vừa có mộc của trường, vừa có dự án xịn gửi vào Big Tech?"
+*   **Thinks:** "Làm sao để vừa có mộc của trường, vừa có dự án xịn để xin việc?"
 *   **Does:** Đành chấp nhận làm dự án lặt vặt để đủ điểm, tự tìm kiếm dự án ngoài để vớt vát lại CV.
 *   **Feels:** Cực kỳ áp lực, tự ti khi so sánh với bạn bè, hoang mang sợ hãi khi đọc JD, thất vọng vì không được code thật.
 
@@ -601,6 +606,8 @@ Với nền tảng là tìm cơ hội từ nhóm khách hàng "Chưa được đ
 
 ### 5.4. Đề xuất Giá trị & Định vị Sản phẩm (Value Proposition & Positioning)
 Từ việc thâu tóm "Hồ sơ Khách hàng - Customer Profile" ở Mục 3, kết hợp với các chính sách định hướng phía trên, IOC thiết kế **Bản đồ Giá trị (Value Map)** để tạo ra sự khớp nối (Fit) 1:1 trong Value Proposition Canvas.
+
+![Mô tả ảnh](https://public-images.interaction-design.org/tags/td-value-proposition-canvas-post-its-05.jpg)
 
 **A. Bản đồ giá trị (Value Map) B2C - "CAREER SURVIVAL KIT" & "PREMIUM CERTIFICATION"**
 *Core JTBD: "Tích lũy kinh nghiệm làm việc thực tế để vượt ải CV và được tuyển dụng."*
