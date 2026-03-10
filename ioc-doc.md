@@ -1,7 +1,5 @@
 **IOC - VER2**
 
-# I. TỔNG QUAN DỰ ÁN
-
 ## 1. Giới thiệu sản phẩm (Executive Summary)
 
 IOC 2.0 (Internship OneConnect) không chỉ là một **đơn vị cung ứng dịch vụ quản trị và vận hành thực tập trọn gói (Managed Internship Service)** mà còn là một **nền tảng công nghệ giáo dục (EdTech Platform) tích hợp môi trường thực tập ảo (Virtual Experience)** mạnh mẽ. Dự án được thiết kế nhằm tái cấu trúc hoạt động thực tập của sinh viên, chuyển đổi từ một thủ tục mang tính hình thức thành một quy trình thực chiến: kết hợp các bài tập/dự án mô phỏng từ các doanh nghiệp/Big Tech với sự hướng dẫn sát sao của chuyên gia, đồng thời cung cấp dữ liệu đánh giá đầu ra định lượng để minh chứng chất lượng cho nhà trường và sinh viên.
