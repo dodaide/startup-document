@@ -886,7 +886,7 @@ Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõ
 
 Dựa trên dữ liệu và bài toán Unit Economics mới nhất (Validation Phase), chiến lược kinh doanh của năm 2026 được thiết lập thực tế hơn với việc dồn lực khai thác mạnh mẽ trong nửa cuối năm (từ tháng 6 trở đi). Mục tiêu sản lượng được điều chỉnh để đạt mốc quy mô **1.000 sinh viên** trong 6 tháng kinh doanh trọng điểm này nhằm khai thác hiệu quả đòn bẩy lợi nhuận từ cả 2 nhánh B2B và B2C.
 
-Khoản doanh thu dự kiến trong nửa cuối 2026 sẽ chạm mốc **2.750.000.000 VNĐ (2,75 Tỷ VNĐ)**. Trong cấu trúc mới này, lượng sinh viên B2B đóng vai trò duy trì sự ổn định của hệ thống, trong khi doanh thu biên lợi nhuận cao (Sản phẩm Bò sữa) được dẫn dắt chủ yếu bởi gói B2C Tiêu chuẩn, cùng với sự chia sẻ đều đặn về volume từ gói B2C Cơ bản.
+Khoản doanh thu dự kiến trong 2026 sẽ chạm mốc **2.750.000.000 VNĐ (2,75 Tỷ VNĐ)**. Trong cấu trúc mới này, lượng sinh viên B2B đóng vai trò duy trì sự ổn định của hệ thống, trong khi doanh thu biên lợi nhuận cao (Sản phẩm Bò sữa) được dẫn dắt chủ yếu bởi gói B2C Tiêu chuẩn, cùng với sự chia sẻ đều đặn về volume từ gói B2C Cơ bản.
 
 | Phân khúc & Khách hàng | Loại Gói Dịch vụ | Đơn giá trung bình | Chỉ tiêu Volume | Tổng Doanh thu (VNĐ) | Tỷ trọng |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -899,12 +899,12 @@ Khoản doanh thu dự kiến trong nửa cuối 2026 sẽ chạm mốc **2.750.
 1.  **Mảng B2B (Mũi nhọn nền tảng - Đóng góp 36,4% doanh thu):** Năm 2025 dự án đã chứng minh năng lực phục vụ mượt mà 300 sinh viên B2B. Việc đạt 500 sinh viên (tương đương 10-15 lứa/batch) trong nửa cuối năm 2026 là hoàn toàn thiết thực khi hệ thống nền tảng đã ổn định, quy trình vận hành được tự động hóa sâu và dự án đã sẵn sàng đón nhận từ các trường khối đối tác.
 2.  **Mảng B2C (Đòn bẩy lợi nhuận - Đóng góp 63,6% doanh thu):** Cần chốt sales tổng cộng 500 sinh viên B2C (250 Tiêu chuẩn, 250 Cơ bản) trong 6 tháng. So với thị trường hàng năm đào thải 60.000 sinh viên công nghệ, con số 500 bạn là hoàn toàn khả thi. Sự kết hợp giữa phễu truyền miệng từ nhóm B2B đẩy sang và các chiến dịch quảng cáo, Micro-Influencers dứt điểm từ tháng 6 trở đi sẽ đảm bảo điểm rơi doanh thu này.
 
-### 9.2. Báo cáo Kết quả Hoạt động Kinh doanh dự phóng (P&L 6 tháng cuối 2026)
-Với mục tiêu doanh thu **2,75 Tỷ VNĐ** và quy mô phục vụ **1.000 sinh viên** trong nửa cuối năm 2026 (Validation & Scale Phase), chiến lược tài chính của IOC chấp nhận mức lỗ kỹ thuật (Net Loss) để đổi lấy lượng User Base lớn (Khẳng định tính hiệu quả của mô hình) và làm dày Rào cản Dữ liệu (Data Moat).
+### 9.2. Báo cáo Kết quả Hoạt động Kinh doanh dự phóng (P&L năm 2026 - Trọng điểm 6 tháng cuối năm)
+Với mục tiêu doanh thu **2,75 Tỷ VNĐ** và quy mô phục vụ **1.000 sinh viên** trong năm 2026 (thời gian trọng điểm là nửa cuối năm - Validation & Scale Phase), chiến lược tài chính của IOC chấp nhận mức lỗ kỹ thuật (Net Loss) để đổi lấy lượng User Base lớn (Khẳng định tính hiệu quả của mô hình) và làm dày Rào cản Dữ liệu (Data Moat).
 
-Dựa trên Unit Economics của mảng B2C, B2B và ngân sách vận hành bộ máy nhân sự định biên, bảng P&L dự phóng 6 tháng cuối năm 2026 được bóc tách chi tiết như sau:
+Dựa trên Unit Economics của mảng B2C, B2B và ngân sách vận hành bộ máy nhân sự định biên, bảng P&L dự phóng năm 2026 được bóc tách chi tiết như sau:
 
-| Hạng mục P&L (Nửa cuối 2026) | Ghi chú & Diễn giải tham số tính toán | Thành tiền (VNĐ) | Tỷ trọng / Doanh thu |
+| Hạng mục P&L (Năm 2026) | Ghi chú & Diễn giải tham số tính toán | Thành tiền (VNĐ) | Tỷ trọng / Doanh thu |
 | :--- | :--- | :--- | :--- |
 | **I. TỔNG DOANH THU (REVENUE)** | **Quy mô mục tiêu: 1.000 Sinh viên** | **2.750.000.000 đ** | **100%** |
 | - Doanh thu B2C Basic | *250 SV x 2.000.000đ/SV* | *500.000.000 đ* | *18.2%* |
@@ -917,8 +917,8 @@ Dựa trên Unit Economics của mảng B2C, B2B và ngân sách vận hành b�
 | **III. LỢI NHUẬN GỘP (GROSS PROFIT)** | *(I) - (II)* | **1.115.000.000 đ** | **40.6%** |
 | **IV. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **Bao gồm CAC, Quản lý và Vận hành nền tảng** | **2.415.000.000 đ** | **87.8%** |
 | - Chi phí Thu hút KH (CAC) / MKT | *250 SV Basic x 1tr + 250 SV Std x 1,5tr* | *625.000.000 đ* | |
-| - Chi phí Lương Core Team (6 th) | *Đội ngũ 11 người (Dev, AI, QA, PM, Ops...)* | *1.590.000.000 đ* | |
-| - Chi phí Quản lý & Cloud (6 th) | *Thuê Văn phòng, pháp lý, Server, API AI* | *200.000.000 đ* | |
+| - Chi phí Lương Core Team (Năm 2026) | *Đội ngũ 11 người (Dev, AI, QA, PM, Ops...)* | *1.590.000.000 đ* | |
+| - Chi phí Quản lý & Cloud (Năm 2026) | *Thuê Văn phòng, pháp lý, Server, API AI* | *200.000.000 đ* | |
 | **V. LỢI NHUẬN THUẦN (NET PROFIT)**| *(III) - (IV)* | **(1.300.000.000 đ)**| **- 47.2%** |
 
 *Ghi chú phân tích P&L:*
