@@ -842,7 +842,7 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
 Sự khác biệt trong việc cấp phát giá trị của IOC so với các lựa chọn hiện hữu được phân tách dọc theo các tác nhân trong **5 Lực lượng cạnh tranh (Porter's 5 Forces)**. Các Yếu tố cạnh tranh (trục X) nay được định nghĩa là *các thuộc tính dịch vụ mà sinh viên hoặc nhà trường quan tâm nhất khi ra quyết định lựa chọn*:
 
 ```mermaid
-%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#3b82f6,#ef4444,#22c55e,#a855f7,#f97316"}}, "xyChart": {"width": 1200, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#3b82f6,#ef4444,#22c55e,#a855f7,#f97316"}}, "xyChart": {"width": 1600, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
 xychart-beta
     title "Bản đồ Chiến lược (Strategy Canvas) - Phân tích thị trường"
     x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận" ]
