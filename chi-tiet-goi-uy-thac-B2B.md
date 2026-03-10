@@ -155,70 +155,32 @@ Chương trình trải nghiệm trên nền tảng số giúp sinh viên:
 Bản chất của các Gói B2B là đàm phán sỉ cả một "Lứa/Cohort" từ nhà trường. Việc tính toán tài chính B2B không đơn thuần nằm ở giá 1 sinh viên, mà nằm ở điểm hòa vốn trên quy mô một lớp (Batch Size).
 
 ### 4.1. Phân bổ cơ cấu chi phí cho 1 Lứa/Batch
-Bất kể quy mô lứa thực tập từ trường gửi sang là 10 người hay 50 người, Nền tảng IOC vẫn phải duy trì một lượng nguồn lực thiết lập cố định để bảo chứng chất lượng và cam kết vận hành.
+Bất kể quy mô lứa thực tập từ trường gửi sang là bao nhiêu, Nền tảng IOC vẫn phải duy trì một lượng nguồn lực thiết lập cố định (Fixed Setup Cost) và chi phí biến đổi (Variable Cost) tùy theo loại gói dịch vụ.
 
-*   **Chi phí Thiết lập Cố định (Fixed Setup Cost):** 
-    *   Chi phí Tech Lead/Project Manager (PM) thiết lập và tùy biến môi trường/Dự án trên nền tảng: ~ **10.000.000đ**.
-    *   Chi phí vận hành Moderator theo dõi tiến độ chung: ~ **3.000.000đ**.
-    *   Chi phí đàm phán/Chốt Deal (Sales Commission B2B): ~ **5.000.000đ**.
-    *   *Tổng Chi phí Cố định trên 1 Batch:* ~ **18.000.000đ/Lứa**.
-*   **Chi phí Vận hành Biến đổi theo đầu người (Variable Cost):** 
-    *   Thù lao Mentor sâu sát (1 Mentor kèm 15-20 sinh viên): hạch toán **~ 800.000đ/User**.
-    *   Phí hệ thống Dashboard/Tài khoản/AI: **~ 200.000đ/User**.
-    *   Phí tham gia Workshop/Sự kiện: **~ 200.000đ/User**.
-    *   *Biến phí (Variable Cost / User):* ~ **1.200.000đ/Sinh viên**.
+**Bảng Cơ cấu Chi phí & Định mức Tài chính:**
+
+| Hạng mục Phân bổ | Gói CƠ BẢN (750.000đ) | Gói TIÊU CHUẨN (2.000.000đ) | Gói CAO CẤP (4.000.000đ) |
+| :--- | :--- | :--- | :--- |
+| **A. Chi phí Thiết lập Cố định (Fixed) / Lứa** | **7.000.000đ** | **18.000.000đ** | **25.000.000đ** |
+| *- Chi phí PM thiết lập dự án/môi trường* | *2.000.000đ* | *10.000.000đ* | *15.000.000đ* |
+| *- Chi phí Moderator vận hành chung* | *2.000.000đ* | *3.000.000đ* | *4.000.000đ* |
+| *- Đàm phán & Chốt Deal (Sales B2B)* | *3.000.000đ* | *5.000.000đ* | *6.000.000đ* |
+| **B. Chi phí Biến đổi (Variable) / Sinh viên** | **250.000đ** | **1.200.000đ** | **2.200.000đ** |
+| *- Thù lao Mentor/Reviewer* | *50.000đ (Q&A)* | *800.000đ (Bi-weekly)* | *1.400.000đ (Weekly)* |
+| *- Tài khoản Hệ thống & AI* | *200.000đ* | *200.000đ* | *200.000đ* |
+| *- Workshop & Phỏng vấn chuyên gia* | *Không có* | *200.000đ* | *600.000đ* |
+| **C. Lợi nhuận Biên (Contribution Margin)** | **500.000đ** | **800.000đ** | **1.800.000đ** |
+| *(Tính trên 1 User: Giá bán - Mục B)* | *(Biên lãi: 66.6%)* | *(Biên lãi: 40.0%)* | *(Biên lãi: 45.0%)* |
 
 ### 4.2. Bài toán Hòa vốn & Quy mô Sĩ số tối thiểu (Minimum Batch Size)
-Từ cơ cấu chi phí trên, chúng ta xác định **Điểm hòa vốn (Break-even Point)** đối với việc ký kết 1 hợp đồng với Nhà trường:
+Từ Lợi nhuận Biên (Contribution Margin), chúng ta sẽ tính được lượng sinh viên tối thiểu cần thiết để thu hồi Cố định phí (Break-even Volume = Định phí Cố định Khấu hao / Lợi nhuận Biên).
 
-*   **Giá trị Bán sỉ giả định (Gói Tiêu chuẩn B2B):** 2.000.000đ / Sinh viên.
-*   **Lợi nhuận Biên (Contribution Margin):** Giá bán (2.000.000đ) - Biến phí (1.200.000đ) = **800.000đ / Sinh viên** (Số tiền mỗi đầu người dư ra để bù đắp Fixed Setup Cost).
-*   **Điểm Hòa Vốn Quy Mô Lứa (Break-even Volume) =** Khấu hao Cố định (18.000.000đ) / Lợi nhuận Biên (800.000đ) = **22,5 Sinh viên**.
+| Chỉ số Hòa vốn & Sinh lời | GÓI CƠ BẢN | GÓI TIÊU CHUẨN | GÓI CAO CẤP |
+| :--- | :--- | :--- | :--- |
+| **Sĩ số Hòa vốn / Lứa** | **14 Sinh viên** | **22,5 Sinh viên** | **14 Sinh viên** |
+| **Chính sách Sĩ số Tối thiểu** | **Nhận tối thiểu 15 SV** | **Nhận tối thiểu 25 SV** | **Nhận tối thiểu 15 SV** |
+| **Lợi nhuận gộp từ SV vượt mốc** | **+500.000đ / người** | **+800.000đ / người** | **+1.800.000đ / người** |
 
 **Quyết định Chiến lược Tài chính Đầu vào (Financial Go/No-go):**
-1.  **Chính sách Sĩ số Tối thiểu:** Nền tảng IOC sẽ TỪ CHỐI NHẬN các lớp/khoa có số lượng đăng ký sỉ dưới **25 sinh viên/Lứa** (hoặc yêu cầu trường phải ghép lớp, hoặc bắt buộc phải thu thêm phụ phí Setup). Việc nhận lứa dưới 25 người ở Gói Tiêu chuẩn 2tr sẽ dẫn đến việc dự án bị Thâm Hụt Tiền Mặt (âm dòng tiền). 
-2.  **Khả năng Sinh lời Vượt bậc (Scale Profit):** Bất cứ sinh viên thứ 26 trở đi (từ 26 đến 50), lợi nhuận gộp sinh ra trực tiếp là đầy đủ **800.000đ/Sinh viên** do phần chi phí cố định (PM/Moderator/Sales) đã được bao tròn ở mốc 25 người đầu tiên. Đây chính là đòn bẩy lợi nhuận biên đặc thù của dự án B2B.
-
-### 4.3. Giá trị Dữ liệu Không định giá (Data Moat Value)
-Đối với khối lượng B2B, điểm lợi hại nhất của mô hình KHÔNG nằm ở tiền mặt tức thời, mà nằm ở hệ sinh thái khép kín:
-*   **Chi phí Thu mua Khách hàng 0 đồng (Zero CAC):** Khác B2C phải đốt Marketing để dụ dỗ (1tr - 1.5tr/người), tệp B2B mang về hàng trăm Profile Data/Sinh viên trong 1 hợp đồng duy nhất, khiến chi phí Acquisition trên một sinh viên cực kỳ vi mô.
-*   **Doanh thu Trái Ngọt (Backend Revenue):** Khoản Lợi nhuận ròng vĩ đại nhất nằm ở việc sau khi lứa 50-100 sinh viên tốt nghiệp kỳ thực tập IOC, hệ thống này nắm giữ Data năng lực định lượng tuyệt đối của họ, có thể bán (Placement Fee) hoặc phân phối ngược nhân sự này cho các Headhunt/Doanh nghiệp Tuyển dụng với mệnh giá môi giới từ **10.000.000đ - 15.000.000đ/Ứng viên**.
-
----
-
-## 5. BẢNG DỰ PHÓNG P&L (PROFIT & LOSS) B2B - NĂM 1
-
-Bảng P&L dưới đây mô phỏng doanh thu, chi phí trực tiếp và định phí được phân bổ riêng cho mảng B2B trong năm đầu tiên hoạt động. Khác với B2C kiếm tiền theo số đông user, B2B kiếm tiền theo lô sỉ (Batches).
-
-### 5.1. Giả định Sản lượng & Chi phí (Assumptions)
-- **Sản lượng (Batches/Trường):** Quý 1 (2 Lứa), Quý 2 (5 Lứa), Quý 3 (10 Lứa - Mùa cao điểm nhà trường gửi sinh viên), Quý 4 (8 Lứa). Trung bình sĩ số 40 sinh viên/lứa.
-- **Gói dịch vụ mặc định:** Khảo sát cho thấy 100% tổ chức sẽ chọn Gói Tiêu Chuẩn để dễ chuyển đổi môn học (2.000.000đ/sv).
-- **Doanh thu 1 Lứa trung bình (40 sv):** 40 * 2.000.000đ = **80.000.000đ/Lứa**.
-- **Giá vốn (COGS) trung bình 1 Lứa:** Setup Fix (18.000.000đ) + Variable (40 * 1.200.000đ) = **66.000.000đ/Lứa**.
-- **Định phí (OPEX) phân bổ cho B2B:** Lương đội ngũ Quản lý đối tác (BD/Sales B2B), Vận hành Core, Event phí: ~100.000.000đ/tháng $\Rightarrow$ **300.000.000đ/Quý**. Mảng B2B gần như không tốn chi phí Marketing đắt đỏ như B2C.
-
-### 5.2. Bảng P&L Dự Phóng nhánh B2B (Đơn vị: VNĐ)
-
-| Khoản mục (P&L Items) | Quý 1 | Quý 2 | Quý 3 | Quý 4 | Tổng Năm 1 |
-| :--- | ---: | ---: | ---: | ---: | ---: |
-| **1. Sản lượng (Lứa / Batches)** | **2** | **5** | **10** | **8** | **25** |
-| *Tổng lượng sinh viên ước tính* | *80* | *200* | *400* | *320* | *1.000* |
-| | | | | | |
-| **2. DOANH THU (REVENUE)** | **160,000,000** | **400,000,000** | **800,000,000** | **640,000,000** | **2,000,000,000** |
-| **3. GIÁ VỐN HÀNG BÁN (COGS)** | **132,000,000** | **330,000,000** | **660,000,000** | **528,000,000** | **1,650,000,000** |
-| *- Fix Setup Cost (Quản lý dự án)* | *36,000,000* | *90,000,000* | *180,000,000* | *144,000,000* | *450,000,000* |
-| *- Biến phí (Mentor, Server...)* | *96,000,000* | *240,000,000* | *480,000,000* | *384,000,000* | *1,200,000,000* |
-| **4. LỢI NHUẬN GỘP (GROSS PROFIT)** | **28,000,000** | **70,000,000** | **140,000,000** | **112,000,000** | **350,000,000** |
-| *Biên lợi nhuận gộp (Gross Margin %)*| *17.5%* | *17.5%* | *17.5%* | *17.5%* | *17.5%* |
-| | | | | | |
-| **5. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **300,000,000** | **315,000,000** | **350,000,000** | **335,000,000** | **1,300,000,000** |
-| *- Phí cố định (Lương Core, Sales)* | *300,000,000* | *300,000,000* | *300,000,000* | *300,000,000* | *1,200,000,000* |
-| *- Hoa hồng Sales bổ sung (nếu có)* | *0* | *15,000,000* | *50,000,000* | *35,000,000* | *100,000,000* |
-| | | | | | |
-| **6. LỢI NHUẬN (LỖ) RÒNG** | **(272,000,000)** | **(245,000,000)** | **(210,000,000)** | **(223,000,000)** | **(950,000,000)** |
-
-**Phân tích P&L B2B:**
-*   **Thách thức Gross Margin:** Nhánh B2B mang lại Doanh thu lớn (Bulk Revenue) ngay lập tức nhưng Cấp độ lợi nhuận gộp khá mỏng (chỉ ~17.5% do nặng chi phí setup ban đầu và vận hành lứa), khiến mô hình này khó tự gánh khoản OPEX lớn trong năm đầu.
-*   **Chiến lược Gỡ băng & Bùng nổ lợi nhuận:** 
-    * Lợi nhuận "ẩn" bù đắp khoản âm ròng P&L của B2B không nằm ở Doanh thu tiền mặt bán gói, mà là việc nạp **1.000 Data sinh viên** chất lượng cao vào hệ thống với "0 đồng Marketing". 
-    * Nếu 1.000 sinh viên tốt nghiệp này được phân phối qua mảng Hệ sinh thái Tuyển dụng (Placement) — giả định 10% (100 người) tuyển thành công với phí Headhunt 10.000.000đ/người — dự án sẽ thu về ngay lập tức thêm **1.000.000.000đ** doanh thu gần như tinh khiết 100% Margin, giúp toàn bộ mảng B2B đảo chiều sang hòa vốn và sinh lời.
+1.  **Chính sách Sĩ số Mở Lớp:** IOC sẽ TỪ CHỐI NHẬN các lớp/khoa có số lượng đăng ký sỉ dưới mức "Chính sách Sĩ số Tối thiểu" từng gói (ví dụ dưới 25 người với gói Tiêu chuẩn). Trong trường hợp ít người hơn, yêu cầu trường phải ghép lớp hoặc thu thêm phụ phí Setup. Việc nhận sai sĩ số sẽ dẫn đến dự án bị thâm hụt tiền mặt.
+2.  **Khả năng Sinh lời Vượt bậc (Scale Profit):** Bất cứ sinh viên nào vượt qua mốc Sĩ số Tối thiểu, lợi nhuận gộp sinh ra trực tiếp hoàn toàn bằng với Lợi nhuận Biên (ví dụ: người thứ 26 gói Tiêu chuẩn mang về lãi cục bộ 800.000đ, hoặc 1.800.000đ ở gói Cao cấp) do phần chi phí cố định (PM/Moderator/Sales) đã được bao tròn ở mốc đầu tiên. Đây chính là đòn bẩy lợi nhuận biên đặc thù và cốt lõi của nhánh dự án B2B.
