@@ -842,7 +842,7 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
 Sự khác biệt trong việc cấp phát giá trị của IOC so với các lựa chọn hiện hữu được phân tách dọc theo các tác nhân trong **5 Lực lượng cạnh tranh (Porter's 5 Forces)**. Các Yếu tố cạnh tranh (trục X) nay được định nghĩa là *các thuộc tính dịch vụ mà sinh viên hoặc nhà trường quan tâm nhất khi ra quyết định lựa chọn*:
 
 ```mermaid
-%%{init: {"xyChart": {"width": 1200, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#3b82f6,#ef4444,#22c55e,#a855f7,#f97316"}}, "xyChart": {"width": 1200, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
 xychart-beta
     title "Bản đồ Chiến lược (Strategy Canvas) - Phân tích thị trường"
     x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận" ]
@@ -853,6 +853,13 @@ xychart-beta
     line "Thực tập truyền thống" [ 100, 100, 100, 100, 30, 100, 20, 100, 40, 0 ]
     line "IOC 2.0" [ 40, 20, 80, 100, 90, 80, 100, 80, 60, 100 ]
 ```
+
+**(Chú thích biểu đồ: Để dễ phân biệt, biểu đồ đã được gán mã màu. Trong trường hợp trình xem Markdown của bạn không hỗ trợ đổi màu, bạn có thể nhận diện qua hình dáng/xu hướng của đường)**
+*   🔵 **Đường màu Xanh dương (Job Boards):** Nằm ở mức 100 tại 2 điểm đầu (Mức giá, Mạng lưới) và chìm xuống 0 ở các yếu tố đào tạo/thực hành ở giữa biểu đồ.
+*   🔴 **Đường màu Đỏ (TT Đào tạo / Bootcamp):** Chạm đáy 0 ở "Mức giá" và đạt đỉnh 100 liên tiếp ở "Kiến thức" và "Bằng cấp".
+*   🟢 **Đường màu Xanh lá (Mô hình Lab ĐH):** Khởi đầu ở điểm 100 (Mức giá), sau đó dao động quanh mức dưới trung bình, rất thấp ở "Mức độ quan tâm" (10).
+*   🟣 **Đường màu Tím (Thực tập truyền thống):** Giữ đỉnh 100 ở nhiều cột (Trải nghiệm, Kiến thức) nhưng rớt xuống 0 ở "Khả năng tiếp cận" (cột cuối cùng).
+*   🟠 **Đường màu Cam - Nổi bật (IOC 2.0):** Đường có chỉ số ổn định ở mức khá -> cao ở các tiêu chí thực tập (80-100), đạt đỉnh cao nhất ở "Khả năng tiếp cận" và "Báo cáo minh bạch" (100).
 
 *Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ" dựa trên vị thế ưu việt ở 10 yếu tố cạnh tranh:*
 *   *So với Đối thủ tiềm ẩn (Job Boards): IOC quyết định thu hẹp và loại bỏ (Eliminate) cuộc đua bám đuổi "Mạng lưới tiếp cận CV" (giảm điểm số xuống 20). Thay vào đó, nền tảng dồn toàn lực cốt lõi vào sự dịch chuyển chất lượng hành nghề thực chiến vững chắc bên trong.*
