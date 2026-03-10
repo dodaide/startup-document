@@ -473,7 +473,7 @@ Dưới đây là các mô hình tiềm năng được đúc kết từ quá tr�
 *   **Solution 29 - Nền tảng thực tập trực tuyến:** Sinh viên tự apply, hệ thống matching và làm việc online hoàn toàn. **→ Lựa chọn vào bước sàng lọc định lượng**
 *   **Solution 30 - Mô hình Lai (Managed Internship Service + EdTech Platform):** Cung cấp môi trường dự án giả lập/thật, có Mentor hướng dẫn, số hóa báo cáo. (Giống Teky) **→ Lựa chọn vào bước sàng lọc định lượng**
 *   **Solution 31 - Mô hình Dự án siêu ngắn "Micro-Internships" (Inspiration from Parker Dewey):** Cắt nhỏ dự án thành các task 5-40 giờ giúp tích lũy kinh nghiệm nhanh.
-*   **Solution 32 - Mô hình Thực tập ảo "Virtual Experience" (Inspiration from Forage):** Bài tập mô phỏng từ các Big Tech để tạo phễu lọc ứng viên chất lượng. **→ Lựa chọn vào bước sàng lọc định lượng**
+*   **Solution 32 - Mô hình Thực tập ảo "Virtual Experience" (Inspiration from Forage hoặc nextwork):** Bài tập mô phỏng từ các Big Tech để tạo phễu lọc ứng viên chất lượng. **→ Lựa chọn vào bước sàng lọc định lượng**
 *   **Solution 33 - Hệ sinh thái "Học - Thực tập - Đi làm" khép kín (Inspiration from Glints):** Cam kết đầu ra dựa trên tuyển dụng và đào tạo thực chiến. 
 *   **Solution 34 - "1-Day Internship" (Modify/Magnify):** Một ngày trải nghiệm thực tế tại doanh nghiệp trước khi quyết định thực tập dài hạn.
 *   **Solution 35 - Thực tập theo mô hình Squad (Modify):** Doanh nghiệp tuyển nguyên một **Squad (3-4 người: FE, BE, Tester)** thay vì cá nhân rời rạc, giúp đội ngũ tự vận hành ngay theo chuẩn Agile/Scrum.
