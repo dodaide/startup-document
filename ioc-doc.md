@@ -838,20 +838,21 @@ Sự khác biệt trong việc cấp phát giá trị của IOC so với các l�
 %%{init: {"xyChart": {"width": 1200, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
 xychart-beta
     title "Bản đồ Chiến lược (Strategy Canvas) - Phân tích thị trường"
-    x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận" ]
+    x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận", "Thời gian" ]
     y-axis "Mức độ Cung ứng" 0 --> 100
-    line "Job Boards (TopCV, ITviec...)" [ 100, 100, 0, 0, 100, 0, 0, 0, 0, 100 ]
-    line "TT Đào tạo / Bootcamp IT" [ 0, 20, 100, 100, 50, 60, 30, 20, 60, 100 ]
-    line "Mô hình Lab ĐH" [ 100, 20, 20, 50, 0, 40, 70, 70, 10, 30 ]
-    line "Thực tập truyền thống" [ 100, 100, 100, 100, 30, 100, 20, 100, 40, 0 ]
-    line "IOC 2.0" [ 40, 20, 80, 100, 90, 80, 100, 80, 60, 100 ]
+    line "Job Boards (TopCV, ITviec...)" [ 100, 100, 0, 0, 100, 0, 0, 0, 0, 100, 100 ]
+    line "TT Đào tạo / Bootcamp IT" [ 0, 20, 100, 100, 50, 60, 30, 20, 60, 100, 60 ]
+    line "Mô hình Lab ĐH" [ 100, 20, 20, 50, 0, 40, 70, 70, 10, 30, 10 ]
+    line "Thực tập truyền thống" [ 100, 100, 100, 100, 30, 100, 20, 100, 40, 0, 40 ]
+    line "IOC 2.0" [ 40, 20, 80, 100, 90, 80, 100, 80, 60, 100, 90 ]
 ```
 
-*Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ" dựa trên vị thế ưu việt ở 10 yếu tố cạnh tranh:*
+*Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ" dựa trên vị thế ưu việt ở 11 yếu tố cạnh tranh:*
 *   *So với Đối thủ tiềm ẩn (Job Boards): IOC quyết định thu hẹp và loại bỏ (Eliminate) cuộc đua bám đuổi "Mạng lưới tiếp cận CV" (giảm điểm số xuống 20). Thay vào đó, nền tảng dồn toàn lực cốt lõi vào sự dịch chuyển chất lượng hành nghề thực chiến vững chắc bên trong.*
 *   *So với Bootcamp & Đại học: Dù mang đến "Mức Giá" linh hoạt và dễ chịu hơn rất nhiều (40 điểm) thay vì sự đắt đỏ kiệt quệ của các Bootcamp (0 điểm), IOC vẫn thiết lập một tiêu chuẩn 100/100 tuyệt đối xuyên suốt ở trục "Lý thuyết" (thấm nhuần cốt lõi Flipped Internship) và "Bằng cấp/Chứng nhận". Sự dứt điểm này lấp đầy điểm yếu ở phần thiếu hụt "Kinh nghiệm" (80) của hệ thống đại học.*
 *   *Khả năng tiếp cận & Linh hoạt: Các cơ chế Lab thực hành của trường Đại học (0 điểm) hay môi trường Thực tập truyền thống (30 điểm) không chỉ bị bó cứng về địa lý, thời gian, mà còn thiết lập một rào cản quá lớn trong "Khả năng tiếp cận" cho những sinh viên bị hổng gốc. Bằng hệ sinh thái dự án phi tập trung, IOC mở cánh cửa tự do tiếp cận cho mọi đối tượng với thiết chế "Linh hoạt" (90 điểm) và "Khả năng tiếp cận" rộng mở bao trùm (100 điểm).*
 *   *So với Thực tập truyền thống: Nhúng mình trực tiếp tại văn phòng doanh nghiệp hiển nhiên duy trì "Trải nghiệm thực tế" và "Kinh nghiệm" ở mức trần tối đa (100). Là một nền tảng thực tập ảo trung gian, IOC dù chỉ tiệm cận mức (80) nhưng đã khắc phục vĩnh viễn điểm yếu chí tử của thực tập truyền thống đó là "Báo cáo minh bạch" quá mờ nhạt (20) và "Mức độ quan tâm" tới từng cá nhân bị phớt lờ do các Mentor luôn quá tải với công việc (40). IOC san lấp hoàn hảo được điểm mù vĩ đại này.*
+*   *Thời gian tối ưu (Time Efficiency):* Trong khi các mô hình đào tạo truyền thống kéo dài hàng năm hoặc thực tập truyền thống tốn nhiều thời gian chờ đợi, IOC 2.0 tối ưu hóa tiến trình (90 điểm) giúp sinh viên nhanh chóng đạt trạng thái "Plug & Play", chỉ sau Job Boards về tốc độ tiếp cận ban đầu nhưng vượt trội về hiệu quả rút ngắn khoảng cách kỹ năng thực tế.
 *   *Kích tạo đại dương xanh (Create): Cuối cùng, đỉnh cao của sự khác biệt là kỷ lục tuyệt đối ở **Báo cáo minh bạch** (100 điểm) đạt được qua việc số hóa mọi Logwork hàng giờ; đồng tâm tạo lập lực tương tác sâu kết nối với **Mức độ quan tâm** (60) mật thiết từ AI Operator và Agile Mentor. Sự giao hòa này chính là định nghĩa về một vùng trời Đại dương Xanh chưa từng có tổ chức nào có thể khai phá.*
 ### 8.3. Lộ trình Sản phẩm Relaunched (Product Roadmap - Now/Next/Later)
 Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 2025, Roadmap hiện tại của IOC tập trung vào bài toán mở rộng quy mô (Scale-up), tự động hóa toàn diện và củng cố chất lượng nội dung:
