@@ -6,7 +6,7 @@
 | :--- | :--- | :--- | :--- |
 | **Mức phí** | 750.000đ / sinh viên | 2.000.000đ / sinh viên | 4.000.000đ / sinh viên |
 | **Thời gian** | 2 tháng | 2.5 tháng | 2.5 tháng |
-| **Hình thức** | 100% Online | Hybrid (Max 1.5 ngày offline/tuần) | Hybrid (Max 2.5 ngày offline/tuần) |
+| **Hình thức** | 100% Online | Hybrid (Max 2 ngày offline/tuần) | Hybrid (Max 5 ngày offline/tuần) |
 | **Dự án thực hiện** | Dự án giả lập | Dự án giả lập | Dự án thực tế hoặc giả lập |
 | **Hỗ trợ từ Mentor** | Qua nhóm chung | Mentor nhóm & Bi-weekly Review | Mentor nhóm & Weekly Review |
 | **Workshop kỹ năng** | Không bao gồm | 03 Workshop cốt lõi | 08 Workshop chuyên sâu |
