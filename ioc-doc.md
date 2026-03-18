@@ -258,7 +258,12 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT"** đã được xác định ở Mục 2.1, hoạt động của IOC ứng dụng phương pháp Tính điểm cơ hội (Opportunity Algorithm) để nhận diện phân khúc. Mặc dù ở giai đoạn đầu tập trung vào xác định định tính từ đội ngũ chuyên gia, nền tảng vẫn hướng đến đáp ứng các **Kết quả chưa được đáp ứng tốt (Underserved Outcomes)** thông qua việc khắc họa chi tiết Hồ sơ Khách hàng (Customer Profile).
 
 #### 3.4.1. CHIẾN LƯỢC B2C (SINH VIÊN)
-*Đối tượng: Sinh viên năm cuối, yếu hoặc mất gốc thực tập sinh tự do, và sinh viên cần hoàn thành tiêu chuẩn thực tập của trường.*
+
+![Mô tả ảnh](https://www.garyfox.co/wp-content/uploads/2024/07/value-proposition-canvas-customer-profile.png)
+
+![Mô tả ảnh](https://www.digital.nsw.gov.au/sites/default/files/styles/wysiwyg_image/public/2022-09/empathy-mapping.png?itok=A0pnvTtm)
+
+*Đối tượng: Khác với tệp B2B có sự phân chia đồng đều, insight thực tế cho thấy tệp khách hàng cá nhân (B2C) tự tìm đến IOC đa phần là những sinh viên có trình độ rất yếu, mất gốc nền tảng, hoặc sinh viên năm cuối cần "phao cứu sinh" cấp tốc để hoàn thành tiêu chuẩn thực tập của trường.*
 
 **1. Customer Profile (Khắc họa phân khúc "Panic Seekers"):**
 *   *Nỗi đau / Underserved Outcome:* Sắp ra trường nhưng CV trống trơn, sợ thất nghiệp, sợ phỏng vấn. Cần một "phao cứu sinh" cấp tốc để có dự án thực tế và nhận mộc thực tập hợp lệ.
@@ -278,12 +283,12 @@ Kế thừa **Chẩn đoán (Diagnosis): "Sự Bế tắc OJT"** đã được x
 
 *👉 **Empathy Map (Bản đồ thấu cảm định tính):***
 *   **Says:** "Chỉ còn 2 tháng nữa là nộp điểm", "Đi thực tập mà toàn bắt ngồi dịch tài liệu với đi mua cafe".
-*   **Thinks:** "Làm sao để vừa có mộc của trường, vừa có dự án xịn gửi vào Big Tech?"
+*   **Thinks:** "Làm sao để vừa có mộc của trường, vừa có dự án xịn để xin việc?"
 *   **Does:** Đành chấp nhận làm dự án lặt vặt để đủ điểm, tự tìm kiếm dự án ngoài để vớt vát lại CV.
 *   **Feels:** Cực kỳ áp lực, tự ti khi so sánh với bạn bè, hoang mang sợ hãi khi đọc JD, thất vọng vì không được code thật.
 
 #### 3.4.2. CHIẾN LƯỢC B2B (NHÀ TRƯỜNG)
-*Đối tượng: Các trường ĐH/CĐ top dưới đang cần nâng cao vị thế đào tạo, gặp khó khăn tìm đối tác tiếp nhận sinh viên.*
+*Đối tượng: Các trường ĐH/CĐ top dưới đang cần nâng cao vị thế đào tạo, gặp khó khăn tìm đối tác tiếp nhận sinh viên. Lượng sinh viên (End-user) đến từ nguồn B2B này mang phổ trình độ phân hóa rất đa dạng (từ khá, trung bình, đến yếu kém).*
 
 **1. Customer Profile (Khắc họa phân khúc "Brand Builders"):**
 *   *Nỗi đau / Underserved Outcome:* Uy tín sinh viên trường chưa cao. Cần môi trường thực tập chất lượng để tạo "output đẹp" nhằm khẳng định năng lực đào tạo với phụ huynh và xã hội.
@@ -600,6 +605,8 @@ Với nền tảng là tìm cơ hội từ nhóm khách hàng "Chưa được đ
 ### 5.4. Đề xuất Giá trị & Định vị Sản phẩm (Value Proposition & Positioning)
 Từ việc thâu tóm "Hồ sơ Khách hàng - Customer Profile" ở Mục 3, kết hợp với các chính sách định hướng phía trên, IOC thiết kế **Bản đồ Giá trị (Value Map)** để tạo ra sự khớp nối (Fit) 1:1 trong Value Proposition Canvas.
 
+![Mô tả ảnh](https://public-images.interaction-design.org/tags/td-value-proposition-canvas-post-its-05.jpg)
+
 **A. Bản đồ giá trị (Value Map) B2C - "CAREER SURVIVAL KIT" & "PREMIUM CERTIFICATION"**
 *Core JTBD: "Tích lũy kinh nghiệm làm việc thực tế để vượt ải CV và được tuyển dụng."*
 *Thông điệp: "Đừng để việc thiếu kinh nghiệm giết chết sự nghiệp của bạn."*
@@ -642,10 +649,11 @@ Khác với việc thiết kế cấu trúc lý thuyết khổng lồ trước k
 
 Chuyển sang giai đoạn hiện tại, chiến lược phát triển sản phẩm của chúng tôi xoay trục hoàn toàn sang việc **hệ thống hóa các tính năng hiện có, gán các chỉ số đo lường (Metrics định lượng)** và tiến hành tối ưu theo vòng lặp **Build - Measure - Learn**. 
 
-Đặc biệt, để đảm bảo việc thực tập diễn ra chất lượng và bám sát năng lực thực tế, toàn bộ quá trình vận hành OJT của hệ thống được thiết kế dựa trên 3 phương pháp luận cốt lõi:
+Đặc biệt, để đảm bảo việc thực tập diễn ra chất lượng và bám sát năng lực thực tế, toàn bộ quá trình vận hành OJT của hệ thống được thiết kế dựa trên 4 phương pháp luận cốt lõi:
 *   **Mastery OJT (Biến thể của Mastery Learning của nhà tâm lý học Benjamin Bloom):** Tính thông thạo được áp dụng toàn diện trên hệ thống. Khi đến từng task công việc, khi học lý thuyết mới hay luyện phỏng vấn, hệ thống đều yêu cầu và hiển thị các bộ kỹ năng cốt lõi tương ứng kèm mức độ thông thạo hiện tại của học viên. Hệ thống thiết lập cơ chế "khóa bảo vệ": sinh viên phải đạt trên mức độ thông thạo quy định (ví dụ >80% ở bài kiểm tra lý thuyết hoặc vượt điểm sàn qua hệ thống Mock Interview) thì mới được "mở khóa" phần kiến thức mới hoặc nhận task công việc có độ phức tạp cao hơn phục vụ dự án.
 *   **Flipped Internship (Thực tập đảo ngược):** Phần lý thuyết sẽ không chiếm nhiều thời gian làm việc (chỉ khoảng 20% thời gian). Hệ thống đưa phần học lý thuyết, quy trình, kiến thức ngành ra ngoài giờ làm việc. Thời gian ở công ty hoặc trên môi trường sinh hoạt dự án chỉ dùng để thực hành mã nguồn, thảo luận sâu, xử lý tình huống thực tế và nhận phản hồi trực tiếp từ Mentor. Thực tập sinh (TTS) sẽ học thông qua hệ thống E-learning (video, tài liệu) để tự học ở nhà.
 *   **Adaptive OJT:** Không chỉ giới hạn ở việc giao task công việc (JIRA-like), tính cá nhân hóa còn phủ rộng trên tài nguyên học tập (LMS), hệ thống kiểm tra và quá trình đánh giá/phỏng vấn. Dựa vào tốc độ tiếp thu và lịch sử năng lực, hệ thống và Mentor sẽ liên tục tự động điều chỉnh độ khó của các task dự án, độ sâu của các chặng bài test, cũng như mức độ thử thách trong các kịch bản luyện phỏng vấn (Mock Interview). Qua đó, hệ sinh thái luôn được "may đo" (adaptive) vừa vặn với nhịp tiến bộ của từng sinh viên, giúp tối ưu hóa quá trình hấp thụ kiến thức đa chiều, giảm thiểu lo âu hay nhàm chán.
+*   **Competency-Based Training (Đào tạo dựa trên năng lực):** Đầu ra của quá trình đào tạo được đo lường hoàn toàn bằng sự thành thạo kỹ năng thay vì số giờ đã học, coi thời gian là một biến số linh hoạt thay vì cố định. Kiến thức và kỹ năng được chia thành cấu trúc các cấp độ: Hiểu biết, Thông hiểu, Vận dụng và Vận dụng cao. Ứng dụng triệt để nguyên tắc không nhảy bước nếu Thực tập sinh (TTS) chưa đủ thành thạo (hệ thống có thể chấp nhận việc TTS chưa hoàn thành chương trình nếu đã hết thời gian thực tập nhưng chưa đủ năng lực). Ngược lại, nếu TTS chứng minh được năng lực vượt trội, hệ thống sẽ bỏ qua các bước căn bản để đi thẳng vào các task nâng cao nhằm tối ưu hóa thời gian.
 
 Dưới đây là phương thức cấu trúc lại Nền tảng thành các giả thuyết (Hypotheses) để theo dõi và tinh chỉnh:
 
@@ -668,20 +676,16 @@ Dưới đây là phương thức cấu trúc lại Nền tảng thành các gi�
 
 *   **Cơ sở Định giá (Pricing Strategy):** Nhóm đối tượng này áp dụng chiến lược **Định giá theo Giá trị (Value-Based Pricing)** kết hợp **Hiệu ứng Điểm neo (Price Anchoring)** để giải quyết bài toán thuyết phục mức giá:
     *   *Value-Based Pricing (Mũi nhọn truyền thông):* Định giá dự theo Tỷ suất hoàn vốn (ROI) mà sinh viên nhận được thay vì tính đếm số giờ Mentor phục vụ. Mức giá trung bình 5.000.000đ được định vị chỉ bằng 50% tháng lương Fresher đầu tiên. Việc đầu tư khoản tiền này để có thêm kiến thức, kỹ năng, kinh nghiệm, dự án trong CV, xóa bỏ nỗi sợ thất nghiệp và nhanh chóng vượt qua vòng phỏng vấn là một khoản đầu tư vô cùng "hời" và xứng đáng.
-    *   *Price Anchoring (Chiến thuật Bảng giá):* Thiết kế cấu trúc 3 nấc (Cơ bản 2tr - Tiêu chuẩn 5tr - Cao cấp xxtr). Gói Cao cấp đóng vai trò "mỏ neo" tâm lý, khiến khách hàng nhìn nhận Gói Tiêu chuẩn (5.000.000đ) là một sự lựa chọn cốt lõi vô cùng vừa vặn, hợp lý, từ đó kích thích số đông ưu tiên mua gói này. Đồng thời ở hậu trường, các mức giá này đều được tính toán đi qua điểm hòa vốn (Cost-Based Pricing) để đảm bảo biên lợi nhuận sau khi trừ đi chi phí Marketing (CAC) và chi phí vận hành Mentor.
+    *   *Price Anchoring (Chiến thuật Bảng giá):* Thiết kế cấu trúc 2 nấc (Cơ bản 2tr - Tiêu chuẩn 5tr). Sự khác biệt rõ rệt về quyền lợi so với mức chênh lệch giá khiến khách hàng nhìn nhận Gói Tiêu chuẩn (5.000.000đ) là một sự lựa chọn cốt lõi vô cùng vừa vặn, hợp lý, từ đó kích thích số đông ưu tiên mua gói này. Đồng thời ở hậu trường, các mức giá này đều được tính toán đi qua điểm hòa vốn (Cost-Based Pricing) để đảm bảo biên lợi nhuận sau khi trừ đi chi phí Marketing (CAC) và chi phí vận hành Mentor.
 
-*   **B2C Gói 1: Gói cao cấp (Đề xuất 2 lựa chọn để chốt trong họp)**
-    *   *Lựa chọn 1:* Chuyển thẳng các khóa học ngắn hạn của Rikkei có yếu tố thực tập về dự án IOC để hệ thống quản lý tập trung.
-    *   *Lựa chọn 2:* Dự án IOC chỉ đảm nhiệm thực thi việc tổ chức giai đoạn thực tập (OJT) cho các khóa học ngắn hạn và dài hạn của Rikkei (cần thiết lập rõ cơ chế ghi nhận thu/chi nội bộ). Song song đó, nền tảng IOC kết hợp cùng Rikkei để xây dựng thêm các khóa đào tạo ngắn hạn mới (Ví dụ gói siêu thực tập - Giá khoảng 60tr, thực tập đến bao giờ đủ skill và xin được việc thì thôi).
-
-*   **B2C Gói 2: Gói tiêu chuẩn (5.000.000đ)**
+*   **B2C Gói 1: Gói tiêu chuẩn (5.000.000đ)**
     *   Chi tiết trong tài liệu (chi-tiet-goi-tt-B2C.md)
-    *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng.
+    *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng. Tuân thủ nguyên tắc **Competency-Based Training**, hệ thống chấp nhận việc thực tập sinh kết thúc thời hạn 3 tháng mà có thể chưa hoàn thành toàn bộ chương trình nếu năng lực chưa đạt sự thành thạo yêu cầu.
     *   *Nội dung chương trình:* Được đào tạo về công nghệ và quy trình làm việc nền tảng. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
 
-*   **B2C Gói 3: Gói cơ bản (2.000.000đ)**
+*   **B2C Gói 2: Gói cơ bản (2.000.000đ)**
     *   Chi tiết trong tài liệu (chi-tiet-goi-tt-B2C.md)
-    *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng.
+    *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng. Tương tự gói Tiêu chuẩn, tính hoàn thành được đánh giá hoàn toàn dựa trên sự thành thạo kỹ năng cốt lõi (**Competency-Based Training**) bất kể giới hạn thời gian thực tập.
     *   *Nội dung chương trình:* Chủ yếu tự đào tạo thông qua tài nguyên có sẵn trên nền tảng. Sinh viên tự làm lại các dự án giả lập đã hoàn thành từ khóa trước và bị hạn chế sự tương tác với Mentor hướng dẫn.
 
 ### 6.2. Trụ cột 2: Hệ thống Nền tảng (Bộ máy Thu thập Dữ liệu & Vận hành JIRA-like)
@@ -768,7 +772,7 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
       </td>
       <td valign="top">
         <strong>Năng lực Cốt lõi</strong><br><br>
-        Nền tảng quản lý dự án linh hoạt tích hợp công cụ đo lường hành vi (Metrics Engine); Hệ thống AI Vận hành (AI Project Operator) làm chủ lực đánh giá (Review Code/Test Case/Docs); Ngân hàng Dự án Mẫu giả lập sát thực tế (Project Templates); Đội ngũ Vận hành + Mạng lưới Mentor (Nội bộ & CTV) đóng vai trò giám sát (Human-in-the-loop); và <strong>Khung Phương pháp luận độc quyền (Mastery OJT, Flipped Internship, Adaptive OJT)</strong>.
+        Nền tảng quản lý dự án linh hoạt tích hợp công cụ đo lường hành vi (Metrics Engine); Hệ thống AI Vận hành (AI Project Operator) làm chủ lực đánh giá (Review Code/Test Case/Docs); Ngân hàng Dự án Mẫu giả lập sát thực tế (Project Templates); Đội ngũ Vận hành + Mạng lưới Mentor (Nội bộ & CTV) đóng vai trò giám sát (Human-in-the-loop); và <strong>Khung Phương pháp luận độc quyền (Mastery OJT, Flipped Internship, Adaptive OJT, Competency-Based Training)</strong>.
       </td>
     </tr>
     <tr>
@@ -786,7 +790,7 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
       <td valign="top" rowspan="3">
         <strong>Tuyên bố Giá trị</strong><br><br>
         - <em>Trước đó:</em> Sinh viên đi thực tập ma hoặc tự học chay qua video lý thuyết; nhà trường theo dõi sinh viên qua những con mộc mờ ảo trên giấy thủ công.<br><br>
-        - <em>Cách thức:</em> IOC nhúng sinh viên thẳng vào nền tảng (JIRA-like), phân nhóm chạy dự án giả lập dưới sự kèm cặp sát sao của AI Project Operator và Mentor (Human-in-the-loop). Vận hành triệt để theo 3 phương pháp: <strong>Flipped Internship</strong> (học lý thuyết ở nhà, thực hành tại dự án), <strong>Mastery OJT</strong> (đạt chuẩn kỹ năng mới mở khóa task) và <strong>Adaptive OJT</strong> (giao việc cá nhân hóa).<br><br>
+        - <em>Cách thức:</em> IOC nhúng sinh viên thẳng vào nền tảng (JIRA-like), phân nhóm chạy dự án giả lập dưới sự kèm cặp sát sao của AI Project Operator và Mentor (Human-in-the-loop). Vận hành triệt để theo 4 phương pháp: <strong>Flipped Internship</strong> (học lý thuyết ở nhà, thực hành tại dự án), <strong>Mastery OJT</strong> (đạt chuẩn kỹ năng mới mở khóa task), <strong>Adaptive OJT</strong> (giao việc cá nhân hóa) và <strong>Competency-Based Training</strong> (đo lường bằng mức độ thành thạo kỹ năng).<br><br>
         - *Sau đó:* Sinh viên tích lũy kinh nghiệm thực chiến vững chắc dựa trên tiến trình chạy dự án; Nhà trường **có nơi gửi sinh viên đi thực chiến ổn định theo mùa vụ**, và có lớp dữ liệu/Dashboard để kiểm soát, bảo chứng hiệu quả đào tạo khi cần.
       </td>
       <td valign="top">
@@ -796,7 +800,7 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
       </td>
       <td valign="top">
         <strong>Lợi thế Phòng thủ</strong><br><br>
-        - Các nền tảng EdTech lớn (Coursera, Udemy) khó sao chép vì họ chỉ mạnh phân phối nội dung tĩnh, <em>sẽ không</em> muốn đầu tư Mentor và <em>không có</em> thiết chế sư phạm chuyên biệt như <strong>Flipped Internship / Mastery OJT / Adaptive OJT</strong>.<br><br>
+        - Các nền tảng EdTech lớn (Coursera, Udemy) khó sao chép vì họ chỉ mạnh phân phối nội dung tĩnh, <em>sẽ không</em> muốn đầu tư Mentor và <em>không có</em> thiết chế sư phạm chuyên biệt như <strong>Flipped Internship / Mastery OJT / Adaptive OJT / Competency-Based Training</strong>.<br><br>
         - Các Job board/Nền tảng tuyển dụng truyền thống cũng <em>không thể</em> bắt chước vì họ rỗng lõi về đào tạo thực chiến.
       </td>
     </tr>
@@ -835,17 +839,25 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
 Sự khác biệt trong việc cấp phát giá trị của IOC so với các lựa chọn hiện hữu được phân tách dọc theo các tác nhân trong **5 Lực lượng cạnh tranh (Porter's 5 Forces)**. Các Yếu tố cạnh tranh (trục X) nay được định nghĩa là *các thuộc tính dịch vụ mà sinh viên hoặc nhà trường quan tâm nhất khi ra quyết định lựa chọn*:
 
 ```mermaid
-%%{init: {"xyChart": {"width": 1200, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#3b82f6,#ef4444,#22c55e,#a855f7,#f97316"}}, "xyChart": {"width": 1600, "height": 500, "xAxis": {"labelPadding": 10} } } }%%
 xychart-beta
     title "Bản đồ Chiến lược (Strategy Canvas) - Phân tích thị trường"
-    x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận", "Thời gian" ]
+    x-axis "Các Yếu tố Cạnh tranh" [ "Mức Giá", "Mạng lưới tiếp cận CV", "Kiến thức", "Bằng cấp", "Linh hoạt", "Kinh nghiệm", "Báo cáo minh bạch", "Trải nghiệm thực tế", "Mức độ quan tâm", "Khả năng tiếp cận", "Thời gian", "Cá nhân hóa" ]
     y-axis "Mức độ Cung ứng" 0 --> 100
-    line "Job Boards (TopCV, ITviec...)" [ 100, 100, 0, 0, 100, 0, 0, 0, 0, 100, 100 ]
-    line "TT Đào tạo / Bootcamp IT" [ 0, 20, 100, 100, 50, 60, 30, 20, 60, 100, 60 ]
-    line "Mô hình Lab ĐH" [ 100, 20, 20, 50, 0, 40, 70, 70, 10, 30, 10 ]
-    line "Thực tập truyền thống" [ 100, 100, 100, 100, 30, 100, 20, 100, 40, 0, 40 ]
-    line "IOC 2.0" [ 40, 20, 80, 100, 90, 80, 100, 80, 60, 100, 90 ]
+    line "Job Boards (TopCV, ITviec...)" [ 100, 100, 0, 0, 100, 0, 0, 0, 0, 100, 100, 0 ]
+    line "TT Đào tạo / Bootcamp IT" [ 0, 20, 100, 100, 50, 60, 30, 20, 60, 100, 60, 20 ]
+    line "Mô hình Lab ĐH" [ 100, 20, 20, 50, 0, 40, 70, 70, 10, 30, 10, 10 ]
+    line "Thực tập truyền thống" [ 100, 100, 100, 100, 30, 100, 20, 100, 40, 0, 40, 50 ]
+    line "IOC 2.0" [ 40, 20, 80, 100, 90, 80, 100, 80, 60, 100, 100, 90 ]
 ```
+
+*Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ" dựa trên vị thế ưu việt ở 11 yếu tố cạnh tranh:*
+**(Chú thích biểu đồ: Để dễ phân biệt, biểu đồ đã được gán mã màu. Trong trường hợp trình xem Markdown của bạn không hỗ trợ đổi màu, bạn có thể nhận diện qua hình dáng/xu hướng của đường)**
+*   🔵 **Đường màu Xanh dương (Job Boards):** Nằm ở mức 100 tại 2 điểm đầu (Mức giá, Mạng lưới) và chìm xuống 0 ở các yếu tố đào tạo/thực hành ở giữa biểu đồ.
+*   🔴 **Đường màu Đỏ (TT Đào tạo / Bootcamp):** Chạm đáy 0 ở "Mức giá" và đạt đỉnh 100 liên tiếp ở "Kiến thức" và "Bằng cấp".
+*   🟢 **Đường màu Xanh lá (Mô hình Lab ĐH):** Khởi đầu ở điểm 100 (Mức giá), sau đó dao động quanh mức dưới trung bình, rất thấp ở "Mức độ quan tâm" (10).
+*   🟣 **Đường màu Tím (Thực tập truyền thống):** Giữ đỉnh 100 ở nhiều cột (Trải nghiệm, Kiến thức) nhưng rớt xuống 0 ở "Khả năng tiếp cận" (cột cuối cùng).
+*   🟠 **Đường màu Cam - Nổi bật (IOC 2.0):** Đường có chỉ số ổn định ở mức khá -> cao ở các tiêu chí thực tập (80-100), đạt đỉnh cao nhất ở "Khả năng tiếp cận" và "Báo cáo minh bạch" (100).
 
 *Đường cong giá trị của IOC 2.0 được tái định hình rõ rệt khỏi "đại dương đỏ" dựa trên vị thế ưu việt ở 11 yếu tố cạnh tranh:*
 *   *So với Đối thủ tiềm ẩn (Job Boards): IOC quyết định thu hẹp và loại bỏ (Eliminate) cuộc đua bám đuổi "Mạng lưới tiếp cận CV" (giảm điểm số xuống 20). Thay vào đó, nền tảng dồn toàn lực cốt lõi vào sự dịch chuyển chất lượng hành nghề thực chiến vững chắc bên trong.*
@@ -853,13 +865,13 @@ xychart-beta
 *   *Khả năng tiếp cận & Linh hoạt: Các cơ chế Lab thực hành của trường Đại học (0 điểm) hay môi trường Thực tập truyền thống (30 điểm) không chỉ bị bó cứng về địa lý, thời gian, mà còn thiết lập một rào cản quá lớn trong "Khả năng tiếp cận" cho những sinh viên bị hổng gốc. Bằng hệ sinh thái dự án phi tập trung, IOC mở cánh cửa tự do tiếp cận cho mọi đối tượng với thiết chế "Linh hoạt" (90 điểm) và "Khả năng tiếp cận" rộng mở bao trùm (100 điểm).*
 *   *So với Thực tập truyền thống: Nhúng mình trực tiếp tại văn phòng doanh nghiệp hiển nhiên duy trì "Trải nghiệm thực tế" và "Kinh nghiệm" ở mức trần tối đa (100). Là một nền tảng thực tập ảo trung gian, IOC dù chỉ tiệm cận mức (80) nhưng đã khắc phục vĩnh viễn điểm yếu chí tử của thực tập truyền thống đó là "Báo cáo minh bạch" quá mờ nhạt (20) và "Mức độ quan tâm" tới từng cá nhân bị phớt lờ do các Mentor luôn quá tải với công việc (40). IOC san lấp hoàn hảo được điểm mù vĩ đại này.*
 *   *Thời gian tối ưu (Time Efficiency):* Trong khi các mô hình đào tạo truyền thống kéo dài hàng năm hoặc thực tập truyền thống tốn nhiều thời gian chờ đợi, IOC 2.0 tối ưu hóa tiến trình (90 điểm) giúp sinh viên nhanh chóng đạt trạng thái "Plug & Play", chỉ sau Job Boards về tốc độ tiếp cận ban đầu nhưng vượt trội về hiệu quả rút ngắn khoảng cách kỹ năng thực tế.
-*   *Kích tạo đại dương xanh (Create): Cuối cùng, đỉnh cao của sự khác biệt là kỷ lục tuyệt đối ở **Báo cáo minh bạch** (100 điểm) đạt được qua việc số hóa mọi Logwork hàng giờ; đồng tâm tạo lập lực tương tác sâu kết nối với **Mức độ quan tâm** (60) mật thiết từ AI Operator và Agile Mentor. Sự giao hòa này chính là định nghĩa về một vùng trời Đại dương Xanh chưa từng có tổ chức nào có thể khai phá.*
+*   *Kích tạo đại dương xanh (Create): Cuối cùng, đỉnh cao của sự khác biệt là kỷ lục tuyệt đối ở **Báo cáo minh bạch** (100 điểm) đạt được qua việc số hóa mọi Logwork hàng giờ, và **Cá nhân hóa** (100 điểm) thông qua các task tinh chỉnh đo ni đóng giày theo từng năng lực cá nhân (Adaptive OJT); đồng tâm tạo lập lực tương tác sâu kết nối với **Mức độ quan tâm** (60) mật thiết từ AI Operator và Agile Mentor. Sự giao hòa này chính là định nghĩa về một vùng trời Đại dương Xanh chưa từng có tổ chức nào có thể khai phá.*
 ### 8.3. Lộ trình Sản phẩm Relaunched (Product Roadmap - Now/Next/Later)
 Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 2025, Roadmap hiện tại của IOC tập trung vào bài toán mở rộng quy mô (Scale-up), tự động hóa toàn diện và củng cố chất lượng nội dung:
 
 *   **NOW 3/2026 - 6/2026 (Giai đoạn Hiện hành - Mở rộng Quy mô & Củng cố Nội dung):**
     *   *Mục đích:* Mở rộng tiếp nhận sinh viên mà không làm vỡ hệ thống vận hành, đồng thời tối ưu hóa lợi nhuận. Đảm bảo nguồn tài nguyên học tập và thực hành phong phú.
-    *   *Sáng kiến Nền tảng & AI:* Vận hành trên Nền tảng ổn định. Tự động hóa các luồng quản lý nhóm. Tích hợp sâu 3 phương pháp luận **Mastery OJT, Flipped Internship và Adaptive OJT** vào luồng làm việc cốt lõi của sinh viên (LMS flow, Task assignment). Hoàn thiện **Trụ cột 3 (AI Project Operator)** vào luồng hỗ trợ Mentor (tự động sinh Test case, phân tích Requirement, Review Code cơ bản) nhằm giảm tải 30-50% sức người.
+    *   *Sáng kiến Nền tảng & AI:* Vận hành trên Nền tảng ổn định. Tự động hóa các luồng quản lý nhóm. Tích hợp sâu 4 phương pháp luận **Mastery OJT, Flipped Internship, Adaptive OJT và Competency-Based Training** vào luồng làm việc cốt lõi của sinh viên (LMS flow, Task assignment). Hoàn thiện **Trụ cột 3 (AI Project Operator)** vào luồng hỗ trợ Mentor (tự động sinh Test case, phân tích Requirement, Review Code cơ bản) nhằm giảm tải 30-50% sức người.
     *   *Sáng kiến Nội dung & Đào tạo:* Xây dựng và chuẩn hóa **Ngân hàng Dự án giả lập (Project Templates)** bao phủ các Tech-stack phổ biến; Đưa các **Dự án Mã nguồn mở (Open Source)** vào hệ thống để sinh viên đóng góp trực tiếp; Số hóa toàn bộ **Nội dung E-learning (Video bài giảng, tài liệu hướng dẫn)** để phục vụ triết lý Flipped Internship; Xây dựng **Ngân hàng câu hỏi/Bài kiểm tra** để đo lường năng lực đầu vào và nghiệm thu từng Sprint.
 *   **NEXT 6/2026 - 12/2026 (Tự động Hóa Chuyên Sâu & Khẳng Định Lợi Thế Dữ Liệu):**
     *   *Mục đích:* Thiết lập Rào cản Dữ liệu (Data Moat) vững chắc, đưa tự động hóa lên mức cao nhất để bứt phá biên lợi nhuận (Gross Margin).
@@ -875,7 +887,7 @@ Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 20
 **a. Các nguồn doanh thu lõi và phụ trợ**
 Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõi (B2B và B2C) thông qua việc khai thác Nền tảng thực tập mô phỏng (Managed Internship Service kết hợp Virtual Experience):
 *   **Doanh thu từ khối B2C (End-user - Sinh viên):** Nguồn thu trực tiếp từ các gói dịch vụ OJT thu phí đối với sinh viên tự do muốn có kinh nghiệm thực chiến. Bao gồm các gói Dịch vụ lộ trình: Cơ bản (2.000.000đ) và Tiêu chuẩn (5.000.000đ) với thời lượng và mức độ tương tác trải nghiệm chuyên gia khác nhau.
-*   **Doanh thu từ khối B2B (Nhà trường/Khoa CNTT):** Nguồn thu từ việc ký kết hợp đồng "Ủy thác Thực tập Trọn gói" nhằm giải quyết gánh nặng quản lý thực tập, với ngân sách dao động từ 750.000đ – 4.000.000đ/sinh viên tùy sự lựa chọn gói Cơ bản, Tiêu chuẩn hay Cao cấp.
+*   **Doanh thu từ khối B2B (Nhà trường/Khoa CNTT):** Nguồn thu từ việc ký kết hợp đồng "Ủy thác Thực tập Trọn gói" nhằm giải quyết gánh nặng quản lý thực tập, với ngân sách dao động từ 750.000đ – 4.000.000đ/sinh viên tùy sự lựa chọn gói Cơ bản hay Tiêu chuẩn.
 
 **b. Chiến lược tăng trưởng doanh thu Đa kênh (B2B & B2C)**
 *   **B2B kéo B2C (Sales-Led Growth kết hợp Truyền miệng):** Khởi chạy lộ trình thâm nhập bằng **Sales-Led Growth** thông qua việc ký biên bản ghi nhớ (MOU) cung cấp nền tảng quản trị OJT cho các trường Đại học/Cao đẳng. Sự hợp tác này đem lại lưu lượng sinh viên (Volume) lớn ngay lập tức. Sau đó, "hữu xạ tự nhiên hương", IOC sử dụng những tín hiệu tích cực về tỷ lệ đậu phỏng vấn và đánh giá thực tiễn của nhóm sinh viên B2B này để kích hoạt hiệu ứng truyền miệng (Word-Of-Mouth). Từ đó, kéo một lượng lớn sinh viên B2C bạn bè tự nguyện đăng ký các gói dịch vụ OJT trả phí (Upsell).
