@@ -16,16 +16,10 @@ Tài liệu SOP này chuẩn hóa cách Mentor vận hành hỗ trợ sinh viên
 - **Trải nghiệm nhất quán**: cách hỗ trợ, cách chốt “next step”, cách follow-up rõ ràng.
 - **Minh bạch đối soát**: giờ làm việc và KPI có bằng chứng để tính thu nhập theo công thức.
 
-### 1.1. Phạm vi
+### Phạm vi
 
 - Áp dụng cho toàn bộ Mentor (CTV) tham gia hướng dẫn sinh viên thuộc các gói dịch vụ của IOC.
 - Mentoring diễn ra theo **các ca cố định**, qua **Google/Lark Meet** hoặc **offline trực tiếp** (tùy gói dịch vụ/điều kiện).
-
-### 1.2. Cách sử dụng tài liệu
-
-- Mentor đọc Mục 3 để nắm nguyên tắc sư phạm bắt buộc.
-- Mentor vận hành theo checklist ở Mục 5 và quy trình hỗ trợ ở Mục 6.
-- Khi có ngoại lệ (đổi lịch, sự cố, vi phạm), xử lý theo eskalation ở Mục 7.4 và quy định vận hành liên quan.
 
 ---
 
