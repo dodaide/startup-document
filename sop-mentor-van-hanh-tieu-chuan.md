@@ -25,112 +25,13 @@ Tài liệu SOP này chuẩn hóa cách Mentor vận hành hỗ trợ sinh viên
 
 - Mentor đọc Mục 3 để nắm nguyên tắc sư phạm bắt buộc.
 - Mentor vận hành theo checklist ở Mục 5 và quy trình hỗ trợ ở Mục 6.
-- Khi có ngoại lệ (đổi lịch, sự cố, vi phạm), xử lý theo eskalation ở Mục 8.4 và quy định vận hành liên quan.
+- Khi có ngoại lệ (đổi lịch, sự cố, vi phạm), xử lý theo eskalation ở Mục 7.4 và quy định vận hành liên quan.
 
 ---
 
-## 2. Vai trò Mentor
+## 2. Định nghĩa Mentor
 
 Trong IOC, **Mentor là các Cộng tác viên**, được để hướng dẫn các nhóm thực tập. Mentor chịu trách nhiệm hướng dẫn chuyên môn như review task, điều chỉnh backlog theo năng lực, chấm điểm OJT,... cho đến các công việc như định hướng, động viên, truyền cảm hứng,...
-
-### 2.1. Cơ chế thu nhập và chi trả cho Mentor (CTV)
-
-IOC áp dụng cơ chế **Thu nhập theo Giờ & Hiệu suất (Hourly + KPI)**. Cách tính này minh bạch, dễ đối soát và tạo động lực để Mentor/CTV vận hành hiệu quả, thực chất.
-
-#### 2.1.1. Công thức tính tổng thu nhập (tháng)
-
-Tổng thu nhập tháng được tính theo:
-
-```text
-Total = (H * R * K_level) * K_perf
-```
-
-Trong đó:
-
-- **H (Hours)**: Tổng số giờ làm việc thực tế trong tháng (được ghi nhận qua timesheet + log hệ thống).
-- **R (Rate)**: Đơn giá giờ cơ bản. **Hiện tại: 80.000đ/giờ**.
-- **K_level**: Hệ số năng lực theo cấp độ Mentor (mentor càng kinh nghiệm hệ số càng cao).
-- **K_perf**: Hệ số hoàn thành công việc theo KPI (từ 0 đến 1.2 tùy kết quả đánh giá) và được dùng để nhân vào toàn bộ thu nhập theo giờ trong tháng.
-
-#### 2.1.2. Đơn vị tính, đơn giá giờ và nguyên tắc áp dụng
-
-- **Đơn vị tính duy nhất:** **Giờ (hour)**. Tất cả hoạt động Mentor đều quy đổi và đối soát theo giờ.
-- **Đơn giá giờ cơ bản (R)**: là mức sàn áp dụng cho CTV mới/tập sự và là “mỏ neo” để tính chi trả theo năng lực. **Hiện tại: 80.000đ/giờ**.  
-  - **Đơn giá giờ thực nhận** được xác định theo `R * K_level` (chưa bao gồm thưởng KPI).
-
-**Lưu ý quan trọng:** chi tiết về **nội dung giảng dạy**, **bố trí thời gian**, **giảng dạy thế nào** (có/không có mock interview, số buổi, tần suất, phạm vi kèm, v.v.) là do **từng gói dịch vụ** quy định.
-
-#### 2.1.3. Bảng phân cấp Mentor và hệ số năng lực (K_level) (tham khảo)
-
-IOC phân cấp để tạo lộ trình thăng tiến và phản ánh năng lực. Bảng dưới là tham khảo để quy đổi hệ số:
-
-| Cấp bậc | K_level | Đặc điểm vai trò |
-| :--- | :---: | :--- |
-| **Mentor Chính thức** | 1.0 | Nắm vững quy trình và mentor được cho sinh viên ở mức tiêu chuẩn |
-| **Senior Mentor** | 1.2+ | Được sự đánh giá cao sinh viên, có nhiều kết quả tốt trong công việc training |
-
-
-#### 2.1.4. Cách tính hệ số hoàn thành (K_perf) theo KPI
-
-KPI dùng để “uốn nắn” hành vi Mentor theo mục tiêu vận hành. **Không sử dụng chỉ số phản hồi**. IOC chấm điểm theo **3 tiêu chí** (tổng 100 điểm):
-
-- **Tiêu chí 1 — Kết quả đầu ra dự án đạt yêu cầu theo chương trình** (tối đa 40 điểm): tính trung bình điểm số về việc đáp ứng chuẩn cấu trúc mã nguồn theo chương trình của sinh viên phụ trách ở kỳ đánh giá.
-  - ≥ 90%: 40 điểm
-  - 80–89%: 30 điểm
-  - 70–79%: 20 điểm
-  - 60–69%: 10 điểm
-  - < 60%: 0 điểm
-
-- **Tiêu chí 2 — Điểm đánh giá Mentor từ sinh viên** (tối đa 20 điểm): dùng điểm khảo sát theo thang điểm của IOC.
-  - Điểm trung bình ≥ 4.7/5: 20 điểm
-  - 4.3–4.69/5: 15 điểm
-  - 4.0–4.29/5: 10 điểm
-  - 3.7–3.99/5: 5 điểm
-  - < 3.7/5: 0 điểm
-
-- **Tiêu chí 3 — Kỷ luật** (tối đa 40 điểm):
-  - **Đúng lịch Meet/Offline**: tỷ lệ tham gia đúng giờ/không hủy sát giờ:  
-    - ≥ 95%: 15 điểm; 90–94%: 10 điểm; 80–89%: 5 điểm; < 80%: 0 điểm.
-  - **Đúng hạn chấm/nhận xét**:  
-    - ≥ 95% đúng hạn: 15 điểm; 90–94%: 10 điểm; 80–89%: 5 điểm; < 80%: 0 điểm.
-  - **Tuân thủ bảo mật & báo cáo**:  
-    - 10 điểm nếu **0 vi phạm**; có 1 vi phạm nhẹ: 5 điểm; vi phạm nghiêm trọng: 0 điểm (và xử lý theo quy định).
-
-- **Bằng chứng ghi nhận (điều kiện để được tính KPI & timesheet)**:
-  - **Google/Lark Meet**: link lịch (Calendar) + thời lượng + recap/tóm tắt sau buổi (gửi lại nhóm chat).
-  - **Offline**: có xác nhận đầu mối/vận hành.
-
-Ví dụ quy đổi K_perf (ban điều hành IOC có quyền chốt):
-
-| Mức | Điểm KPI | K_perf | Ý nghĩa |
-| :--- | :---: | :---: | :--- |
-| **Xuất sắc** | 90-100 | 1.2 | **Chỉ áp dụng khi có thành tích đặc biệt và được ban điều hành IOC khen thưởng/chốt trong tháng**; khi áp dụng sẽ tăng 20% trên tổng thu nhập theo giờ trong tháng |
-| **Tốt** | 85–100 | 1.0 | Giữ nguyên tổng thu nhập theo giờ trong tháng |
-| **Trung bình** | 70–85 | 0.8 | Giảm 20% thu nhập theo giờ trong tháng |
-| **Cần cố gắng** | < 70 | 0.5 | Giảm 50% trên tổng thu nhập theo giờ trong tháng |
-
-#### 2.1.5. Quy tắc ghi nhận thời gian (timesheet rules)
-
-- **Timesheet là bắt buộc**: mọi công việc tính công phải có **dòng timesheet** tương ứng.
-- **Các công việc phát sinh**: cần gửi lại bằng chứng và là hoạt động chính đáng
-- **Không tính công** cho các hoạt động không có bằng chứng hoặc không gắn group/issue cụ thể.
-
-#### 2.1.6. Đối soát, phê duyệt và kỳ thanh toán
-
-- **Kỳ thanh toán và đối soát:** theo tháng.
-- **Người phê duyệt:** ban điều hành dự án xác nhận **timesheet + bằng chứng**; bộ phận tài chính thực hiện chi trả.
-- **Hồ sơ chi trả:** thông tin CTV, phương thức thanh toán, chứng từ theo quy định (nếu cần).
-
-#### 2.1.7. Quy tắc điều chỉnh công (khấu trừ/không duyệt/dừng) (nếu phát sinh)
-
-Đội ngũ vận hành có thể không duyệt hoặc điều chỉnh timesheet trong các trường hợp:
-
-- **Timesheet thiếu link bằng chứng** hoặc bằng chứng không khớp group/ngày/loại hoạt động.
-- **Không đáp ứng quy định tối thiểu** (ví dụ vắng ca hỗ trợ, không chấm điểm đúng hạn) và đã được nhắc.
-- **Vi phạm quy tắc đạo đức / bảo mật / xung đột lợi ích** theo quy định chung.
-- **Nhóm bị dừng/chuyển Mentor** theo quyết định vận hành (chốt công đến thời điểm bàn giao được xác nhận).
-
-Lưu ý: mọi điều chỉnh phải dựa trên **quy định vận hành từng chương trình** hoặc **phụ lục hợp đồng CTV**, tránh xử lý tùy tiện theo cảm tính.
 
 ### 2.2. Tiêu chuẩn Mentor
 
@@ -326,7 +227,7 @@ Khi đổi mentor:
 
 ---
 
-## 3. Chuẩn sư phạm (nguyên tắc bắt buộc)
+## 3. Chuẩn sư phạm
 
 1. **Không dạy lại lý thuyết cơ bản trong giờ mentor–nhóm.** Hướng sinh viên sang LMS/tài liệu; thời gian chung dùng cho thực chiến, gỡ lỗi logic, kiến trúc, mindset kỹ sư.
 
@@ -352,6 +253,107 @@ Mentor vận hành nhóm chủ yếu qua 3 kênh: **tin nhắn**, **Google/Lark 
 
 ---
 
+### 5. Cơ chế thu nhập và chi trả cho Mentor (CTV)
+
+IOC áp dụng cơ chế **Thu nhập theo Giờ & Hiệu suất (Hourly + KPI)**. Cách tính này minh bạch, dễ đối soát và tạo động lực để Mentor/CTV vận hành hiệu quả, thực chất.
+
+#### 5.1. Công thức tính tổng thu nhập (tháng)
+
+Tổng thu nhập tháng được tính theo:
+
+```text
+Total = (H * R * K_level) * K_perf
+```
+
+Trong đó:
+
+- **H (Hours)**: Tổng số giờ làm việc thực tế trong tháng (được ghi nhận qua timesheet + log hệ thống).
+- **R (Rate)**: Đơn giá giờ cơ bản. **Hiện tại: 80.000đ/giờ**.
+- **K_level**: Hệ số năng lực theo cấp độ Mentor (mentor càng kinh nghiệm hệ số càng cao).
+- **K_perf**: Hệ số hoàn thành công việc theo KPI (từ 0 đến 1.2 tùy kết quả đánh giá) và được dùng để nhân vào toàn bộ thu nhập theo giờ trong tháng.
+
+#### 5.2. Đơn vị tính, đơn giá giờ và nguyên tắc áp dụng
+
+- **Đơn vị tính duy nhất:** **Giờ (hour)**. Tất cả hoạt động Mentor đều quy đổi và đối soát theo giờ.
+- **Đơn giá giờ cơ bản (R)**: là mức sàn áp dụng cho CTV mới/tập sự và là “mỏ neo” để tính chi trả theo năng lực. **Hiện tại: 80.000đ/giờ**.  
+  - **Đơn giá giờ thực nhận** được xác định theo `R * K_level` (chưa bao gồm thưởng KPI).
+
+**Lưu ý quan trọng:** chi tiết về **nội dung giảng dạy**, **bố trí thời gian**, **giảng dạy thế nào** (có/không có mock interview, số buổi, tần suất, phạm vi kèm, v.v.) là do **từng gói dịch vụ** quy định.
+
+#### 5.3. Bảng phân cấp Mentor và hệ số năng lực (K_level) (tham khảo)
+
+IOC phân cấp để tạo lộ trình thăng tiến và phản ánh năng lực. Bảng dưới là tham khảo để quy đổi hệ số:
+
+| Cấp bậc | K_level | Đặc điểm vai trò |
+| :--- | :---: | :--- |
+| **Mentor Chính thức** | 1.0 | Nắm vững quy trình và mentor được cho sinh viên ở mức tiêu chuẩn |
+| **Senior Mentor** | 1.2+ | Được sự đánh giá cao sinh viên, có nhiều kết quả tốt trong công việc training |
+
+
+#### 5.4. Cách tính hệ số hoàn thành (K_perf) theo KPI
+
+KPI dùng để “uốn nắn” hành vi Mentor theo mục tiêu vận hành. **Không sử dụng chỉ số phản hồi**. IOC chấm điểm theo **3 tiêu chí** (tổng 100 điểm):
+
+- **Tiêu chí 1 — Kết quả đầu ra dự án đạt yêu cầu theo chương trình** (tối đa 40 điểm): tính trung bình điểm số về việc đáp ứng chuẩn cấu trúc mã nguồn theo chương trình của sinh viên phụ trách ở kỳ đánh giá.
+  - ≥ 90%: 40 điểm
+  - 80–89%: 30 điểm
+  - 70–79%: 20 điểm
+  - 60–69%: 10 điểm
+  - < 60%: 0 điểm
+
+- **Tiêu chí 2 — Điểm đánh giá Mentor từ sinh viên** (tối đa 20 điểm): dùng điểm khảo sát theo thang điểm của IOC.
+  - Điểm trung bình ≥ 4.7/5: 20 điểm
+  - 4.3–4.69/5: 15 điểm
+  - 4.0–4.29/5: 10 điểm
+  - 3.7–3.99/5: 5 điểm
+  - < 3.7/5: 0 điểm
+
+- **Tiêu chí 3 — Kỷ luật** (tối đa 40 điểm):
+  - **Đúng lịch Meet/Offline**: tỷ lệ tham gia đúng giờ/không hủy sát giờ:  
+    - ≥ 95%: 15 điểm; 90–94%: 10 điểm; 80–89%: 5 điểm; < 80%: 0 điểm.
+  - **Đúng hạn chấm/nhận xét**:  
+    - ≥ 95% đúng hạn: 15 điểm; 90–94%: 10 điểm; 80–89%: 5 điểm; < 80%: 0 điểm.
+  - **Tuân thủ bảo mật & báo cáo**:  
+    - 10 điểm nếu **0 vi phạm**; có 1 vi phạm nhẹ: 5 điểm; vi phạm nghiêm trọng: 0 điểm (và xử lý theo quy định).
+
+- **Bằng chứng ghi nhận (điều kiện để được tính KPI & timesheet)**:
+  - **Google/Lark Meet**: link lịch (Calendar) + thời lượng + recap/tóm tắt sau buổi (gửi lại nhóm chat).
+  - **Offline**: có xác nhận đầu mối/vận hành.
+
+Ví dụ quy đổi K_perf (ban điều hành IOC có quyền chốt):
+
+| Mức | Điểm KPI | K_perf | Ý nghĩa |
+| :--- | :---: | :---: | :--- |
+| **Xuất sắc** | 90-100 | 1.2 | **Chỉ áp dụng khi có thành tích đặc biệt và được ban điều hành IOC khen thưởng/chốt trong tháng**; khi áp dụng sẽ tăng 20% trên tổng thu nhập theo giờ trong tháng |
+| **Tốt** | 85–100 | 1.0 | Giữ nguyên tổng thu nhập theo giờ trong tháng |
+| **Trung bình** | 70–85 | 0.8 | Giảm 20% thu nhập theo giờ trong tháng |
+| **Cần cố gắng** | < 70 | 0.5 | Giảm 50% trên tổng thu nhập theo giờ trong tháng |
+
+#### 5.5. Quy tắc ghi nhận thời gian (timesheet rules)
+
+- **Timesheet là bắt buộc**: mọi công việc tính công phải có **dòng timesheet** tương ứng.
+- **Các công việc phát sinh**: cần gửi lại bằng chứng và là hoạt động chính đáng
+- **Không tính công** cho các hoạt động không có bằng chứng hoặc không gắn group/issue cụ thể.
+
+#### 5.6. Đối soát, phê duyệt và kỳ thanh toán
+
+- **Kỳ thanh toán và đối soát:** theo tháng.
+- **Người phê duyệt:** ban điều hành dự án xác nhận **timesheet + bằng chứng**; bộ phận tài chính thực hiện chi trả.
+- **Hồ sơ chi trả:** thông tin CTV, phương thức thanh toán, chứng từ theo quy định (nếu cần).
+
+#### 5.7. Quy tắc điều chỉnh công (khấu trừ/không duyệt/dừng) (nếu phát sinh)
+
+Đội ngũ vận hành có thể không duyệt hoặc điều chỉnh timesheet trong các trường hợp:
+
+- **Timesheet thiếu link bằng chứng** hoặc bằng chứng không khớp group/ngày/loại hoạt động.
+- **Không đáp ứng quy định tối thiểu** (ví dụ vắng ca hỗ trợ, không chấm điểm đúng hạn) và đã được nhắc.
+- **Vi phạm quy tắc đạo đức / bảo mật / xung đột lợi ích** theo quy định chung.
+- **Nhóm bị dừng/chuyển Mentor** theo quyết định vận hành (chốt công đến thời điểm bàn giao được xác nhận).
+
+Lưu ý: mọi điều chỉnh phải dựa trên **quy định vận hành từng chương trình** hoặc **phụ lục hợp đồng CTV**, tránh xử lý tùy tiện theo cảm tính.
+
+---
+
 ## 6. Quy trình hỗ trợ Mentor (Tin nhắn / Google/Lark Meet / Offline)
 
 1. Trước ca: Đặt lịch (Calendar) và gửi link cho đúng người/đúng nhóm.
@@ -361,32 +363,24 @@ Mentor vận hành nhóm chủ yếu qua 3 kênh: **tin nhắn**, **Google/Lark 
 
 ---
 
-## 7. Human-in-the-loop với AI
+## 7. Giao tiếp và kỷ luật chuyên nghiệp
 
-1. **Chấp nhận gợi ý AI** khi: nhất quán với chuẩn team, tiết kiệm thời gian review lặp, không có rủi ro hiểu sai nghiệp vụ.  
-2. **Ghi đè / bổ sung** khi: AI bỏ sót ngữ cảnh domain, đánh giá quá khắt hoặc quá lỏng, hoặc ảnh hưởng đến **công bằng** giữa sinh viên.  
-3. Mentor là **cổng chất lượng cuối** trước khi kết luận đạt/không đạt giai đoạn.
-
----
-
-## 8. Giao tiếp và kỷ luật chuyên nghiệp
-
-### 8.1. Kênh
+### 7.1. Kênh
 
 - **Tin nhắn**: kênh chính để nhận yêu cầu và phản hồi hằng ngày (nhóm/1:1).  
 - **Google/Lark Meet**: dùng khi cần trao đổi sâu, debug, hoặc review kiến trúc.  
 - **Offline trực tiếp**: chỉ áp dụng khi gói dịch vụ/điều kiện cho phép, có đầu mối điều phối.
 
-### 8.2. Ứng xử
+### 7.2. Ứng xử
 
 - Ngôn ngữ tôn trọng, tập trung hành vi và sản phẩm, không cá nhân hóa.  
 - Thời gian phản hồi thống nhất trong nhóm (nêu rõ giờ “offline” nếu cần).
 
-### 8.3. Vi phạm / trung thực
+### 7.3. Vi phạm / trung thực
 
 - Nghi ngờ báo cáo ảo, copy, gian lận: **không kết luận một mình** — thu thập log (issue, commit, daily); báo **Vận hành** để quy trình đối soát.
 
-### 8.4. Giải quyết xung đột
+### 7.4. Giải quyết xung đột
 
 | Tình huống | Hành động |
 | :--- | :--- |
@@ -396,9 +390,9 @@ Mentor vận hành nhóm chủ yếu qua 3 kênh: **tin nhắn**, **Google/Lark 
 
 ---
 
-## 9. Phụ lục
+## 8. Phụ lục
 
-### 9.1. Sơ đồ luồng tổng quan
+### 8.1. Sơ đồ luồng tổng quan
 
 ```mermaid
 flowchart LR
@@ -427,7 +421,7 @@ flowchart LR
   H --> E
 ```
 
-### 9.2. Ma trận RACI (rút gọn)
+### 8.2. Ma trận RACI (rút gọn)
 
 | Hoạt động | Sinh viên | Mentor | Vận hành | Nhà trường B2B |
 | :--- | :---: | :---: | :---: | :---: |
