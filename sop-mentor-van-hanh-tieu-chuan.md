@@ -354,7 +354,6 @@ Lưu ý: mọi điều chỉnh phải dựa trên **quy định vận hành từ
 2. Trong ca: xử lý theo thứ tự ưu tiên (blocker trước), hướng dẫn theo cấu trúc: **nguyên nhân giả định → bước kiểm tra → bước xử lý → tiêu chí Done**.  
 3. Sau ca: gửi **tóm tắt + next step** vào nhóm chat và cập nhật timesheet.  
 4. Nếu cần chuyên sâu: chốt lịch 1:1 Meet/offline theo điều phối.
-
 ---
 
 ## 7. Giao tiếp và kỷ luật chuyên nghiệp
