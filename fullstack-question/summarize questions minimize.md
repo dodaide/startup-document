@@ -617,6 +617,8 @@ Chọn Java hoặc C# nhé.
 
 15. Toàn vẹn dữ liệu là gì? Nêu nguyên tắc ACID
 
+31. Transaction trong database là gì? Nêu nguyên tắc ACID
+
 17. Truy vấn con là gì? Các kiểu truy vấn con?
 
 18. Lệnh SELECT là gì?
@@ -665,11 +667,10 @@ Chọn Java hoặc C# nhé.
 
 40. Pattern Matching trong SQL?
 
-41. Sự khác biệt giữa clustered index và non-clustered index?
+41. Index là gì?
 
 42. Khi nào không nên tạo index trên một cột?
 
-31. Transaction Storage Engines trong MySQL là gì?
 #5. Team work
 ## 5.1. Git
 1. Trong Git Flow, nhánh develop và master (main) khác nhau thế nào?
