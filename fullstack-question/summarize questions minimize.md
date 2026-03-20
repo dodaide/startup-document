@@ -456,6 +456,8 @@
 
 47. Cleanup function trong useEffect dùng trong trường hợp nào?
 
+48. Phân biệt Client Side Rendering và Server side Rendering
+
 # 3. Backend
 Chọn Java hoặc C# nhé.
 ## 3.1. Java
