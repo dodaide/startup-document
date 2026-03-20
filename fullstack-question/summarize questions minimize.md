@@ -673,7 +673,7 @@ Chọn Java hoặc C# nhé.
 
 42. Khi nào không nên tạo index trên một cột?
 
-#5. Team work
+# 5. Team work
 ## 5.1. Git
 1. Trong Git Flow, nhánh develop và master (main) khác nhau thế nào?
 
