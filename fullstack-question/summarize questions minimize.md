@@ -364,6 +364,8 @@
 
 6. Sự khác biệt giữa REST API và RESTful API?
 
+6. Nêu các mã http mà em biết? Đầu mã 2xx có ý nghĩa gì, 4xx có ý nghĩa gì, 5xx có ý nghĩa gì?
+
 7. Ưu điểm của sử dụng REST trong Web API?
 
 8. Sự khác biệt giữa REST và SOAP?
