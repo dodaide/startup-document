@@ -180,6 +180,7 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 *   46. Tăng sự chủ động, giảm phụ thuộc vào sự giới thiệu việc làm/chỗ thực tập của nhà trường.
 *   47. Tăng khả năng nhận được dấu mộc xác nhận thực tập hợp lệ **để hoàn thành chương trình học bắt buộc**.
 *   48. Tăng khả năng thẩm thấu lý thuyết trên lớp nhờ việc được "thực tế hóa" các khái niệm thông qua quá trình tham gia dự án sớm.
+*   49. Tăng khả năng sử dụng kết quả dự án thực tế tại IOC làm Đồ án tốt nghiệp (Capstone Project), giúp "nhất cử lưỡng tiện" tối ưu hóa thời gian và nỗ lực của sinh viên năm cuối.
 
 #### 3.3.2 Job map NHÓM B2B - NHÀ TRƯỜNG & KHOA CNTT (THE "ADMINISTRATOR" JOURNEY)
 *Mục tiêu: Quản lý chất lượng chuyên môn môn học, Bảo vệ uy tín sinh viên trường.*
@@ -683,10 +684,15 @@ Dưới đây là phương thức cấu trúc lại Nền tảng thành các gi�
     *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng. Tuân thủ nguyên tắc **Competency-Based Training**, hệ thống chấp nhận việc thực tập sinh kết thúc thời hạn 3 tháng mà có thể chưa hoàn thành toàn bộ chương trình nếu năng lực chưa đạt sự thành thạo yêu cầu.
     *   *Nội dung chương trình:* Được đào tạo về công nghệ và quy trình làm việc nền tảng. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
 
-*   **B2C Gói 2: Gói cơ bản (2.000.000đ)**
+*   **B2C Gói 2: Gói cơ bản (2.500.000đ)**
     *   Chi tiết trong tài liệu (chi-tiet-goi-tt-B2C.md)
     *   *Hình thức & Thời hạn:* Hoàn toàn Online kéo dài trong 3 tháng. Tương tự gói Tiêu chuẩn, tính hoàn thành được đánh giá hoàn toàn dựa trên sự thành thạo kỹ năng cốt lõi (**Competency-Based Training**) bất kể giới hạn thời gian thực tập.
-    *   *Nội dung chương trình:* Chủ yếu tự đào tạo thông qua tài nguyên có sẵn trên nền tảng. Sinh viên tự làm lại các dự án giả lập đã hoàn thành từ khóa trước và bị hạn chế sự tương tác với Mentor hướng dẫn.
+    *   *Nội dung chương trình:* Chủ yếu tự đào tạo thông qua tài nguyên có sẵn trên nền tảng. Sinh viên làm các dự án giả lập và được hỗ trợ từ Mentor 01 lần/tháng.
+
+*   **B2C Gói 3: Gói miễn phí (0đ)**
+    *   Chi tiết trong tài liệu (chi-tiet-goi-tt-B2C.md)
+    *   *Hình thức & Thời hạn:* 100% Online trong 2 tuần.
+    *   *Nội dung chương trình:* Tham gia làm các dự án mẫu trên nền tảng, tiếp cận kho tài nguyên học tập cơ bản. Không bao gồm hỗ trợ Mentor và Mock Interview.
 
 ### 6.2. Trụ cột 2: Hệ thống Nền tảng (Bộ máy Thu thập Dữ liệu & Vận hành JIRA-like)
 
@@ -866,17 +872,16 @@ xychart-beta
 *   *So với Thực tập truyền thống: Nhúng mình trực tiếp tại văn phòng doanh nghiệp hiển nhiên duy trì "Trải nghiệm thực tế" và "Kinh nghiệm" ở mức trần tối đa (100). Là một nền tảng thực tập ảo trung gian, IOC dù chỉ tiệm cận mức (80) nhưng đã khắc phục vĩnh viễn điểm yếu chí tử của thực tập truyền thống đó là "Báo cáo minh bạch" quá mờ nhạt (20) và "Mức độ quan tâm" tới từng cá nhân bị phớt lờ do các Mentor luôn quá tải với công việc (40). IOC san lấp hoàn hảo được điểm mù vĩ đại này.*
 *   *Thời gian tối ưu (Time Efficiency):* Trong khi các mô hình đào tạo truyền thống kéo dài hàng năm hoặc thực tập truyền thống tốn nhiều thời gian chờ đợi, IOC 2.0 tối ưu hóa tiến trình (90 điểm) giúp sinh viên nhanh chóng đạt trạng thái "Plug & Play", chỉ sau Job Boards về tốc độ tiếp cận ban đầu nhưng vượt trội về hiệu quả rút ngắn khoảng cách kỹ năng thực tế.
 *   *Kích tạo đại dương xanh (Create): Cuối cùng, đỉnh cao của sự khác biệt là kỷ lục tuyệt đối ở **Báo cáo minh bạch** (100 điểm) đạt được qua việc số hóa mọi Logwork hàng giờ, và **Cá nhân hóa** (100 điểm) thông qua các task tinh chỉnh đo ni đóng giày theo từng năng lực cá nhân (Adaptive OJT); đồng tâm tạo lập lực tương tác sâu kết nối với **Mức độ quan tâm** (60) mật thiết từ AI Operator và Agile Mentor. Sự giao hòa này chính là định nghĩa về một vùng trời Đại dương Xanh chưa từng có tổ chức nào có thể khai phá.*
-### 8.3. Lộ trình Sản phẩm Relaunched (Product Roadmap - Now/Next/Later)
+### 8.3. Lộ trình Sản phẩm Relaunched (Product Roadmap)
 Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 2025, Roadmap hiện tại của IOC tập trung vào bài toán mở rộng quy mô (Scale-up), tự động hóa toàn diện và củng cố chất lượng nội dung:
 
-*   **NOW 3/2026 - 6/2026 (Giai đoạn Hiện hành - Mở rộng Quy mô & Củng cố Nội dung):**
-    *   *Mục đích:* Mở rộng tiếp nhận sinh viên mà không làm vỡ hệ thống vận hành, đồng thời tối ưu hóa lợi nhuận. Đảm bảo nguồn tài nguyên học tập và thực hành phong phú.
-    *   *Sáng kiến Nền tảng & AI:* Vận hành trên Nền tảng ổn định. Tự động hóa các luồng quản lý nhóm. Tích hợp sâu 4 phương pháp luận **Mastery OJT, Flipped Internship, Adaptive OJT và Competency-Based Training** vào luồng làm việc cốt lõi của sinh viên (LMS flow, Task assignment). Hoàn thiện **Trụ cột 3 (AI Project Operator)** vào luồng hỗ trợ Mentor (tự động sinh Test case, phân tích Requirement, Review Code cơ bản) nhằm giảm tải 30-50% sức người.
-    *   *Sáng kiến Nội dung & Đào tạo:* Xây dựng và chuẩn hóa **Ngân hàng Dự án giả lập (Project Templates)** bao phủ các Tech-stack phổ biến; Đưa các **Dự án Mã nguồn mở (Open Source)** vào hệ thống để sinh viên đóng góp trực tiếp; Số hóa toàn bộ **Nội dung E-learning (Video bài giảng, tài liệu hướng dẫn)** để phục vụ triết lý Flipped Internship; Xây dựng **Ngân hàng câu hỏi/Bài kiểm tra** để đo lường năng lực đầu vào và nghiệm thu từng Sprint.
-*   **NEXT 6/2026 - 12/2026 (Tự động Hóa Chuyên Sâu & Khẳng Định Lợi Thế Dữ Liệu):**
-    *   *Mục đích:* Thiết lập Rào cản Dữ liệu (Data Moat) vững chắc, đưa tự động hóa lên mức cao nhất để bứt phá biên lợi nhuận (Gross Margin).
-    *   *Sáng kiến Nền tảng & AI:* Nâng cấp AI đóng vai trò Senior Reviewer để đảm đương 50-70% công suất Mentor và tự động hóa điều chỉnh độ khó task theo lộ trình **Adaptive OJT**. Triển khai tính năng **Project Recycling** (AI tự động trích xuất dự án cũ để làm templates vòng lặp mới). Hoàn thiện hệ thống Dashboard báo cáo tiến độ và hiệu quả thực tập.
-    *   *Sáng kiến Nội dung & Đào tạo:* Liên tục mở rộng thư viện E-learning theo xu hướng công nghệ mới. Ký kết và đưa trực tiếp bài toán thực tế của doanh nghiệp (Real-world Projects) vào hệ thống dưới dạng dự án mở để sinh viên giải quyết.
+*   **PAST 11/2025 - 02/2026 (Giai đoạn Phát triển MVP cho IOC v2):**
+    *   Xây dựng cấu trúc nền tảng cốt lõi, thiết lập các tính năng vận hành cơ bản (JIRA-like) và thử nghiệm mô hình OJT giả lập với nhóm sinh viên nhỏ để hiệu chỉnh phương pháp luận.
+
+*   **NOW 03/2026 - 06/2026 (Giai đoạn Hoàn thiện bản thương mại):**
+    *   Hoàn thiện các tính năng thương mại như áp dụng các phương pháp luận đào tạo internship, tích hợp AI để vận hành, mentoring. Đảm bảo nguồn tài nguyên học tập và thực hành, xây dựng đội ngũ mentor, quy trình vận hành chuẩn chỉ.
+*   **NEXT 06/2026 - 12/2026 (Giai đoạn Cải tiến):**
+    *   *Mục đích:* Đưa tự động hóa lên mức cao nhất để bứt phá biên lợi nhuận (Gross Margin) và cải tiến trải nghiệm người dùng dựa trên phản hồi thực tế.
 
 ---
 
@@ -886,7 +891,7 @@ Dựa trên thực tế dự án đã vượt qua giai đoạn MVP trong năm 20
 
 **a. Các nguồn doanh thu lõi và phụ trợ**
 Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõi (B2B và B2C) thông qua việc khai thác Nền tảng thực tập mô phỏng (Managed Internship Service kết hợp Virtual Experience):
-*   **Doanh thu từ khối B2C (End-user - Sinh viên):** Nguồn thu trực tiếp từ các gói dịch vụ OJT thu phí đối với sinh viên tự do muốn có kinh nghiệm thực chiến. Bao gồm các gói Dịch vụ lộ trình: Cơ bản (2.000.000đ) và Tiêu chuẩn (5.000.000đ) với thời lượng và mức độ tương tác trải nghiệm chuyên gia khác nhau.
+*   **Doanh thu từ khối B2C (End-user - Sinh viên):** Nguồn thu trực tiếp từ các gói dịch vụ OJT thu phí đối với sinh viên tự do muốn có kinh nghiệm thực chiến. Bao gồm các gói Dịch vụ lộ trình: Cơ bản (2.500.000đ) và Tiêu chuẩn (5.000.000đ) với thời lượng và mức độ tương tác trải nghiệm chuyên gia khác nhau.
 *   **Doanh thu từ khối B2B (Nhà trường/Khoa CNTT):** Nguồn thu từ việc ký kết hợp đồng "Ủy thác Thực tập Trọn gói" nhằm giải quyết gánh nặng quản lý thực tập, với ngân sách dao động từ 750.000đ – 4.000.000đ/sinh viên tùy sự lựa chọn gói Cơ bản hay Tiêu chuẩn.
 
 **b. Chiến lược tăng trưởng doanh thu Đa kênh (B2B & B2C)**
@@ -897,49 +902,51 @@ Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõ
 
 Dựa trên dữ liệu và bài toán Unit Economics mới nhất (Validation Phase), chiến lược kinh doanh của năm 2026 được thiết lập thực tế hơn với việc dồn lực khai thác mạnh mẽ trong nửa cuối năm (từ tháng 6 trở đi). Mục tiêu sản lượng được điều chỉnh để đạt mốc quy mô **1.000 sinh viên** trong 6 tháng kinh doanh trọng điểm này nhằm khai thác hiệu quả đòn bẩy lợi nhuận từ cả 2 nhánh B2B và B2C.
 
-Khoản doanh thu dự kiến trong 2026 sẽ chạm mốc **2.750.000.000 VNĐ (2,75 Tỷ VNĐ)**. Trong cấu trúc mới này, lượng sinh viên B2B đóng vai trò duy trì sự ổn định của hệ thống, trong khi doanh thu biên lợi nhuận cao (Sản phẩm Bò sữa) được dẫn dắt chủ yếu bởi gói B2C Tiêu chuẩn, cùng với sự chia sẻ đều đặn về volume từ gói B2C Cơ bản.
+Khoản doanh thu dự kiến trong nửa cuối năm 2026 sẽ chạm mốc **1.600.000.000 VNĐ (1,6 Tỷ VNĐ)**. Trong cấu trúc mới này, lượng sinh viên B2B đóng vai trò duy trì sự ổn định của hệ thống, trong khi doanh thu biên lợi nhuận cao (Sản phẩm Bò sữa) được dẫn dắt chủ yếu bởi các gói B2C.
 
 | Phân khúc & Khách hàng | Loại Gói Dịch vụ | Đơn giá trung bình | Chỉ tiêu Volume | Tổng Doanh thu (VNĐ) | Tỷ trọng |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **B2B (Trường ĐH/Khoa CNTT)** | Ủy thác thực tập (Chủ đạo Tiêu chuẩn) | ~ 2.000.000đ | **500** sinh viên | 1.000.000.000đ | ~ 36,4% |
-| **B2C (Sinh viên tự do)** | Gói Tiêu chuẩn | 5.000.000đ | **250** sinh viên | 1.250.000.000đ | ~ 45,4% |
-| **B2C (Sinh viên tự do)** | Gói Cơ bản | 2.000.000đ | **250** sinh viên | 500.000.000đ | ~ 18,2% |
-| **TỔNG CỘNG MỤC TIÊU 2026** | | | **1.000 sinh viên** | **2.750.000.000đ** | **100%** |
+| **B2B (Trường ĐH/Khoa CNTT)** | Ủy thác thực tập | ~ 2.000.000đ | **350** sinh viên | 700.000.000đ | ~ 43,8% |
+| **B2C (Sinh viên tự do)** | Gói Tiêu chuẩn | 5.000.000đ | **120** sinh viên | 600.000.000đ | ~ 37,5% |
+| **B2C (Sinh viên tự do)** | Gói Cơ bản | 2.500.000đ | **120** sinh viên | 300.000.000đ | ~ 18,7% |
+| **B2C (Sinh viên tự do)** | Gói Miễn phí | 0đ | **500** sinh viên | 0đ | 0% |
+| **TỔNG CỘNG MỤC TIÊU 2026** | | | **1.090 sinh viên** | **1.600.000.000đ** | **100%** |
 
-**d. Tính khả thi của chiến lược 6 tháng cán mốc 2,75 Tỷ:**
-1.  **Mảng B2B (Mũi nhọn nền tảng - Đóng góp 36,4% doanh thu):** Năm 2025 dự án đã chứng minh năng lực phục vụ mượt mà 300 sinh viên B2B. Việc đạt 500 sinh viên (tương đương 10-15 lứa/batch) trong nửa cuối năm 2026 là hoàn toàn thiết thực khi hệ thống nền tảng đã ổn định, quy trình vận hành được tự động hóa sâu và dự án đã sẵn sàng đón nhận từ các trường khối đối tác.
-2.  **Mảng B2C (Đòn bẩy lợi nhuận - Đóng góp 63,6% doanh thu):** Cần chốt sales tổng cộng 500 sinh viên B2C (250 Tiêu chuẩn, 250 Cơ bản) trong 6 tháng. So với thị trường hàng năm đào thải 60.000 sinh viên công nghệ, con số 500 bạn là hoàn toàn khả thi. Sự kết hợp giữa phễu truyền miệng từ nhóm B2B đẩy sang và các chiến dịch quảng cáo, Micro-Influencers dứt điểm từ tháng 6 trở đi sẽ đảm bảo điểm rơi doanh thu này.
+**d. Tính khả thi của chiến lược 6 tháng cán mốc 1,6 Tỷ:**
+1.  **Mảng B2B (Đóng góp ~43,8% doanh thu):** Năm 2025 dự án đã chứng minh năng lực phục vụ mượt mà 300 sinh viên B2B. Việc đạt 350 sinh viên trong nửa cuối năm 2026 là hoàn toàn thiết thực khi nền tảng đã ổn định và sẵn sàng đón nhận từ các trường đối tác.
+2.  **Mảng B2C (Đòn bẩy lợi nhuận - Đóng góp ~56,2% doanh thu):** Cần chốt sales tổng cộng 240 gói B2C trả phí (120 Tiêu chuẩn, 120 Cơ bản) trong 6 tháng. So với phễu miễn phí, đây là tỷ lệ chuyển đổi khiêm tốn dễ đạt được.
 
 ### 9.2. Báo cáo Kết quả Hoạt động Kinh doanh dự phóng (P&L năm 2026 - Trọng điểm 6 tháng cuối năm)
-Với mục tiêu doanh thu **2,75 Tỷ VNĐ** và quy mô phục vụ **1.000 sinh viên** trong năm 2026 (thời gian trọng điểm là nửa cuối năm - Validation & Scale Phase), chiến lược tài chính của IOC chấp nhận mức lỗ kỹ thuật (Net Loss) để đổi lấy lượng User Base lớn (Khẳng định tính hiệu quả của mô hình) và làm dày Rào cản Dữ liệu (Data Moat).
+Với mục tiêu doanh thu **1,6 Tỷ VNĐ** và quy mô phục vụ **1.090 sinh viên** trong nửa cuối năm 2026, chiến lược tài chính của IOC chấp nhận mức lỗ kỹ thuật (Net Loss) để hình thành khoản đầu tư R&D lớn cho hệ thống tương lai.
 
-Dựa trên Unit Economics của mảng B2C, B2B và ngân sách vận hành bộ máy nhân sự định biên, bảng P&L dự phóng năm 2026 được bóc tách chi tiết như sau:
+Dựa trên Unit Economics của phân khúc B2C, B2B và ngân sách vận hành, bảng P&L dự phóng 6 tháng được bóc tách như sau:
 
 | Hạng mục P&L (Năm 2026) | Ghi chú & Diễn giải tham số tính toán | Thành tiền (VNĐ) | Tỷ trọng / Doanh thu |
 | :--- | :--- | :--- | :--- |
-| **I. TỔNG DOANH THU (REVENUE)** | **Quy mô mục tiêu: 1.000 Sinh viên** | **2.750.000.000 đ** | **100%** |
-| - Doanh thu B2C Basic | *250 SV x 2.000.000đ/SV* | *500.000.000 đ* | *18.2%* |
-| - Doanh thu B2C Standard | *250 SV x 5.000.000đ/SV* | *1.250.000.000 đ* | *45.4%* |
-| - Doanh thu B2B | *500 SV x 2.000.000đ/SV* | *1.000.000.000 đ* | *36.4%* |
-| **II. GIÁ VỐN HÀNG BÁN (COGS)** | **Chi phí trực tiếp (Labor/Mentor/Setup Lớp)** | **1.635.000.000 đ** | **59.4%** |
-| - COGS B2C Basic | *250 SV x 1.200.000 đ (Mentor thấp)* | *300.000.000 đ* | |
-| - COGS B2C Standard | *250 SV x 1.500.000 đ (Mentor chuyên sâu)* | *375.000.000 đ* | |
-| - COGS B2B | *20 Lớp x 18tr (Setup) + 500 SV x 1.2tr (Biến phí)* | *960.000.000 đ* | |
-| **III. LỢI NHUẬN GỘP (GROSS PROFIT)** | *(I) - (II)* | **1.115.000.000 đ** | **40.6%** |
-| **IV. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **Bao gồm CAC, Quản lý và Vận hành nền tảng** | **2.415.000.000 đ** | **87.8%** |
-| - Chi phí Thu hút KH (CAC) / MKT | *250 SV Basic x 1tr + 250 SV Std x 1,5tr* | *625.000.000 đ* | |
-| - Chi phí Lương Core Team (Năm 2026) | *Đội ngũ 11 người (Dev, AI, QA, PM, Ops...)* | *1.590.000.000 đ* | |
+| **I. TỔNG DOANH THU (REVENUE)** | **Quy mô mục tiêu: 1.090 Sinh viên** | **1.600.000.000 đ** | **100%** |
+| - Doanh thu B2C Basic | *120 SV x 2.500.000đ/SV* | *300.000.000 đ* | *18.7%* |
+| - Doanh thu B2C Standard | *120 SV x 5.000.000đ/SV* | *600.000.000 đ* | *37.5%* |
+| - Doanh thu B2B | *350 SV x 2.000.000đ/SV* | *700.000.000 đ* | *43.8%* |
+| **II. GIÁ VỐN HÀNG BÁN (COGS)** | **Chi phí trực tiếp (Labor/Mentor/Setup)** | **996.000.000 đ** | **62.3%** |
+| - COGS B2C Basic | *120 SV x 1.200.000 đ (Mentor)* | *144.000.000 đ* | |
+| - COGS B2C Standard | *120 SV x 1.500.000 đ (Mentor)* | *180.000.000 đ* | |
+| - COGS B2B | *14 Lớp x 18tr (Setup) + 350 SV x 1.2tr* | *672.000.000 đ* | |
+| **III. LỢI NHUẬN GỘP (GROSS PROFIT)** | *(I) - (II)* | **604.000.000 đ** | **37.7%** |
+| **IV. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **Bao gồm MKT, R&D Sản phẩm và Quản lý** | **1.220.000.000 đ** | **76.3%** |
+| - Chi phí Thu hút KH (CAC) / MKT | *120 SV Basic x 1tr + 120 SV Std x 1,5tr* | *300.000.000 đ* | |
+| - Chi phí R&D Sản phẩm (Năm 2026) | *Khoán ngân sách làm cốt lõi 120tr/tháng x 6* | *720.000.000 đ* | |
 | - Chi phí Quản lý & Cloud (Năm 2026) | *Thuê Văn phòng, pháp lý, Server, API AI* | *200.000.000 đ* | |
-| **V. LỢI NHUẬN THUẦN (NET PROFIT)**| *(III) - (IV)* | **(1.300.000.000 đ)**| **- 47.2%** |
+| **V. LỢI NHUẬN THUẦN (NET PROFIT)**| *(III) - (IV)* | **(616.000.000 đ)**| **- 38.5%** |
 
 *Ghi chú phân tích P&L:*
-*   **Điểm sáng Gross Margin (40.6%):** Tại mức Level (Product/Project level), mô hình vẫn sinh lãi gộp cực tốt, chứng minh Unit Economics của sản phẩm cốt lõi là khỏe mạnh (bán 1 đơn vị sản phẩm sinh ra thặng dư).
-*   **Lý do Lỗ Thuần (-1.3 Tỷ VNĐ) là xứng đáng:** Khoản lỗ này chủ yếu gánh toàn bộ **Bộ máy Nhân sự Cốt lõi (1.59 Tỷ - nhóm Dev, AI, PM, Ops)**. Trong giai đoạn 2026, đội ngũ này đang phải làm gấp đôi công suất để vừa vận hành hệ thống Dịch vụ hiện tại, vừa phải R&D mô hình AI Project Operator tương lai. Đây không phải là "lỗ vận hành vì không bán được hàng", mà là **Khoản đầu tư (R&D Đầu tư nén)** để xây dựng công nghệ cốt lõi và lấy thị phần.
+*   **Điểm sáng Gross Margin (37.7%):** Tại mức sản phẩm cốt lõi, mô hình vẫn sinh lãi gộp cực tốt (chứng tỏ bán 1 đơn vị dịch vụ đem lại thặng dư dương).
+*   **Lý do Lỗ Thuần (-616 Triệu VNĐ):** Khoản lỗ này chiếm phần lớn để gánh chi phí **R&D Sản Phẩm (720 Triệu - tương đương 120tr/tháng)**. Đây là khoản **Đầu tư nén** để mở rộng công năng hệ thống và nền tảng AI. Khi khối R&D được tối ưu, tỷ suất sinh lời tự động dương lên.
 
-**b. Biên lợi nhuận tăng vọt tương lai**
+**b. Biên lợi nhuận tăng vọt tương lai & Điểm hòa vốn 2027**
+*   **Mở rộng & Hòa Vốn năm 2027:** Năm tiếp theo sau khi hệ thống rã đông chi phí nâng cấp R&D, dự kiến tăng trưởng doanh thu đạt trên 100%. Điểm hòa vốn (Break-even point) trên toàn mạch chiến lược dự kiến rơi vào năm tới, từ đó sinh lợi nhuận bền vững thông qua việc mở rộng quy mô.
 *   **Giai đoạn chạm mốc Scale-up (Break-even):** Nhờ cơ chế "Sản phẩm Phễu" tự động hóa quy trình (B2C Gói Cơ bản) và mô hình "Sĩ số đòn bẩy" (B2B Sinh viên vượt mốc), khi lượng User đã vượt điểm hòa vốn định phí, biên lợi nhuận gộp sinh ra trực tiếp ở sinh viên phần ngọn trở lên là vô cùng lớn (Gross Margin ~ 35 - 77%). 
 *   **Giai đoạn AI trưởng thành:** Khi Trụ cột AI đạt độ chín, AI thay thế hơn 50% quy trình Code/Docs Review của Mentor, Giá vốn hàng bán (COGS) trên phần dịch vụ cốt lõi sẽ giảm sâu trong khi chất lượng đánh giá không đổi.
-*   **Giai đoạn Hệ Sinh thái Tuyển dụng (Talent Ecosystem):** Lợi nhuận ròng của dự án sẽ tăng vọt mạnh mẽ trong dài hạn thông qua luồng **Doanh thu Backend**. Đảo chiều P&L hoàn toàn dựa trên tệp Data **1.150 bộ hồ sơ** năng lực Ứng viên chuẩn chỉnh mà hệ thống đã dày công đào tạo và thẩm định trong năm. Khi "bán" hoặc điều phối Placement tệp IT chất lượng cao này với phí Headhunt 10.000.000đ/ứng viên, mảng này có lợi suất cận biên đóng góp lợi nhuận ròng là gần như 100%.
+*   **Giai đoạn Hệ Sinh thái Tuyển dụng (Talent Ecosystem):** Lợi nhuận ròng của dự án sẽ tăng vọt mạnh mẽ trong dài hạn thông qua luồng **Doanh thu Backend**. Đảo chiều P&L hoàn toàn dựa trên tệp Data **1.250 bộ hồ sơ** năng lực Ứng viên chuẩn chỉnh mà hệ thống đã dày công đào tạo và thẩm định trong năm. Khi "bán" hoặc điều phối Placement tệp IT chất lượng cao này với phí Headhunt 10.000.000đ/ứng viên, mảng này có lợi suất cận biên đóng góp lợi nhuận ròng là gần như 100%.
 
 ---
 
