@@ -1237,3 +1237,28 @@ Chọn Java hoặc C# nhé.
 30. Sharding trong MySQL?
 
 31. Transaction Storage Engines trong MySQL là gì?
+
+# 6. Bảo mật (Security)
+1. XSS (Cross-Site Scripting) là gì? Các hình thức tấn công XSS phổ biến và cách phòng chống?
+
+2. CSRF (Cross-Site Request Forgery) là gì? Cách ngăn chặn tấn công CSRF?
+
+3. SQL Injection là gì? Nêu các biện pháp ngăn chặn SQL Injection trong ứng dụng web.
+
+4. CORS (Cross-Origin Resource Sharing) là gì và tại sao chúng ta cần nó?
+
+5. Sự khác biệt giữa Xác thực (Authentication) và Phân quyền (Authorization) là gì?
+
+6. JWT (JSON Web Token) là gì? Cấu trúc của JWT gồm những phần nào?
+
+7. Ưu và nhược điểm của việc lưu trữ token bảo mật ở Local Storage so với Cookie (HttpOnly)?
+
+8. HTTPS hoạt động như thế nào? TLS/SSL là gì?
+
+9. Tấn công Man-in-the-Middle (MitM) là gì?
+
+10. Tấn công DDoS là gì và cách giảm thiểu ở mức ứng dụng/hệ thống?
+
+11. Băm mật khẩu (Password Hashing) là gì? Tại sao phải thêm Salt khi băm mật khẩu? Nên dùng thuật toán nào?
+
+12. OWASP Top 10 là gì? Kể tên một vài lỗ hổng bảo mật phổ biến trong danh sách này.
