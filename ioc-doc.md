@@ -896,20 +896,20 @@ Doanh thu của IOC 2.0 chủ yếu đến từ hai nhóm khách hàng cốt lõ
 
 **c. Bảng cơ cấu phân bổ doanh thu kỳ vọng 2026 (Tập trung từ Tháng 6):**
 
-Dựa trên dữ liệu và bài toán Unit Economics mới nhất (Validation Phase), chiến lược kinh doanh của năm 2026 được thiết lập thực tế hơn với việc dồn lực khai thác mạnh mẽ trong nửa cuối năm (từ tháng 6 trở đi). Mục tiêu sản lượng được điều chỉnh để đạt mốc quy mô **970 sinh viên** trong 6 tháng kinh doanh trọng điểm này nhằm khai thác hiệu quả đòn bẩy lợi nhuận từ cả 2 nhánh B2B và B2C.
+Dựa trên dữ liệu và bài toán Unit Economics mới nhất (Validation Phase), chiến lược kinh doanh của năm 2026 được thiết lập thực tế hơn với việc dồn lực khai thác mạnh mẽ trong nửa cuối năm (từ tháng 6 trở đi). Mục tiêu sản lượng được điều chỉnh để đạt mốc quy mô **1.280 sinh viên** trong 6 tháng kinh doanh trọng điểm này nhằm khai thác hiệu quả đòn bẩy lợi nhuận từ cả 2 nhánh B2B và B2C.
 
-Khoản doanh thu dự kiến trong nửa cuối năm 2026 sẽ chạm mốc **1.300.000.000 VNĐ (1,3 Tỷ VNĐ)**. Trong cấu trúc mới này, lượng sinh viên B2B đóng vai trò duy trì sự ổn định của hệ thống, trong khi doanh thu biên lợi nhuận cao (Sản phẩm Bò sữa) được dẫn dắt chủ yếu bởi các gói B2C.
+Khoản doanh thu dự kiến trong nửa cuối năm 2026 sẽ chạm mốc **1.600.000.000 VNĐ (1,6 Tỷ VNĐ)**. Trong cấu trúc mới này, lượng sinh viên B2B đóng vai trò duy trì sự ổn định của hệ thống, trong khi doanh thu biên lợi nhuận cao (Sản phẩm Bò sữa) được dẫn dắt chủ yếu bởi các gói B2C.
 
 | Phân khúc & Khách hàng | Loại Gói Dịch vụ | Đơn giá trung bình | Chỉ tiêu Volume | Tổng Doanh thu (VNĐ) | Tỷ trọng |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **B2B (Trường ĐH/Khoa CNTT)** | Ủy thác thực tập | ~ 2.000.000đ | **350** sinh viên | 700.000.000đ | ~ 53,8% |
-| **B2C (Sinh viên tự do)** | Gói Tiêu chuẩn | 5.000.000đ | **120** sinh viên | 600.000.000đ | ~ 46,2% |
-| **B2C (Sinh viên tự do)** | Gói Miễn phí | 0đ | **500** sinh viên | 0đ | 0% |
-| **TỔNG CỘNG MỤC TIÊU 2026** | | | **970 sinh viên** | **1.300.000.000đ** | **100%** |
+| **B2B (Trường ĐH/Khoa CNTT)** | Ủy thác thực tập | ~ 2.000.000đ | **350** sinh viên | 700.000.000đ | ~ 43,8% |
+| **B2C (Sinh viên tự do)** | Gói Tiêu chuẩn | 5.000.000đ | **180** sinh viên | 900.000.000đ | ~ 56,2% |
+| **B2C (Sinh viên tự do)** | Gói Miễn phí | 0đ | **750** sinh viên | 0đ | 0% |
+| **TỔNG CỘNG MỤC TIÊU năm 2026** | | | **1.280 sinh viên** | **1.600.000.000đ** | **100%** |
 
 **d. Tính khả thi của chiến lược 6 tháng cán mốc 1,6 Tỷ:**
 1.  **Mảng B2B (Đóng góp ~43,8% doanh thu):** Năm 2025 dự án đã chứng minh năng lực phục vụ mượt mà 300 sinh viên B2B. Việc đạt 350 sinh viên trong nửa cuối năm 2026 là hoàn toàn thiết thực khi nền tảng đã ổn định và sẵn sàng đón nhận từ các trường đối tác.
-2.  **Mảng B2C (Đòn bẩy lợi nhuận - Đóng góp ~46,2% doanh thu):** Cần chốt sales tổng cộng 120 gói B2C trả phí (Gói Tiêu chuẩn) trong 6 tháng. So với phễu miễn phí, đây là tỷ lệ chuyển đổi khiêm tốn dễ đạt được.
+2.  **Mảng B2C (Đòn bẩy lợi nhuận - Đóng góp ~56,2% doanh thu):** Cần chốt sales tổng cộng 180 gói B2C trả phí (Gói Tiêu chuẩn) trong 6 tháng. So với phễu miễn phí, đây là tỷ lệ chuyển đổi khiêm tốn dễ đạt được.
 
 ### 9.2. Báo cáo Kết quả Hoạt động Kinh doanh dự phóng (P&L năm 2026 - Trọng điểm 6 tháng cuối năm)
 Với mục tiêu doanh thu **1,6 Tỷ VNĐ** và quy mô phục vụ **1.090 sinh viên** trong nửa cuối năm 2026, chiến lược tài chính của IOC chấp nhận mức lỗ kỹ thuật (Net Loss) để hình thành khoản đầu tư R&D lớn cho hệ thống tương lai.
@@ -918,18 +918,18 @@ Dựa trên Unit Economics của phân khúc B2C, B2B và ngân sách vận hàn
 
 | Hạng mục P&L (Năm 2026) | Ghi chú & Diễn giải tham số tính toán | Thành tiền (VNĐ) | Tỷ trọng / Doanh thu |
 | :--- | :--- | :--- | :--- |
-| **I. TỔNG DOANH THU (REVENUE)** | **Quy mô mục tiêu: 970 Sinh viên** | **1.300.000.000 đ** | **100%** |
-| - Doanh thu B2C Standard | *120 SV x 5.000.000đ/SV* | *600.000.000 đ* | *46.2%* |
-| - Doanh thu B2B | *350 SV x 2.000.000đ/SV* | *700.000.000 đ* | *53.8%* |
-| **II. GIÁ VỐN HÀNG BÁN (COGS)** | **Chi phí trực tiếp (Labor/Mentor/Setup)** | **852.000.000 đ** | **65.5%* |
-| - COGS B2C Standard | *120 SV x 1.500.000 đ (Mentor)* | *180.000.000 đ* | |
+| **I. TỔNG DOANH THU (REVENUE)** | **Quy mô mục tiêu: 1.280 Sinh viên** | **1.600.000.000 đ** | **100%** |
+| - Doanh thu B2C Standard | *180 SV x 5.000.000đ/SV* | *900.000.000 đ* | *56.2%* |
+| - Doanh thu B2B | *350 SV x 2.000.000đ/SV* | *700.000.000 đ* | *43.8%* |
+| **II. GIÁ VỐN HÀNG BÁN (COGS)** | **Chi phí trực tiếp (Labor/Mentor/Setup)** | **942.000.000 đ** | **58.9%** |
+| - COGS B2C Standard | *180 SV x 1.500.000 đ (Mentor)* | *270.000.000 đ* | |
 | - COGS B2B | *14 Lớp x 18tr (Setup) + 350 SV x 1.2tr* | *672.000.000 đ* | |
-| **III. LỢI NHUẬN GỘP (GROSS PROFIT)** | *(I) - (II)* | **448.000.000 đ** | **34.5%** |
-| **IV. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **Bao gồm MKT, R&D Sản phẩm và Quản lý** | **1.100.000.000 đ** | **84.6%** |
-| - Chi phí Thu hút KH (CAC) / MKT | *120 SV Std x 1,5tr* | *180.000.000 đ* | |
+| **III. LỢI NHUẬN GỘP (GROSS PROFIT)** | *(I) - (II)* | **658.000.000 đ** | **41.1%** |
+| **IV. CHI PHÍ HOẠT ĐỘNG (OPEX)** | **Bao gồm MKT, R&D Sản phẩm và Quản lý** | **1.190.000.000 đ** | **74.4%** |
+| - Chi phí Thu hút KH (CAC) / MKT | *180 SV Std x 1,5tr* | *270.000.000 đ* | |
 | - Chi phí R&D Sản phẩm (Năm 2026) | *Khoán ngân sách làm cốt lõi 120tr/tháng x 6* | *720.000.000 đ* | |
 | - Chi phí Quản lý & Cloud (Năm 2026) | *Thuê Văn phòng, pháp lý, Server, API AI* | *200.000.000 đ* | |
-| **V. LỢI NHUẬN THUẦN (NET PROFIT)**| *(III) - (IV)* | **(652.000.000 đ)**| **- 50.2%** |
+| **V. LỢI NHUẬN THUẦN (NET PROFIT)**| *(III) - (IV)* | **(532.000.000 đ)**| **- 33.3%** |
 
 *Ghi chú phân tích P&L:*
 *   **Điểm sáng Gross Margin (37.7%):** Tại mức sản phẩm cốt lõi, mô hình vẫn sinh lãi gộp cực tốt (chứng tỏ bán 1 đơn vị dịch vụ đem lại thặng dư dương).

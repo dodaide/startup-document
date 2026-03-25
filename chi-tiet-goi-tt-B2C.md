@@ -46,7 +46,7 @@ Chương trình đào tạo thực chiến dự án giả lập và dự án mã
 
 ---
 
-## 3. GÓI MIỄN PHÍ: TRẢI NGHIỆM NỀN TẢNG (FREE)
+## 2. GÓI MIỄN PHÍ: TRẢI NGHIỆM NỀN TẢNG (FREE)
 *   **Mức phí:** 0đ
 *   **Thời gian:** 2 tuần
 *   **Hình thức:** 100% Online
