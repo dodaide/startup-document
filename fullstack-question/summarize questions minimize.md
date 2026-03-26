@@ -703,3 +703,18 @@ Chọn Java hoặc C# nhé.
 4. Trong Agile, nếu một task không hoàn thành khi kết thúc sprint thì xử lý thế nào?
 
 5. Product Owner trong Scrum chịu trách nhiệm chính về điều gì?
+
+# 6. Bảo mật (Security)
+1. XSS (Cross-Site Scripting) là gì? Cách phòng chống?
+
+2. CSRF (Cross-Site Request Forgery) là gì? Cách phòng chống?
+
+3. SQL Injection là gì? Nêu các biện pháp ngăn chặn?
+
+4. CORS (Cross-Origin Resource Sharing) là gì?
+
+5. Sự khác biệt giữa Xác thực (Authentication) và Phân quyền (Authorization) là gì?
+
+6. JWT (JSON Web Token) là gì? Lưu trữ JWT ở đâu thì an toàn?
+
+7. Băm mật khẩu (Password Hashing) là gì? Tại sao phải dùng Salt?
