@@ -22,6 +22,21 @@ Nút thắt sống còn của thị trường thực tập CNTT không chỉ là
 - Trong nội bộ doanh nghiệp công nghệ, kỹ sư Senior quá bận chạy dự án, dẫn tới việc thực tập sinh IT vào công ty chỉ được giao đọc tài liệu hoặc làm các task "rác". Doanh nghiệp coi sinh viên là gánh nặng.
 - Ở phía đầu ra, Nhà trường và Khoa CNTT không có cách nào kiểm chứng sinh viên có thực sự code và giải quyết vấn đề kỹ thuật hay không, đành phải chấm điểm dựa trên giấy xác nhận hình thức có dấu mộc.
 - Hàng ngàn sinh viên CNTT mỗi năm bị kẹt giữa hai "con sóng" này: Cần dự án để có kinh nghiệm xin việc, nhưng không đủ kinh nghiệm để được giao làm dự án. Nguyên nhân sâu xa là thị trường thiếu một "Hàng rào Thẩm định" bằng dữ liệu để chứng minh năng lực thật.
+
+### 2.2. Phân tách vấn đề theo Problem Statement Canvas
+
+Nhằm làm rõ hơn chẩn đoán chiến lược bên trên, cấu trúc vấn đề cốt lõi được mổ xẻ chi tiết thông qua mô hình Problem Statement Canvas:
+
+| Yếu tố | Phân tích chi tiết |
+| :--- | :--- |
+| **CONTEXT**<br>*(Bối cảnh: Vấn đề xảy ra khi nào?)* | Xảy ra vào mỗi mùa vụ thực tập/kiến tập (năm 3, năm 4). Đặc biệt căng thẳng khi các doanh nghiệp IT thắt chặt tuyển dụng, cắt giảm chương trình Fresher do kinh tế khó khăn và không có nhu cầu tuyển dụng. |
+| **PROBLEM**<br>*(Vấn đề: Nguyên nhân gốc rễ là gì?)* | Sự đứt gãy trong khâu On-the-job Training (OJT). Doanh nghiệp ngại rủi ro/chi phí, không có nhu cầu nên ít nhận fresher, dẫn đến nhà trường và sinh viên không có môi trường thực chiến đúng nghĩa để rèn luyện. |
+| **ALTERNATIVES**<br>*(Giải pháp thay thế: Khách hàng đang làm gì để giải quyết?)* | **(Sinh viên)** Tự học qua video/khóa học tĩnh, làm dự án cá nhân, tham gia bootcamp, chấp nhận đi thực tập "rót nước pha trà".<br>**(Nhà trường)** Lập Lab nội bộ, thay thế bằng Capstone project, chấp nhận các công ty ít uy tín hơn, cấp chứng nhận thực tập hình thức. |
+| **CUSTOMERS**<br>*(Khách hàng: Ai có vấn đề này thường xuyên nhất?)* | **1. Nhóm B2C:** Sinh viên CNTT thiếu kinh nghiệm thực tế, yếu nền tảng hoặc kỹ năng ứng tuyển kém.<br>**2. Nhóm B2B:** Các Khoa CNTT/Trường ĐH, CĐ (đặc biệt top dưới) chưa có nhiều uy tín, mạng lưới quan hệ với doanh nghiệp chuyên ngành. |
+| **EMOTIONAL IMPACT**<br>*(Tác động cảm xúc: Khách hàng cảm thấy gì?)* | **(Sinh viên)** Áp lực, tự ti nặng nề khi đối diện với vấn đề việc làm tương lai.<br>**(Nhà trường)** Hoang mang về chuẩn "đầu ra", bất an trước tỷ lệ sinh viên có việc làm thấp làm sụt giảm uy tín tuyển sinh. |
+| **QUANTIFIABLE IMPACT**<br>*(Tác động định lượng: Đo lường mức độ tác động?)* | **65%** sinh viên CNTT tốt nghiệp không đáp ứng yêu cầu, cần đào tạo lại. Tỷ lệ chọi Fresher IT tăng phi mã lên đến **330 hồ sơ/1 vị trí**. Sinh viên lãng phí **2-3 tháng** thực tập mà không có dòng kỹ năng nào trên CV. |
+| **ALTERNATIVE SHORTCOMINGS**<br>*(Nhược điểm của Giải pháp thay thế là gì?)* | **(Sinh viên)** khả năng tự học của sinh viên yếu chưa tốt, các khóa học ngắn hạn thường có chi phí cao và thời gian kéo dài. Thực tập "việc vặt" làm tốn thời gian mà Portfolio vẫn rỗng.<br>**(Nhà trường)** đưa vào Lab/Capstone để thực tập chất lượng không tốt, sinh viên không hài lòng. |
+
 #### **Chứng cứ định lượng về cuộc khủng hoảng niềm tin & năng lực:**
 
 *   **Lỗ hổng kỹ năng thực tế:** Mặc dù hàng năm có 50.000 - 57.000 sinh viên nhập học ngành CNTT, nhưng chỉ **35% sinh viên tốt nghiệp đáp ứng được yêu cầu doanh nghiệp**. 65% còn lại cần từ 3-6 tháng đào tạo lại hoàn toàn.
