@@ -676,6 +676,65 @@ Mặc dù vẫn sử dụng các chiến lược phễu truyền thống (chiế
 4.  **Truyền miệng (Advocacy):** Sinh viên lan truyền sự thần kỳ về OJT thực chiến trong cộng đồng. Khoa IT này rỉ tai Khoa IT trường khác về giải pháp của IOC.
 *👉 Bánh đà lúc này quay vòng thứ hai mạnh mẽ hơn: Càng nhiều sinh viên đi qua phễu Freemium và chuyển đổi thành công -> Đủ khối lượng dữ liệu chất lượng thu hút thêm doanh nghiệp tuyển dụng từ pool của IOC -> Độ uy tín càng cao làm phễu đầu vào tự nhiên càng lớn, chi phí thu hút (CAC) giảm, tiếp tục lan toả sức hút đối với sinh viên mới...*
 
+#### 5.5.1. 4Ps cho B2C (Sinh viên tự do)
+- **Product (Sản phẩm)**
+  - *Core Benefit (Lợi ích cốt lõi):* Giúp sinh viên “vượt ải CV” bằng kinh nghiệm thực chiến đã được số hoá và có minh chứng (Proof-of-Work/Portfolio), để giảm rủi ro khi đi phỏng vấn và tăng xác suất nhận offer.
+  - *Actual Product (Sản phẩm thực tế - tính năng/thiết kế):*
+    - *Freemium trải nghiệm:* tham gia dự án mẫu và tiếp cận kho tài nguyên học tập nền tảng.
+    - *Gói tiêu chuẩn (trả phí):* triển khai dự án mô phỏng theo Agile/Scrum; có Mentor đồng hành, thực hiện **Mock Interview**, và cấp đầu ra dạng chứng nhận/dấu mộc.
+    - *Vận hành theo board & workflow:* sinh viên làm việc trên board (Scrum/Kanban/Waterfall), nộp daily report, chuyển trạng thái issue theo quy trình.
+  - *Augmented Product (Sản phẩm gia tăng - hậu mãi/hỗ trợ):*
+    - *Bảo chứng bằng dữ liệu:* logwork/điểm số được hệ thống hoá để Portfolio có tính “điểm hoá” và truy xuất được.
+    - *Hỗ trợ giảm nỗi sợ phỏng vấn:* feedback Mock Interview theo năng lực, giúp sinh viên biết mình thiếu gì để cải thiện.
+
+- **Price (Giá)**
+  - *Chiến lược tổng thể:* **Freemium + Penetration Pricing** (định vị mức vào thấp để giảm rào cản, sau đó thu phí ở mức phù hợp với khả năng chi trả để mở rộng quy mô).
+  - *0đ (Freemium) cho trải nghiệm:* giảm rủi ro “mất tiền mà không biết chất lượng”, phù hợp nhóm sinh viên còn phân vân và cần kiểm chứng trước khi đầu tư.
+  - *5.000.000đ / 3 tháng (Gói tiêu chuẩn):* neo giá theo giá trị ROI (kiến thức/kỹ năng/dự án trong CV + giảm thời gian “tự bơi” tìm cơ hội).
+  - *Lý do phù hợp định vị:* IOC bán “trải nghiệm thực chiến có minh chứng” chứ không bán “số giờ”. Vì vậy mức giá cần phản ánh kết quả đầu ra và khả năng áp dụng được trong phỏng vấn/ứng tuyển.
+
+- **Place (Phân phối - tiện lợi tiếp cận)**
+  - *Kênh trực tiếp:* ứng dụng/web app + LMS + board dự án nội bộ của IOC (student workspace) để sinh viên tham gia, nộp báo cáo và quản trị quá trình học.
+  - *Kênh gián tiếp:* KOL/micro-influencer và các cộng đồng sinh viên kéo traffic về landing/đăng ký trải nghiệm Free.
+  - *Convenience (thuận tiện):* mô hình online-first, học bất kỳ lúc nào; onboarding Free -> nâng cấp lên Standard theo năng lực/điều kiện “unlock”, giúp người học không bị “đứt mạch”.
+
+- **Promotion (Chiêu thị - IMC)**
+  - *Advertising (Quảng cáo):* chạy paid social theo phễu (awareness -> Free trial), retargeting nhóm đã xem landing/đã đăng ký Free; ưu tiên nội dung “kỹ sư thay vì thợ code” và case evidence.
+  - *PR (Quan hệ công chúng):* hợp tác nội dung với các trường/Khoa CNTT.
+  - *Kích cầu bán hàng (Sales promotion):* tạo cơ chế “chuyển đổi tự nhiên” từ Free sang Standard (ví dụ ưu đãi/bonus cho người hoàn thành mốc dự án mẫu hoặc vượt ngưỡng kỹ năng trong hành trình Free).
+  - *Marketing trực tiếp (Direct marketing):* nuôi theo vòng đời (từ các kênh phễu -> trải nghiệm free -> mời vào Standard) qua kênh email/notification và kênh chat cộng đồng, kèm roadmap gợi ý theo năng lực để tăng tỷ lệ chuyển đổi.
+
+#### 5.5.2. 4Ps cho B2B (Nhà trường/Khoa CNTT)
+- **Product (Sản phẩm)**
+  - *Core Benefit (Lợi ích cốt lõi):* IOC giúp nhà trường “giải bài toán quản trị thực tập + bảo chứng chất lượng đầu ra” bằng hệ thống vận hành có quy trình và dữ liệu minh chứng, giảm rủi ro “thực tập hình thức” và giảm gánh nặng phối hợp với doanh nghiệp theo mùa vụ.
+  - *Actual Product (Sản phẩm thực tế - tính năng/thiết kế):*
+    - *Managed Internship Service:* ủy thác thực tập trọn gói, tổ chức nhóm dự án theo chuẩn doanh nghiệp (Agile/Scrum), triển khai kịch bản OJT và chấm điểm OJT theo Metrics.
+    - *University Dashboard:* dashboard cho Giảng viên/Quản trị trường để theo dõi tiến độ, thống kê và cảnh báo rủi ro (drop-off/task trễ).
+    - *Hệ thống mentor vận hành:* mentor là người hướng dẫn, QA theo cơ chế human-in-the-loop, đảm bảo chất lượng đầu ra nhất quán.
+    - *Hệ sinh thái dự án & template:* project templates/Project Bank để clone quy trình phù hợp quy mô và domain.
+    - *Luồng nghiệm thu:* cung cấp bộ kết quả/điểm/bảng điểm/chứng nhận phục vụ nghiệm thu môn học.
+  - *Augmented Product (Sản phẩm gia tăng - hậu mãi/hỗ trợ):*
+    - *Tính sẵn sàng triển khai:* bộ khung MOU + kế hoạch vận hành theo kỳ thực tập, giảm thời gian thương thảo vận hành.
+    - *Báo cáo định kỳ & case evidence:* báo cáo theo kỳ (tuỳ thỏa thuận) để nhà trường có “bằng chứng” phục vụ đối soát/đánh giá chất lượng.
+    - *Hỗ trợ nhân sự vận hành:* onboarding người phụ trách, hướng dẫn quy trình theo dashboard và luồng hỗ trợ trong suốt kỳ.
+
+- **Price (Giá)**
+  - *Chiến lược tổng thể:* **Value-based Contract + Option/Revenue-share** để giảm rào cản ngân sách và tối ưu theo rủi ro của bên mua.
+  - *Khung giá theo đầu sinh viên:* khoảng **750.000đ – 4.000.000đ / sinh viên** (tuỳ quy mô và thỏa thuận), phản ánh giá trị vận hành và mức độ “bảo chứng dữ liệu + minh chứng đầu ra”.
+  - *Phương án thay thế khi trường không có ngân sách:* chia sẻ doanh thu **15% - 20%** theo mô hình hợp tác truyền thông & chuyển đổi (nhà trường tham gia kích hoạt nguồn vào, IOC đảm bảo chuẩn vận hành & nghiệm thu).
+  - *Lý do phù hợp:* B2B thường thận trọng với chi phí cố định. Cấu trúc giá theo giá trị + phương án chia sẻ giúp nhà trường dễ phê duyệt hơn và align động cơ chất lượng đầu ra.
+
+- **Place (Phân phối - tiện lợi tiếp cận)**
+  - *Kênh trực tiếp (B2B):* sales/partnership trực tiếp tới trường/Khoa CNTT thông qua bộ phận hướng nghiệp, phối hợp các điểm chạm như seminar, masterclass, trao đổi trực tiếp để chốt vận hành.
+  - *Kênh gián tiếp:* hệ sinh thái đối tác (trường/Khoa đã chạy thí điểm, kênh kết nối ngành) giúp lan toả niềm tin thông qua case evidence.
+  - *Convenience:* quy trình triển khai theo khung chuẩn (MOU + lịch kỳ + dashboard access), tổ chức mô hình Hybrid/online theo thời hạn thỏa thuận để giảm “ma sát vận hành”.
+
+- **Promotion (Chiêu thị - IMC)**
+  - *Advertising (Quảng cáo):* đăng tải tin tức, thông tin trên các kênh để đối tác nếu có nhu cầu tìm hiểu thì sẽ có thể xem dễ dàng.
+  - *PR (Quan hệ công chúng):* xây dựng uy tín bằng nội dung cách đo chất lượng thực tập, chống hình thức và công bố case kết quả theo kỳ (đã ẩn thông tin nhạy cảm nếu cần).
+  - *Kích cầu bán hàng (Sales promotion):* mở nhóm nhỏ để nhà trường thử nghiệm; ưu đãi cho hợp đồng lớn, đa kỳ.
+  - *Marketing trực tiếp (Direct marketing):* tác động đến nhóm quyết định (Trưởng khoa/Trung tâm hướng nghiệp phụ trách), set lịch họp trực tiếp.
+
 ---
 
 ## 6. Giải pháp Dịch vụ & Nền tảng
