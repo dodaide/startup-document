@@ -2,7 +2,6 @@
 
 ## 1. Mục tiêu chương trình
 - Đảm bảo thực tập sinh nắm vững và trả lời được toàn bộ bộ câu hỏi phỏng vấn mà IOC cung cấp ngay từ đầu chương trình, thông qua quá trình tự học, ôn luyện lại kiến thức và có thể giải thích sâu kèm ví dụ rút ra trực tiếp từ dự án mình làm.
-- Nâng cao tính kỷ luật và độc lập: 100% làm việc cá nhân (Solo project), không làm nhóm để đảm bảo lượng kiến thức tiếp thu bề mặt và bề sâu là tối đa.
 - Rèn luyện tư duy kỹ sư cốt lõi (First Principles): Tự xây dựng nền tảng component từ con số không thay vì lạm dụng UI thư viện có sẵn hay phụ thuộc vào AI.
 
 ## 2. Nguyên tắc cốt lõi (Bắt buộc tuân thủ)
