@@ -19,7 +19,7 @@ Tài liệu này chuẩn hóa quy trình và nội dung review cho Mentor trong 
 
 | Hoạt động Review | Danh mục kiểm tra (Checklist) | Lưu ý cho Mentor |
 | :--- | :--- | :--- |
-| **Trả bài Interview** | - Sinh viên trả lời đúng trọng tâm bộ câu hỏi IOC không?<br>- Có khả năng nêu ví dụ thực tế không? | Đánh giá theo thang điểm: Nắm vững - Cần ôn lại - Chưa hiểu. |
+| **Trả bài Interview** | - Sinh viên trả lời đúng trọng tâm bộ câu hỏi IOC không?<br>- Có khả năng nêu ví dụ thực tế không? Nếu cần có thể live code | Đánh giá theo thang điểm: Nắm vững - Cần ôn lại - Chưa hiểu. |
 
 ### Giai đoạn 2: Fullstack Project (Tháng thứ 2 & 3)
 **Mục tiêu:** Kiểm soát chất lượng sản phẩm thực tế, tính kỷ luật quy trình Agile và khả năng vận hành Hybrid.
