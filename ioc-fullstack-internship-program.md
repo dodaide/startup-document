@@ -1,31 +1,34 @@
 # Chương trình Thực tập Fullstack Thực chiến tại IOC
 
 ## 1. Mục tiêu chương trình
-- Đảm bảo thực tập sinh nắm vững và trả lời được toàn bộ bộ câu hỏi phỏng vấn mà IOC cung cấp ngay từ đầu chương trình, thông qua quá trình tự học, ôn luyện lại kiến thức và có thể giải thích sâu kèm ví dụ rút ra trực tiếp từ dự án mình làm.
-- Nâng cao tính kỷ luật và độc lập: 100% làm việc cá nhân (Solo project), không làm nhóm để đảm bảo lượng kiến thức tiếp thu bề mặt và bề sâu là tối đa.
-- Rèn luyện tư duy kỹ sư cốt lõi (First Principles): Tự xây dựng nền tảng component từ con số không thay vì lạm dụng UI thư viện có sẵn hay phụ thuộc vào AI.
+- **Làm chủ sản phẩm Fullstack Thực tế**: Hoàn thiện một hệ thống từ cơ bản đến nâng cao từ đầu đến cuối, chứng minh năng lực giải quyết bài toán nghiệp vụ thực tế.
+- **Tư duy Kỹ sư Giải trình (Engineering Accountability)**: Có khả năng bảo vệ mọi quyết định kỹ thuật (từ kiến trúc, thiết kế CSDL đến bảo mật và hiệu năng) dựa trên nguyên lý gốc.
+- **Phản xạ Kiến thức qua Thực chiến**: Nắm chắc kiến thức không phải bằng cách học thuộc, mà bằng cách áp dụng và kiểm chứng trực tiếp các concept đó vào dự án mình xây dựng.
 
 ## 2. Nguyên tắc cốt lõi (Bắt buộc tuân thủ)
 1. **Phát triển Fullstack Trọn vẹn**: mọi sinh viên đều khắt khe phải hoàn thiện một hệ thống Fullstack từ Backend, Database đến thiết kế Frontend.
 2. **Làm việc Độc lập**: Tự chịu trách nhiệm cho mọi khâu từ phân tích yêu cầu (Requirement), thiết kế CSDL (ERD), code backend, thao tác DOM frontend, và tự tích hợp.
-3. **"No Magic" - Chỉ Dùng Code Thuần**:
-   - **Frontend**: Bắt buộc dùng UI Framework (như React, Angular, Vue), nhưng KHÔNG dùng thư viện CSS/UI Component (Bootstrap, Tailwind, MUI, Ant Design...) có sẵn. Sinh viên phải tự build các UI Component (Button, Modal, Table, Dropdown...) dựa trên Framework bằng CSS/SCSS thuần, có kiến trúc mở và khả năng cấu hình Theme linh hoạt (giới thiệu hệ thống Custom Properties/CSS Variables) tương tự như cách hoạt động của Tailwind/MUI.
-     *(Lưu ý: Các bạn có định hướng chuyên sâu Backend thì phân hệ Frontend chỉ cần đáp ứng functional, có thể bỏ qua việc xây dựng base chi tiết như trên).*
-   - **Backend & Database**: KHÔNG dùng ORM (như Prisma, Hibernate, Entity Framework hay Sequelize). Kiến trúc dữ liệu bắt buộc dùng SQL thuần thông qua các **Stored Procedure** cho mọi thao tác nghiệp vụ phức tạp từ CSDL.
-4. **Hạn chế AI can thiệp ở mức độ Sinh code**: KHÔNG dùng AI (ChatGPT, Copilot, Cursor...) để generate code cho sản phẩm. AI chỉ được phép đóng vai trò hỗ trợ giải thích concept, giải thích logic, đưa ví dụ nguyên lý cấu trúc dữ liệu, hoặc tìm hiểu lý thuyết để trả bài.
-5. **Củng cố Nền tảng (CS Fundamentals)**: Yêu cầu bắt buộc tự thiết kế và code lại nguyên bản một số cấu trúc dữ liệu và thuật toán cơ bản (như Linked List, Hash Map, Binary Tree, các thuật toán tìm kiếm/sắp xếp, thuật toán mã hóa...).
+3. **"Hybrid Control" - Kiểm soát Công cụ và Nền tảng**:
+   - **Frontend**: Cho phép sử dụng UI Framework (React, Angular, Vue), Tailwind CSS và các thư viện UI Component (MUI, Ant Design, ShadcnUI...). Tuy nhiên, **ít nhất 50% các component cơ sở (base components)** phải được sinh viên tự viết lại, override/custom sâu để hiểu bản chất giao diện và kiến trúc CSS.
+     *(Lưu ý: Các bạn chuyên sâu Backend có thể giảm tỷ lệ này xuống mức tối thiểu đáp ứng functional).*
+   - **Backend & Database**: Cho phép sử dụng **ORM** (Prisma, Sequelize, TypeORM...) cho các tác vụ CRUD đơn giản (thêm, sửa, xóa cơ bản). Đối với các luồng nghiệp vụ phức tạp, truy vấn thống kê hoặc xử lý dữ liệu liên bảng, **bắt buộc sử dụng SQL thuần thông qua Stored Procedures** để đảm bảo tối ưu hiệu năng và rèn luyện tư duy Database.
+4. **Quy trình Agile/Scrum & Product Ownership**: Sinh viên đóng vai trò là chủ sở hữu sản phẩm (Product Owner), chịu trách nhiệm từ khâu phân tích bài toán (SRS), lập Backlog đến viết User Story & AC. Việc phát triển phải tuân thủ kỷ luật Sprint chặt chẽ.
 
 ## 3. Lộ trình thực tập chi tiết (Dự kiến 3 tháng OJT)
 
 ### Giai đoạn 1: Ôn luyện kiến thức nền tảng (3 tuần)
 - **Học tập & trả bài**: Ôn luyện theo phạm vi bộ câu hỏi phỏng vấn IOC cung cấp từ đầu chương trình.
 - **Thực hành theo câu hỏi**: Với từng nhóm câu, tự viết code mẫu/triển khai mini đủ để hiểu bản chất, sau đó tự trả lời lại bằng ngôn ngữ của chính mình.
-- **Tiêu chuẩn đầu ra (Khớp phỏng vấn)**: Nắm chắc khái niệm cốt lõi, trả lời được trade-off, và giải thích được cách phân tích độ phức tạp/hành vi hệ thống.
+- **Tiêu chuẩn đầu ra (Khớp phỏng vấn)**: Nắm chắc khái niệm cốt lõi, trả lời được trade-off.
 
 ### Giai đoạn 2: Làm dự án Fullstack End-to-End (2 tháng)
-- **Thiết kế & triển khai dự án**: Từ dự án (dự án có thể giống nhau) -> Phân tích yêu cầu -> ERD -> Stored Procedure/Database thuần -> Backend API -> Frontend UI (SPA, Router, UI Component System) -> tích hợp thành một sản phẩm chạy được.
-- **Neo câu trả lời vào dự án**: Mọi phần kiến thức đã ôn ở GĐ1 phải được thể hiện thông qua logic/luồng xử lý/đoạn code cụ thể trong dự án.
-- **Tiêu chuẩn đầu ra (Khớp phỏng vấn)**: Khi được hỏi theo bộ câu hỏi, sinh viên có thể liên hệ trực tiếp tới module/luồng mình đã implement và giải thích “vì sao” lựa chọn thiết kế đó.
+- **Khởi tạo Backlog ban đầu (Sprint 0)**: Phân tích bài toán -> Lập Product Backlog tổng thể (các tính năng ở mức cao, chưa cần chi tiết) -> Ước lượng độ ưu tiên. Backlog là tài liệu sống, được **bồi đắp liên tục mỗi tuần** khi sinh viên phát hiện thêm yêu cầu hoặc refinement. Xây dựng base back end, front end, database
+- **Phát triển theo Sprint (Sprint 1-6)**: Mỗi Sprint kéo dài 1-2 tuần, quy trình mỗi vòng như sau:
+    - **Sprint Planning:** Chọn task từ Backlog -> **Lúc này mới phân tích chi tiết User Story và viết Acceptance Criteria (AC)** -> ước lượng công việc.
+    - **Sprint Execution:** Thiết kế ERD bổ sung -> Viết Stored Procedure & ORM -> Backend API -> Frontend UI (Tailwind, UI Lib & 50% Custom).
+    - **Sprint Review:** Demo tính năng cho Mentor, nghiệm thu theo AC đã viết.
+    - **Backlog Refinement:** Cập nhật và bổ sung thêm vào Product Backlog cho các Sprint tiếp theo.
+- **Tiêu chuẩn đầu ra**: Khi được hỏi, sinh viên liên hệ được trực tiếp tới tính năng cụ thể mình đã code và giải thích "vì sao" lựa chọn thiết kế đó.
 
 ### Giai đoạn 3: Chuẩn bị bảo vệ & phỏng vấn đầu ra (2 tuần)
 - **Chốt toàn bộ câu trả lời**: Tổng hợp lại toàn bộ bộ câu hỏi từ đầu chương trình và hoàn thiện câu trả lời cuối cùng (rõ cấu trúc, có ví dụ từ dự án, nêu được giới hạn/nhược điểm và hướng tối ưu).
@@ -34,4 +37,4 @@
 
 ---
 **Tổng kết giá trị lợi ích:**
-Chương trình ứng dụng triệt để nền tảng kiến thức phỏng vấn thực chiến, ép sinh viên chạm đến vùng nguyên lý (First Principles) của ngành Kỹ thuật Phần mềm. Khi sống sót qua lộ trình cường độ cao, cấm dùng UI Library có sẵn này, việc trả lời câu hỏi phỏng vấn sẽ trở thành **phản xạ tư duy** tự nhiên, vì họ đã tự tay cài đặt toàn bộ "phép phật" ẩn giấu đằng sau những thư viện công nghiệp, xây đắp một độ sâu kiến thức không thể rỗng.
+Chương trình biến dự án thành "phòng thí nghiệm" để sinh viên tôi luyện kỹ năng. Thay vì học để đi thi, sinh viên xây dựng để làm chủ. Kết thúc chương trình, mỗi cá nhân không chỉ có một bộ câu trả lời phỏng vấn xuất sắc mà quan trọng hơn là một **Portfolio thực chiến**, minh chứng cho khả năng tư duy độc lập, kỹ năng giải quyết vấn đề phức tạp và sự sẵn sàng cho môi trường làm việc chuyên nghiệp (Production-ready).
