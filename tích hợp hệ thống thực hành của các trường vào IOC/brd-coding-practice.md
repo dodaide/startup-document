@@ -26,7 +26,7 @@ Hệ thống hỗ trợ 3 nhóm người dùng chính tại mỗi trường họ
 | Vai Trò | Nhiệm Vụ & Quyền Hạn Nghiệp Vụ |
 | :--- | :--- |
 | **Admin Nhà Trường (School Admin)** | - Cấu hình nhận diện thương hiệu của trường (Logo, Màu sắc chủ đạo, Favicon, Tên trường).<br>- Khởi tạo và quản lý danh sách tài khoản Giảng viên.<br>- Xem báo cáo tổng quan về tình hình dạy và học của toàn trường. |
-| **Giảng Viên (Lecturer)** | - Đăng tải học liệu (Slide bài giảng, PDF, link Video bài giảng).<br>- Tạo danh sách bài tập thực hành lập trình và gắn vào lộ trình học tập.<br>- Thiết lập và giám sát các ca thi Live Code trực tiếp.<br>- Quản lý điểm số, xem báo cáo chi tiết về phổ điểm của lớp học. |
+| **Giảng Viên (Lecturer)** | - Đăng tải học liệu (Slide bài giảng, PDF, link Video bài giảng).<br>- Tạo danh sách bài tập thực hành lập trình và gắn trực tiếp vào các bài học.<br>- Thiết lập và giám sát các ca thi Live Code trực tiếp.<br>- Quản lý điểm số, xem báo cáo chi tiết về phổ điểm của lớp học. |
 | **Học Viên (Student)** | - Truy cập học liệu của lớp học theo phân quyền.<br>- Viết code và chạy thử bài tập lập trình trực tiếp trên trình duyệt.<br>- Tham gia các ca thi Live Code và theo dõi bảng xếp hạng thời gian thực. |
 
 ---
@@ -35,7 +35,7 @@ Hệ thống hỗ trợ 3 nhóm người dùng chính tại mỗi trường họ
 
 ### 3.1. Phân hệ Quản lý Học tập cơ bản (LMS Lite)
 Cho phép giảng viên tổ chức bài giảng một cách trực quan:
-* **Quản trị Lộ trình**: Chia bài học theo Chương/Tuần học (Topic-based layout).
+* **Quản trị Nội dung**: Chia bài học theo Chương/Tuần học (Topic-based layout).
 * **Đa dạng Tài liệu**: Hỗ trợ đăng tải Slide bài giảng (PDF), tài liệu đọc (Markdown/Text), và nhúng video bài giảng trực tiếp.
 * **Quản lý Lớp học**: Giảng viên có thể tạo mã lớp (Class code) để sinh viên chủ động tham gia lớp học.
 
