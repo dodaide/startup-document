@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo Cáo Tình Hình Hoạt Động Dự Án IOC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --font-family: 'Be Vietnam Pro', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      /* Dark Theme Variable System - IOC System Gray Palette */
+      --bg-color: #020617;
+      /* --color-slate-900 */
+      --surface-color: #0f172a;
+      /* --color-slate-800 */
+      --card-bg: rgba(15, 23, 42, 0.75);
+      /* --color-slate-800 transparent */
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-color: #f4f8fb;
+      /* --color-slate-25 */
+      --text-muted: #94a3b8;
+      /* --color-slate-300 */
+
+      /* IOC brand colors - Crimson Red */
+      --primary-color: #bc2228;
+      /* --color-brand-500 */
+      --primary-gradient: linear-gradient(135deg, #bc2228 0%, #d26b6f 100%);
+      --secondary-gradient: linear-gradient(135deg, #d26b6f 0%, #eababc 100%);
+      --accent-color: #d26b6f;
+      /* --color-brand-300 */
+
+      /* Success, Warning, Error - IOC Palette */
+      --success-color: #12b76a;
+      /* --color-success-500 */
+      --success-gradient: linear-gradient(135deg, #12b76a 0%, #039855 100%);
+      --warning-color: #f79009;
+      /* --color-warning-500 */
+      --warning-gradient: linear-gradient(135deg, #f79009 0%, #dc6803 100%);
+      --danger-color: #f04438;
+      /* --color-error-500 */
+      --danger-gradient: linear-gradient(135deg, #f04438 0%, #d92d20 100%);
+
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+      --glass-blur: blur(12px);
+      --border-radius-sm: 8px;
+      --border-radius-md: 16px;
+      --border-radius-lg: 24px;
+      --transition-speed: 0.3s;
+    }
+
+    [data-theme="light"] {
+      /* Light Theme Variable System - IOC System Gray Palette */
+      --bg-color: #f4f8fb;
+      /* --color-slate-25 */
+      --surface-color: #ffffff;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --card-border: rgba(188, 34, 40, 0.08);
+      /* Brand tinted border */
+      --text-color: #0f172a;
+      /* --color-slate-800 */
+      --text-muted: #64748b;
+      /* --color-slate-400 */
+
+      --primary-color: #bc2228;
+      --primary-gradient: linear-gradient(135deg, #bc2228 0%, #ab1f24 100%);
+      --secondary-gradient: linear-gradient(135deg, #bc2228 0%, #d26b6f 100%);
+      --accent-color: #bc2228;
+
+      --success-color: #039855;
+      /* --color-success-600 */
+      --success-gradient: linear-gradient(135deg, #039855 0%, #027a48 100%);
+      --warning-color: #dc6803;
+      /* --color-warning-600 */
+      --warning-gradient: linear-gradient(135deg, #dc6803 0%, #b54708 100%);
+      --danger-color: #d92d20;
+      /* --color-error-600 */
+      --danger-gradient: linear-gradient(135deg, #d92d20 0%, #b42318 100%);
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.03);
+      --shadow-lg: 0 10px 30px rgba(188, 34, 40, 0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Header styling */
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    @media(min-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .header-title h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.025em;
+    }
+
+    .header-title p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: var(--border-radius-sm);
+      font-family: var(--font-family);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--primary-gradient);
+      color: white;
+      box-shadow: 0 4px 14px rgba(188, 34, 40, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(188, 34, 40, 0.6);
+    }
+
+    .btn-secondary {
+      background: var(--surface-color);
+      color: var(--text-color);
+      border-color: var(--card-border);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--primary-color);
+    }
+
+    /* Dashboard Layout Grid */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      .dashboard-grid {
+        grid-template-columns: 1.2fr 1fr;
+      }
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-md);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-md);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: transparent;
+      transition: background 0.3s;
+    }
+
+    .card.primary-accent::before {
+      background: var(--primary-color);
+    }
+
+    .card.secondary-accent::before {
+      background: var(--accent-color);
+    }
+
+    .card.warning-accent::before {
+      background: var(--warning-color);
+    }
+
+    .card.danger-accent::before {
+      background: var(--danger-color);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-color);
+    }
+
+    .card-title svg {
+      width: 20px;
+      height: 20px;
+      color: var(--primary-color);
+    }
+
+    /* Summary Stats Grid */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media(min-width: 640px) {
+      .stats-row {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .stat-card {
+      background: var(--surface-color);
+      border: 1px solid var(--card-border);
+      padding: 1.25rem;
+      border-radius: var(--border-radius-sm);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .stat-card.active-stat .stat-value {
+      color: var(--primary-color);
+    }
+
+    .stat-card.conversion-stat .stat-value {
+      color: var(--accent-color);
+    }
+
+    .stat-card.warning-stat .stat-value {
+      color: var(--warning-color);
+    }
+
+    .stat-card.danger-stat .stat-value {
+      color: var(--danger-color);
+    }
+
+    /* Timeline Styling */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 2px solid var(--card-border);
+      margin-left: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-badge {
+      position: absolute;
+      left: -2.5rem;
+      top: 0.25rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: var(--bg-color);
+      border: 2.5px solid var(--primary-color);
+      box-shadow: 0 0 8px var(--primary-color);
+      transition: all 0.3s;
+    }
+
+    .timeline-item:hover .timeline-badge {
+      transform: scale(1.25);
+      background: var(--primary-color);
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .timeline-header {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-body {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-body ul {
+      margin-left: 1.25rem;
+      margin-top: 0.5rem;
+      list-style-type: square;
+    }
+
+    /* Tab Controls */
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .tabs {
+      display: inline-flex;
+      background: var(--surface-color);
+      padding: 0.35rem;
+      border-radius: 100px;
+      border: 1px solid var(--card-border);
+    }
+
+    .tab {
+      padding: 0.5rem 1.5rem;
+      border-radius: 100px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--text-muted);
+      border: none;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .tab.active {
+      background: var(--primary-color);
+      color: white;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Funnel Custom Visualization CSS */
+    .funnel-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+
+    .funnel-stage-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+
+    .funnel-stage-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+      font-weight: 600;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .funnel-stage-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .funnel-stage-item.selected {
+      box-shadow: 0 0 0 2.5px var(--accent-color), 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Cascading Funnel Widths - IOC Brand Crimson to Rose-coral Theme */
+    .funnel-w1 {
+      width: 100%;
+      background: linear-gradient(90deg, #85181c 0%, #ab1f24 100%);
+    }
+
+    .funnel-w2 {
+      width: 85%;
+      background: linear-gradient(90deg, #ab1f24 0%, #bc2228 100%);
+    }
+
+    .funnel-w3 {
+      width: 70%;
+      background: linear-gradient(90deg, #bc2228 0%, #c94e53 100%);
+    }
+
+    .funnel-w4 {
+      width: 55%;
+      background: linear-gradient(90deg, #c94e53 0%, #d26b6f 100%);
+    }
+
+    .funnel-w5 {
+      width: 40%;
+      background: linear-gradient(90deg, #475569 0%, #334155 100%);
+    }
+
+    .funnel-w5.has-zero {
+      background: linear-gradient(90deg, rgba(239, 68, 68, 0.2) 0%, rgba(239, 68, 68, 0.1) 100%);
+      border: 1px dashed var(--danger-color);
+      color: var(--danger-color);
+    }
+
+    .stage-name {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .stage-value-box {
+      text-align: right;
+    }
+
+    .stage-number {
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .stage-percent {
+      font-size: 0.75rem;
+      opacity: 0.85;
+      font-weight: 500;
+    }
+
+    /* Transition indicators between stages */
+    .funnel-connector {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      height: 18px;
+    }
+
+    .conv-rate {
+      color: var(--success-color);
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    .drop-rate {
+      color: var(--danger-color);
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    /* Channel distribution visualization */
+    .channel-title {
+      font-weight: 700;
+      font-size: 0.98rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .channel-title span.badge {
+      font-size: 0.75rem;
+      background: rgba(188, 34, 40, 0.15);
+      color: var(--primary-color);
+      padding: 0.2rem 0.5rem;
+      border-radius: 100px;
+    }
+
+    .channel-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .channel-item {
+      background: var(--surface-color);
+      border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm);
+      padding: 0.75rem 1rem;
+    }
+
+    .channel-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+    }
+
+    .channel-progress-bg {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    [data-theme="light"] .channel-progress-bg {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .channel-progress-fill {
+      height: 100%;
+      background: var(--primary-color);
+      border-radius: 100px;
+      width: 0%;
+      transition: width 0.6s cubic-bezier(0.1, 0.8, 0.2, 1);
+    }
+
+    /* Highlights & Bullet lists */
+    .highlight-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .highlight-item {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.92rem;
+    }
+
+    .highlight-icon {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-top: 0.2rem;
+    }
+
+    .highlight-icon.success {
+      color: var(--success-color);
+    }
+
+    .highlight-icon.warning {
+      color: var(--warning-color);
+    }
+
+    .highlight-icon.danger {
+      color: var(--danger-color);
+    }
+
+    .highlight-icon.primary {
+      color: var(--primary-color);
+    }
+
+    /* Bullet box */
+    .bullet-box {
+      border-radius: var(--border-radius-sm);
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 3px solid var(--card-border);
+      margin-top: 1rem;
+    }
+
+    .bullet-box-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+
+    /* Side-by-side proposed solutions */
+    .solution-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    @media(min-width: 768px) {
+      .solution-container {
+        grid-template-columns: 1fr 1.2fr;
+      }
+    }
+
+    .solution-card {
+      border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-md);
+      padding: 1.75rem;
+      background: var(--card-bg);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s;
+    }
+
+    .solution-card.recommended {
+      border-color: var(--success-color);
+      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.08);
+      background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.05), transparent 60%), var(--card-bg);
+    }
+
+    .solution-badge {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: var(--success-color);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .solution-meta {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .solution-name {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    .solution-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .solution-points {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.9rem;
+    }
+
+    .solution-point-item {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .solution-point-item svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 1.5rem;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+        padding: 0;
+      }
+
+      .card,
+      .stat-card,
+      .channel-item,
+      .solution-card {
+        background: white !important;
+        border: 1px solid #ccc !important;
+        color: black !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+      }
+
+      .tab-container,
+      .theme-toggle,
+      .header-actions {
+        display: none !important;
+      }
+
+      .funnel-stage-item {
+        color: black !important;
+        border: 1px solid #777 !important;
+        background: #f0f0f0 !important;
+      }
+
+      .funnel-w1 {
+        width: 100% !important;
+      }
+
+      .funnel-w2 {
+        width: 85% !important;
+      }
+
+      .funnel-w3 {
+        width: 70% !important;
+      }
+
+      .funnel-w4 {
+        width: 55% !important;
+      }
+
+      .funnel-w5 {
+        width: 40% !important;
+      }
+
+      .funnel-w5.has-zero {
+        border: 1px dashed red !important;
+        color: red !important;
+      }
+
+      .header-title h1 {
+        -webkit-text-fill-color: initial !important;
+        color: black !important;
+      }
+
+      .channel-progress-bg {
+        background: #ddd !important;
+      }
+
+      .channel-progress-fill {
+        background: #4f46e5 !important;
+      }
+    }
+
+    /* Floating Utilities */
+    .theme-toggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--card-border);
+      background: var(--surface-color);
+      color: var(--text-color);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--primary-color);
+      transform: rotate(15deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-title">
+        <h1>BÁO CÁO HOẠT ĐỘNG DỰ ÁN IOC</h1>
+        <p>Đánh giá giai đoạn vận hành phát triển, chuyển đổi phễu kinh doanh & đề xuất định hướng</p>
+      </div>
+      <div class="header-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Đổi giao diện Sáng/Tối">
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="btn btn-secondary" onclick="window.print()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          In Báo Cáo
+        </button>
+      </div>
+    </header>
+
+    <!-- Summary Stats -->
+    <div class="stats-row">
+      <div class="stat-card active-stat">
+        <div class="stat-value" id="stat-total-reg">471</div>
+        <div class="stat-label">Tổng Đăng Ký</div>
+      </div>
+      <div class="stat-card conversion-stat">
+        <div class="stat-value" id="stat-conv-rate">57.7%</div>
+        <div class="stat-label">Tỷ Lệ Trải Nghiệm</div>
+      </div>
+      <div class="stat-card warning-stat">
+        <div class="stat-value" id="stat-active-rate">41.4%</div>
+        <div class="stat-label">Tỷ Lệ Nhận Tư Vấn</div>
+      </div>
+      <div class="stat-card danger-stat">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Hợp Đồng Thành Công</div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="dashboard-grid">
+
+      <!-- Left Column: Operations & Conversion Funnel -->
+      <div class="flex-column" style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+        <!-- Card 1: Vận hành & Cải tiến sản phẩm -->
+        <div class="card primary-accent">
+          <div class="card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Phát Triển Sản Phẩm & Vận Hành Hệ Thống
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-date">Giữa tháng 5 - Đầu tháng 6</div>
+              <div class="timeline-header">Xây Dựng Mô Hình & Tối Ưu Hóa Trải Nghiệm</div>
+              <div class="timeline-body">
+                Tập trung hoàn thiện mô hình và liên tục cải tiến sản phẩm đáp ứng mục tiêu:
+                <ul>
+                  <li>Tái cấu trúc luồng trải nghiệm khách hàng tối giản, mượt mà.</li>
+                  <li>Tích hợp và chuẩn hóa hệ thống bài test đánh giá đầu vào.</li>
+                  <li>Xây dựng phân hệ quản lý Lead chuyên biệt hỗ trợ chăm sóc sâu.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge"
+                style="border-color: var(--warning-color); box-shadow: 0 0 8px var(--warning-color);"></div>
+              <div class="timeline-date">Đầu tháng 6 - Giữa tháng 6</div>
+              <div class="timeline-header" style="color: var(--warning-color);">Nút Thắt Nhân Lực & Trục Trặc Vận Hành
+              </div>
+              <div class="timeline-body">
+                Tiến độ phát triển bị gián đoạn và gặp trục trặc kỹ thuật do các đối tác và bên liên quan không đủ nguồn
+                lực, nhân sự chuyên trách để đáp ứng tốc độ dự án.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge"
+                style="border-color: var(--success-color); box-shadow: 0 0 8px var(--success-color);"></div>
+              <div class="timeline-date">Giữa tháng 6 - Nay</div>
+              <div class="timeline-header" style="color: var(--success-color);">Khắc Phục & Tăng Tốc</div>
+              <div class="timeline-body">
+                Khắc phục hoàn toàn tình trạng đình trệ nguồn lực nhờ tuyển dụng bổ sung thành công các vị trí key dự
+                án. Bộ máy vận hành đi vào guồng ổn định.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Phễu Chuyển Đổi Tương Tác -->
+        <div class="card secondary-accent">
+          <div class="card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            Phễu Chuyển Đổi Kinh Doanh
+          </div>
+
+          <!-- Tab Selector -->
+          <div class="tab-container">
+            <div class="tabs">
+              <button class="tab active" onclick="switchData('overall')">Toàn bộ giai đoạn (12/6 - 2/7)</button>
+              <button class="tab" onclick="switchData('daily')">Ngày gần nhất (1/7/2026)</button>
+            </div>
+          </div>
+
+          <p
+            style="font-size: 0.88rem; color: var(--text-muted); text-align: center; margin-top:-0.5rem; margin-bottom: 1rem;">
+            * Nhấp vào từng tầng phễu bên dưới để cập nhật chi tiết nguồn phân bổ dữ liệu.
+          </p>
+
+          <!-- Interactive Funnel -->
+          <div class="funnel-container" id="funnel-container">
+            <!-- Dynamic Funnel Elements will render here via Javascript -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Marketing & Sales Insights -->
+      <div class="flex-column" style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+        <!-- Card 3: Chi Tiết Phân Bổ Nguồn Nước Dữ Liệu -->
+        <div class="card secondary-accent">
+          <div class="card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>
+            Phân Bổ Kênh Nguồn (<span id="source-stage-name">Đăng ký tài khoản</span>)
+          </div>
+
+          <div class="channel-title">
+            <span>Chi tiết phân bổ nguồn</span>
+            <span class="badge" id="source-total-badge">471 data</span>
+          </div>
+
+          <div class="channel-list" id="channel-progress-container">
+            <!-- Dynamic channel progress bars will render here -->
+          </div>
+        </div>
+
+        <!-- Card 4: Nhận định Marketing & Chất lượng lead -->
+        <div class="card warning-accent">
+          <div class="card-title" style="color: var(--warning-color);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            Nhận Định Marketing & Chất Lượng Dữ Liệu
+          </div>
+
+          <ul class="highlight-list">
+            <li class="highlight-item">
+              <svg class="highlight-icon primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              <div>
+                <strong>Bùng nổ nhờ Seeding & Content:</strong>
+                Giai đoạn đầu (12/6 - 18/6) chạy quảng cáo trả phí không hiệu quả, tốn <strong>3.000.000đ</strong> thu
+                được đúng 3 đăng ký. Từ ngày 18/6 triển khai seeding organic trên Threads, Facebook Groups mang lại hiệu
+                quả vượt bậc và chiếm đa số nguồn data hiện tại.
+              </div>
+            </li>
+            <li class="highlight-item">
+              <svg class="highlight-icon success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div>
+                <strong>Tiềm năng lưu lượng lớn:</strong>
+                Ngày gần nhất (1/7) ghi nhận <strong>113 tài khoản đăng ký mới</strong>. Dự báo nếu làm tốt khâu
+                xây dựng cộng đồng, tối ưu hóa nội dung seeding và mở rộng phễu sang TikTok, tiềm năng lưu lượng hoàn
+                toàn khả thi ở mức <strong>200 - 300 tài khoản/ngày</strong>.
+              </div>
+            </li>
+            <li class="highlight-item">
+              <svg class="highlight-icon warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <div>
+                <strong>Chất lượng Lead phân hóa sâu:</strong>
+                Data thu được đa dạng từ nhiều vị trí trong ngành IT. Tuy nhiên, hành vi nhu cầu rất phân tán (học
+                elearning, làm quizz, thi thử, trải nghiệm, spam). Nhu cầu thực tế của học viên bị chi phối mạnh mẽ bởi
+                thông điệp của content seeding.
+              </div>
+            </li>
+          </ul>
+
+          <div class="bullet-box">
+            <div class="bullet-box-title" style="color: var(--warning-color);">Kết Luận Sơ Bộ</div>
+            <div style="font-size: 0.9rem;">
+              Chiến dịch đã <strong>chứng minh năng lực phễu thu hút</strong> cực kỳ khả thi của dự án IOC, với chi phí
+              thu hút lead cực rẻ thông qua organic content.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Điểm nghẽn thương mại -->
+        <div class="card danger-accent">
+          <div class="card-title" style="color: var(--danger-color);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <octagon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></octagon>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            Nút Thắt Chuyển Đổi Thương Mại
+          </div>
+
+          <div style="font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Dù dữ liệu phễu đổ về rất khả quan (471 đăng ký), dự án ghi nhận <strong>0 đơn hàng thương mại phát sinh tự
+              động</strong>.
+          </div>
+
+          <ul class="highlight-list">
+            <li class="highlight-item">
+              <svg class="highlight-icon danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <div>
+                <strong>Không chuyển đổi tự nhiên:</strong> Khách hàng sau khi hoàn tất trải nghiệm hệ thống hoàn toàn
+                <strong>không có hành vi tự nguyện đăng ký nhận tư vấn</strong>.
+              </div>
+            </li>
+            <li class="highlight-item">
+              <svg class="highlight-icon danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <div>
+                <strong>Lệ thuộc 100% Outbound Sales:</strong> Toàn bộ 195 liên hệ được tư vấn đều phải do đội ngũ Sales
+                tự chủ động khai thác data thô và liên hệ thủ công.
+              </div>
+            </li>
+            <li class="highlight-item">
+              <svg class="highlight-icon danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <div>
+                <strong>Sản phẩm khó bán & thiếu nhân lực:</strong> Đặc thù gói dịch vụ thực tập B2C không thể tự chuyển
+                đổi mà cần kỹ năng chốt sale tư vấn cao, trong khi dự án đang thiếu trầm trọng nhân sự Sales.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Proposed Solutions -->
+    <div class="card primary-accent" style="margin-bottom: 2rem;">
+      <div class="card-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1v4M19 5h4M12 12a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"></path>
+          <path d="m14 14-2-2-2 2"></path>
+        </svg>
+        Đề Xuất & Giải Pháp Định Hướng Chiến Lược
+      </div>
+
+      <div class="solution-container">
+
+        <!-- Solution 1 -->
+        <div class="solution-card">
+          <div>
+            <div class="solution-meta">Phương Án Bán Trực Tiếp</div>
+            <div class="solution-name">Đầu Tư Đội Ngũ Sales Chuyên Nghiệp</div>
+            <p class="solution-desc">
+              Xây dựng bài bản bộ máy Telesales & Tư vấn học thuật chuyên biệt để trực tiếp chuyển đổi nguồn data thô từ
+              phễu IOC sang gói sản phẩm Thực tập hiện tại.
+            </p>
+          </div>
+          <ul class="solution-points">
+            <li class="solution-point-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--danger-color)" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span>Giúp dự án phát sinh doanh thu từ sản phẩm hiện tại nhưng tốn nhiều chi phí vận hành.</span>
+            </li>
+            <li class="solution-point-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--danger-color)" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span>Hiệu quả lâu dài cho công ty không cao, rủi ro chi phí cố định lớn.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Solution 2: Recommended -->
+        <div class="solution-card recommended">
+          <span class="solution-badge">Đề xuất ưu tiên</span>
+          <div>
+            <div class="solution-meta" style="color: var(--success-color);">Phương Án Bán Chéo (Cross-selling Funnel)
+            </div>
+            <div class="solution-name">Biến IOC Thành Phễu Trung Gian Phân Phối Data</div>
+            <p class="solution-desc">
+              Giữ nguyên thế mạnh phễu thu hút giá rẻ của IOC, chuyển giao data chất lượng cao này sang bán chéo các sản
+              phẩm đào tạo ngắn hạn có biên lợi nhuận cao hơn của công ty.
+            </p>
+          </div>
+          <ul class="solution-points">
+            <li class="solution-point-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--success-color)" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Chuyển data tiềm năng thu về từ IOC sang trung tâm ngắn hạn để khai thác bán chéo khóa học.</span>
+            </li>
+            <li class="solution-point-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--success-color)" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Tách phần nội dung Thực tập của các khóa học ngắn hạn thành sản phẩm con để tối ưu doanh số.</span>
+            </li>
+            <li class="solution-point-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--success-color)" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Tận dụng hạ tầng Sales có sẵn của công ty, tối ưu dòng tiền và giảm thiểu tối đa rủi ro vận
+                hành.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Báo cáo được khởi tạo tự động dựa trên dữ liệu hệ thống IOC ngày 02/07/2026. Bản quyền thuộc về Ban Quản Trị Dự Án
+      IOC.
+    </div>
+
+  </div>
+
+  <script>
+    // System Data Configuration
+    const dataStore = {
+      overall: {
+        totalReg: 471,
+        convRate: "57.7%", // 272/471
+        outboundRate: "41.4%", // 195/471
+        stages: [
+          { key: "reg", name: "1. Đăng ký tài khoản", count: 471, widthClass: "funnel-w1", rate: "100%", conv: "77%", drop: "23%", sources: { "Threads": 244, "Email": 88, "Facebook": 34, "Zalo": 1, "Khác": 104 } },
+          { key: "ver", name: "2. Xác thực Email", count: 363, widthClass: "funnel-w2", rate: "77%", conv: "75%", drop: "25%", sources: { "Threads": 191, "Email": 68, "Facebook": 25, "Zalo": 1, "Khác": 78 } },
+          { key: "exp", name: "3. Thi thử / Trải nghiệm", count: 272, widthClass: "funnel-w3", rate: "58%", conv: "72%", drop: "28%", sources: { "Threads": 130, "Email": 64, "Facebook": 20, "Zalo": 1, "Khác": 57 } },
+          { key: "adv", name: "4. Được tư vấn (Outbound)", count: 195, widthClass: "funnel-w4", rate: "41%", conv: "0%", drop: "100%", sources: { "Threads": 83, "Email": 86, "Facebook": 24, "Zalo": 1, "Khác": 22 } },
+          { key: "pkg", name: "5. Đăng ký Gói dịch vụ", count: 0, widthClass: "funnel-w5", rate: "0%", conv: "0%", drop: "0%", sources: { "Threads": 0, "Email": 0, "Facebook": 0, "Zalo": 0, "Khác": 0 } }
+        ]
+      },
+      daily: {
+        totalReg: 113,
+        convRate: "64.6%", // 73/113
+        outboundRate: "44.2%", // 50/113
+        stages: [
+          { key: "reg", name: "1. Đăng ký tài khoản", count: 113, widthClass: "funnel-w1", rate: "100%", conv: "85%", drop: "15%", sources: { "Threads": 70, "Facebook": 5, "Email": 1, "Khác": 37 } },
+          { key: "ver", name: "2. Xác thực Email", count: 96, widthClass: "funnel-w2", rate: "85%", conv: "76%", drop: "24%", sources: { "Threads": 57, "Facebook": 4, "Email": 1, "Khác": 34 } },
+          { key: "exp", name: "3. Thi thử / Trải nghiệm", count: 73, widthClass: "funnel-w3", rate: "65%", conv: "68%", drop: "32%", sources: { "Threads": 42, "Facebook": 4, "Email": 2, "Khác": 25 } },
+          { key: "adv", name: "4. Được tư vấn (Outbound)", count: 50, widthClass: "funnel-w4", rate: "44%", conv: "0%", drop: "100%", sources: { "Email": 30, "Threads": 12, "Khác": 8 } },
+          { key: "pkg", name: "5. Đăng ký Gói dịch vụ", count: 0, widthClass: "funnel-w5", rate: "0%", conv: "0%", drop: "0%", sources: { "Threads": 0, "Email": 0, "Facebook": 0, "Zalo": 0, "Khác": 0 } }
+        ]
+      }
+    };
+
+    let currentMode = "overall";
+    let selectedStageIndex = 0;
+
+    // Theme toggle function
+    function toggleTheme() {
+      const html = document.documentElement;
+      const themeIcon = document.getElementById('theme-icon');
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.setAttribute('data-theme', 'light');
+        themeIcon.innerHTML = `
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        `;
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        themeIcon.innerHTML = `
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        `;
+      }
+    }
+
+    // Switch data mode
+    function switchData(mode) {
+      currentMode = mode;
+
+      // Update Active Tab UI
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        if (tab.getAttribute('onclick').includes(mode)) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+
+      // Update Summary Cards
+      document.getElementById('stat-total-reg').innerText = dataStore[mode].totalReg;
+      document.getElementById('stat-conv-rate').innerText = dataStore[mode].convRate;
+      document.getElementById('stat-active-rate').innerText = dataStore[mode].outboundRate;
+
+      // Maintain active stage index if possible, otherwise clamp to 0
+      if (selectedStageIndex >= dataStore[mode].stages.length) {
+        selectedStageIndex = 0;
+      }
+
+      renderFunnel();
+      updateChannelSection();
+    }
+
+    // Render funnel visualization
+    function renderFunnel() {
+      const container = document.getElementById('funnel-container');
+      container.innerHTML = "";
+      const stages = dataStore[currentMode].stages;
+
+      stages.forEach((stage, idx) => {
+        const isLast = idx === stages.length - 1;
+        const wrapper = document.createElement('div');
+        wrapper.className = "funnel-stage-wrapper";
+
+        // Element funnel bar
+        const isZeroVal = stage.count === 0;
+        const itemClass = `funnel-stage-item ${stage.widthClass} ${idx === selectedStageIndex ? 'selected' : ''} ${isZeroVal ? 'has-zero' : ''}`;
+
+        wrapper.innerHTML = `
+          <div class="${itemClass}" onclick="selectStage(${idx})">
+            <div class="stage-name">
+              <span>${stage.name}</span>
+            </div>
+            <div class="stage-value-box">
+              <div class="stage-number">${stage.count.toLocaleString()}</div>
+              <div class="stage-percent">Tỷ lệ phễu: ${stage.rate}</div>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(wrapper);
+
+        // Render transition rates if not the last item
+        if (!isLast) {
+          const nextStage = stages[idx + 1];
+          const connector = document.createElement('div');
+          connector.className = "funnel-connector";
+          connector.innerHTML = `
+            <span class="conv-rate">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+              ${stage.conv} chuyển tiếp
+            </span>
+            <span>&bull;</span>
+            <span class="drop-rate">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              ${stage.drop} rơi rụng
+            </span>
+          `;
+          container.appendChild(connector);
+        }
+      });
+    }
+
+    // Select active stage to show breakdown
+    function selectStage(index) {
+      selectedStageIndex = index;
+
+      // Update selected class in DOM
+      const elements = document.querySelectorAll('.funnel-stage-item');
+      elements.forEach((el, idx) => {
+        if (idx === index) {
+          el.classList.add('selected');
+        } else {
+          el.classList.remove('selected');
+        }
+      });
+
+      updateChannelSection();
+    }
+
+    // Update the right card side channel bar list
+    function updateChannelSection() {
+      const stage = dataStore[currentMode].stages[selectedStageIndex];
+      document.getElementById('source-stage-name').innerText = stage.name;
+      document.getElementById('source-total-badge').innerText = `${stage.count.toLocaleString()} data`;
+
+      const progressContainer = document.getElementById('channel-progress-container');
+      progressContainer.innerHTML = "";
+
+      const sources = stage.sources;
+      const sortedSources = Object.entries(sources).sort((a, b) => b[1] - a[1]);
+
+      if (stage.count === 0) {
+        progressContainer.innerHTML = `
+          <div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">
+            Không có dữ liệu phân bổ tại tầng phễu này.
+          </div>
+        `;
+        return;
+      }
+
+      sortedSources.forEach(([name, count]) => {
+        const percent = stage.count > 0 ? ((count / stage.count) * 100).toFixed(1) : 0;
+
+        const channelItem = document.createElement('div');
+        channelItem.className = "channel-item";
+        channelItem.innerHTML = `
+          <div class="channel-info">
+            <span>${name}</span>
+            <span>${count.toLocaleString()} (${percent}%)</span>
+          </div>
+          <div class="channel-progress-bg">
+            <div class="channel-progress-fill" style="width: 0%"></div>
+          </div>
+        `;
+
+        progressContainer.appendChild(channelItem);
+
+        // Animate fill bar in a short delay
+        setTimeout(() => {
+          const fill = channelItem.querySelector('.channel-progress-fill');
+          if (fill) fill.style.width = `${percent}%`;
+        }, 50);
+      });
+    }
+
+    // Initialize application
+    window.onload = function () {
+      switchData('overall');
+    };
+  </script>
+</body>
+
+</html>
