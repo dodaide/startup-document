@@ -111,7 +111,7 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 
 *   **Đối với Sinh viên (B2C):**
     *   *Công việc cảm xúc:* Muốn cảm thấy **"tự tin"** vào năng lực code của bản thân, xóa bỏ nỗi sợ rớt CV và nỗi sợ "bị xoáy" lúc phỏng vấn chuyên môn.
-    *   *Công việc xã hội:* Muốn được nhà tuyển dụng (HR Tech/Leader) và bạn bè nhìn nhận là ứng viên **"có kinh nghiệm"** làm phần mềm, làm việc chuyên nghiệp chuẩn Agile/Scrum.
+    *   *Công việc xã hội:* Muốn được nhà tuyển dụng (HR Tech/Leader) và bạn bè nhìn nhận là ứng viên **"có kinh nghiệm"** làm phần mềm, làm việc chuyên nghiệp chuẩn áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall.
 
 *   **Đối với Nhà trường (B2B):**
     *   *Công việc cảm xúc:* Muốn cảm thấy **"an tâm"** (Safety) về uy tín của Khoa khi gửi sinh viên đi thực chiến tại các doanh nghiệp IT.
@@ -164,7 +164,7 @@ Xác định **Công việc chức năng cốt lõi (Core Functional Job)** cho 
 *Sinh viên làm việc để chứng minh giá trị (Survival mode).*
 *   25. Giảm thiểu rủi ro phải làm các công việc lặt vặt ("xách nước bổ cam") **thay vì được giao task chuyên môn thực tế**.
 *   26. Giảm thiểu thời gian "chết" (Blocked time) **khi đối diện với các vấn đề kỹ thuật phức tạp**.
-*   27. Tăng tốc độ hòa nhập với quy trình Agile/Scrum của team **trong tiến trình hội nhập dự án (Onboarding)**.
+*   27. Tăng tốc độ hòa nhập với quy trình phát triển Agile/Scrum, Kanban, Waterfall của team **trong tiến trình hội nhập dự án (Onboarding)**.
 *   28. Giảm số lượng lỗi Re-open (Bug rate) **sau quy trình kiểm thử của bộ phận QA**.
 *   29. Tăng chất lượng code theo chuẩn (Clean code compliance) **ở các quy trình đánh giá Pull Request**.
 *   30. Giảm sự phụ thuộc thụ động vào Mentor (Passive dependency) **xuyên suốt quá trình triển khai tác vụ độc lập**.
@@ -390,7 +390,7 @@ Mọi quyết định thiết kế sản phẩm phải bắt đầu từ mục t
 
 **2. Khám phá Cơ hội (Opportunities)**
 Dựa trên Outcome trên, IOC đào sâu vào các vấn đề (Pain points) chưa được đáp ứng tốt của đối tượng khách hàng:
-*   **Opportunity 1 (Đói kinh nghiệm thực chiến - B2C):** Hàng ngàn sinh viên cần môi trường rèn luyện các dự án sát thực tế theo chuẩn Agile/Scrum của doanh nghiệp, nhưng bị doanh nghiệp từ chối tiếp nhận vì lo sợ rủi ro.
+*   **Opportunity 1 (Đói kinh nghiệm thực chiến - B2C):** Hàng ngàn sinh viên cần môi trường rèn luyện các dự án sát thực tế theo chuẩn Agile/Scrum, Kanban, Waterfall của doanh nghiệp, nhưng bị doanh nghiệp từ chối tiếp nhận vì lo sợ rủi ro.
 *   **Opportunity 2 (Bế tắc tìm chỗ thực tập chất lượng - B2B):** Nhà trường (đặc biệt nhóm trường top dưới/thiếu quan hệ doanh nghiệp) **khó tìm đủ nơi tiếp nhận sinh viên đi thực tập** theo mùa vụ. Khi đã có nơi tiếp nhận, bài toán “quản lý/đối soát chất lượng” mới phát sinh: nhà trường thiếu cách kiểm chứng sinh viên có thực sự làm việc chuyên môn hay không, nên buộc phải dựa vào giấy xác nhận thiếu minh định.
 
 **3. Mở rộng Giải pháp với Tư duy Phân kỳ (Solutions via Divergent Thinking)**
@@ -449,7 +449,7 @@ Giải quyết bài toán: "Thông tin bị phân mảnh giữa nhà trường v
 *   **"Income Share Agreement" (Analogy từ BloomTech):** Cơ chế "Học trước, trả sau". Tài trợ học bổng thực tập, sinh viên chỉ trả lại một phần nhỏ từ lương khi có việc làm chính thức, gắn kết trách nhiệm 3 bên.
 *   **"Gig Economy" (Analogy từ Upwork/Fiverr):** Mô hình **"Intern-Gigs"**. Chia nhỏ dự án thành các task ngắn (code module, viết doc) trong 1 tuần để sinh viên nhận việc và có thu nhập + chứng chỉ ngay lập tức.
 *   **"Grab cho Micro-tasks":** Doanh nghiệp "phát lệnh" (bug fix/document), sinh viên rảnh và đủ trình độ sẽ "nhận đơn" và xử trị tức thì.
-*   **"Airbnb cho Tài năng" (Hosting an Intern):** Các startup nhỏ thiếu nhân sự nhưng ngại đào tạo có thể "đăng ký" các task nhỏ trên IOC, sinh viên "đặt chỗ" để giải quyết dựa trên quy trình Agile/Scrum sẵn có của nền tảng.
+*   **"Airbnb cho Tài năng" (Hosting an Intern):** Các startup nhỏ thiếu nhân sự nhưng ngại đào tạo có thể "đăng ký" các task nhỏ trên IOC, sinh viên "đặt chỗ" để giải quyết dựa trên quy trình phát triển Agile/Scrum, Kanban, Waterfall sẵn có của nền tảng.
 *   **"Kickstarter cho Career":** Sinh viên gọi vốn (crowdfunding) cho các dự án sáng tạo trên IOC/Vfund, cam kết làm việc cho nhà đầu tư hoặc chia sẻ bản quyền sản phẩm sau này.
 *   **"Uber/Grab cho Mentor":** Sinh viên gặp lỗi kỹ thuật (NestJS, Prisma...) có thể "đặt" Mentor hỗ trợ 1:1 tức thì trong 30-60 phút để gỡ rối nhanh chóng.
 *   **"GitHub cho mọi ngành nghề" (Portfolio-first):** Biến profile sinh viên thành một **"Live Portfolio"**. Mọi dự án, task thực tập đều được lưu trữ và hiển thị kết quả thật (demo, feedback) thay vì CV chữ.
@@ -514,7 +514,7 @@ Dưới đây là các mô hình tiềm năng được đúc kết từ quá tr�
 *   **Solution 32 - Mô hình Thực tập ảo "Virtual Experience" (Inspiration from Forage hoặc nextwork):** Bài tập mô phỏng từ các Big Tech để tạo phễu lọc ứng viên chất lượng. **→ Lựa chọn vào bước sàng lọc định lượng**
 *   **Solution 33 - Hệ sinh thái "Học - Thực tập - Đi làm" khép kín (Inspiration from Glints):** Cam kết đầu ra dựa trên tuyển dụng và đào tạo thực chiến. 
 *   **Solution 34 - "1-Day Internship" (Modify/Magnify):** Một ngày trải nghiệm thực tế tại doanh nghiệp trước khi quyết định thực tập dài hạn.
-*   **Solution 35 - Thực tập theo mô hình Squad (Modify):** Doanh nghiệp tuyển nguyên một **Squad (3-4 người: FE, BE, Tester)** thay vì cá nhân rời rạc, giúp đội ngũ tự vận hành ngay theo chuẩn Agile/Scrum.
+*   **Solution 35 - Thực tập theo mô hình Squad (Modify):** Doanh nghiệp tuyển nguyên một **Squad (3-4 người: FE, BE, Tester)** thay vì cá nhân rời rạc, giúp đội ngũ tự vận hành ngay theo chuẩn Agile/Scrum, Kanban, Waterfall.
 *   **Solution 36 - Dự án thực tập theo đợt với cam kết tài chính (Inspiration from EntryLevel):** Tổ chức thực tập theo nhóm (Cohort), sử dụng mô hình "Cọc và Hoàn tiền/Thưởng" (Financial Stakes) để đảm bảo 100% sinh viên hoàn thành dự án.
 *   **Solution 37 - Tech Apprenticeships (Inspiration from Multiverse):** Chương trình vừa học vừa làm dài hạn, cung cấp chứng chỉ năng lực thực tiễn được các doanh nghiệp IT công nhận thay thế cho bằng cấp học thuật truyền thống.
 *   **Solution 38 - Onboarding Preparation (Adapt from Forage):** Sinh viên phải hoàn thành khóa "huấn luyện giả lập" quy trình/tech-stack của doanh nghiệp trên IOC trước khi được apply dự án thật. **→ Lựa chọn vào bước sàng lọc định lượng**
@@ -577,7 +577,7 @@ Dù đang khai phá một ngách "đại dương xanh", lợi thế cạnh tranh
 ### 4.6. Phân tích Lĩnh vực Đội ngũ (Team Domains)
 Khả năng hiện thực hóa mô hình Managed Internship Service không dựa trên bề nổi công nghệ, mà đến từ khác biệt cốt lõi của đội ngũ sáng lập (DNA kết hợp giữa Giáo dục và Thực chiến):
 *   **Sứ mệnh, khát vọng và mức độ chấp nhận rủi ro:** Đội ngũ chung tầm nhìn về một nền giáo dục gắn liền với thị trường, sẵn sàng đập bỏ rào cản thực tập sáo rỗng để kiến tạo nền tảng đào tạo nhân lực "Plug & Play".
-*   **Năng lực thực thi các Yếu tố Thành công Then chốt (CSFs):** Sở hữu kinh nghiệm vận hành trực tiếp các dự án phần mềm theo tiêu chuẩn Agile/Scrum trên quy mô lớn, kết hợp với hiểu biết sâu sắc về nghiệp vụ giáo dục đào tạo, đánh giá sinh viên (Rikkei Education).
+*   **Năng lực thực thi các Yếu tố Thành công Then chốt (CSFs):** Sở hữu kinh nghiệm vận hành trực tiếp các dự án phần mềm theo tiêu chuẩn áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall trên quy mô lớn, kết hợp với hiểu biết sâu sắc về nghiệp vụ giáo dục đào tạo, đánh giá sinh viên (Rikkei Education).
 *   **Mối quan hệ trong Chuỗi giá trị (Connectedness):** Việc thừa hưởng lợi thế mạng lưới đối tác doanh nghiệp IT hàng đầu và cơ sở quan hệ vững chắc với các trường Đại học/Cao đẳng (Upstream & Downstream) giúp lan tỏa nhanh hệ thống, tiếp cận ngay tệp khách hàng B2B cũng như cam kết chất lượng Mentor đồng hành.
 
 ### 4.7. Phân tích Môi trường với SWOT Analysis
@@ -614,7 +614,7 @@ SWOT trong mục này được tổng hợp từ các phân tích trước đó 
 ### 5.1. Hạt nhân Chiến lược (The Kernel of Good Strategy - theo Richard Rumelt)
 Một chiến lược tốt bắt đầu bằng việc nhìn nhận bức tranh lõi của vấn đề, thay vì các mục tiêu sáo rỗng:
 *   **Chẩn đoán (Diagnosis):** Ngành IT đang thừa nhân lực không có kinh nghiệm nhưng thiếu nhân sự làm được việc. Khủng hoảng không nằm ở việc thiếu kiến thức lý thuyết, mà nằm ở "Sự Bế tắc OJT kéo dài" khi doanh nghiệp không muốn nhận Fresher vào dạy việc vì sợ rủi ro, còn sinh viên thì không biết xin kinh nghiệm thực tế ở đâu.
-*   **Chính sách định hướng (Guiding Policy):** Định vị IOC không phải là một Job Board hay một nền tảng bán khóa học tĩnh. IOC giải quyết khâu "thiếu kinh nghiệm" bằng cách đặt sinh viên vào môi trường dự án thực chiến chuẩn Agile/Scrum qua các bài toán từ Big Tech/doanh nghiệp như đang đi làm tại công ty.
+*   **Chính sách định hướng (Guiding Policy):** Định vị IOC không phải là một Job Board hay một nền tảng bán khóa học tĩnh. IOC giải quyết khâu "thiếu kinh nghiệm" bằng cách đặt sinh viên vào môi trường dự án thực chiến chuẩn áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall qua các bài toán từ Big Tech/doanh nghiệp như đang đi làm tại công ty.
 *   **Hành động nhất quán (Coherent Actions):**
     *   Quy tụ bài tập mô phỏng thực tập ảo, dự án giả lập, dự án mã nguồn mở và thực tế từ doanh nghiệp.
     *   Xây dựng đội ngũ Mentor chất lượng đồng hành sát sao cùng sinh viên.
@@ -681,7 +681,7 @@ Mặc dù vẫn sử dụng các chiến lược phễu truyền thống (chiế
   - *Core Benefit (Lợi ích cốt lõi):* Giúp sinh viên “vượt ải CV” bằng kinh nghiệm thực chiến đã được số hoá và có minh chứng (Proof-of-Work/Portfolio), để giảm rủi ro khi đi phỏng vấn và tăng xác suất nhận offer.
   - *Actual Product (Sản phẩm thực tế - tính năng/thiết kế):*
     - *Freemium trải nghiệm:* tham gia dự án mẫu và tiếp cận kho tài nguyên học tập nền tảng.
-    - *Gói tiêu chuẩn (trả phí):* triển khai dự án mô phỏng theo Agile/Scrum; có Mentor đồng hành, thực hiện **Mock Interview**, và cấp đầu ra dạng chứng nhận/dấu mộc.
+    - *Gói tiêu chuẩn (trả phí):* triển khai dự án mô phỏng theo mô hình Agile/Scrum, Kanban, Waterfall; có Mentor đồng hành, thực hiện **Mock Interview**, và cấp đầu ra dạng chứng nhận/dấu mộc.
     - *Vận hành theo board & workflow:* sinh viên làm việc trên board (Scrum/Kanban/Waterfall), nộp daily report, chuyển trạng thái issue theo quy trình.
   - *Augmented Product (Sản phẩm gia tăng - hậu mãi/hỗ trợ):*
     - *Bảo chứng bằng dữ liệu:* logwork/điểm số được hệ thống hoá để Portfolio có tính “điểm hoá” và truy xuất được.
@@ -708,7 +708,7 @@ Mặc dù vẫn sử dụng các chiến lược phễu truyền thống (chiế
 - **Product (Sản phẩm)**
   - *Core Benefit (Lợi ích cốt lõi):* IOC giúp nhà trường “giải bài toán quản trị thực tập + bảo chứng chất lượng đầu ra” bằng hệ thống vận hành có quy trình và dữ liệu minh chứng, giảm rủi ro “thực tập hình thức” và giảm gánh nặng phối hợp với doanh nghiệp theo mùa vụ.
   - *Actual Product (Sản phẩm thực tế - tính năng/thiết kế):*
-    - *Managed Internship Service:* ủy thác thực tập trọn gói, tổ chức nhóm dự án theo chuẩn doanh nghiệp (Agile/Scrum), triển khai kịch bản OJT và chấm điểm OJT theo Metrics.
+    - *Managed Internship Service:* ủy thác thực tập trọn gói, tổ chức nhóm dự án theo chuẩn doanh nghiệp (áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall), triển khai kịch bản OJT và chấm điểm OJT theo Metrics.
     - *University Dashboard:* dashboard cho Giảng viên/Quản trị trường để theo dõi tiến độ, thống kê và cảnh báo rủi ro (drop-off/task trễ).
     - *Hệ thống mentor vận hành:* mentor là người hướng dẫn, QA theo cơ chế human-in-the-loop, đảm bảo chất lượng đầu ra nhất quán.
     - *Hệ sinh thái dự án & template:* project templates/Project Bank để clone quy trình phù hợp quy mô và domain.
@@ -759,7 +759,7 @@ Dưới đây là phương thức cấu trúc lại Nền tảng thành các gi�
 *   **Dịch vụ B2B: Ủy thác Thực tập Trọn gói (750.000đ – 4.000.000đ / sinh viên. Đây cũng là mức sẵn sàng chi trả của nhà trường thông qua những lần trao đổi với các trường)**
     *   Chi tiết trong tài liệu (chi-tiet-goi-uy-thac-B2B.md)
     *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 2.5 tháng.
-    *   *Nội dung chương trình:* Sinh viên được đào tạo ban đầu về công nghệ, quy trình. Sau đó, được tham gia dự án mô phỏng và trải nghiệm thực tập ảo theo chuẩn Agile/Scrum với sự hướng dẫn sát sao của Mentor.
+    *   *Nội dung chương trình:* Sinh viên được đào tạo ban đầu về công nghệ, quy trình. Sau đó, được tham gia dự án mô phỏng và trải nghiệm thực tập ảo theo chuẩn Agile/Scrum, Kanban, Waterfall với sự hướng dẫn sát sao của Mentor.
 
 *   **Dịch vụ B2B thay thế: Hợp tác Truyền thông & Chia sẻ Doanh thu (Dành cho trường không có ngân sách)**
     *   *Mô hình hợp tác:* Nhà trường đóng vai trò truyền thông, khuyến khích sinh viên tự đăng ký các gói thực tập thực chiến của IOC.
@@ -775,7 +775,7 @@ Dưới đây là phương thức cấu trúc lại Nền tảng thành các gi�
 *   **B2C Gói 1: Gói tiêu chuẩn (5.000.000đ)**
     *   Chi tiết trong tài liệu (chi-tiet-goi-tt-B2C.md)
     *   *Hình thức & Thời hạn:* Hybrid (Offline / Online) kéo dài trong 3 tháng. Tuân thủ nguyên tắc **Competency-Based Training**, hệ thống chấp nhận việc thực tập sinh kết thúc thời hạn 3 tháng mà có thể chưa hoàn thành toàn bộ chương trình nếu năng lực chưa đạt sự thành thạo yêu cầu.
-    *   *Nội dung chương trình:* Được đào tạo về công nghệ và quy trình làm việc nền tảng. Được làm dự án mô phỏng theo chuẩn Agile/Scrum với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
+    *   *Nội dung chương trình:* Được đào tạo về công nghệ và quy trình làm việc nền tảng. Được làm dự án mô phỏng theo chuẩn Agile/Scrum, Kanban, Waterfall với sự hướng dẫn của Mentor. Được tham gia 2 lần Mock Interview.
 
 
 *   **B2C Gói 2: Gói miễn phí (0đ)**
@@ -824,7 +824,7 @@ Dựa trên Hệ sinh thái OJT (On-the-Job Training) tích hợp công nghệ t
 
 | **Key Partnerships**<br>(Đối tác chính) | **Key Activities**<br>(Hoạt động chính) | **Value Propositions**<br>(Giải pháp giá trị) | **Customer Relationships**<br>(Quan hệ khách hàng) | **Customer Segments**<br>(Phân khúc khách hàng) |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Nhà trường/Cơ sở giáo dục:**<br>- Cung cấp nguồn sinh viên (Volume đầu vào).<br>- Đối tác sử dụng nền tảng SaaS quản trị thực tập của IOC.<br><br>**2. Doanh nghiệp IT/Công nghệ:**<br>- Cung cấp mạng lưới Mentor, Chuyên gia đánh giá.<br>- Cung cấp nguồn tư liệu dự án thật (Requirement, tài liệu thiết kế).<br>- Nhóm tiêu thụ nhân sự đầu ra (tương lai).<br><br>**3. Đối tác nền tảng:**<br>- Đơn vị cung cấp API AI (LLMs) cho thuật toán AI Project Operator.<br>- Nhà cung cấp hạ tầng Cloud/Server (AWS, Azure...). | **1. R&D Nền tảng & AI:**<br>- Xây dựng và duy trì hệ thống quản trị JIRA-like của hệ sinh thái.<br>- Tinh chỉnh AI Operator phục vụ tự động review code/test case.<br><br>**2. Vận hành Thực chiến (OJT):**<br>- Điều phối các Sprints, quản lý tiến độ báo cáo dự án mô phỏng hằng ngày.<br><br>**3. Sales & Marketing:**<br>- Chạy chiến dịch B2C trực tiếp qua KOL/Micro-influencer để thu hút ứng viên.<br>- Mở rộng mạng lưới với Khoa/Nhà trường (B2B).<br><br>**4. Đảm bảo chất lượng (QA OJT):**<br>- Giám sát độ lệch điểm và thời gian chấm qua Metrics (Human-in-the-loop). | **A. Nhóm B2B (Nhà trường/Khoa CNTT):**<br>**"Managed Internship Service"**<br>- *Vận hành trọn gói:* Xóa bỏ gánh nặng chạy đua tìm bến đỗ thực tập/doanh nghiệp tiếp nhận theo từng mùa vụ.<br>- *Dữ liệu số hóa:* Hệ thống đo lường minh chứng định lượng, phòng chống "thực tập ma", đánh giá đúng năng lực, bảo vệ chất lượng đầu ra phục vụ kiểm định trường học.<br><br>**B. Nhóm B2C (Sinh viên tự do):**<br>**"Career Survival Kit & Verification"**<br>- *Không gian mô phỏng chân thật:* Cấp dự án thật kèm Mentor mô phỏng mô hình doanh nghiệp (Agile/Scrum), chấm dứt cảnh "rót nước pha trà".<br>- *Proof-of-Work:* Lấp đầy CV rỗng bằng kiến thức và dự án.<br>- Cấp chứng nhận, dấu mộc doanh nghiệp hợp lệ để qua môn thực tập ở trường và rèn luyện tâm lý (Mock Interview định kỳ). | **1. Đồng hành thực chiến (B2C):**<br>- Tương tác sâu với qua Mentor (Code Review, truyền thụ mindset kỹ sư).<br>- Hỗ trợ tinh thần qua vòng Mock Interview.<br><br>**2. Đối tác chiến lược (B2B):**<br>- Trở thành nơi thực tập vững chắc cho nhà trường, cung cấp hệ thống quản trị bằng Dashboard (Báo cáo Real-time).<br>- Đồng hành đáp ứng KPI chất lượng đào tạo (Employment Rate).<br><br>**3. Tự động & Cá nhân hóa (Tech-driven):**<br>- AI liên tục đôn đốc công việc, giao task theo triết lý *Adaptive OJT* (tùy chỉnh độ khó theo năng lực cá nhân). | **1. Nhóm B2B ("Brand Builders"):**<br>- Các Khoa CNTT/Trường Đại học/Cao đẳng (đặc biệt top dưới) gặp khó trong việc đối ngoại tìm doanh nghiệp tiếp nhận thực tập sinh khối lượng lớn.<br>- Cơ sở đào tạo cần hệ thống số hóa để quản lý tiến độ sinh viên đi OJT và tăng uy tín việc làm đầu ra.<br><br>**2. Nhóm B2C ("Panic Seekers"):**<br>- Sinh viên năm cuối ngành IT, yếu tay nghề hoặc mất gốc, sợ rớt hồ sơ do thiếu dự án.<br>- Sinh viên buộc phải có hồ sơ thực tập hợp lệ nộp về trường.<br>- Sinh viên tự do muốn trang bị nhanh kinh nghiệm thực chiến chuyên nghiệp (Plug-and-play). |
+| **1. Nhà trường/Cơ sở giáo dục:**<br>- Cung cấp nguồn sinh viên (Volume đầu vào).<br>- Đối tác sử dụng nền tảng SaaS quản trị thực tập của IOC.<br><br>**2. Doanh nghiệp IT/Công nghệ:**<br>- Cung cấp mạng lưới Mentor, Chuyên gia đánh giá.<br>- Cung cấp nguồn tư liệu dự án thật (Requirement, tài liệu thiết kế).<br>- Nhóm tiêu thụ nhân sự đầu ra (tương lai).<br><br>**3. Đối tác nền tảng:**<br>- Đơn vị cung cấp API AI (LLMs) cho thuật toán AI Project Operator.<br>- Nhà cung cấp hạ tầng Cloud/Server (AWS, Azure...). | **1. R&D Nền tảng & AI:**<br>- Xây dựng và duy trì hệ thống quản trị JIRA-like của hệ sinh thái.<br>- Tinh chỉnh AI Operator phục vụ tự động review code/test case.<br><br>**2. Vận hành Thực chiến (OJT):**<br>- Điều phối các Sprints, quản lý tiến độ báo cáo dự án mô phỏng hằng ngày.<br><br>**3. Sales & Marketing:**<br>- Chạy chiến dịch B2C trực tiếp qua KOL/Micro-influencer để thu hút ứng viên.<br>- Mở rộng mạng lưới với Khoa/Nhà trường (B2B).<br><br>**4. Đảm bảo chất lượng (QA OJT):**<br>- Giám sát độ lệch điểm và thời gian chấm qua Metrics (Human-in-the-loop). | **A. Nhóm B2B (Nhà trường/Khoa CNTT):**<br>**"Managed Internship Service"**<br>- *Vận hành trọn gói:* Xóa bỏ gánh nặng chạy đua tìm bến đỗ thực tập/doanh nghiệp tiếp nhận theo từng mùa vụ.<br>- *Dữ liệu số hóa:* Hệ thống đo lường minh chứng định lượng, phòng chống "thực tập ma", đánh giá đúng năng lực, bảo vệ chất lượng đầu ra phục vụ kiểm định trường học.<br><br>**B. Nhóm B2C (Sinh viên tự do):**<br>**"Career Survival Kit & Verification"**<br>- *Không gian mô phỏng chân thật:* Cấp dự án thật kèm Mentor mô phỏng mô hình doanh nghiệp (áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall), chấm dứt cảnh "rót nước pha trà".<br>- *Proof-of-Work:* Lấp đầy CV rỗng bằng kiến thức và dự án.<br>- Cấp chứng nhận, dấu mộc doanh nghiệp hợp lệ để qua môn thực tập ở trường và rèn luyện tâm lý (Mock Interview định kỳ). | **1. Đồng hành thực chiến (B2C):**<br>- Tương tác sâu với qua Mentor (Code Review, truyền thụ mindset kỹ sư).<br>- Hỗ trợ tinh thần qua vòng Mock Interview.<br><br>**2. Đối tác chiến lược (B2B):**<br>- Trở thành nơi thực tập vững chắc cho nhà trường, cung cấp hệ thống quản trị bằng Dashboard (Báo cáo Real-time).<br>- Đồng hành đáp ứng KPI chất lượng đào tạo (Employment Rate).<br><br>**3. Tự động & Cá nhân hóa (Tech-driven):**<br>- AI liên tục đôn đốc công việc, giao task theo triết lý *Adaptive OJT* (tùy chỉnh độ khó theo năng lực cá nhân). | **1. Nhóm B2B ("Brand Builders"):**<br>- Các Khoa CNTT/Trường Đại học/Cao đẳng (đặc biệt top dưới) gặp khó trong việc đối ngoại tìm doanh nghiệp tiếp nhận thực tập sinh khối lượng lớn.<br>- Cơ sở đào tạo cần hệ thống số hóa để quản lý tiến độ sinh viên đi OJT và tăng uy tín việc làm đầu ra.<br><br>**2. Nhóm B2C ("Panic Seekers"):**<br>- Sinh viên năm cuối ngành IT, yếu tay nghề hoặc mất gốc, sợ rớt hồ sơ do thiếu dự án.<br>- Sinh viên buộc phải có hồ sơ thực tập hợp lệ nộp về trường.<br>- Sinh viên tự do muốn trang bị nhanh kinh nghiệm thực chiến chuyên nghiệp (Plug-and-play). |
 | | **Key Resources**<br>(Nguồn lực chính) | | **Channels**<br>(Kênh phân phối) | |
 | | **1. Nền tảng Công nghệ:**<br>- Hạ tầng quản lý dự án (SaaS Platform).<br><br>**2. Đội ngũ (Human Capital):**<br>- Mạng lưới cốt lõi: Mentor IT, Scrum Master nội bộ và cộng tác viên.<br>- Đội ngũ vận hành trung tâm (Moderators) & Tech/AI R&D.<br><br>**3. Kho dữ liệu đặc thù (Data Moat):**<br>- Ngân hàng Dự án giả lập (Project Templates) chuẩn bị sẵn.<br>- Network sâu với trường ĐH và doanh nghiệp IT (Connectedness). | | **1. Kênh Direct Sales (B2B):**<br>- Ký kết MOU/Hợp tác dài hạn thông qua Bộ phận Hướng nghiệp/Khoa Đại học đóng vai trò đối tác nền tảng.<br><br>**2. Kênh Truyền miệng & KOLs (B2C):**<br>- Sức lan tỏa tự nhiên rỉ tai (Word-Of-Mouth) từ tệp sinh viên B2B chốt việc thành công.<br>- Nhóm KOL/Micro-influencer nội bộ chia sẻ nội dung hướng nghiệp, định hướng tư duy trên TikTok/LinkedIn.<br><br>**3. Nền tảng Chuyển giao:**<br>- Hệ sinh thái Web app / Dashboard của chính IOC. | |
 | **Cost Structure**<br>(Cấu trúc chi phí) | | | **Revenue Streams**<br>(Dòng doanh thu) | |
@@ -928,7 +928,7 @@ Chiến lược là sự lựa chọn. Dựa trên 10 khối thành phần của
 *   **Eliminate (Loại bỏ):** Định hướng chạy đua theo **Mạng lưới tiếp cận CV** của giới sinh viên (dám loại bỏ giá trị gốc lõi của Job Boards để tập trung chuyên sâu đào tạo).
 *   **Reduce (Cắt giảm):** Rào cản về **Mức Giá** đắt đỏ (cấu trúc chi phí tối ưu giúp đem lại điểm số mức giá tốt hơn nhiều so với điểm 0 đắt đỏ của Bootcamp IT).
 *   **Raise (Gia tăng):** **Tính Linh hoạt** (khả năng tham gia nhiều hình thức trực tuyến); **Kiến thức** & **Bằng cấp** (đỉnh cao với hệ thống số hóa và Flipped Internship); và **Báo cáo minh bạch** (số hóa làm minh chứng cho đối tác).
-*   **Create (Tạo ra):** Môi trường làm việc cung cấp **Kinh nghiệm** và **Trải nghiệm thực tế** mô phỏng hoàn hảo môi trường công sở thông qua Agile/Scrum.
+*   **Create (Tạo ra):** Môi trường làm việc cung cấp **Kinh nghiệm** và **Trải nghiệm thực tế** mô phỏng hoàn hảo môi trường công sở thông qua áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall.
 
 **2. Phân tích Đường cong Giá trị (Strategy Canvas):**
 Sự khác biệt trong việc cấp phát giá trị của IOC so với các lựa chọn hiện hữu được phân tách dọc theo các tác nhân trong **5 Lực lượng cạnh tranh (Porter's 5 Forces)**. Các Yếu tố cạnh tranh (trục X) nay được định nghĩa là *các thuộc tính dịch vụ mà sinh viên hoặc nhà trường quan tâm nhất khi ra quyết định lựa chọn*:

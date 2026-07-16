@@ -33,7 +33,7 @@ Chương trình trải nghiệm 7 ngày miễn phí được IOC thiết kế nh
 *   **Học tập chủ động qua Kho bài giảng LMS:** Cấp quyền truy cập vào hệ thống Quản lý Học tập (LMS) của IOC để chủ động tự học thông qua kho bài giảng lý thuyết cô đọng, bám sát thực tế, củng cố nhanh chóng các lỗ hổng kiến thức.
 *   **Thử thách với các Bài ôn luyện nâng cao năng lực:** Làm bài ôn luyện (Quiz) lý thuyết nhanh trên hệ thống để tự đo lường độ hiểu sâu kiến thức. Điểm số từ các bài ôn luyện này sẽ trực tiếp đóng góp vào điểm **Thông hiểu (Understand)** trên Khung năng lực cá nhân của bạn.
 *   **Tiếp cận Kho dự án mẫu (Project Bank) phong phú:** Tự do tìm hiểu và lựa chọn dự án phù hợp nhất với hướng phát triển cá nhân (Web App, Mobile App, API Services, Hệ thống Quản lý...) để bắt đầu thực hành.
-*   **Vận hành theo kỷ luật Agile/Scrum:** Thực hành làm việc nhóm chuyên nghiệp, quản lý trực quan trên bảng Kanban Board (Jira/Lark). Thực hiện báo cáo tiến độ đầu giờ hàng ngày theo phương pháp 3 dòng (Đã làm gì - Sẽ làm gì - Gặp khó khăn/Blocker gì) và ghi nhận thời gian làm việc (Logwork) nghiêm ngặt.
+*   **Vận hành theo kỷ luật Agile/Scrum, Kanban, Waterfall:** Thực hành làm việc nhóm chuyên nghiệp, quản lý trực quan trên bảng Kanban Board (Jira/Lark). Thực hiện báo cáo tiến độ đầu giờ hàng ngày theo phương pháp 3 dòng (Đã làm gì - Sẽ làm gì - Gặp khó khăn/Blocker gì) và ghi nhận thời gian làm việc (Logwork) nghiêm ngặt.
 *   **Sử dụng AI Code Assistant chuyên nghiệp:** Được hướng dẫn ứng dụng các trợ lý AI hàng đầu (như Antigravity, Cursor, Claude) qua kỹ năng Prompt Engineering nhằm tối ưu hiệu suất, tự đánh giá mã nguồn (Self-code review) trước khi gửi cho Mentor.
 
 ### 2. Nhận Chứng chỉ Năng lực IOC (Certificate of Competency) – "Tấm vé vàng" minh bạch cho CV
@@ -68,7 +68,7 @@ Kỳ thực tập hè tại IOC được thiết kế để bạn làm chủ to�
 2.  **Học chủ động qua kho LMS & Thực hành ngay trên Kho dự án mẫu phong phú:** 
     *   *Flipped Internship (Thực tập đảo ngược):* Học lý thuyết ngoài giờ trên LMS, dành trọn vẹn thời gian làm việc để code dự án thực tế và giải quyết bài toán nghiệp vụ từ cơ bản đến phức tạp.
     *   *Project Bank khổng lồ:* Tự tay thiết kế cơ sở dữ liệu, xây dựng giao diện ứng dụng hoàn chỉnh cho các dự án Web App, Mobile App, API Services...
-3.  **Tôi luyện tác phong làm việc chuẩn doanh nghiệp:** Vận hành nhóm theo đúng kỷ luật Agile/Scrum với Kanban Board, Logwork và báo cáo Daily Report hàng ngày.
+3.  **Tôi luyện tác phong làm việc chuẩn doanh nghiệp:** Vận hành nhóm theo đúng kỷ luật Agile/Scrum, Kanban, Waterfall với Kanban Board, Logwork và báo cáo Daily Report hàng ngày.
 4.  **Sử dụng công nghệ hiện đại và trợ lý AI tối tân:** Ứng dụng AI Code Assistant (Claude, Antigravity, Cursor) thông qua kỹ năng Prompt Engineering để tăng tốc viết code, tự debug. Nhận sự hỗ trợ sát sao từ đội ngũ **Senior Mentor** để định hướng tư duy lập trình chuyên sâu thay vì "code vẹt".
 5.  **"Chốt" chứng chỉ năng lực có QR xác thực:** Làm đẹp CV gửi trường học đối chiếu điểm thực tập tốt nghiệp và tạo ấn tượng mạnh mẽ trước nhà tuyển dụng.
 

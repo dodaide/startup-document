@@ -16,7 +16,7 @@
 *   **Mô tả ngắn gọn dự án:** Hệ thống này làm gì? Giải quyết vấn đề gì?
 *   **Phạm vi dự án & Vai trò:** Nêu rõ đây là dự án **Cá nhân (Solo Project)** hay **Nhóm (Group Project)**.
     *   *Nếu là cá nhân:* Làm việc độc lập 100% từ phân tích, thiết kế, đến lập trình Backend/Frontend.
-    *   *Nếu là nhóm:* Phân rõ vai trò (Ai làm DB, Backend, Frontend) và cách team quản lý tiến độ bằng Agile/Scrum.
+    *   *Nếu là nhóm:* Phân rõ vai trò (Ai làm DB, Backend, Frontend) và cách team quản lý tiến độ bằng áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ---
 
-## Nội dung 4: Quản lý Dự án với Agile/Scrum (Project Management)
+## Nội dung 4: Quản lý Dự án theo các mô hình Agile/Scrum, Kanban, Waterfall (Project Management)
 *   **Product Backlog & User Stories:** Khái quát danh sách các tính năng cốt lõi đã định nghĩa cho hệ thống.
 *   **Quá trình chạy Sprint:**
     *   Tổng số Sprint đã thực hiện, mục tiêu (Sprint Goal) của từng Sprint.

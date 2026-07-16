@@ -6,7 +6,7 @@
 1. Kiểm soát Công cụ và Nền tảng:
   - Frontend: Cho phép sử dụng UI Framework (React, Angular, Vue), Tailwind CSS và các thư viện UI Component (MUI, Ant Design, ShadcnUI...). Tuy nhiên, ít nhất 50% các component cơ sở (base components) phải được sinh viên tự viết lại, override/custom sâu để hiểu bản chất giao diện và kiến trúc CSS. (Lưu ý: Các bạn chuyên sâu Backend có thể giảm tỷ lệ này xuống mức tối thiểu đáp ứng functional).
   - Backend & Database: Cho phép sử dụng ORM (Prisma, Sequelize, TypeORM...) cho các tác vụ CRUD đơn giản (thêm, sửa, xóa cơ bản). Đối với các luồng nghiệp vụ phức tạp, truy vấn thống kê hoặc xử lý dữ liệu liên bảng, bắt buộc sử dụng SQL thuần thông qua Stored Procedures để đảm bảo tối ưu hiệu năng và rèn luyện tư duy Database.
-2. Quy trình Agile/Scrum & Phân tích nghiệp vụ: cá nhân/nhóm phải tự đóng vai trò Product Owner và Developer để phân tích bài toán, lập Product Backlog và viết User Story cho dự án của mình. Việc phát triển phải tuân thủ kỷ luật Sprint (chia nhỏ công việc, demo tiến độ).
+2. Quy trình áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall & Phân tích nghiệp vụ: cá nhân/nhóm phải tự đóng vai trò Product Owner và Developer để phân tích bài toán, lập Product Backlog và viết User Story cho dự án của mình. Việc phát triển phải tuân thủ kỷ luật Sprint (chia nhỏ công việc, demo tiến độ).
 3. Lộ trình thực tập chi tiết (Dự kiến 3 tháng OJT)
 Giai đoạn 1: Ôn luyện kiến thức nền tảng (3 tuần)
 - Học tập & trả bài: Ôn luyện theo phạm vi bộ câu hỏi phỏng vấn IOC cung cấp từ đầu chương trình.

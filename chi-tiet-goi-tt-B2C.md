@@ -22,7 +22,7 @@
 ### Tổng quan chương trình
 INTERNSHIP ONE CONNECT – Xóa bỏ nỗi sợ rớt CV, tự tin ứng tuyển vị trí Fresher.
 Chương trình đào tạo thực chiến dự án giả lập và dự án mã nguồn mở giúp sinh viên:
-*   Trải nghiệm môi trường dự án thực tế theo chuẩn Agile/Scrum của doanh nghiệp.
+*   Trải nghiệm môi trường dự án thực tế theo chuẩn Agile/Scrum, Kanban, Waterfall của doanh nghiệp.
 *   Được "cầm tay chỉ việc", review code và góp ý bởi Mentor giàu kinh nghiệm.
 *   Trang bị đầy đủ kỹ năng thiết thực để vượt qua vòng phỏng vấn chuyên môn.
 
@@ -31,7 +31,7 @@ Chương trình đào tạo thực chiến dự án giả lập và dự án mã
     *   Kết hợp một số buổi đào tạo Offline và tự học qua tài nguyên trên nền tảng để củng cố công nghệ chuyên sâu (theo các framework Java, .Net, JS, Python...).
     *   Hướng dẫn quy trình làm việc nền tảng, làm quen với công cụ quản lý Task.
 *   **Giai đoạn 2 – Dự án giả lập & Dự án mã nguồn mở**
-    *   Làm việc theo khuôn khổ Agile/Scrum trên các dự án giả lập hoặc đóng góp vào dự án mã nguồn mở.
+    *   Làm việc theo khuôn khổ Agile/Scrum, Kanban, Waterfall trên các dự án giả lập hoặc đóng góp vào dự án mã nguồn mở.
     *   Được Mentor hướng dẫn sát sao, Weekly Review 1-2 lần/tuần để cập nhật tiến độ, review code.
 *   **Giai đoạn 3 – Tổng kết & Nâng cấp bản thân**
     *   Được tham gia **02 lần Mock Interview (Phỏng vấn thử)** 1:1 với chuyên gia nhân sự/chuyên gia kỹ thuật.

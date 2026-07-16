@@ -43,7 +43,7 @@
 *   **Key Messages:**
     *   Doanh nghiệp không cần "thợ code copy-paste từ ChatGPT". Doanh nghiệp cần người hiểu **Bản chất (First Principles)**.
     *   Thực trạng CV hiện nay: 100 CV thì 99 cái giống hệt nhau (cùng clone một project từ Youtube, cùng dùng các thư viện UI ăn liền, không giải thích nổi tại sao database lại thiết kế như vậy).
-    *   Tại sao Rikkeisoft sẵn sàng nhận sinh viên từ chương trình IOC? Vì sinh viên IOC được rèn luyện theo triết lý "No Magic", vừa ứng dụng AI tốt và vừa nắm vững được những kiến thức, tư duy giải quyết vấn đề.
+    *   Tại sao Rikkeisoft sẵn sàng nhận sinh viên từ chương trình IOC? Vì sinh viên IOC được rèn luyện thực chất để hiểu sâu bản chất vấn đề, vừa ứng dụng AI tốt và vừa nắm vững được những kiến thức, tư duy giải quyết vấn đề.
 
 ---
 

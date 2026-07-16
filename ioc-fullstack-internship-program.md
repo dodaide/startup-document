@@ -8,12 +8,12 @@ Chương trình Thực tập Fullstack Hướng Nhật Bản tại IOC được 
 
 ### 1. Năng lực Chuyên môn Kỹ thuật (Technical Competency)
 *   **Kiến trúc & Phát triển Fullstack**: Hoàn thiện dự án End-to-End từ Database, Backend API đến Frontend UI. Sinh viên hiểu rõ bức tranh toàn cảnh của hệ thống và sự tương tác giữa các tầng công nghệ.
-*   **Nguyên tắc "No Magic" & Hybrid Control**:
+*   **Tư duy bản chất & Hybrid Control**:
     *   **Frontend**: Được sử dụng các UI Framework hiện đại (React, Vue, Angular) và UI Libraries (Ant Design, MUI, ShadcnUI) để tăng tốc độ phát triển. Tuy nhiên, sinh viên **bắt buộc phải tự viết tay và tùy biến sâu (override) tối thiểu 50% các component cơ sở (base components)** để nắm vững bản chất CSS, DOM, và tối ưu hóa giao diện.
     *   **Backend & Database**: Sử dụng ORM cho các truy vấn đơn giản (CRUD cơ bản). Đối với các luồng nghiệp vụ phức tạp, truy vấn liên bảng lớn hoặc các xử lý yêu cầu hiệu năng cao, sinh viên **bắt buộc sử dụng SQL thuần thông qua Stored Procedures** để rèn luyện tư duy tối ưu hóa CSDL gốc.
 *   **Kiểm soát chất lượng mã nguồn**: Sử dụng Git Flow, thực hành viết Clean Code, thực hiện Unit Test và hiểu rõ về bảo mật ứng dụng (các lỗi phổ biến như SQL Injection, XSS, cơ chế mã hóa mật khẩu).
 
-### 2. Kỹ năng Quản trị Dự án & Kỷ luật Agile/Scrum (Project Management)
+### 2. Kỹ năng Quản trị Dự án & Kỷ luật áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall (Project Management)
 *   **Kỷ luật Sprint**: Sinh viên đóng vai trò là Product Owner và Developer để tự phân tích bài toán nghiệp vụ, xây dựng Product Backlog, viết User Story với tiêu chí nghiệm thu (Acceptance Criteria - AC) chi tiết.
 *   **Vận hành công cụ quản lý**: Sử dụng thành thạo các công cụ quản lý công việc và phát triển phần mềm như Jira, Lark hoặc GitHub Projects. Quản lý tiến độ bằng Issue/Ticket, tuyệt đối không làm việc không có task đi kèm.
 *   **Năng lực Giải trình (Engineering Accountability)**: Có khả năng giải thích rõ ràng "Tại sao chọn giải pháp này?" thay vì chỉ "Làm như thế nào?". Mỗi quyết định kỹ thuật phải dựa trên nguyên lý gốc và có sự cân nhắc trade-off.
@@ -25,7 +25,7 @@ Chương trình Thực tập Fullstack Hướng Nhật Bản tại IOC được 
 
 ### 4. Tiếng Nhật & Tác phong làm việc kiểu Nhật (Japanese Business Manners)
 *   **Vận hành Cuộc họp (朝会 - Chokai & 週次報告 - Shuji Houkoku) linh hoạt**: Thực hành họp hằng ngày (Daily Scrum) bằng tiếng Nhật (khoảng 10-15 phút) **nội bộ giữa các thành viên trong nhóm** để tự rèn luyện phản xạ giao tiếp. Báo cáo tiến độ tuần bằng tiếng Việt (hoặc tiếng Nhật đơn giản) để Mentor người Việt dễ dàng đánh giá kỹ thuật, kết hợp slide báo cáo tiếng Nhật để chuẩn bị cho buổi bảo vệ cuối kỳ.
-*   **Tác phong Hou-Ren-So (報連相)**: Rèn luyện kỹ năng **Báo cáo (Houkoku) - Liên lạc (Renraku) - Thảo luận (Soudan)**. Khi gặp blocker kỹ thuật, sinh viên tự nghiên cứu trước, sau đó chủ động liên lạc và thảo luận với đồng đội hoặc Mentor theo đúng quy trình: Nêu vấn đề -> Phương án đã thử -> Đề xuất hỗ trợ. Giao tiếp với Mentor người Việt bằng **tiếng Việt** để giải quyết blocker kỹ thuật nhanh nhất, tránh rào cản ngôn ngữ làm chậm tiến độ dự án.
+*   **Kỹ năng báo cáo & giao tiếp**: Rèn luyện kỹ năng **Báo cáo - Liên lạc - Thảo luận**. Khi gặp blocker kỹ thuật, sinh viên tự nghiên cứu trước, sau đó chủ động liên lạc và thảo luận với đồng đội hoặc Mentor theo đúng quy trình: Nêu vấn đề -> Phương án đã thử -> Đề xuất hỗ trợ. Giao tiếp với Mentor người Việt bằng **tiếng Việt** để giải quyết blocker kỹ thuật nhanh nhất, tránh rào cản ngôn ngữ làm chậm tiến độ dự án.
 *   **Tiếng Nhật Chuyên ngành (IT Nihongo) & Giao tiếp**: Viết tài liệu thiết kế hệ thống, comment trong mã nguồn, commit message và mô tả issue bằng tiếng Nhật (có thể sử dụng AI hỗ trợ biên dịch và kiểm tra cấu trúc câu). Sử dụng kính ngữ (Keigo) cơ bản trong các email giả lập gửi khách hàng Nhật.
 
 ---
@@ -51,7 +51,7 @@ flowchart TD
     
     subgraph Interns [Nhóm Sinh Viên Thực Tập]
         I[Thực Hiện Sprint & Viết Thiết Kế] --> J[Họp Đầu Giờ Chokai Tiếng Nhật]
-        J --> K[Báo Cáo & Thực Hành Hou-Ren-So]
+        J --> K[Báo Cáo & Giải Quyết Vấn Đề]
     end
 
     I -. Đồng Bộ Task & Commit .-> B
@@ -95,7 +95,7 @@ Chương trình kéo dài 12 tuần, chia làm 3 giai đoạn rõ rệt, kết h
 | **Tuần 2** | Ôn luyện Fullstack nâng cao (thiết kế CSDL chuẩn hóa, viết Stored Procedure cơ bản). Sử dụng AI để sinh Mock data cho DB. | Tìm hiểu nghiệp vụ dự án. Xây dựng sơ đồ thực thể kết hợp (ERD). | Thực hành viết tài liệu Thiết kế cơ bản (Basic Design/Đặc tả yêu cầu) bằng tiếng Việt và chuyển ngữ sang tiếng Nhật. | **Mentor**: Hướng dẫn tư duy thiết kế CSDL thực chiến, review ERD sơ bộ và sửa lỗi tài liệu nghiệp vụ tiếng Nhật. | File ERD chi tiết. Tài liệu thiết kế cơ bản (Basic Design) bằng tiếng Nhật. |
 | **Tuần 3** | Setup Boilerplate (Frontend & Backend). Cấu hình Git Flow và quy tắc đặt tên nhánh, commit. | Phân rã tính năng thành Product Backlog. Viết User Story và AC chi tiết cho các Sprint (Sprint 0). | Thống nhất quy tắc viết comment code và commit message bằng tiếng Nhật. Tập viết email báo cáo kickoff dự án. | **Ban vận hành**: Kiểm tra cấu trúc Boilerplate của các nhóm.<br>**Mentor**: Review và phê duyệt Product Backlog, duyệt tài liệu thiết kế kỹ thuật. | Source code Boilerplate đã kết nối DB. Product Backlog trên Jira/Lark. |
 | **Tuần 4** | **Sprint 1**: Phát triển tính năng Đăng nhập/Đăng ký, Phân quyền người dùng. Ứng dụng AI viết khung code Auth. | Họp Sprint Planning 1. Phân chia task trên bảng Kanban. Ghi nhận logwork. | Bắt đầu họp đầu giờ (**Chokai**) bằng tiếng Nhật (10 phút hằng ngày). Thực hành báo cáo tiến độ 3 dòng (Đã làm, Sẽ làm, Blocker). | **Ban vận hành**: Giám sát Daily Report và thời gian họp Chokai.<br>**Mentor**: Hướng dẫn về bảo mật cơ bản (JWT, mã hóa mật khẩu), review Sprint 1. | Tính năng Auth hoàn thiện. Bảng Kanban Sprint 1 cập nhật đầy đủ. |
-| **Tuần 5** | **Sprint 2**: Phát triển các nghiệp vụ CRUD cơ bản. Bắt buộc tự viết 50% base components cho giao diện (FE). | Họp Sprint Planning 2 và Sprint Review 1. Nghiệm thu tính năng dựa trên AC. | Thực hành tác phong **Hou-Ren-So** linh hoạt (dùng tiếng Nhật trao đổi nội bộ nhóm, tiếng Việt với Mentor) khi gặp blocker về kỹ thuật hoặc giao diện. | **Mentor**: Kiểm tra tỷ lệ tự viết Component (không lạm dụng thư viện UI), review code Backend & DB của Sprint 1. | 50% Base component giao diện được custom. API CRUD cơ bản chạy tốt. |
+| **Tuần 5** | **Sprint 2**: Phát triển các nghiệp vụ CRUD cơ bản. Bắt buộc tự viết 50% base components cho giao diện (FE). | Họp Sprint Planning 2 và Sprint Review 1. Nghiệm thu tính năng dựa trên AC. | Thực hành trao đổi, báo cáo tiến độ linh hoạt (dùng tiếng Nhật trao đổi nội bộ nhóm, tiếng Việt với Mentor) khi gặp blocker về kỹ thuật hoặc giao diện. | **Mentor**: Kiểm tra tỷ lệ tự viết Component (không lạm dụng thư viện UI), review code Backend & DB của Sprint 1. | 50% Base component giao diện được custom. API CRUD cơ bản chạy tốt. |
 | **Tuần 6** | **Sprint 3**: Triển khai nghiệp vụ phức tạp. Bắt buộc dùng **Stored Procedure** cho các câu lệnh truy vấn liên bảng lớn. | Họp Sprint Planning 3 và Sprint Review 2. Điều chỉnh Product Backlog (Refinement). | Viết tài liệu Thiết kế chi tiết (Detail Design) bằng tiếng Nhật cho các API nghiệp vụ khó. | **Mentor**: Kiểm tra hiệu năng Stored Procedure, hướng dẫn cách viết thiết kế chi tiết bằng tiếng Nhật chuẩn IT Nhật. | Tài liệu Detail Design tiếng Nhật. Các Stored Procedure nghiệp vụ phức tạp. |
 | **Tuần 7** | **Mốc Giữa kỳ (Sprint 4)**: Tích hợp Frontend & Backend cho toàn bộ tính năng cốt lõi. Sử dụng AI hỗ trợ viết Unit Test. | Họp Sprint Planning 4 và Sprint Review 3. Đánh giá tiến độ dự án đạt 60% khối lượng. | **Mock Review Giữa Kỳ**: Nhóm thuyết trình demo sản phẩm bằng tiếng Nhật (10 phút) trước Mentor và đại diện IOC. | **Ban vận hành**: Tổ chức đánh giá giữa kỳ, chấm điểm tác phong nhóm.<br>**Mentor**: Đánh giá năng lực kỹ thuật và giao tiếp tiếng Nhật của từng cá nhân. | Hệ thống chạy thông suốt các luồng chính. Slide và bài thuyết trình giữa kỳ. |
 | **Tuần 8** | **Sprint 5**: Phát triển tính năng nâng cao (Thống kê, biểu đồ, xuất nhập file Excel). Dùng AI để refactor code tối ưu hóa. | Họp Sprint Planning 5 và Sprint Review 4. Cập nhật các thay đổi nghiệp vụ phát sinh. | Tiếp tục duy trì Chokai tiếng Nhật. Thực hành viết báo cáo tuần (週次報告) bằng tiếng Nhật gửi Mentor qua email. | **Mentor**: Hướng dẫn giải thuật thống kê, tối ưu hóa câu lệnh SQL liên quan đến báo cáo dữ liệu lớn. | Tính năng báo cáo thống kê hoàn thành. File Excel/PDF xuất ra chuẩn định dạng Nhật. |
@@ -123,7 +123,7 @@ OJT Score (100%) = Kỹ thuật (40%) + Agile & Kỷ luật (20%) + AI & Năng s
 *   **Chất lượng mã nguồn (Clean Code)**: Code có dễ đọc, dễ bảo trì không? Có đúng quy tắc thiết kế hệ thống không?
 *   **Minh chứng**: Lịch sử Git Commit, chất lượng Pull Request và kết quả đánh giá DoD cuối mỗi Sprint của Mentor.
 
-#### Cột 2: Kỷ luật Agile/Scrum & Quản trị Dự án (Trọng số 20%)
+#### Cột 2: Kỷ luật áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall & Quản trị Dự án (Trọng số 20%)
 *   **Kỷ luật Task**: Hoàn thành công việc đúng hạn (Deadline), cập nhật trạng thái task trên Kanban Board thời gian thực.
 *   **Logwork & Daily Report**: Ghi nhận thời gian làm việc thực tế và viết báo cáo hằng ngày đầy đủ, chính xác.
 *   **Tương tác đồng đội**: Khả năng phối hợp nhóm, phân chia công việc hợp lý trong Sprint.
@@ -137,7 +137,7 @@ OJT Score (100%) = Kỹ thuật (40%) + Agile & Kỷ luật (20%) + AI & Năng s
 
 #### Cột 4: Tiếng Nhật & Tác phong làm việc kiểu Nhật (Trọng số 25%)
 *   **Họp Chokai & Thuyết trình**: Tần suất phát biểu, mức độ lưu loát và tự tin khi báo cáo bằng tiếng Nhật trong họp Chokai hằng ngày và họp cuối Sprint.
-*   **Tác phong Hou-Ren-So**: Sự chủ động báo cáo tiến độ, liên lạc khi gặp sự cố và thái độ thảo luận tìm giải pháp.
+*   **Báo cáo và thảo luận**: Sự chủ động báo cáo tiến độ, liên lạc khi gặp sự cố và thái độ thảo luận tìm giải pháp.
 *   **Chất lượng Nhật ngữ trong dự án**: Tính chính xác của tiếng Nhật dùng trong tài liệu thiết kế, comment code và commit message.
 *   **Minh chứng**: Video ghi hình các buổi họp Chokai, email báo cáo tuần, các tài liệu thiết kế hệ thống bằng tiếng Nhật.
 
@@ -146,10 +146,10 @@ Dựa trên điểm OJT Score, sinh viên được xếp loại năng lực theo
 
 | Cấp độ | Khoảng điểm OJT | Đánh giá Khả năng Sẵn sàng (Ready-to-Japan) |
 | :---: | :---: | :--- |
-| **S (Xuất sắc)** | **90 - 100** | **Vượt trội**: Nắm vững kỹ thuật, tác phong Hou-Ren-So xuất sắc, giao tiếp tiếng Nhật trôi chảy, sử dụng AI thành thạo để tối ưu hiệu suất. Sẵn sàng nhận việc với vai trò Kỹ sư/BrSE ngay khi sang Nhật mà không cần đào tạo lại. |
-| **A (Tốt)** | **80 - 89** | **Đạt yêu cầu**: Hoàn thành tốt các yêu cầu kỹ thuật, thực hiện đúng quy trình Agile và Hou-Ren-So. Có khả năng tự lập giải quyết vấn đề dưới sự hướng dẫn tối thiểu. |
+| **S (Xuất sắc)** | **90 - 100** | **Vượt trội**: Nắm vững kỹ thuật, kỹ năng giao tiếp và báo cáo tiến độ xuất sắc, giao tiếp tiếng Nhật trôi chảy, sử dụng AI thành thạo để tối ưu hiệu suất. Sẵn sàng nhận việc với vai trò Kỹ sư/BrSE ngay khi sang Nhật mà không cần đào tạo lại. |
+| **A (Tốt)** | **80 - 89** | **Đạt yêu cầu**: Hoàn thành tốt các yêu cầu kỹ thuật, thực hiện đúng quy trình Agile và chủ động báo cáo tiến độ. Có khả năng tự lập giải quyết vấn đề dưới sự hướng dẫn tối thiểu. |
 | **B (Trung bình)** | **70 - 79** | **Cần giám sát**: Kỹ thuật ở mức cơ bản, tác phong làm việc đôi lúc còn thiếu chủ động, tiếng Nhật cần cải thiện thêm. Cần có sự kèm cặp của Senior khi mới sang Nhật làm việc. |
-| **C/F (Yếu/Kém)** | **< 70** | **Chưa sẵn sàng**: Kỹ thuật yếu, vi phạm kỷ luật Agile, không thực hiện Hou-Ren-So tốt hoặc không giao tiếp được bằng tiếng Nhật. Cần phải học lại hoặc kéo dài thời gian thực tập. |
+| **C/F (Yếu/Kém)** | **< 70** | **Chưa sẵn sàng**: Kỹ thuật yếu, vi phạm kỷ luật Agile, kỹ năng giao tiếp và báo cáo tiến độ chưa tốt hoặc không giao tiếp được bằng tiếng Nhật. Cần phải học lại hoặc kéo dài thời gian thực tập. |
 
 ---
 
@@ -175,9 +175,9 @@ Slide báo cáo của nhóm sinh viên phải tuân thủ cấu trúc chuyên ng
 *   **Slide 1: Trang bìa (表紙)**: Tên dự án, tên nhóm, danh sách thành viên kèm vai trò trong dự án (Project Leader, Backend Dev, Frontend Dev), thời gian thực hiện.
 *   **Slide 2: Mục tiêu & Nghiệp vụ Dự án (プロジェクト概要)**: Hệ thống này giải quyết vấn đề gì? Đối tượng người dùng là ai? Tại sao nghiệp vụ này lại cần thiết?
 *   **Slide 3: Thiết kế Hệ thống & CSDL (システム構成 & DB設計)**: Sơ đồ kiến trúc (Architecture Diagram), sơ đồ ERD các bảng dữ liệu trọng tâm. Thể hiện các công nghệ sử dụng.
-*   **Slide 4: Quy trình Agile/Scrum & Ứng dụng AI (アジャイル開発 & AI活用)**: Tổng số Sprint đã chạy. Cách nhóm sử dụng AI để dịch tài liệu nghiệp vụ, viết testcase và tăng năng suất viết code.
+*   **Slide 4: Quy trình áp dụng linh hoạt các mô hình Agile/Scrum, Kanban, Waterfall & Ứng dụng AI (アジャイル開発 & AI活用)**: Tổng số Sprint đã chạy. Cách nhóm sử dụng AI để dịch tài liệu nghiệp vụ, viết testcase và tăng năng suất viết code.
 *   **Slide 5: Demo Tính năng cốt lõi (デモンストレーション)**: Video hoặc chạy trực tiếp (Live demo) các luồng tính năng chính của hệ thống.
-*   **Slide 6: Điểm tự hào kỹ thuật & Bài học kinh nghiệm (技術的アピール & 振り返り)**: Show trực tiếp source code phần Stored Procedure nghiệp vụ phức tạp hoặc các component custom tự viết. Nêu các khó khăn đã gặp và cách nhóm đã áp dụng Hou-Ren-So để vượt qua.
+*   **Slide 6: Điểm tự hào kỹ thuật & Bài học kinh nghiệm (技術적アピール & 振り返り)**: Show trực tiếp source code phần Stored Procedure nghiệp vụ phức tạp hoặc các component custom tự viết. Nêu các khó khăn đã gặp và cách nhóm đã chủ động phối hợp giải quyết.
 *   **Slide 7: Lời cảm ơn & Q&A (質疑応答)**: Trân trọng cảm ơn khách hàng và Mentor đã lắng nghe và sẵn sàng nhận câu hỏi.
 
 ### 3. Bộ Câu hỏi Q&A Thường gặp từ Khách Nhật & Gợi ý Cách Trả lời
@@ -185,16 +185,16 @@ Khách hàng Nhật rất quan tâm đến quá trình làm việc thực chất
 
 #### Câu hỏi 1: Về Phân chia Công việc và Quản trị
 *   *Câu hỏi từ khách Nhật*: "Trong dự án nhóm này, khi có một thành viên bị chậm tiến độ (delay) làm ảnh hưởng đến các task tiếp theo của nhóm, các bạn đã giải quyết như thế nào?"
-*   *Định hướng trả lời*: Sinh viên cần nhấn mạnh quy trình quản lý của nhóm. "Chúng tôi họp Chokai hằng ngày để theo dõi bảng Kanban. Khi phát hiện task của bạn A bị nghẽn (Blocker), Leader nhóm đã ngay lập tức thực hiện Hou-Ren-So. Chúng tôi phân tích nguyên nhân: bạn A gặp khó khăn trong việc viết Stored Procedure phức tạp. Cả nhóm đã thống nhất điều chuyển bớt task Frontend đơn giản của bạn B sang cho bạn A, đồng thời bạn B (có kỹ năng DB tốt hơn) đã cùng bạn A thảo luận (Soudan) và hướng dẫn giải quyết lỗi DB. Nhờ vậy, chúng tôi vẫn hoàn thành mục tiêu Sprint đúng hạn."
+*   *Định hướng trả lời*: Sinh viên cần nhấn mạnh quy trình quản lý của nhóm. "Chúng tôi họp Chokai hằng ngày để theo dõi bảng Kanban. Khi phát hiện task của bạn A bị nghẽn (Blocker), Leader nhóm đã ngay lập tức phối hợp hỗ trợ. Chúng tôi phân tích nguyên nhân: bạn A gặp khó khăn trong việc viết Stored Procedure phức tạp. Cả nhóm đã thống nhất điều chuyển bớt task Frontend đơn giản của bạn B sang cho bạn A, đồng thời bạn B (có kỹ năng DB tốt hơn) đã cùng bạn A thảo luận và hướng dẫn giải quyết lỗi DB. Nhờ vậy, chúng tôi vẫn hoàn thành mục tiêu Sprint đúng hạn."
 
 #### Câu hỏi 2: Về Quyết định Kỹ thuật (Tư duy First Principles)
 *   *Câu hỏi từ khách Nhật*: "Tại sao các bạn lại tự viết lại các base component thay vì dùng 100% thư viện UI như MUI hay Ant Design? Như vậy có làm giảm tốc độ phát triển dự án không?"
-*   *Định hướng trả lời*: "Mục tiêu của chúng tôi khi tham gia chương trình thực tập tại IOC là hiểu rõ bản chất công nghệ chứ không chỉ lắp ghép thư viện có sẵn (nguyên tắc No Magic). Việc tự viết lại 50% base component giúp chúng tôi làm chủ cấu trúc CSS, tối ưu hóa kích thước ứng dụng và dễ dàng tùy biến giao diện theo đúng đặc tả yêu cầu của khách hàng mà không bị phụ thuộc vào giới hạn của thư viện. Dù thời gian đầu có chậm hơn một chút, nhưng ở các Sprint sau, khi các base component đã ổn định, tốc độ phát triển của nhóm đã tăng lên đáng kể."
+*   *Định hướng trả lời*: "Mục tiêu của chúng tôi khi tham gia chương trình thực tập tại IOC là hiểu rõ bản chất công nghệ chứ không chỉ lắp ghép thư viện có sẵn. Việc tự viết lại 50% base component giúp chúng tôi làm chủ cấu trúc CSS, tối ưu hóa kích thước ứng dụng và dễ dàng tùy biến giao diện theo đúng đặc tả yêu cầu của khách hàng mà không bị phụ thuộc vào giới hạn của thư viện. Dù thời gian đầu có chậm hơn một chút, nhưng ở các Sprint sau, khi các base component đã ổn định, tốc độ phát triển của nhóm đã tăng lên đáng kể."
 
 #### Câu hỏi 3: Về Ứng dụng AI
 *   *Câu hỏi từ khách Nhật*: "Các bạn sử dụng AI rất nhiều trong dự án. Làm sao các bạn đảm bảo được code do AI sinh ra là an toàn, không chứa lỗi logic hoặc rò rỉ dữ liệu?"
 *   *Định hướng trả lời*: "Chúng tôi sử dụng AI làm công cụ hỗ trợ tăng năng suất (Code Assistant) chứ không phụ thuộc hoàn toàn. Quy trình của chúng tôi là: AI sinh mã nguồn -> Sinh viên trực tiếp đọc hiểu từng dòng code để kiểm tra logic -> Viết Unit Test để xác minh tính đúng đắn của code -> Thực hiện quy trình Self-code review bằng cách hỏi AI về các nguy cơ bảo mật tiềm ẩn (như SQL Injection hay XSS) -> Gửi Pull Request để Mentor review lần cuối trước khi merge. Chúng tôi chịu trách nhiệm 100% cho dòng code được merge chứ không phải AI."
 
-#### Câu hỏi 4: Về Tác phong và Giao tiếp (Hou-Ren-So)
+#### Câu hỏi 4: Về Báo cáo và Giao tiếp
 *   *Câu hỏi từ khách Nhật*: "Khi các bạn không thể hoàn thành task đúng hạn như đã cam kết trong Sprint Planning, các bạn sẽ làm gì?"
 *   *Định hướng trả lời*: "Ngay khi ước lượng (estimate) thấy task có nguy cơ không hoàn thành đúng hạn (tối thiểu trước deadline 1 ngày), chúng tôi sẽ thực hiện báo cáo (Houkoku) và liên lạc (Renraku) ngay với Mentor. Chúng tôi sẽ không đợi đến buổi họp Review cuối Sprint mới nói. Báo cáo của chúng tôi sẽ nêu rõ: Tình trạng hiện tại của task (đạt bao nhiêu %), lý do chậm trễ (gặp lỗi kỹ thuật phát sinh ngoài dự kiến), thời gian dự kiến hoàn thành mới, và đề xuất nhờ sự trợ giúp từ đồng đội (Soudan). Điều này giúp Mentor và Ban vận hành luôn nắm bắt được trạng thái thực tế của dự án."

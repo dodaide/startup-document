@@ -1,6 +1,6 @@
 # Hướng dẫn Mentor Review: Fullstack Internship Program
 
-Tài liệu này chuẩn hóa quy trình và nội dung review cho Mentor trong chương trình thực tập Fullstack tại IOC. Mục tiêu là đảm bảo sinh viên không chỉ "làm đúng" mà còn "hiểu sâu" (First Principles) và tuyệt đối tuân thủ nguyên tắc **"No Magic"**.
+Tài liệu này chuẩn hóa quy trình và nội dung review cho Mentor trong chương trình thực tập Fullstack tại IOC. Mục tiêu là đảm bảo sinh viên không chỉ "làm đúng" mà còn "hiểu sâu" (First Principles) và làm chủ bản chất công nghệ.
 
 ---
 

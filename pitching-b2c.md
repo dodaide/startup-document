@@ -38,7 +38,7 @@ Sức mạnh của IOC nằm ở việc ứng dụng các phương pháp giáo d
 ## 2. Chi tiết Chương trình Thực tập Fullstack Thực chiến
 Chương trình IOC Fullstack Internship được thiết kế để ép sinh viên chạm đến vùng nguyên lý (**First Principles**) của ngành Kỹ thuật Phần mềm, biến kiến thức thực tế thành **phản xạ tư duy**.
 
-### Triết lý "No Magic" - Thực chất đến từng dòng Code:
+### Triết lý học và làm thực chất đến từng dòng Code:
 *   **100% Solo Project:** Sinh viên làm việc độc lập hoàn toàn để đảm bảo hiểu sâu mọi khâu từ Backend, Database đến Frontend. Đầu ra sinh viên cần vượt qua vòng phỏng vấn với những câu hỏi được cung cấp ban đầu bằng những kiến thức và dự án trong suốt quá trình thực tập
 *   **Frontend "Zero Library":** Sử dụng Framework (React/Angular/Vue) nhưng **không dùng thư viện UI** (Tailwind, MUI, AntD...). Sinh viên tự xây dựng UI Component System bằng CSS/SCSS thuần để hiểu bản chất giao diện.
 *   **Database "Raw SQL":** **Không dùng ORM** (Prisma, Sequelize...). Mọi thao tác nghiệp vụ phức tạp đều phải triển khai qua **Stored Procedure** và SQL thuần.
