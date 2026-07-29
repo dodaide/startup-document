@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo Cáo Tổng Hợp Dự Án IOC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-family: 'Be Vietnam Pro', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --bg-color: #020617;
+      --surface-color: #0f172a;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-color: #f4f8fb;
+      --text-muted: #94a3b8;
+      --primary-color: #bc2228;
+      --primary-gradient: linear-gradient(135deg, #bc2228 0%, #d26b6f 100%);
+      --accent-color: #d26b6f;
+      --success-color: #12b76a;
+      --warning-color: #f79009;
+      --danger-color: #f04438;
+      --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --glass-blur: blur(12px);
+      --border-radius-sm: 8px;
+      --border-radius-md: 16px;
+      --transition-speed: 0.3s;
+    }
+    [data-theme="light"] {
+      --bg-color: #f4f8fb;
+      --surface-color: #ffffff;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --card-border: rgba(188, 34, 40, 0.08);
+      --text-color: #0f172a;
+      --text-muted: #64748b;
+      --primary-color: #bc2228;
+      --primary-gradient: linear-gradient(135deg, #bc2228 0%, #ab1f24 100%);
+      --accent-color: #bc2228;
+      --success-color: #039855;
+      --warning-color: #dc6803;
+      --danger-color: #d92d20;
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-family);
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      transition: background var(--transition-speed), color var(--transition-speed);
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    header {
+      display: flex; flex-direction: column; gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 768px) {
+      header { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .header-title h1 {
+      font-size: 2rem; font-weight: 800;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      letter-spacing: -0.025em;
+    }
+    .header-title p { color: var(--text-muted); font-size: 0.95rem; font-weight: 500; }
+    .header-meta { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; }
+    .header-actions { display: flex; gap: 0.75rem; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 1.2rem; border-radius: var(--border-radius-sm);
+      font-family: var(--font-family); font-size: 0.9rem; font-weight: 600;
+      cursor: pointer; border: 1px solid transparent; transition: all 0.2s;
+    }
+    .btn-secondary {
+      background: var(--surface-color); color: var(--text-color); border-color: var(--card-border);
+    }
+    .btn-secondary:hover { border-color: var(--primary-color); }
+    .theme-toggle {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 1px solid var(--card-border); background: var(--surface-color);
+      color: var(--text-color); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .toc-nav {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      margin-bottom: 2rem; padding: 1rem 1.25rem;
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-md); backdrop-filter: var(--glass-blur);
+      position: sticky; top: 0.5rem; z-index: 100;
+    }
+    .toc-nav a {
+      font-size: 0.82rem; font-weight: 600; color: var(--text-muted);
+      text-decoration: none; padding: 0.35rem 0.75rem;
+      border-radius: 100px; border: 1px solid var(--card-border);
+      transition: all 0.2s;
+    }
+    .toc-nav a:hover { color: var(--primary-color); border-color: var(--primary-color); }
+    .section { margin-bottom: 2.5rem; scroll-margin-top: 5rem; }
+    .section-heading {
+      font-size: 1.5rem; font-weight: 800; margin-bottom: 1.25rem;
+      display: flex; align-items: center; gap: 0.75rem;
+      padding-bottom: 0.75rem; border-bottom: 2px solid var(--card-border);
+    }
+    .section-heading .num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 2rem; height: 2rem; border-radius: 50%;
+      background: var(--primary-color); color: white; font-size: 0.9rem;
+    }
+    .stats-row {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1rem; margin-bottom: 1.5rem;
+    }
+    @media (min-width: 640px) { .stats-row { grid-template-columns: repeat(4, 1fr); } }
+    .stat-card {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      padding: 1.25rem; border-radius: var(--border-radius-sm); text-align: center;
+    }
+    .stat-value { font-size: 1.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 0.25rem; }
+    .stat-label {
+      font-size: 0.75rem; color: var(--text-muted); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .stat-card.primary .stat-value { color: var(--primary-color); }
+    .stat-card.warning .stat-value { color: var(--warning-color); }
+    .stat-card.danger .stat-value { color: var(--danger-color); }
+    .stat-card.success .stat-value { color: var(--success-color); }
+    .card {
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-md); padding: 1.75rem;
+      box-shadow: var(--shadow-md); backdrop-filter: var(--glass-blur);
+      margin-bottom: 1.5rem; position: relative; overflow: hidden;
+    }
+    .card::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 4px; height: 100%; background: transparent;
+    }
+    .card.primary::before { background: var(--primary-color); }
+    .card.warning::before { background: var(--warning-color); }
+    .card.danger::before { background: var(--danger-color); }
+    .card.success::before { background: var(--success-color); }
+    .card-title {
+      font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+    .card p, .card li { font-size: 0.92rem; color: var(--text-muted); }
+    .card ul { margin-left: 1.25rem; margin-top: 0.5rem; }
+    .dashboard-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+    }
+    @media (min-width: 1024px) { .dashboard-grid { grid-template-columns: 1fr 1fr; } }
+    .exec-summary {
+      font-size: 1rem; color: var(--text-muted); line-height: 1.75;
+      padding: 1.25rem; background: var(--surface-color);
+      border-radius: var(--border-radius-sm); border-left: 4px solid var(--primary-color);
+    }
+    .exec-summary strong { color: var(--text-color); }
+    .data-table {
+      width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1rem 0;
+    }
+    .data-table th, .data-table td {
+      padding: 0.65rem 0.85rem; text-align: left;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .data-table th {
+      font-weight: 700; color: var(--text-color);
+      background: var(--surface-color);
+    }
+    .data-table td { color: var(--text-muted); }
+    .image-gallery {
+      display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 1.25rem 0;
+    }
+    @media (min-width: 768px) { .image-gallery { grid-template-columns: 1fr 1fr; } }
+    .gallery-item {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm); overflow: hidden;
+    }
+    .gallery-item img { width: 100%; height: auto; display: block; }
+    .gallery-caption {
+      padding: 0.75rem 1rem; font-size: 0.82rem;
+      color: var(--text-muted); font-weight: 600;
+    }
+    .funnel-mini { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+    .funnel-bar {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 1.25rem; border-radius: 10px; color: white;
+      font-weight: 600; font-size: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .fb1 { width: 100%; background: linear-gradient(90deg, #85181c, #ab1f24); }
+    .fb2 { width: 85%; background: linear-gradient(90deg, #ab1f24, #bc2228); }
+    .fb3 { width: 70%; background: linear-gradient(90deg, #bc2228, #c94e53); }
+    .fb4 { width: 55%; background: linear-gradient(90deg, #c94e53, #d26b6f); }
+    .fb5 { width: 40%; background: linear-gradient(90deg, #475569, #334155); }
+    .highlight-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .highlight-item {
+      display: flex; gap: 0.75rem; font-size: 0.92rem; color: var(--text-muted);
+    }
+    .highlight-item strong { color: var(--text-color); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 0.45rem; flex-shrink: 0; }
+    .dot.danger { background: var(--danger-color); }
+    .dot.warning { background: var(--warning-color); }
+    .dot.success { background: var(--success-color); }
+    .dot.primary { background: var(--primary-color); }
+    .module-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1rem;
+    }
+    @media (min-width: 640px) { .module-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .module-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .module-card {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm); padding: 1.1rem;
+    }
+    .module-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .module-card p { font-size: 0.82rem; color: var(--text-muted); }
+    .status-badge {
+      display: inline-block; font-size: 0.7rem; font-weight: 700;
+      padding: 0.15rem 0.5rem; border-radius: 100px;
+      text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.5rem;
+    }
+    .status-badge.done { background: rgba(18,183,106,0.15); color: var(--success-color); }
+    .status-badge.progress { background: rgba(247,144,9,0.15); color: var(--warning-color); }
+    .status-badge.fail { background: rgba(240,68,56,0.15); color: var(--danger-color); }
+    .timeline {
+      position: relative; padding-left: 2rem;
+      border-left: 2px solid var(--card-border); margin-left: 0.5rem;
+      display: flex; flex-direction: column; gap: 1.5rem;
+    }
+    .timeline-item { position: relative; }
+    .timeline-badge {
+      position: absolute; left: -2.5rem; top: 0.25rem;
+      width: 1rem; height: 1rem; border-radius: 50%;
+      background: var(--bg-color); border: 2.5px solid var(--primary-color);
+    }
+    .timeline-date {
+      font-size: 0.82rem; font-weight: 700; color: var(--primary-color);
+      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;
+    }
+    .timeline-header { font-weight: 700; font-size: 1rem; margin-bottom: 0.35rem; }
+    .timeline-body { font-size: 0.9rem; color: var(--text-muted); }
+    .ops-journey {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0; margin-top: 0.75rem;
+    }
+    .ops-journey-cap {
+      width: 100%; max-width: 560px;
+      background: var(--surface-color);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1rem 1.15rem;
+      position: relative;
+    }
+    .ops-journey-cap.start {
+      border-color: rgba(188, 34, 40, 0.35);
+      background: linear-gradient(135deg, rgba(188,34,40,0.08), transparent 60%), var(--surface-color);
+    }
+    .ops-journey-cap.end {
+      border-color: rgba(18, 183, 106, 0.4);
+      background: linear-gradient(135deg, rgba(18,183,106,0.08), transparent 60%), var(--surface-color);
+    }
+    .ops-cap-badge {
+      display: inline-block; font-size: 0.7rem; font-weight: 800;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 0.15rem 0.55rem; border-radius: 100px; margin-bottom: 0.55rem;
+    }
+    .ops-journey-cap.start .ops-cap-badge {
+      background: rgba(188,34,40,0.15); color: var(--primary-color);
+    }
+    .ops-journey-cap.end .ops-cap-badge {
+      background: rgba(18,183,106,0.15); color: var(--success-color);
+    }
+    .ops-cap-steps {
+      display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center;
+      font-size: 0.88rem; font-weight: 700;
+    }
+    .ops-cap-chip {
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      padding: 0.4rem 0.75rem; border-radius: 8px;
+    }
+    .ops-cap-arrow { color: var(--primary-color); font-weight: 800; }
+    .ops-spine {
+      width: 2px; height: 28px;
+      background: linear-gradient(180deg, var(--primary-color), rgba(188,34,40,0.25));
+    }
+    .ops-spine.down {
+      background: linear-gradient(180deg, rgba(188,34,40,0.25), var(--success-color));
+    }
+    .ops-cycle-block {
+      width: 100%; max-width: 560px;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem 1rem 1.1rem;
+      background: var(--surface-color);
+      position: relative;
+    }
+    .ops-cycle-block::before {
+      content: "";
+      position: absolute; inset: 0;
+      border-radius: 16px;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(188,34,40,0.45), transparent 40%, rgba(188,34,40,0.2));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+    .ops-cycle-heading {
+      text-align: center; margin-bottom: 1rem;
+    }
+    .ops-cycle-heading h4 {
+      font-size: 0.95rem; font-weight: 800; color: var(--text-color);
+    }
+    .ops-cycle-heading p {
+      font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;
+    }
+    .ops-cycle {
+      position: relative;
+      width: min(300px, 85vw);
+      height: min(300px, 85vw);
+      margin: 0 auto;
+    }
+    .ops-cycle svg.ring {
+      position: absolute; inset: 12%;
+      width: 76%; height: 76%;
+    }
+    .ops-cycle-center {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--primary-gradient);
+      color: white; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-size: 0.68rem; font-weight: 800; text-align: center;
+      line-height: 1.2; box-shadow: 0 8px 20px rgba(188,34,40,0.35);
+      z-index: 2;
+    }
+    .ops-cycle-center span { font-size: 1.1rem; line-height: 1; margin-bottom: 0.1rem; }
+    .ops-cycle-node {
+      position: absolute; width: 124px;
+      transform: translate(-50%, -50%);
+      text-align: center; z-index: 3;
+    }
+    .ops-cycle-node .bubble {
+      background: var(--card-bg);
+      border: 1.5px solid var(--card-border);
+      border-radius: 12px;
+      padding: 0.65rem 0.5rem;
+      font-size: 0.78rem; font-weight: 700;
+      color: var(--text-color); line-height: 1.3;
+      box-shadow: var(--shadow-md);
+      transition: border-color 0.2s;
+    }
+    .ops-cycle-node .bubble:hover { border-color: var(--primary-color); }
+    .ops-cycle-node .idx {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--primary-color); color: #fff;
+      font-size: 0.7rem; font-weight: 800; margin-bottom: 0.3rem;
+    }
+    .ops-cycle-node.t { top: 6%; left: 50%; }
+    .ops-cycle-node.r { top: 50%; left: 94%; }
+    .ops-cycle-node.b { top: 94%; left: 50%; }
+    .ops-cycle-node.l { top: 50%; left: 6%; }
+    @media (max-width: 480px) {
+      .ops-cycle-node { width: 100px; }
+      .ops-cycle-node .bubble { font-size: 0.7rem; padding: 0.5rem 0.35rem; }
+      .ops-cycle-node.r { left: 90%; }
+      .ops-cycle-node.l { left: 10%; }
+    }
+    .channel-grid {
+      display: grid; grid-template-columns: 1fr; gap: 0.75rem;
+    }
+    @media (min-width: 640px) { .channel-grid { grid-template-columns: 1fr 1fr; } }
+    .channel-card {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm); padding: 1rem;
+    }
+    .channel-card h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .channel-card .role { font-size: 0.8rem; color: var(--primary-color); font-weight: 600; margin-bottom: 0.35rem; }
+    .channel-card p { font-size: 0.82rem; color: var(--text-muted); }
+    .growth-summary {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.25rem 0;
+    }
+    @media (min-width: 768px) { .growth-summary { grid-template-columns: repeat(4, 1fr); } }
+    .growth-box {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm); padding: 1rem; text-align: center;
+    }
+    .growth-box .value { font-size: 1.6rem; font-weight: 800; color: var(--success-color); }
+    .growth-box .label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; margin-top: 0.25rem; }
+    .growth-box .sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.15rem; }
+    .growth-up { color: var(--success-color); font-weight: 700; }
+    .compare-cols { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    @media (min-width: 900px) { .compare-cols { grid-template-columns: 1fr 1fr; } }
+    .year-tag {
+      display: inline-block; font-size: 0.72rem; font-weight: 800;
+      padding: 0.2rem 0.6rem; border-radius: 100px; margin-bottom: 0.75rem;
+    }
+    .year-tag.y2025 { background: rgba(148,163,184,0.15); color: var(--text-muted); }
+    .year-tag.y2026 { background: rgba(18,183,106,0.15); color: var(--success-color); }
+    .chart-panel {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm); padding: 1.25rem; margin-top: 1.25rem;
+    }
+    .chart-panel h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-color); }
+    .chart-grid-2 { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+    @media (min-width: 900px) { .chart-grid-2 { grid-template-columns: 1fr 1fr; } }
+    .h-bar-chart { display: flex; flex-direction: column; gap: 0.7rem; }
+    .h-bar-row {
+      display: grid; grid-template-columns: minmax(100px, 130px) 1fr 36px;
+      gap: 0.65rem; align-items: center; font-size: 0.8rem;
+    }
+    .h-bar-label { color: var(--text-muted); font-weight: 600; line-height: 1.25; }
+    .h-bar-track {
+      height: 24px; background: rgba(255,255,255,0.05);
+      border-radius: 6px; overflow: hidden;
+    }
+    [data-theme="light"] .h-bar-track { background: rgba(0,0,0,0.06); }
+    .h-bar-fill { height: 100%; border-radius: 6px; min-width: 4px; }
+    .h-bar-fill.y2025 { background: linear-gradient(90deg, #64748b, #94a3b8); }
+    .h-bar-fill.y2026 { background: linear-gradient(90deg, #027a48, #12b76a); }
+    .h-bar-value { font-weight: 800; text-align: right; font-size: 0.85rem; }
+    .v-bar-chart-wrap { padding: 0.5rem 0; }
+    .v-bar-chart {
+      display: flex; align-items: flex-end; justify-content: space-around;
+      gap: 0.5rem; height: 190px; padding: 0 0.5rem;
+      border-bottom: 2px solid var(--card-border);
+    }
+    .v-bar-group { display: flex; flex-direction: column; align-items: center; flex: 1; max-width: 100px; }
+    .v-bar-pair { display: flex; align-items: flex-end; gap: 5px; height: 150px; }
+    .v-bar-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+    .v-bar {
+      width: 28px; border-radius: 6px 6px 0 0; position: relative;
+      transition: height 0.6s ease;
+    }
+    @media (min-width: 640px) { .v-bar { width: 34px; } }
+    .v-bar.y2025 { background: linear-gradient(180deg, #94a3b8, #64748b); }
+    .v-bar.y2026 { background: linear-gradient(180deg, #12b76a, #027a48); }
+    .v-bar-val {
+      font-size: 0.72rem; font-weight: 800; margin-bottom: 4px;
+      color: var(--text-color); white-space: nowrap;
+    }
+    .v-bar-name {
+      font-size: 0.72rem; font-weight: 600; color: var(--text-muted);
+      text-align: center; margin-top: 0.5rem; line-height: 1.2;
+    }
+    .chart-legend {
+      display: flex; gap: 1.25rem; justify-content: center;
+      margin-top: 0.85rem; font-size: 0.8rem; color: var(--text-muted);
+    }
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+    .legend-dot.y2025 { background: #94a3b8; }
+    .legend-dot.y2026 { background: #12b76a; }
+    .compare-h-header {
+      display: grid; grid-template-columns: minmax(110px, 140px) 1fr 1fr;
+      gap: 0.75rem; font-size: 0.75rem; font-weight: 800;
+      color: var(--text-muted); margin-bottom: 0.65rem; text-align: center;
+    }
+    .compare-h-header .label-col { text-align: left; }
+    .compare-h-row {
+      display: grid; grid-template-columns: minmax(110px, 140px) 1fr 1fr;
+      gap: 0.75rem; align-items: center; margin-bottom: 0.85rem;
+    }
+    .compare-h-label { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); line-height: 1.3; }
+    .compare-dual-cell { display: flex; flex-direction: column; gap: 0.35rem; }
+    .compare-dual-track {
+      height: 22px; background: rgba(255,255,255,0.05); border-radius: 6px; overflow: hidden;
+    }
+    [data-theme="light"] .compare-dual-track { background: rgba(0,0,0,0.06); }
+    .compare-dual-fill { height: 100%; border-radius: 6px; min-width: 2px; }
+    .compare-dual-fill.y2025 { background: linear-gradient(90deg, #64748b, #94a3b8); }
+    .compare-dual-fill.y2026 { background: linear-gradient(90deg, #027a48, #12b76a); }
+    .compare-dual-val { font-size: 0.82rem; font-weight: 800; text-align: right; }
+    .compare-dual-val.empty { color: var(--text-muted); font-weight: 600; }
+    .yoy-main-chart { margin-top: 0.5rem; }
+    .yoy-main-chart .v-bar-chart { height: 220px; gap: 1rem; }
+    .yoy-main-chart .v-bar-pair { height: 175px; }
+    .yoy-delta {
+      font-size: 0.7rem; font-weight: 700; margin-top: 0.15rem;
+    }
+    .yoy-delta.up { color: var(--success-color); }
+    .yoy-delta.down { color: var(--danger-color); }
+    .tram-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem;
+    }
+    @media (min-width: 768px) { .tram-grid { grid-template-columns: 1fr 1fr; } }
+    .tram-card {
+      background: var(--surface-color); border: 1px solid var(--card-border);
+      border-radius: var(--border-radius-sm); padding: 1.15rem; position: relative;
+    }
+    .tram-num {
+      display: inline-block; font-size: 0.72rem; font-weight: 800;
+      color: white; background: var(--primary-color);
+      padding: 0.2rem 0.55rem; border-radius: 100px; margin-bottom: 0.5rem;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .tram-card h4 { font-size: 0.98rem; font-weight: 800; margin-bottom: 0.25rem; }
+    .tram-dur { font-size: 0.78rem; color: var(--primary-color); font-weight: 700; margin-bottom: 0.65rem; }
+    .tram-card ul { margin-left: 1.1rem; font-size: 0.85rem; color: var(--text-muted); }
+    .tram-card li { margin-bottom: 0.3rem; }
+    .tram-ws {
+      margin-top: 0.65rem; padding: 0.55rem 0.75rem;
+      background: rgba(188,34,40,0.08); border-radius: 6px;
+      font-size: 0.82rem; color: var(--text-muted);
+    }
+    .tram-ws strong { color: var(--primary-color); }
+    .roadmap-img {
+      width: 100%; max-width: 520px; margin: 1rem auto 0; display: block;
+      border-radius: var(--border-radius-sm); border: 1px solid var(--card-border);
+    }
+    .ops-roles { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    @media (min-width: 768px) { .ops-roles { grid-template-columns: 1fr; } }
+    .solution-container {
+      display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+    }
+    @media (min-width: 768px) { .solution-container { grid-template-columns: 1fr 1.2fr; } }
+    .solution-card {
+      border: 1px solid var(--card-border); border-radius: var(--border-radius-md);
+      padding: 1.75rem; background: var(--card-bg); position: relative;
+    }
+    .solution-card.recommended {
+      border-color: var(--success-color);
+      box-shadow: 0 8px 30px rgba(16,185,129,0.08);
+    }
+    .solution-badge {
+      position: absolute; top: 1.25rem; right: 1.25rem;
+      background: var(--success-color); color: white;
+      font-size: 0.72rem; font-weight: 800; padding: 0.2rem 0.65rem;
+      border-radius: 100px; text-transform: uppercase;
+    }
+    .solution-meta {
+      font-size: 0.78rem; font-weight: 700; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;
+    }
+    .solution-name { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .solution-desc { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem; }
+    .solution-points { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-muted); }
+    .footer {
+      text-align: center; margin-top: 3rem; color: var(--text-muted);
+      font-size: 0.85rem; border-top: 1px solid var(--card-border); padding-top: 1.5rem;
+    }
+    @media print {
+      body { background: white; color: black; padding: 0; }
+      .toc-nav, .theme-toggle, .header-actions { display: none !important; }
+      .card, .stat-card, .gallery-item, .module-card, .solution-card {
+        background: white !important; border: 1px solid #ccc !important;
+        box-shadow: none !important; break-inside: avoid;
+      }
+      .header-title h1 { -webkit-text-fill-color: initial !important; color: black !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-title">
+        <h1>BÁO CÁO TỔNG HỢP DỰ ÁN IOC</h1>
+        <p>Tình hình kinh doanh, sản phẩm, vận hành &amp; định hướng chiến lược</p>
+        <div class="header-meta">Ngày báo cáo: 28/07/2026 &nbsp;|&nbsp; Ban Quản Trị Dự Án IOC</div>
+      </div>
+      <div class="header-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Đổi giao diện Sáng/Tối">
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="btn btn-secondary" onclick="window.print()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          In Báo Cáo
+        </button>
+      </div>
+    </header>
+
+    <nav class="toc-nav">
+      <a href="#exec">Tóm tắt</a>
+      <a href="#biz">Kinh doanh B2C</a>
+      <a href="#product">Nền tảng</a>
+      <a href="#program">B2B &amp; bán ké</a>
+      <a href="#training">Chương trình ĐT</a>
+      <a href="#ops">Vận hành</a>
+      <a href="#social">Kênh MXH</a>
+      <a href="#conclusion">Kết luận</a>
+    </nav>
+
+    <!-- A: Tóm tắt điều hành -->
+    <section id="exec" class="section">
+      <h2 class="section-heading"><span class="num">A</span> Tóm tắt điều hành</h2>
+      <div class="stats-row">
+        <div class="stat-card primary"><div class="stat-value">759</div><div class="stat-label">Tổng lead B2C</div></div>
+        <div class="stat-card warning"><div class="stat-value">70</div><div class="stat-label">Sale chính liên hệ học thử 3 ngày</div></div>
+        <div class="stat-card warning"><div class="stat-value">689</div><div class="stat-label">Đã được TTS Sale nhắn zalo hoặc gọi</div></div>
+        <div class="stat-card danger"><div class="stat-value">0</div><div class="stat-label">Hợp đồng B2C chốt được</div></div>
+      </div>
+      <div class="exec-summary">
+        Trong thời gian vừa qua, đội dự án đã triển khai <strong>nhiều chiến dịch khác nhau</strong> để kiểm chứng khả năng bán IOC theo mô hình B2C. Kết quả <strong>không khả quan</strong>: có thể tạo lead đầu vào (759), nhưng chất lượng thấp, tỷ lệ chuyển đổi gần như bằng 0.
+        <br><br>
+        <strong>70 bạn</strong> do <strong>đội sale chính</strong> (chị Nhung) lọc và liên hệ mời học thử 3 ngày — funnel rơi mạnh, sang ngày 2 chỉ còn 2 bạn quan tâm (và cũng chỉ vì mentor miễn phí). <strong>Data còn lại</strong> đã được các <strong>thực tập sinh sale</strong> nhắn Zalo và gọi điện đầy đủ, nhưng cũng không mang lại kết quả tích cực.
+        <br><br>
+        Song song, đối thủ <strong>CodeGym</strong> và <strong>VTI</strong> cũng triển khai chương trình tương tự (seeding, ads) nhưng hiện đã <strong>đóng chương trình</strong>.
+        <br><br>
+        <strong>Nhận định:</strong> Sản phẩm/mô hình hiện tại chưa fit thị trường B2C. Trong khi đó, mảng <strong>B2B tiếp tục tăng trưởng</strong> — mở rộng đối tác trường, tăng số kỳ thực tập triển khai. Đề xuất <strong>ưu tiên quay lại B2B</strong> — nơi IOC đã chứng minh được thành công.
+      </div>
+    </section>
+
+    <!-- B: Kinh doanh B2C -->
+    <section id="biz" class="section">
+      <h2 class="section-heading"><span class="num">B</span> Hoạt động kinh doanh &amp; thử nghiệm B2C</h2>
+
+      <div class="card primary">
+        <div class="card-title">KPI tổng hợp chiến dịch</div>
+        <table class="data-table">
+          <thead><tr><th>Chỉ số</th><th>Giá trị</th><th>Ghi chú</th></tr></thead>
+          <tbody>
+            <tr><td>Tổng số lượng lead</td><td><strong>759</strong></td><td>Phần lớn Spam / Không liên hệ được / Fail</td></tr>
+            <tr><td>Dự án trải nghiệm</td><td><strong>307</strong></td><td>Sinh viên tham gia trải nghiệm nền tảng</td></tr>
+            <tr><td>Bài đánh giá năng lực</td><td><strong>477</strong></td><td>Hoàn thành bài test đầu vào</td></tr>
+            <tr><td>Hợp đồng B2C</td><td><strong>0</strong></td><td>Không có doanh thu từ bán lẻ</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card primary">
+        <div class="card-title">Biểu đồ &amp; phân tích dữ liệu</div>
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <img src="assets/bao-cao-2026/01-tong-quan-lead.png" alt="Biến động lead theo thời gian">
+            <div class="gallery-caption">Biến động số lượng theo thời gian — đỉnh đầu tháng 7 rồi giảm do định hướng các nội dung khác nhau</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/bao-cao-2026/02-phan-bo-lead.png" alt="Phân bổ trạng thái lead">
+            <div class="gallery-caption">Phân bổ trạng thái lead, trường, địa lý và người phụ trách</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/bao-cao-2026/03-ly-do-tu-choi.png" alt="Lý do từ chối">
+            <div class="gallery-caption">Thống kê lý do từ chối và ghi chú sale mới nhất</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="card danger">
+          <div class="card-title">Funnel học thử 3 ngày (đội sale chính)</div>
+          <p style="margin-bottom:0.75rem;font-size:0.88rem;color:var(--text-muted);"><strong>70 bạn</strong> do đội sale chính (chị Nhung) lọc và liên hệ — chỉ gồm sinh viên role dev, tick chọn "Có nhu cầu đi thực tập" trên form đăng ký. Data còn lại không nằm trong phễu này mà do TTS Sale chăm sóc riêng.</p>
+          <div class="funnel-mini">
+            <div class="funnel-bar fb1"><span>Sale chính liên hệ (đã lọc)</span><span>70</span></div>
+            <div class="funnel-bar fb2"><span>Có nhu cầu / tiềm năng xa</span><span>23</span></div>
+            <div class="funnel-bar fb3"><span>Mời vào phễu học thử 3 ngày</span><span>12</span></div>
+            <div class="funnel-bar fb5"><span>Còn quan tâm sang ngày 2</span><span>2</span></div>
+          </div>
+          <p><strong>Nhận xét:</strong> Ngay cả khi đã lọc data theo ICP (dev + có nhu cầu thực tập), funnel vẫn rơi mạnh từ ngày 2. Tín hiệu mua hàng gần như không xuất hiện; 2 bạn còn lại chỉ quan tâm phần hỗ trợ miễn phí của mentor.</p>
+        </div>
+
+        <div class="card warning">
+          <div class="card-title">Data còn lại — TTS Sale đã nhắn &amp; gọi</div>
+          <p style="margin-bottom:0.75rem;font-size:0.88rem;color:var(--text-muted);">Phần lead không nằm trong nhóm 70 của đội sale chính đã được các <strong>thực tập sinh sale</strong> chăm sóc đầy đủ qua Zalo và gọi điện. Kết quả vẫn không tích cực — các lý do từ chối phổ biến:</p>
+          <ul class="highlight-list">
+            <li class="highlight-item"><span class="dot danger"></span><div><strong>Không phản hồi / chặn liên hệ</strong> — cao nhất</div></li>
+            <li class="highlight-item"><span class="dot danger"></span><div><strong>Đã tìm được nơi thực tập hoặc đi làm</strong></div></li>
+            <li class="highlight-item"><span class="dot warning"></span><div><strong>Chưa phù hợp ở thời điểm hiện tại</strong></div></li>
+            <li class="highlight-item"><span class="dot warning"></span><div><strong>Muốn đi thực tập thật</strong> — không muốn mô hình trả phí</div></li>
+            <li class="highlight-item"><span class="dot warning"></span><div><strong>Không muốn trả tiền để đi thực tập</strong></div></li>
+            <li class="highlight-item"><span class="dot primary"></span><div>Khác: tài chính không đáp ứng, chờ thực tập theo trường, ngành chưa hỗ trợ...</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card danger">
+        <div class="card-title">Quan sát đối thủ &amp; thị trường</div>
+        <ul class="highlight-list">
+          <li class="highlight-item"><span class="dot danger"></span><div><strong>CodeGym &amp; VTI</strong> cũng triển khai chương trình tương tự (seeding, ads) nhưng không thấy bài khai giảng — hiện <strong>cả hai đã đóng chương trình</strong>.</div></li>
+          <li class="highlight-item"><span class="dot warning"></span><div>Cộng đồng IT (group Facebook) nghi ngờ mô hình bootcamp/thực tập trả phí — lo ngại "lừa đảo", "lùa gà", khuyên tự học thay vì trả tiền.</div></li>
+          <li class="highlight-item"><span class="dot primary"></span><div>Thị trường xác nhận khó khăn chung với mô hình "trải nghiệm / thực tập trả phí B2C" — không chỉ riêng IOC.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- C: Nền tảng sản phẩm -->
+    <section id="product" class="section">
+      <h2 class="section-heading"><span class="num">C</span> Tình hình nền tảng &amp; sản phẩm IOC 2.0</h2>
+
+      <div class="card primary">
+        <div class="card-title">Tổng quan</div>
+        <p>IOC 2.0 trên hệ thống thật là nền tảng <strong>vận hành OJT + LMS + đánh giá năng lực + CRM/Lead + bộ công cụ AI trong dự án</strong>. Các phân hệ dưới đây lấy theo menu/admin thực tế đang chạy — không liệt kê roadmap hay tính năng chưa có trên product.</p>
+      </div>
+
+      <div class="card primary">
+        <div class="card-title">Ma trận phân hệ sản phẩm (theo hệ thống hiện tại)</div>
+        <div class="module-grid">
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Kỳ thực tập (Phase)</h4><p>Quản lý kỳ OJT theo trường/đối tác, gán sinh viên, gắn bài thi &amp; lịch đánh giá.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Nhóm thực tập</h4><p>Tạo nhóm, gán mentor/sinh viên, theo dõi tiến độ, vi phạm, điểm danh.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Dự án &amp; Board</h4><p>Board kiểu JIRA: issue, backlog, sprint, custom fields theo không gian làm việc.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Kho dự án mẫu</h4><p>Project Bank — kho template dự án để tái sử dụng khi tạo nhóm/dự án.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Mẫu không gian (Space Template)</h4><p>Cấu hình workflow/board tái sử dụng cho các dự án thực tập.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Bài kiểm tra đầu vào</h4><p>Fresher test / entrance exam, làm bài luyện, lịch sử bài thi trên hệ thống.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>E-learning</h4><p>Học liệu, lớp học, bài giảng, theo dõi tiến độ học của sinh viên.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Sơ đồ năng lực</h4><p>Competency map — quản trị kỹ năng và theo dõi năng lực sinh viên.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Chấm điểm OJT</h4><p>Mẫu tiêu chí, kỳ đánh giá, mentor chấm điểm và xác nhận kết quả, đánh giá mentor.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Daily Report &amp; Điểm danh</h4><p>Báo cáo hàng ngày trong nhóm; cấu hình điểm danh &amp; lịch làm việc.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>CRM / Khách hàng (Lead)</h4><p>Lead tiềm năng/đang chăm sóc, lý do từ chối, dashboard phễu cho Sales.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Quản trị danh mục</h4><p>Tài khoản hệ thống, sinh viên, trường, doanh nghiệp, giảng viên, mentor.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Bộ công cụ AI trong dự án</h4><p>AI tạo dự án, backlog, document, design, testcase, review code/PR, AI Mentor Rika, Stakeholder giả lập giả lập.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>CMS &amp; Marketing</h4><p>Tin tức/bài viết, đại sứ, nội dung quảng bá, UTM/short link, hỗ trợ góp ý.</p></div>
+          <div class="module-card"><span class="status-badge done">Đã triển khai</span><h4>Dashboard &amp; Thông báo</h4><p>Dashboard theo role (Admin/Sales/School/Mentor/Business) và thông báo in-app.</p></div>
+        </div>
+        <p style="margin-top:1rem;font-size:0.85rem;color:var(--text-muted)"><strong>Không có trên hệ thống hiện tại:</strong> Coding Dojo, AI Interview/Mock Interview dạng sản phẩm riêng, chat nhóm real-time / SMS gateway, cổng apply vị trí thực tập (job board).</p>
+      </div>
+    </section>
+
+    <!-- D: Kinh doanh B2B và B2C bán ké -->
+    <section id="program" class="section">
+      <h2 class="section-heading"><span class="num">D</span> Kinh doanh B2B và B2C bán ké</h2>
+
+      <!-- B2B -->
+      <div id="b2b-growth" class="card success" style="scroll-margin-top:5rem">
+        <div class="card-title">Tăng trưởng B2B — So sánh 2025 vs 2026</div>
+
+        <div class="chart-panel yoy-main-chart">
+          <h4>So sánh chỉ số chính</h4>
+          <div class="v-bar-chart-wrap">
+            <div class="v-bar-chart">
+              <div class="v-bar-group">
+                <div class="v-bar-pair">
+                  <div class="v-bar-col"><div class="v-bar-val">4</div><div class="v-bar y2025" style="height:64px"></div></div>
+                  <div class="v-bar-col"><div class="v-bar-val">5</div><div class="v-bar y2026" style="height:80px"></div></div>
+                </div>
+                <div class="v-bar-name">Số kỳ<div class="yoy-delta up">+25%</div></div>
+              </div>
+              <div class="v-bar-group">
+                <div class="v-bar-pair">
+                  <div class="v-bar-col"><div class="v-bar-val">3</div><div class="v-bar y2025" style="height:48px"></div></div>
+                  <div class="v-bar-col"><div class="v-bar-val">4</div><div class="v-bar y2026" style="height:80px"></div></div>
+                </div>
+                <div class="v-bar-name">Số trường<div class="yoy-delta up">+34%</div></div>
+              </div>
+              <div class="v-bar-group">
+                <div class="v-bar-pair">
+                  <div class="v-bar-col"><div class="v-bar-val">157</div><div class="v-bar y2025" style="height:80px"></div></div>
+                  <div class="v-bar-col"><div class="v-bar-val">127</div><div class="v-bar y2026" style="height:65px"></div></div>
+                </div>
+                <div class="v-bar-name">Tổng SV<div class="yoy-delta down">−19%</div></div>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-dot y2025"></span> 2025</span>
+              <span class="legend-item"><span class="legend-dot y2026"></span> 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="compare-cols">
+          <div>
+            <span class="year-tag y2025">Năm 2025</span>
+            <table class="data-table">
+              <thead>
+                <tr><th>Kỳ thực tập</th><th>Trường</th><th>SV</th><th>Trạng thái</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>FU OJT Spring T5/2025</td><td>FU Cần Thơ</td><td><strong>43</strong></td><td>Đã kết thúc</td></tr>
+                <tr><td>FU OJT Fall T8/2025</td><td>FU Cần Thơ</td><td><strong>31</strong></td><td>Đã kết thúc</td></tr>
+                <tr><td>Đợt thực tập CMC</td><td>CMC</td><td><strong>67</strong></td><td>Đã kết thúc</td></tr>
+                <tr><td>FPT Greenwich T10</td><td>FPT Greenwich</td><td><strong>16</strong></td><td>Đã kết thúc</td></tr>
+                <tr style="background:var(--surface-color)"><td colspan="2"><strong>Tổng cộng</strong></td><td><strong>157</strong></td><td>4 kỳ</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <span class="year-tag y2026">Năm 2026</span>
+            <table class="data-table">
+              <thead>
+                <tr><th>Kỳ thực tập</th><th>Trường</th><th>SV</th><th>Trạng thái</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>FU Cần Thơ — Mùa xuân 2026</td><td>FU Cần Thơ</td><td><strong>40</strong></td><td>Đã kết thúc</td></tr>
+                <tr><td>FPT Greenwich HN — Mùa xuân 2026</td><td>FPT Greenwich</td><td><strong>10</strong></td><td>Đã kết thúc</td></tr>
+                <tr><td>OJT ĐH Tôn Đức Thắng — Mùa hạ 2026</td><td>ĐH Tôn Đức Thắng</td><td><strong>17</strong></td><td>Đang diễn ra</td></tr>
+                <tr><td>OJT Greenwich Batch 3 — Mùa xuân 2026</td><td>FPT Greenwich</td><td><strong>15</strong></td><td>Đang diễn ra</td></tr>
+                <tr><td>OJT Đại học Phenikaa — Mùa hạ 2026</td><td>Đại học Phenikaa</td><td><strong>45</strong></td><td>Đã kết thúc</td></tr>
+                <tr style="background:var(--surface-color)"><td colspan="2"><strong>Tổng cộng</strong></td><td><strong>127</strong></td><td>5 kỳ</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="chart-panel">
+          <h4>SV theo đối tác (2025 vs 2026)</h4>
+          <div class="compare-h-header">
+            <div class="label-col">Đối tác</div>
+            <div>2025</div>
+            <div>2026</div>
+          </div>
+          <div class="compare-h-row">
+            <div class="compare-h-label">FU Cần Thơ</div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2025" style="width:100%"></div></div>
+              <div class="compare-dual-val">74</div>
+            </div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2026" style="width:54.1%"></div></div>
+              <div class="compare-dual-val">40<span class="yoy-delta down" style="font-size:0.7rem">-46%</span></div>
+            </div>
+          </div>
+          <div class="compare-h-row">
+            <div class="compare-h-label">FPT Greenwich</div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2025" style="width:21.6%"></div></div>
+              <div class="compare-dual-val">16</div>
+            </div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2026" style="width:33.8%"></div></div>
+              <div class="compare-dual-val">25 <span class="yoy-delta up" style="font-size:0.7rem">+56%</span></div>
+            </div>
+          </div>
+          <div class="compare-h-row">
+            <div class="compare-h-label">CMC</div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2025" style="width:90.5%"></div></div>
+              <div class="compare-dual-val">67</div>
+            </div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2026" style="width:0%"></div></div>
+              <div class="compare-dual-val empty">—</div>
+            </div>
+          </div>
+          <div class="compare-h-row">
+            <div class="compare-h-label">ĐH Phenikaa</div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2025" style="width:0%"></div></div>
+              <div class="compare-dual-val empty">—</div>
+            </div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2026" style="width:60.8%"></div></div>
+              <div class="compare-dual-val">45 <span class="yoy-delta up" style="font-size:0.7rem">Mới</span></div>
+            </div>
+          </div>
+          <div class="compare-h-row">
+            <div class="compare-h-label">ĐH Tôn Đức Thắng</div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2025" style="width:0%"></div></div>
+              <div class="compare-dual-val empty">—</div>
+            </div>
+            <div class="compare-dual-cell">
+              <div class="compare-dual-track"><div class="compare-dual-fill y2026" style="width:23%"></div></div>
+              <div class="compare-dual-val">17 <span class="yoy-delta up" style="font-size:0.7rem">Mới</span></div>
+            </div>
+          </div>
+          <div class="chart-legend" style="margin-top:1rem">
+            <span class="legend-item"><span class="legend-dot y2025"></span> 2025</span>
+            <span class="legend-item"><span class="legend-dot y2026"></span> 2026</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- B2C bán ké -->
+      <div id="b2c-cross" class="card warning" style="scroll-margin-top:5rem">
+        <div class="card-title">B2C bán ké — Sinh viên tự do / sản phẩm ngắn hạn</div>
+        <p>Không phải ủy thác trường. Luồng bán ké sản phẩm ngắn hạn (vd. Java Backend) và nhóm SV tự do trên hệ thống.</p>
+
+        <div class="growth-summary">
+          <div class="growth-box">
+            <div class="value">5 tháng</div>
+            <div class="label">Đợt tự do</div>
+            <div class="sub">22 SV trong bảng</div>
+          </div>
+          <div class="growth-box">
+            <div class="value">~20</div>
+            <div class="label">SV nguồn khác</div>
+            <div class="sub">PTIT K23, Okinawa, BTEC, Thăng Long</div>
+          </div>
+          <div class="growth-box">
+            <div class="value">~42</div>
+            <div class="label">Ước tính tổng</div>
+            <div class="sub">Nhóm tự do + nguồn bổ sung</div>
+          </div>
+          <div class="growth-box">
+            <div class="value">Nhỏ / phân tán</div>
+            <div class="label">Quy mô</div>
+            <div class="sub">Đa số đợt 2–5 SV</div>
+          </div>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Đợt</th>
+              <th>SV</th>
+              <th>Mentor</th>
+              <th>Bắt đầu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tháng 1/2026</td><td><strong>5</strong></td><td>Trần Văn Cao, Nguyễn Luận</td><td>13/01/2026</td></tr>
+            <tr><td>Tháng 2/2026</td><td><strong>2</strong></td><td>Nguyễn Tiến Trung</td><td>01/03/2026</td></tr>
+            <tr><td>Tháng 3/2026</td><td><strong>3</strong></td><td>Nguyễn Viết Cảnh</td><td>17/03/2026</td></tr>
+            <tr><td>Tháng 4/2026</td><td><strong>4</strong></td><td>Nguyễn Tiến Trung, Nguyễn Viết Cảnh</td><td>26/03/2026</td></tr>
+            <tr><td>Tháng 5/2026</td><td><strong>8</strong></td><td>Nguyễn Thanh Bình Phước</td><td>20/04/2026</td></tr>
+            <tr style="background:var(--surface-color)"><td><strong>Tổng</strong></td><td><strong>22</strong></td><td colspan="2">+ ~20 SV nguồn khác ≈ <strong>~42</strong></td></tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+    <!-- E: Chương trình đào tạo -->
+    <section id="training" class="section">
+      <h2 class="section-heading"><span class="num">E</span> Chương trình đào tạo</h2>
+
+      <div class="card primary">
+        <div class="card-title">Roadmap thực tập tại IOC (4 trạm)</div>
+        <p>Chương trình OJT chuẩn đang áp dụng cho các kỳ B2B / nhóm thực tập. Hành trình khoảng <strong>12–13 tuần</strong>, kết thúc bằng bảo vệ dự án, mock interview và chứng nhận Rikkei Education.</p>
+
+        <div class="tram-grid">
+          <div class="tram-card">
+            <span class="tram-num">Trạm 1</span>
+            <h4>Onboard nhập cuộc</h4>
+            <div class="tram-dur">1–2 buổi</div>
+            <ul>
+              <li><strong>Ứng tuyển:</strong> Nộp CV, đăng ký nguyện vọng</li>
+              <li><strong>Đánh giá:</strong> OneConnect Test (50 câu) + phỏng vấn định hướng 1-1 với Mentor</li>
+              <li><strong>Hội quân:</strong> Văn hóa doanh nghiệp, chia nhóm 3–6 người, phân vai Front/Back/Test, thống nhất workflow</li>
+            </ul>
+          </div>
+
+          <div class="tram-card">
+            <span class="tram-num">Trạm 2</span>
+            <h4>Đắp móng kiến thức</h4>
+            <div class="tram-dur">Tuần 1–3</div>
+            <ul>
+              <li><strong>Lý thuyết:</strong> Ôn theo bộ câu hỏi phỏng vấn chuẩn</li>
+              <li><strong>Thực hành:</strong> Code theo mẫu, làm mini-app</li>
+              <li><strong>Mentor Review:</strong> 1–2 buổi/tuần — mock interview kiến thức nền</li>
+            </ul>
+            <div class="tram-ws"><strong>Workshop:</strong> Ứng dụng AI trong dự án</div>
+          </div>
+
+          <div class="tram-card">
+            <span class="tram-num">Trạm 3</span>
+            <h4>Thực chiến dự án &amp; AI</h4>
+            <div class="tram-dur">Tuần 4–11</div>
+            <ul>
+              <li><strong>Vận hành:</strong> Dự án Fullstack theo Agile/Scrum (và mô hình thực tế khác)</li>
+              <li><strong>Ứng dụng AI:</strong> Tăng tốc code, test, quản lý công việc</li>
+              <li><strong>Mentor Review:</strong> 1–2 buổi/tuần — review code, gỡ blocker, định hướng kiến trúc, nghiệm thu feature</li>
+            </ul>
+            <div class="tram-ws"><strong>Workshop:</strong> Viết CV chuyên nghiệp (thể hiện dự án OJT)</div>
+          </div>
+
+          <div class="tram-card">
+            <span class="tram-num">Trạm 4</span>
+            <h4>Bảo vệ &amp; tốt nghiệp</h4>
+            <div class="tram-dur">Tuần 12–13</div>
+            <ul>
+              <li><strong>Hoàn thiện CV:</strong> Chuyên gia HR chỉnh sửa trực tiếp</li>
+              <li><strong>Tốt nghiệp:</strong> Bảo vệ dự án + Mock Interview cuối trước hội đồng Mentor</li>
+            </ul>
+            <div class="tram-ws"><strong>Workshop:</strong> Kỹ năng phỏng vấn — tâm lý &amp; trình bày bản thân</div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid" style="margin-top:1.25rem">
+          <div>
+            <p style="font-size:0.9rem;color:var(--text-muted)"><strong>Đầu ra:</strong></p>
+            <ul style="margin-left:1.1rem;font-size:0.88rem;color:var(--text-muted);margin-top:0.35rem">
+              <li>Chứng nhận OJT Internship OneConnect (Rikkei Education)</li>
+              <li>Ưu tiên kết nối phỏng vấn tại Rikkeisoft &amp; mạng lưới đối tác</li>
+            </ul>
+          </div>
+          <div>
+            <img class="roadmap-img" src="assets/bao-cao-2026/07-chuong-trinh-dao-tao.png" alt="Roadmap chương trình thực tập tại IOC">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F: Quy trình vận hành -->
+    <section id="ops" class="section">
+      <h2 class="section-heading"><span class="num">F</span> Quy trình vận hành</h2>
+
+      <div class="card primary">
+        <div class="card-title">Luồng vận hành chuẩn</div>
+        <div class="ops-journey">
+          <div class="ops-journey-cap start">
+            <div class="ops-cap-badge">Khởi đầu kỳ</div>
+            <div class="ops-cap-steps">
+              <span class="ops-cap-chip">Onboarding SV</span>
+              <span class="ops-cap-arrow">→</span>
+              <span class="ops-cap-chip">Gán nhóm &amp; dự án</span>
+            </div>
+          </div>
+
+          <div class="ops-spine"></div>
+
+          <div class="ops-cycle-block">
+            <div class="ops-cycle-heading">
+              <h4>Vòng lặp hàng tuần</h4>
+              <p>Lặp lại suốt kỳ thực tập cho đến khi kết thúc</p>
+            </div>
+            <div class="ops-cycle" aria-label="Vòng lặp vận hành hàng tuần">
+              <svg class="ring" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+                <circle cx="50" cy="50" r="38" stroke="rgba(188,34,40,0.25)" stroke-width="2.5"/>
+                <circle cx="50" cy="50" r="38" stroke="#bc2228" stroke-width="2.5"
+                  stroke-dasharray="12 8" stroke-linecap="round" opacity="0.85"/>
+                <!-- arrow tips around the ring -->
+                <polygon points="50,8 47,14 53,14" fill="#bc2228"/>
+                <polygon points="92,50 86,47 86,53" fill="#bc2228"/>
+                <polygon points="50,92 53,86 47,86" fill="#bc2228"/>
+                <polygon points="8,50 14,53 14,47" fill="#bc2228"/>
+              </svg>
+              <div class="ops-cycle-center"><span>↻</span>Mỗi<br>tuần</div>
+              <div class="ops-cycle-node t">
+                <div class="bubble"><div class="idx">1</div>Daily Report</div>
+              </div>
+              <div class="ops-cycle-node r">
+                <div class="bubble"><div class="idx">2</div>Mentor Review<br>(1–2 buổi/tuần)</div>
+              </div>
+              <div class="ops-cycle-node b">
+                <div class="bubble"><div class="idx">3</div>Chấm điểm OJT</div>
+              </div>
+              <div class="ops-cycle-node l">
+                <div class="bubble"><div class="idx">4</div>SV đánh giá &amp;<br>ký xác nhận</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ops-spine down"></div>
+
+          <div class="ops-journey-cap end">
+            <div class="ops-cap-badge">Kết thúc kỳ</div>
+            <div class="ops-cap-steps">
+              <span class="ops-cap-chip">Bảo vệ cuối kỳ / Portfolio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- G: Kênh MXH -->
+    <section id="social" class="section">
+      <h2 class="section-heading"><span class="num">G</span> Kênh truyền thông &amp; MXH</h2>
+
+      <div class="card primary">
+        <div class="card-title">Hiện trạng các kênh</div>
+        <div class="channel-grid">
+          <div class="channel-card">
+            <h4>Facebook</h4>
+            <div class="role">Fanpage chính thức IOC</div>
+            <p>Kênh nhận diện thương hiệu, đăng tải thông tin chương trình và sự kiện. facebook.com/internshiponeconnect</p>
+          </div>
+          <div class="channel-card">
+            <h4>TikTok</h4>
+            <div class="role">Content ngắn — KOL-led growth</div>
+            <p>Kênh @ioc.chuyenthuctap, hướng tới sinh viên IT. Nội dung mindset "kỹ sư thay vì thợ code".</p>
+          </div>
+          <div class="channel-card">
+            <h4>Threads</h4>
+            <div class="role">Seeding organic</div>
+            <p>Kênh mang lead hiệu quả nhất giai đoạn đầu chiến dịch (theo báo cáo 02/07). Chi phí thấp hơn paid ads.</p>
+          </div>
+          <div class="channel-card">
+            <h4>Email marketing</h4>
+            <div class="role">Nurture funnel</div>
+            <p>Template email có sẵn, hỗ trợ nuôi lead từ trải nghiệm miễn phí sang gói trả phí.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- G: Kết luận -->
+    <section id="conclusion" class="section">
+      <h2 class="section-heading"><span class="num">H</span> Kết luận &amp; đề xuất định hướng</h2>
+
+      <div class="card danger">
+        <div class="card-title">Kết luận</div>
+        <ul class="highlight-list">
+          <li class="highlight-item"><span class="dot danger"></span><div><strong>Sản phẩm/nền tảng đủ mạnh cho B2B</strong>, nhưng <strong>chưa fit thị trường B2C</strong> — hoặc đội ngũ chưa tìm ra cách làm phù hợp.</div></li>
+          <li class="highlight-item"><span class="dot warning"></span><div><strong>Thị trường và đối thủ</strong> (CodeGym, VTI) xác nhận khó khăn chung — cả hai đã đóng chương trình tương tự.</div></li>
+          <li class="highlight-item"><span class="dot primary"></span><div><strong>Chưa có idea B2C</strong> đủ sâu và khả thi để tiếp tục action. Cần nghiên cứu lại mô hình/giá trị sản phẩm trước khi mở rộng.</div></li>
+        </ul>
+      </div>
+
+      <div class="solution-container">
+        <div class="solution-card">
+          <div class="solution-meta">Phương án thay thế</div>
+          <div class="solution-name">Tạm dừng mở rộng B2C</div>
+          <p class="solution-desc">Không tiếp tục đốt ngân sách ads/quy mô lớn khi chưa có tín hiệu chuyển đổi. Nếu vẫn giữ hướng B2C, cần nghiên cứu sâu để thay đổi mô hình trước khi action.</p>
+          <ul class="solution-points">
+            <li>• Tránh chi phí cố định sales/marketing không hiệu quả</li>
+            <li>• Giữ nền tảng freemium làm lead gen cho B2B</li>
+            <li>• Theo dõi thị trường, chờ insight mới</li>
+          </ul>
+        </div>
+        <div class="solution-card recommended">
+          <span class="solution-badge">Đề xuất chính</span>
+          <div class="solution-meta" style="color:var(--success-color)">Phương án ưu tiên</div>
+          <div class="solution-name">Quay lại thị trường B2B</div>
+          <p class="solution-desc">Tập trung nguồn lực vào đối tác trường/doanh nghiệp — nơi IOC đã chứng minh được thành công. Năm 2026: 16 kỳ thực tập, mở rộng Phenikaa, TDTU, tăng quy mô FPT Greenwich. Tiếp tục scale gói ủy thác.</p>
+          <ul class="solution-points">
+            <li>• Tận dụng hạ tầng sản phẩm &amp; SOP vận hành đã có</li>
+            <li>• Doanh thu ổn định hơn, ít phụ thuộc outbound sale</li>
+            <li>• Phù hợp định vị "Managed Internship Service" cốt lõi</li>
+            <li>• Freemium B2C vẫn có thể giữ làm phễu nhận diện thụ động</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      Báo cáo tổng hợp dự án IOC — cập nhật ngày 28/07/2026. Bản quyền thuộc về Ban Quản Trị Dự Án IOC.
+    </div>
+  </div>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const icon = document.getElementById('theme-icon');
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.setAttribute('data-theme', 'light');
+        icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        icon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+      }
+    }
+  </script>
+</body>
+</html>
